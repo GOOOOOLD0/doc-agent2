@@ -1,0 +1,14 @@
+{
+  "source_id": "br-act-9426-2021",
+  "country": "brazil",
+  "norm": "Act No. 9,426/2021, coexistence parameters between terrestrial and satellite stations",
+  "url": "https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2021/1597-ato-9426",
+  "fetched_at": "2026-06-23T01:17:36+00:00",
+  "title": "Anatel - Ato nº 9426, de 24 de outubro de 2021 Agência Nacional de Telecomunicações Anatel - Ato nº 9426, de 24 de outubro de 2021",
+  "charset": "utf-8",
+  "source_format": "html",
+  "capture_method": "anatel_html",
+  "normalized_sha256": "64295bc6ec92065f9ecc3e49bcb8a3cbff6d9d86c7b6eeb28fb723dc15def1c5",
+  "status": "updated",
+  "compared_to": "/Users/fish/Desktop/卫星落地许可/sources/brazil/br-act-9426-2021/snapshots/2026-06-23/normalized.txt"
+}

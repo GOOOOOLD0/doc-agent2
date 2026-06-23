@@ -1,0 +1,162 @@
+{
+  "version": 1,
+  "updated_at": "2026-06-23",
+  "sources": [
+    {
+      "source_id": "br-law-9472-1997",
+      "country": "brazil",
+      "norm": "Law No. 9,472/1997, General Telecommunications Law (LGT)",
+      "authority": "Anatel / Brazil Federal Government",
+      "url": "https://informacoes.anatel.gov.br/legislacao/leis/2-lei-9472",
+      "source_format": "html",
+      "capture_method": "anatel_html",
+      "process_step": "Landing rights; service authorization; spectrum/orbit powers",
+      "status": "url-confirmed",
+      "monitor": true
+    },
+    {
+      "source_id": "br-res-748-2021",
+      "country": "brazil",
+      "norm": "Resolution No. 748/2021, General Regulation for the Exploitation of Satellites",
+      "authority": "Anatel",
+      "url": "https://informacoes.anatel.gov.br/legislacao/resolucoes/2021/1595-resolucao-748",
+      "source_format": "html",
+      "capture_method": "anatel_html",
+      "process_step": "Landing rights; satellite exploitation framework",
+      "status": "url-confirmed",
+      "monitor": true
+    },
+    {
+      "source_id": "br-act-9523-2021",
+      "country": "brazil",
+      "norm": "Act No. 9,523/2021, technical and operational requirements for satellite communication systems",
+      "authority": "Anatel",
+      "url": "https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2021/1598-ato-9523",
+      "source_format": "html",
+      "capture_method": "anatel_html",
+      "process_step": "Technical system requirements; frequency coordination support",
+      "status": "url-confirmed",
+      "monitor": true
+    },
+    {
+      "source_id": "br-act-9426-2021",
+      "country": "brazil",
+      "norm": "Act No. 9,426/2021, coexistence parameters between terrestrial and satellite stations",
+      "authority": "Anatel",
+      "url": "https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2021/1597-ato-9426",
+      "source_format": "html",
+      "capture_method": "anatel_html",
+      "process_step": "Coexistence / interference; frequency coordination",
+      "status": "url-confirmed",
+      "monitor": true
+    },
+    {
+      "source_id": "br-act-9526-2021",
+      "country": "brazil",
+      "norm": "Act No. 9,526/2021, requirements for obtaining the right to exploit satellites",
+      "authority": "Anatel",
+      "url": null,
+      "source_format": "unknown",
+      "capture_method": null,
+      "process_step": "Landing rights application requirements",
+      "status": "needs-url-verification",
+      "monitor": false
+    },
+    {
+      "source_id": "br-law-5070-1966",
+      "country": "brazil",
+      "norm": "Law No. 5,070/1966, FISTEL Law",
+      "authority": "Anatel / Brazil Federal Government",
+      "url": "https://informacoes.anatel.gov.br/legislacao/leis/474-lei-5070",
+      "source_format": "html",
+      "capture_method": "anatel_html",
+      "process_step": "Fees: TFI and TFF",
+      "status": "url-confirmed",
+      "monitor": true
+    },
+    {
+      "source_id": "br-res-715-2019",
+      "country": "brazil",
+      "norm": "Resolution No. 715/2019, conformity assessment and homologation of telecom products",
+      "authority": "Anatel",
+      "url": "https://informacoes.anatel.gov.br/legislacao/resolucoes/2019/1350-resolucao-715",
+      "source_format": "html",
+      "capture_method": "anatel_html",
+      "process_step": "Equipment certification and approval",
+      "status": "url-confirmed",
+      "monitor": true
+    },
+    {
+      "source_id": "br-res-719-2020",
+      "country": "brazil",
+      "norm": "Resolution No. 719/2020, General Licensing Regulation (RGL)",
+      "authority": "Anatel",
+      "url": "https://informacoes.anatel.gov.br/legislacao/resolucoes/2020/1381-resolucao-719",
+      "source_format": "html",
+      "capture_method": "anatel_html",
+      "process_step": "Station licensing",
+      "status": "url-confirmed",
+      "monitor": true
+    },
+    {
+      "source_id": "br-res-720-2020",
+      "country": "brazil",
+      "norm": "Resolution No. 720/2020, General Regulation of Grants (RGO)",
+      "authority": "Anatel",
+      "url": "https://informacoes.anatel.gov.br/legislacao/resolucoes/2020/1382-resolucao-720",
+      "source_format": "html",
+      "capture_method": "anatel_html",
+      "process_step": "Service authorization; transfer and extinction of authorizations",
+      "status": "url-confirmed",
+      "monitor": true
+    },
+    {
+      "source_id": "br-res-777-2025",
+      "country": "brazil",
+      "norm": "Resolution No. 777/2025, General Regulation of Telecommunications Services (RGST)",
+      "authority": "Anatel",
+      "url": "https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2022-resolucao-777",
+      "source_format": "html",
+      "capture_method": "anatel_html",
+      "process_step": "Service authorization and service-specific rules for SMP, SCM, and SMGS",
+      "status": "url-confirmed",
+      "monitor": true
+    },
+    {
+      "source_id": "br-res-477-2007",
+      "country": "brazil",
+      "norm": "Resolution No. 477/2007, former SMP regulation",
+      "authority": "Anatel",
+      "url": "https://informacoes.anatel.gov.br/legislacao/resolucoes/2007/9-resolucao-477",
+      "source_format": "html",
+      "capture_method": "archive_only",
+      "process_step": "Historical SMP reference",
+      "status": "historical-revoked",
+      "monitor": false
+    },
+    {
+      "source_id": "br-res-614-2013",
+      "country": "brazil",
+      "norm": "Resolution No. 614/2013, former SCM regulation",
+      "authority": "Anatel",
+      "url": "https://informacoes.anatel.gov.br/legislacao/resolucoes/2013/465-resolucao-614",
+      "source_format": "html",
+      "capture_method": "archive_only",
+      "process_step": "Historical SCM reference",
+      "status": "historical-revoked",
+      "monitor": false
+    },
+    {
+      "source_id": "br-portaria-560-1997",
+      "country": "brazil",
+      "norm": "Portaria No. 560/1997, Norma No. 16/97 for non-geostationary SMGS",
+      "authority": "Ministry of Communications / Anatel legislation portal",
+      "url": "https://informacoes.anatel.gov.br/legislacao/normas-do-mc/185-portaria-560",
+      "source_format": "html",
+      "capture_method": "anatel_html",
+      "process_step": "SMGS historical / transition source",
+      "status": "transitional",
+      "monitor": true
+    }
+  ]
+}

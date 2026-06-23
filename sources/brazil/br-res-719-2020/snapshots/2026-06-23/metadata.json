@@ -1,0 +1,14 @@
+{
+  "source_id": "br-res-719-2020",
+  "country": "brazil",
+  "norm": "Resolution No. 719/2020, General Licensing Regulation (RGL)",
+  "url": "https://informacoes.anatel.gov.br/legislacao/resolucoes/2020/1381-resolucao-719",
+  "fetched_at": "2026-06-23T01:17:40+00:00",
+  "title": "Anatel - Resolução nº 719, de 10 de fevereiro de 2020 Agência Nacional de Telecomunicações Anatel - Resolução nº 719, de 10 de fevereiro de 2020",
+  "charset": "utf-8",
+  "source_format": "html",
+  "capture_method": "anatel_html",
+  "normalized_sha256": "d3b0a774c9851208a02dff5b2e659303610a20d5b0708a2a9e1d6df96f474005",
+  "status": "updated",
+  "compared_to": "/Users/fish/Desktop/卫星落地许可/sources/brazil/br-res-719-2020/snapshots/2026-06-23/normalized.txt"
+}

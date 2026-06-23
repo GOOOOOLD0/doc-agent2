@@ -1,0 +1,14 @@
+{
+  "source_id": "br-law-9472-1997",
+  "country": "brazil",
+  "norm": "Law No. 9,472/1997, General Telecommunications Law (LGT)",
+  "url": "https://informacoes.anatel.gov.br/legislacao/leis/2-lei-9472",
+  "fetched_at": "2026-06-23T01:17:31+00:00",
+  "title": "Anatel - Lei nº 9.472, de 16 de julho de 1997 Agência Nacional de Telecomunicações Anatel - Lei nº 9.472, de 16 de julho de 1997",
+  "charset": "utf-8",
+  "source_format": "html",
+  "capture_method": "anatel_html",
+  "normalized_sha256": "c8f9bf5145ac07599a4bcc29e6e57afb1e5caa13880d022cb2c4c7c09d2df74e",
+  "status": "updated",
+  "compared_to": "/Users/fish/Desktop/卫星落地许可/sources/brazil/br-law-9472-1997/snapshots/2026-06-23/normalized.txt"
+}
