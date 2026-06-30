@@ -1,0 +1,1477 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="pt-br" dir="ltr"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="pt-br" dir="ltr"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="pt-br" dir="ltr"> <![endif]-->
+<!--[if gt IE 8]><!--> 
+
+<html class="no-js" lang="pt-br" dir="ltr"> <!--<![endif]-->
+	<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-61388073-6" type="b41d008067d7be1a1ba85c6e-text/javascript"></script>
+    <script type="b41d008067d7be1a1ba85c6e-text/javascript">
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-61388073-6');
+    </script>
+
+    <!-- Compilar normas -->
+    <script type="b41d008067d7be1a1ba85c6e-text/javascript">
+      // Função que ativa ou desativa a remoção dos elementos tachados
+      window.compila = function() {
+        var elems = document.body.getElementsByTagName('*');
+        var active = document.body.classList.toggle('compiled'); // Alterna o estado
+
+        for (var i = 0; i < elems.length; i++) {
+          var elemStyle = window.getComputedStyle(elems[i]);
+
+          // Verifica se o elemento tem 'line-through' e aplica/remova conforme o estado
+          if (elemStyle.getPropertyValue('text-decoration').startsWith('line-through')) {
+            elems[i].style.display = active ? 'none' : ''; // Oculta ou restaura o elemento
+          }
+        }
+
+        // Atualiza o título do botão conforme o estado atual
+        var botaoCompila = document.querySelector('.botao-compila');
+        botaoCompila.title = active ? 'Desativar Texto Compilado' : 'Ativar Texto Compilado';
+
+        // Adiciona ou remove o hash #compilado na URL
+        if (active) {
+          window.location.hash = 'compilado'; // Adiciona #compilado na URL
+          botaoCompila.classList.add('active'); // Adiciona a classe 'active' ao botão
+        } else {
+          history.pushState("", document.title, window.location.pathname + window.location.search); // Remove o hash
+          botaoCompila.classList.remove('active'); // Remove a classe 'active' do botão
+        }
+      }
+
+      // Verifica se a URL contém #compilado ao carregar a página
+      document.addEventListener("DOMContentLoaded", function() {
+        if (window.location.hash === '#compilado') {
+          window.compila(); // Ativa a compilação automaticamente
+        }
+      });
+    </script>
+
+	  <title>Anatel - Ato nº 9523, de 27 de outubro de 2021</title>
+      <title>Agência Nacional de Telecomunicações</title>
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <meta name="Description" content="Informações sobre a Agência Nacional de Telecomunicações"/>
+<meta name="keywords" content="Setor regulado, Consumidor, Anatel, Telecomunicações, Legislação, Telefonia Fixa, Telefonia Móvel, Celular, Banda Larga, Internet, Operadoras, Serviços de Telecomunicações, Infraestrutura de Telecomunicações, Radioamador, Radiofrequência"/>
+      <meta name="author" content="ANATEL"/>
+      <meta name="robots" content="index, follow"/>
+<!-- Telecomunicações, ANATEL, Regulação -->
+
+        <!--[if lt IE 9]>
+        <script src="/legislacao/templates/padraogoverno01/js/html5shiv.js"></script>
+        <![endif]-->
+		
+		
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/bootstrap/css/bootstrap.min.css" type='text/css'/>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/template-legislacao.css" type='text/css'/>
+                    <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/icones-bmp-institucional.css" type='text/css'/>
+                    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" crossorigin="anonymous">
+        <!--[if lt IE 10]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie.css" />
+        <![endif]-->
+        <!--[if lt IE 9]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie8.css" />
+        <![endif]-->
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie7.css" />
+        <link rel="stylesheet" href="/legislacao/font-awesome/css/font-awesome-ie7.min.css" />
+        <![endif]-->
+            <base href="https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2021/1598-ato-9523" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Aprovação, Requisito Técnico, Operacionais, Sistemas de Comunicação, Satélite, Território Brasileiro, AtoVigente" />
+	<meta name="rights" content="Direitos reservados à Anatel. As normas podem ser utilizadas desde que informada a fonte." />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="Aprova os requisitos técnicos e operacionais para sistemas de comunicação via satélite operando sobre o território brasileiro." />
+	<title>Anatel - Ato nº 9523, de 27 de outubro de 2021</title>
+	<link href="/legislacao/templates/padraogoverno01/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+	<link href="/legislacao/media/com_attachments/css/attachments_hide.css" rel="stylesheet" type="text/css" />
+	<link href="/legislacao/media/com_attachments/css/attachments_list.css" rel="stylesheet" type="text/css" />
+	<link href="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/css/cookie.css?v=79788093" rel="stylesheet" type="text/css" />
+	<link href="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/css/responsive.css?v=1711255115" rel="stylesheet" type="text/css" />
+	<link href="/legislacao/media/mod_languages/css/template.css?7acd2053edfb97467c7bf73ffe8ac30f" rel="stylesheet" type="text/css" />
+	<style type="text/css">
+#scrollToTop {
+	cursor: pointer;
+	font-size: 0.9em;
+	position: fixed;
+	text-align: center;
+	z-index: 9999;
+	-webkit-transition: background-color 0.2s ease-in-out;
+	-moz-transition: background-color 0.2s ease-in-out;
+	-ms-transition: background-color 0.2s ease-in-out;
+	-o-transition: background-color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out;
+
+	background: #3e67b1;
+	color: #ffffff;
+	border-radius: 5px;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	right: 20px; bottom: 20px;
+}
+
+#scrollToTop:hover {
+	background: #3a72bc;
+	color: #ffffff;
+}
+
+#scrollToTop > img {
+	display: block;
+	margin: 0 auto;
+}
+	</style>
+	<script type="application/json" class="joomla-script-options new">{"csrf.token":"f717f466866f68d4d3c12f079f4f88d3","system.paths":{"root":"\/legislacao","base":"\/legislacao"}}</script>
+	<script src="/legislacao/media/jui/js/jquery.min.js?7acd2053edfb97467c7bf73ffe8ac30f" type="b41d008067d7be1a1ba85c6e-text/javascript"></script>
+	<script src="/legislacao/media/jui/js/jquery-noconflict.js?7acd2053edfb97467c7bf73ffe8ac30f" type="b41d008067d7be1a1ba85c6e-text/javascript"></script>
+	<script src="/legislacao/media/jui/js/jquery-migrate.min.js?7acd2053edfb97467c7bf73ffe8ac30f" type="b41d008067d7be1a1ba85c6e-text/javascript"></script>
+	<script src="/legislacao/media/plg_system_sl_scrolltotop/js/scrolltotop_jq.js" type="b41d008067d7be1a1ba85c6e-text/javascript"></script>
+	<script src="/legislacao/media/com_attachments/js/attachments_refresh.js" type="b41d008067d7be1a1ba85c6e-text/javascript"></script>
+	<script src="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/js/cookie_script.js?v=1860247374" type="b41d008067d7be1a1ba85c6e-text/javascript"></script>
+	<script type="b41d008067d7be1a1ba85c6e-text/javascript">
+jQuery(document).ready(function() {
+	jQuery(document.body).SLScrollToTop({
+		'image':		'',
+		'text':			'Voltar ao topo',
+		'title':		'scroll top',
+		'className':	'scrollToTop',
+		'duration':		500
+	});
+});
+
+/*===  EASY GOOGLE ANALYTICS : START TRACKING CODE  ===*/
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-37108821-1']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+/*===  EASY GOOGLE ANALYTICS : END TRACKING CODE  ===*/
+
+	</script>
+
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+	
+                    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,800,700" rel='stylesheet' type='text/css'>
+            	
+	<!--CHAMADA CUSTOMIZACAO -->
+	<script src="/legislacao/templates/padraogoverno01/js/custom-portal.js" type="b41d008067d7be1a1ba85c6e-text/javascript"></script>
+	 <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/customizacao-legislacao.css?22062026221736" type='text/css'/>
+	<style type="text/css">@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.2.8/latin-ext/400/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.2.8/cyrillic/400/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.2.8/latin/400/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.2.8/vietnamese/400/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.2.8/cyrillic-ext/400/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}</style>
+</head>
+<body  id="main-navigation">
+
+<a href="#conteudo" accesskey="1">
+<a href="#main-navigation" accesskey="2">
+<a href="#search" accesskey="3">  
+<a href="#portal-footer" accesskey="4">     
+
+    <a class="hide" id="topo" href="#accessibility">Ir direto para menu de acessibilidade.</a>
+    <noscript>
+    <div class="error minor-font">
+        Seu navegador de internet está sem suporte à JavaScript. Por esse motivo algumas funcionalidades do site podem não estar acessíveis.
+    </div>
+    </noscript>
+    <!--[if lt IE 7]><center><strong>Atenção, a versão de seu navegador não é compatível com este sítio. Atualize seu navegador.</strong></center><![endif]-->
+		
+<div class="layout">
+   
+    <header class="super-destaque">
+         <div class="noticia-destaque">
+        <div class="container tmpl-custom">
+            
+            <!-- fim .row-fluid -->
+            <div class="row-fluid">
+                <div id="logo" class="span4">
+				
+                    <a href="https://www.gov.br/mcom" title="Ministério das Comunicações">
+                        
+												
+						<span class="portal-title-1"></span>
+
+                                                        <span class="portal-description">Ministério das Comunicações</span>
+                                
+                        									
+                    </a>
+					
+                </div>
+                  
+                <!-- fim .span4 -->
+                <div id="menulateral" class="span8">
+                    	<nav id="" class="row">
+    	<p class="hidden">Opções de acessibilidade</p>
+    	
+<ul class="pull-right" id="portal-siteactions">
+<li class="item-478 siteaction-outros"><a class="siteaction-outros" href="https://www.gov.br/pt-br/orgaos-do-governo"  accesskey="0" >Órgãos do Governo</a></li><li class="item-479 siteaction-outros"><a class="siteaction-outros" href="http://www.acessoainformacao.gov.br"  accesskey="1" >Acesso à Informação</a></li><li class="item-480 siteaction-outros"><a class="siteaction-outros" href="http://www4.planalto.gov.br/legislacao"  accesskey="2" >Legislação</a></li><li class="item-481 siteaction-outros"><a class="siteaction-outros" href="https://www.gov.br/governodigital/pt-br/acessibilidade-digital"  accesskey="3" >Acessibilidade</a></li><li class="item-260 toggle-contraste"><a class="toggle-contraste" href="#"  accesskey="4" >⠀</a></li><li class="item-263 siteaction-vlibras"><a class="siteaction-vlibras" href="https://acesso.gov.br/"  accesskey="5" >⠀</a></li></ul>
+    </nav>
+		<nav id="" class="row">
+    	<p class="hidden">Seleção de Idioma</p>
+    	<div class="mod-languages">
+
+	<ul class="lang-inline">
+						<li class="lang-active" dir="ltr">
+			<a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2021">
+							PT						</a>
+			</li>
+								<li dir="ltr">
+			<a href="/legislacao/en/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2021">
+							EN						</a>
+			</li>
+								<li dir="ltr">
+			<a href="/legislacao/es/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2021">
+							ES						</a>
+			</li>
+				</ul>
+
+</div>
+    </nav>
+	
+                </div>
+                <!-- fim .span8 -->
+            </div>
+            <!-- fim .row-fluid -->
+        </div>
+        <!-- fim div.container -->  
+        <div class="sobre" id="search">
+            <div class="container tmpl-custom">
+                <div class="menu-servicos">
+                    <div class="header-icons">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <a href="https://www.gov.br/anatel/pt-br" title="Agência Nacional de Telecomunicações - Anatel">
+                                            
+                             <h1 class="portal-title corto">Agência Nacional de Telecomunicações</h1>
+                        
+                                            </a>
+                    	<nav >
+        <p class="hide">Pesquisar</p>
+        <nav id="portal-searchbox">
+<form action="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2021" method="post" class="pull-right">
+    <fieldset>
+        <legend class="hide">Busca</legend>
+        <h2 class="hidden">Buscar no portal</h2>
+        <div class="input-append">
+            <label for="portal-searchbox-field" class="hide">Busca: </label>
+            <input type="text" id="portal-searchbox-field" class="searchField" placeholder="O que você procura?" title="O que você procura?" name="searchword">       
+            <button type="submit" class="btn searchButton"><span class="hide">Buscar</span><i class="fas fa-search"></i></button>
+        </div>
+        <input type="hidden" name="task" value="search" />
+        <input type="hidden" name="option" value="com_search" />
+        <input type="hidden" name="Itemid" value="254" />
+    </fieldset>
+</form>    </nav>
+	
+                    <div class="header-search">
+                        <a href="/legislacao/component/pesquisa/view-results/module-188"><i class="fas fa-search"></i></a>
+                    </div>
+            </div>
+            <!-- .container -->
+        </div>  
+    </div>
+        <!-- fim .sobre -->
+        <div id="conteudo"></div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container tmpl-custom">
+            	<div class="row-fluid">
+		<section>
+						
+<div class="rastro-navegacao row-flutuante">
+<a title="Voltar para a Página Inicial" href="https://www.gov.br/anatel/pt-br"><i class='fas fa-home'></i></a><span class="separator">&gt;</span><a href="/legislacao/" class="pathway">Legislação</a> <span class="separator">&gt;</span> <a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro" class="pathway">Atos de Requisitos Técnicos de Gestão do Espectro</a> <span class="separator">&gt;</span> <a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2021" class="pathway">2021</a> <span class="separator">&gt;</span> <span>Ato nº 9523, de 27 de outubro de 2021</span></div>
+		</section>
+	</div>
+	
+            <div class="row-fluid" >
+                                    <!-- Menus Principal -->
+                    <div class="navigation-wrapper">
+                        <div class="container tmpl-custom tmpl-before">
+                            <div id="navigation">
+                                <section id="navigation-section">
+        				
+                                    <!-- <span class="hide">Início do menu principal</span> -->
+        							
+                                    	<nav class="  super-menus">
+		<!-- <h2 >Legislação da Anatel <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2  class="Legislação-da-Anatel"><span>Legislação da Anatel </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-105 parent"><a href="/legislacao/resolucoes" >Resoluções</a></li><li class="item-118"><a href="/legislacao/sumulas" >Súmulas</a></li><li class="item-182"><a href="/legislacao/portarias-de-delegacao" >Portarias de Delegação</a></li><li class="item-319 parent"><a href="/legislacao/portarias-normativas" >Portarias Normativas</a></li><li class="item-435"><a href="/legislacao/resolucoes-internas" >Resoluções Internas</a></li><li class="item-264"><a href="/legislacao/metodologias-de-calculo-de-multa" >Metodologias de Cálculo de Multa</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Atos da Anatel <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2  class=""><span>Atos da Anatel </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-342 parent"><a href="/legislacao/atos-de-certificacao-de-produtos" >Atos de Certificação de Produtos</a></li><li class="item-369 active deeper parent"><a class="menu-normas" href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro" >Atos de Requisitos Técnicos de Gestão do Espectro</a><ul><li class="item-546"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2026" >2026</a></li><li class="item-518"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2025" >2025</a></li><li class="item-495"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2024" >2024</a></li><li class="item-491"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2023" >2023</a></li><li class="item-489"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2022" >2022</a></li><li class="item-497 current active"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2021" >2021</a></li><li class="item-433"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2020" >2020</a></li><li class="item-370"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2019" >2019</a></li><li class="item-371"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2018" >2018</a></li><li class="item-372"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2017" >2017</a></li><li class="item-373"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2016" >2016</a></li><li class="item-374"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2015" >2015</a></li><li class="item-375"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2014" >2014</a></li><li class="item-376"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2013" >2013</a></li><li class="item-377"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2012" >2012</a></li><li class="item-378"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2011" >2011</a></li><li class="item-379"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2010" >2010</a></li><li class="item-380"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2009" >2009</a></li><li class="item-381"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2008" >2008</a></li><li class="item-382"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2007" >2007</a></li><li class="item-383"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2006" >2006</a></li><li class="item-384"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2005" >2005</a></li><li class="item-385"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2004" >2004</a></li><li class="item-386"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2003" >2003</a></li><li class="item-387"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2002" >2002</a></li><li class="item-388"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2001" >2001</a></li><li class="item-389"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2000" >2000</a></li><li class="item-390"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/1999" >1999</a></li><li class="item-391"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/1998" >1998</a></li><li class="item-392"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/1997" >1997</a></li></ul></li><li class="item-483"><a href="/legislacao/atos-de-numeracao" >Atos de Numeração</a></li><li class="item-543"><a href="/legislacao/atos-complementares-de-regulacao" >Atos Complementares de Regulação</a></li><li class="item-547"><a href="/legislacao/atos-de-requisitos-operacionais-de-outorga-e-licenciamento" >Atos de Requisitos Operacionais de Outorga e Licenciamento</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Demais Normas <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2  class=""><span>Demais Normas </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-106"><a href="/legislacao/leis" >Leis</a></li><li class="item-107"><a href="/legislacao/decretos" >Decretos</a></li><li class="item-108"><a href="/legislacao/normas-do-mc" >Normas do MC</a></li><li class="item-293"><a href="/legislacao/instruções-do-dentel" >Instruções do Dentel</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Fiscalização <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2  class=""><span>Fiscalização </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-203"><a href="/legislacao/procedimentos-de-fiscalizacao" >Procedimentos de Fiscalização</a></li><li class="item-202"><a href="/legislacao/instrucoes-de-fiscalizacao" >Instruções de Fiscalização</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Glossário <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2  class=""><span>Glossário </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-256"><a href="/legislacao/glossario-anatel" >Termos de Telecomunicações</a></li></ul>
+	</nav>
+	
+                                    <span class="hide">Fim do menu principal</span>
+                                </section>
+                            </div>
+                        </div>    
+                    </div>   
+                    <!-- fim Menus Principal -->
+                
+                <div id="content" class="span9  internas">
+                    <section id="content-section">
+                    
+                    <div class="banner-destaque">
+                        
+                    </div>    
+                        <!-- <span class="hide">Início do conteúdo da página</span> -->
+
+                                    
+                    <!-- Chamada da posição paginas de Serviços -->
+                     
+
+                    <!--Fim da chamada de paginas de Serviços -->    
+
+                                                
+                        <!-- INÍCIO - Menu de tradução ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                         <!-- Local: template - html - mod_menu (menutraducao.php) -->
+                        <!-- FINAL - Menu de Tradução +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        
+                        <!-- INÍCIO - Chapéu do artigo ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        <!-- <div class="row-fluid">
+                            <p class="section" property="rnews:articleSection">Ciência e Tecnologia</p>
+                        </div> -->
+                        <!-- FINAL - Chapéu do artigo +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+                        <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        <!-- Local: template - html - mod_menu (default.php) -->
+                        <!--jdoc:include type="modules" name="modulo-contexto" />
+                        <!-- FINAL - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+                        
+                                                                                        
+                                <div class="row-fluid module">
+                                                                                    <!-- Escreve conteúdo das páginas internas -->
+                                                
+                                                ﻿﻿﻿<div class="content-header-options-1 row-fluid redes-sociais">
+
+		<div class="btns-social-like span5 hide">
+															<style>
+    @media print {
+      footer, #scrollToTop, #scrollToTop:hover, .icon-chevron-up:before, .icon-list:before, main .container #navigation .mainmenu-toggle, footer .footer-ferramenta, footer .footer-logos, #content.internas .below-content .line, main div.rastro-navegacao, #barra-brasil, header, #content.internas .content-header-options-1 .btns-social-like {
+        display: none !important;
+      }
+      img.access-button {
+      display: none;
+      }
+      img.pop-up {
+      display: none;
+      }
+      a:after, a[href^="javascript:"]:after, a[href^="#"]:after { 
+        display: none;
+      }
+    }
+
+    /* Estilos para os botões fixos */
+    .fixed-buttons {
+      position: fixed;
+      top: 36%;
+      left: 20px;
+      display: flex;
+      flex-direction: column;
+      z-index: 1000; /* Garante que os botões fiquem no topo */
+    }
+
+    .fixed-buttons div, .fixed-buttons p {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    /* Cor de botão ativa para o botão de compilação */
+    .botao-compila.active {
+      background-color: #4CAF50; /* Verde indica ativo */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Contêiner dos botões fixos -->
+  <div class="fixed-buttons">
+    <div class="facebook" title="Compartilhar no Facebook">
+      <span class="facebook-share" data-js="facebook-share"><i class="fab fa-facebook-f"></i></span>
+    </div>
+
+    <div class="twitter" title="Compartilhar no Twitter">
+      <span class="twitter-share-button" data-lang="pt" data-js="twitter-share"><i class="fab fa-twitter"></i></span>
+    </div>
+
+    <p class="botao-imprime" title="Imprimir">
+      <a href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.print();" data-cf-modified-b41d008067d7be1a1ba85c6e-=""><i class="fas fa-print"></i></a>
+    </p>
+
+    <p class="botao-compila" title="Ativar Texto Compilado">
+      <a href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.compila(); return false;" data-cf-modified-b41d008067d7be1a1ba85c6e-=""><i class="fas fa-file-alt"></i></a>
+    </p>
+  </div>
+
+  <script type="b41d008067d7be1a1ba85c6e-text/javascript">
+    // Função de compartilhamento no Facebook
+    var facebookShare = document.querySelector('[data-js="facebook-share"]');
+    facebookShare.onclick = function(e) {
+      e.preventDefault();
+      var facebookWindow = window.open('https://www.facebook.com/sharer/sharer.php?u=' + document.URL, 'facebook-popup','height=350, width=600, left='+(window.innerWidth-600)/2+', top='+(window.innerHeight-600)/2);
+      if(facebookWindow.focus) { facebookWindow.focus(); }
+      return false;
+    }
+
+    // Função de compartilhamento no Twitter
+    var twitterShare = document.querySelector('[data-js="twitter-share"]');
+    twitterShare.onclick = function(e) {
+      e.preventDefault();
+      var twitterWindow = window.open('https://twitter.com/share?url=' + document.URL, 'twitter-popup','height=350, width=600, left='+(window.innerWidth-600)/2+', top='+(window.innerHeight-600)/2);
+      if(twitterWindow.focus) { twitterWindow.focus(); }
+      return false;
+    }
+
+    // Função que ativa ou desativa a remoção dos elementos tachados
+    window.compila = function() {
+      var elems = document.body.getElementsByTagName('*');
+      var active = document.body.classList.toggle('compiled'); // Alterna o estado
+
+      for (var i = 0; i < elems.length; i++) {
+        var elemStyle = window.getComputedStyle(elems[i]);
+        if (elemStyle.getPropertyValue('text-decoration').startsWith('line-through')) {
+          elems[i].style.display = active ? 'none' : ''; // Oculta ou restaura o elemento
+        }
+      }
+
+      // Atualiza o título e a cor do botão conforme o estado atual
+      var botaoCompila = document.querySelector('.botao-compila');
+      botaoCompila.title = active ? 'Desativar Texto Compilado' : 'Ativar Texto Compilado';
+      botaoCompila.classList.toggle('active', active);
+
+      // Adiciona ou remove o hash #compilado na URL
+      if (active) {
+        window.location.hash = 'compilado';
+      } else {
+        history.pushState("", document.title, window.location.pathname + window.location.search);
+      }
+    }
+
+    // Verifica se a URL contém #compilado ao carregar a página
+    document.addEventListener("DOMContentLoaded", function() {
+      if (window.location.hash === '#compilado') {
+        window.compila(); // Ativa a compilação automaticamente
+      }
+    });
+  </script>					<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="b41d008067d7be1a1ba85c6e-|49" defer></script></div>		
+		
+
+</div>
+
+<div class="item-page">
+
+
+
+	
+
+
+	<h1 class="documentFirstHeading">
+			Ato nº 9523, de 27 de outubro de 2021		</h1>
+
+	<ul class="actions">
+					</ul>
+
+
+
+<div class="content-header-options-1 row-fluid">
+	<div class="documentByLine span7">
+				
+			
+
+					<span class="documentPublished">
+				Publicado: Sexta, 29 Outubro 2021 17:01			</span>
+			<span class="separator">|</span>			
+
+					<span class="documentModified">
+				Última atualização: Sexta, 19 Dezembro 2025 07:58			</span>
+			<span class="separator">|</span>			
+		
+					<span class="documentHits">
+				Acessos: 9199			</span>
+					
+		
+	</div>
+</div>
+<!-- fim .content-header-options-1 -->
+
+
+
+	
+		<table style="width: 98%;" border="0" cellspacing="2" cellpadding="20" align="center">
+<tbody>
+<tr>
+<td style="padding-right: 25px; width: 50%; text-align: left;" valign="middle"> </td>
+<td style="width: 50%; text-align: justify;" valign="middle">
+<p style="text-align: justify;"> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;"> </p>
+<p style="text-align: justify;"><span style="color: #ff0000;"><strong>Observação</strong></span>: Este texto não substitui o publicado no DOU de <a title="Acesse o DOU" href="https://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=29/10/2021&amp;jornal=515&amp;pagina=15&amp;totalArquivos=130">29/10/2021</a>.</p>
+<p style="text-align: justify;"> </p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><b>O SUPERINTENDENTE DE OUTORGA E RECURSOS À PRESTAÇÃO DA AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES</b>, no uso das atribuições que lhe foram conferidas pelo <a title="Acesse o Artigo" href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2013/450-resolucao-612#art156">art. 156</a> do Regimento Interno da Anatel, aprovado pela Resolução nº 612, de 29 de abril de 2013, e</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">CONSIDERANDO a competência dada pelo Inciso VIII do <a title="Acesse o Artigo" href="https://informacoes.anatel.gov.br/legislacao/leis/2-lei-9472#art19">art. 19</a> da Lei nº 9.472/97 – Lei Geral de Telecomunicações;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">CONSIDERANDO a competência da Anatel de regular o uso eficiente e adequado do espectro, consoante o interesse público, de acordo com o disposto no <a title="Acesse o Artigo" href="https://informacoes.anatel.gov.br/legislacao/leis/2-lei-9472#art160">art. 160</a> da Lei nº 9.472, de 1997;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">CONSIDERANDO a Proposta de Atuações Regulatórias <a title="Acesse o SEI" href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_documento_consulta_externa.php?eEP-wqk1skrd8hSlk5Z3rN4EVg9uLJqrLYJw_9INcO7nm3SQbuN3TVoDP6aJjfc9rU__w7sZqZZWONRHMBoWZl7nvPqBaxOWsmNIbo40wvxw6LZ1mwWENrr3nbsVFXr1">(SEI nº 3077101)</a>, aprovada pelo Acórdão 651 <a title="Acesse o SEI" href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_documento_consulta_externa.php?eEP-wqk1skrd8hSlk5Z3rN4EVg9uLJqrLYJw_9INcO6rxGT2rD0MihODXYL0NVSlANt8ytzB87ey1Yx1jIRWulOTXLAcPf9ESzjNaQXwoBvViNoFAT07PDDEmYtNMMlE">(SEI nº 3434164)</a>, nos autos do <a title="Acesse o Processo" href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_processo_exibir.php?5gYoR1KAsC6DjRCbPhmMOOVg9zRBSU6KM_dMM2dffV6uXABkpM3AC_FvsJjJLZawJGpS7XJ2Cix36pBUfTFiDbXL-2CeqgKMP8ok7jFDG33m4IMeU-MK0DJ7vJToUSuY">Processo 53500.014958/2016-89</a>;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">CONSIDERANDO o disposto nos artigos <a title="Acesse o Artigo " href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2021/1595-resolucao-748#art10Anexo">10</a> e <a title="Acesse o Artigo" href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2021/1595-resolucao-748#art15Anexo">15</a> do Regulamento Anexo à Resolução nº 748, de 22 de outubro de 2021;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">CONSIDERANDO o constante dos autos do <a title="Acesse o Pocesso" href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_processo_exibir.php?exIsiWoPbTSMJNP15y_TiUpWIfXjgqaCc-xbh3o0V5ttS0uQqIkRDNDdsrlbDPN0z9DjOh_HT6NYS_BYkN5mlEHyugekrC0Bp_WumaDC2Y0V7RLehEVlovba6GZCwK6s">processo nº 53500.012173/2019-14</a>;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">CONSIDERANDO o constante dos autos do <a title="Acesse o Processo" href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_processo_exibir.php?exIsiWoPbTSMJNP15y_TiUpWIfXjgqaCc-xbh3o0V5ttS0uQqIkRDNDdsrlbDPN0z9DjOh_HT6NYS_BYkN5mlLDurGHLCvM5iZVHQ4UBpGyLnqxKho3dgMwzJ3nzPHV_">processo nº 53500.032857/2019-32</a>;</p>
+<p class="Texto_Espaco_Duplo_Recuo_Primeira_Linha resolve texto-recuo-1a-linha" style="text-align: justify;">RESOLVE:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art1"></a>Art. 1º Aprovar os requisitos técnicos e operacionais para sistemas de comunicação via satélite operando sobre o território brasileiro, conforme o <a title="Acesse o Anexo" href="#anexo">Anexo</a> deste Ato.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art2"></a>Art. 2º Este Ato entra em vigor em 1º de novembro de 2021.</p>
+<p class="texto-recuo-1a-linha" style="text-align: center;">VINICIUS OLIVEIRA CARAM GUIMARÃES<br />Superintendente de Outorga e Recursos à Prestação</p>
+<p class="texto-recuo-1a-linha" style="text-align: center;"> </p>
+<p class="Texto_Centralizado" style="text-align: center;"><a id="anexo"></a>ANEXO</p>
+<p class="Texto_Centralizado" style="text-align: center;"><strong>REQUISITOS TÉCNICOS E OPERACIONAIS PARA SISTEMAS DE COMUNICAÇÃO VIA SATÉLITE</strong></p>
+<p class="Paragrafo_Numerado_Nivel1" style="text-align: justify;"><a id="item1"></a>1. OBJETIVO E ABRANGÊNCIA</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item1.1"></a>1.1. Estabelecer os requisitos técnicos e operacionais para sistemas de comunicação via satélite, brasileiros e estrangeiros, comunicando-se com estações no território brasileiro nas faixas de frequências associadas aos serviços de radiocomunicação por satélite, em conformidade com o Regulamento Geral de Exploração de Satélites, aprovado pela <a title="Acesse a Resolução" href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2021/1595-resolucao-748">Resolução nº 748, de 22 de outubro de 2021</a>.</p>
+<p class="Paragrafo_Numerado_Nivel1" style="text-align: justify;"><a name="item2"></a>2. REFERÊNCIAS</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item2.1"></a>2.1. <a title="Acesse a Resolução " href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2021/1595-resolucao-748">Resolução nº 748, de 22 de outubro de 2021</a>, que aprova o Regulamento Geral de Exploração de Satélites;</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item2.2"></a>2.2. Regulamento de Rádio (RR) da União Internacional de Telecomunicações (UIT);</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a id="item2.3"></a>2.3. Resolução 76 (Rev. CMR-15) da UIT: <em>Protection of geostationary fixed-satellite service and geostationary broadcasting-satellite service networks from the maximum aggregate equivalent power flux-density produced by multiple non-geostationary fixed-satellite service systems in frequency bands where equivalent power flux-density limits have been adopted</em>;</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a id="item2.3A"></a>2.3-A.   Resolução 121 (CMR-23) da UIT: Use of the frequency band 12.75-13.25 GHz by earth stations in motion on aircraft and vessels communicating with geostationary space stations in the fixed-satellite service; <a title="Acesse o Ato " href="https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2025/2082-ato-18530">(Incluído pelo Ato nº 18530, de 30 de novembro de 2025)</a><br /><br /><a id="item2.3B"></a>2.3-B.   Resolução 123 (CMR-23) da UIT: Use of the frequency bands 17.7-18.6 GHz, 18.8-19.3 GHz and 19.7-20.2 GHz (space-to-Earth) and 27.5-29.1 GHz and 29.5-30 GHz (Earth-to-space) by aeronautical and maritime earth stations in motion communicating with non-geostationary space stations in the fixed-satellite service; <a title="Acesse o Ato " href="https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2025/2082-ato-18530">(Incluído pelo Ato nº 18530, de 30 de novembro de 2025)</a></p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item2.4"></a>2.4. Resolução 156 (CMR-15) da UIT: <em>Use of the frequency bands 19,7-20,2 GHz and 29,5-30,0 GHz by earth stations in motion communicating with geostationary space stations in the fixed-satellite service</em><i>;</i></p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item2.5"></a>2.5. Resolução 169 (CMR-19) da UIT: <em>Use of the frequency bands 17,7-19,7 GHz and 27,5-29,5 GHz by earth stations in motion communicating with geostationary space stations in the fixed-satellite service</em><i>;</i></p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><i><a id="item2.5A"></a>2.5-A.   Resolução 679 (CMR-23) da UIT: Use of the frequency bands 18.1-18.6 GHz, 18.8-20.2 GHz and 27.5-30 GHz by the inter-satellite service; <a title="Acesse o Ato " href="https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2025/2082-ato-18530">(Incluído pelo Ato nº 18530, de 30 de novembro de 2025)</a></i></p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item2.6"></a>2.6. Resolução 739 (Rev. CMR-19) da UIT: <em>Compatibility between the radio astronomy service and the active space services in certain adjacent and nearby frequency bands</em>;</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item2.7"></a>2.7. Resolução 750 (CMR-19) da UIT: <i>Compatibility between the Earth exploration-satellite service (passive) and relevant active services;</i></p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item2.8"></a>2.8. Resolução 769 (CMR-19) da UIT:<i> </i><em>Protection of geostationary fixed-satellite service, broadcasting-satellite service and mobile-satellite service networks from the aggregate interference produced by multiple non-geostationary fixed-satellite service systems in the frequency bands 37.5-39.5 GHz, 39.5-42.5 GHz, 47.2-50.2 GHz and 50.4-51.4 GHz;</em></p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item2.9"></a>2.9. Resolução 770 (CMR-19) da UIT:<i> </i><em>Application of Article 22 of the Radio Regulations to the protection of geostationary fixed-satellite service and broadcasting-satellite service networks from non-geostationary fixed-satellite service systems in the frequency bands 37.5-39.5 GHz, 39.5-42.5 GHz, 47.2-50.2 GHz and 50.4-51.4 GHz</em>;</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item2.10"></a>2.10. Resolução 902 (CMR-03) da UIT: <em>Provisions relating to earth stations located on board vessels which operate in fixed-satellite service networks in the uplink bands 5.925-6.425 MHz and 14-14,5 GHz</em><i>;</i></p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item2.11"></a>2.11. Recomendação ITU-R BO.1213-1: <em>Reference receiving earth station antenna pattern for the broadcasting-satellite service in the 11,7-12,75 GHz band</em>;</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item2.12"></a>2.12. Recomendação ITU-R BO.1517: <em>Equivalent power flux-density limits, epfd↓, to protect the broadcasting-satellite service in the 12 GHz band from interference caused by non-geostationary fixed-satellite service systems​;</em></p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item2.13"></a>2.13. Recomendação ITU-R BO.1697<em>: Power flux-density values in the band 11,7-12,7 GHz and associated calculation methodology which may be used for bilateral coordination when the power flux-density values in § 3 of Annex 1 to Appendix 30 or Annex 4 to Appendix 30 of the Radio Regulations are exceeded;</em></p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item2.14"></a>2.14. Recomendação ITU-R M.1086-1: <em>Determination of the need for coordination between geostationary mobile satellite networks sharing the same frequency bands​;</em></p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item2.15"></a>2.15. Recomendação ITU-R M.1091<em>: Reference off-axis radiation patterns for mobile earth station antennas operating in the land mobile-satellite service in the frequency range 1 to 3 GHz</em>;</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a id="item2.15A"></a>2.15-A. Recomendação ITU-R M.1643: Technical and operational requirements for aircraft earth stations of aeronautical mobile-satellite service including those using fixed-satellite service network transponders in the band 14-14.5 GHz (Earth-to-space); <a title="Acesse o Ato " href="https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2025/2082-ato-18530">(Incluído pelo Ato nº 18530, de 30 de novembro de 2025)</a></p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item2.16"></a>2.16. Recomendação ITU-R S.465-6: <i>Reference radiation pattern of earth station antennas in the </i><em>Fixed-Satellite Service for use in coordination and interference assesment in the frequency range from 2 to 31 GHz;</em></p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item2.17"></a>2.17. Recomendação ITU-R S.484-3<em>: Station-keeping in longitude of geostationary satellites in the fixed-satellite service​;</em></p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item2.18"></a>2.18. Recomendação ITU-R S.524-9: <em>Maximum permissible levels of off-axis e.i.r.p. density from earth stations in geostationary-satellite orbit networks operating in the fixed-satellite service transmitting in the 6 GHz, 13 GHz, 14 GHz and 30 GHz frequency bands</em><em>;</em></p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item2.19"></a>2.19. Recomendação ITU-R S.580-6: <i>Radiation diagrams for use as design objectives for antennas of earth stations operating with geoestationary satellites;</i></p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item2.20"></a>2.20. Recomendação ITU-R S.672-4:<i> </i><em>Satellite antenna radiation pattern for use as a design objective in the fixed-satellite service employing geostationary satellites;</em></p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item2.21"></a>2.21. Recomendação ITU-R S.728-1: <em>Maximum permissible level of off-axis e.i.r.p. density from very small aperture terminals (VSATs)​;</em></p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item2.22"></a>2.22. Recomendação ITU-R S.1003-2: <em>Environmental protection of the geostationary-satellite orbit;</em></p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item2.23"></a>2.23. Recomendação<i> </i>ITU-R S.1528:<em> Satellite antenna radiation patterns for non-geostationary orbit satellite antennas operating in the fixed-satellite service below 30 GHz;</em></p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item2.24"></a>2.24. Recomendação<em> </em>ITU-R S.1587: <em>Provisional technical characteristics of earth stations on board vessels operating in the frequency bands 5925-6425 MHz and 14-14.5 GHz which are allocated to the fixed-satellite service;</em></p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item2.25"></a>2.25. Recomendação ITU-R SF.1650-1: <em>The minimum distance from the baseline beyond which in-motion earth stations located on board vessels would not cause unacceptable interference to the terrestrial service in the bands 5.925-6.425 MHz and 14-14,5 GHz​;</em></p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item2.26"></a>2.26. Decisão (13) 01 da Comissão Europeia de Comunicações (ECC):<em> </em><em>The harmonised use, free circulation and exemption from individual licensing of Earth Stations On Mobile Platforms (ESOMPs) within the frequency bands 17.3-20.2 GHz and 27.5-30.0 GHz</em>​;</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;">2.26-A. Decisão 05 (11) da Comissão Europeia de Comunicações (ECC): The free circulation and use of Aircraft Earth Stations (AES) in the frequency bands 14.0-14.5 GHz (Earth-tospace), 10.7-11.7 GHz (space-to-Earth) and 12.5-12.75 GHz (space-to-Earth); <a title="Acesse o Ato " href="https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2025/2082-ato-18530">(Incluído pelo Ato nº 18530, de 30 de novembro de 2025)</a><br /><br />2.26-B. Decisão (15) 04 da Comissão Europeia de Comunicações (ECC): The harmonised use, free circulation and exemption from individual licensing of Land, Maritime and Aeronautical Earth Stations On Mobile Platforms (ESOMPs) operating with NGSO FSS satellite systems in the frequency ranges 17.3-20.2 GHz, 27.5-29.1 GHz and 29.5-30.0 GHz; <a title="Acesse o Ato " href="https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2025/2082-ato-18530">(Incluído pelo Ato nº 18530, de 30 de novembro de 2025)</a><br /><br />2.26-C. Decisão (18) 04 da Comissão Europeia de Comunicações (ECC): The harmonised use, exemption from individual licensing and free circulation and use of land based Earth Stations In-Motion (ESIM) operating with GSO FSS satellite systems in the frequency bands 10.7-12.75 GHz and 14.0-14.5 GHz; <a title="Acesse o Ato " href="https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2025/2082-ato-18530">(Incluído pelo Ato nº 18530, de 30 de novembro de 2025)</a><br /><br />2.26-D. Decisão (18) 05 da Comissão Europeia de Comunicações (ECC): The harmonised use, exemption from individual licensing and free circulation and use of Earth Stations In-Motion (ESIM) operating with NGSO FSS satellite systems in the frequency bands 10.7-12.75 GHz and 14.0-14.5 GHz; <a title="Acesse o Ato " href="https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2025/2082-ato-18530">(Incluído pelo Ato nº 18530, de 30 de novembro de 2025)</a></p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item2.27"></a>2.27. Resolução nº 45/20 do Mercosul/GMC, de 26 de janeiro de 2021: Implementação de estações terrenas do serviço de satélite fixo (Terra-espaço) para uso distinto dos enlaces de conexão para o Serviço de Radiodifusão por Satélite.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a id="item2.28"></a>2.28. Parte 25 do Título 47 do Código de Regulamentações Federais dos Estados Unidos. <a title="Acesse o Ato " href="https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2025/2082-ato-18530">(Incluído pelo Ato nº 18530, de 30 de novembro de 2025)</a></p>
+<p class="Paragrafo_Numerado_Nivel1" style="text-align: justify;"><a name="item3"></a>3. DEFINIÇÕES</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item3.1"></a>3.1. Para os fins destes Requisitos Técnicos e Operacionais, além das definições constantes na legislação e regulamentação, aplicam-se as definições a seguir.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item3.2"></a>3.2. Banda L: denominação correspondente às faixas de frequências de 1.610 MHz a 1.660,5 MHz e 1.668 MHz a 1.675 MHz (enlace de subida) e de 1.518 MHz a 1.559 MHz (enlace de descida);</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item3.3"></a>3.3. Banda S: denominação correspondente às faixas de frequências de 1.980 MHz a 2.025 MHz (enlace de subida) e de 2.160 MHz a 2.200 MHz e 2.483,5 MHz a 2.500 MHz (enlace de descida);</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item3.4"></a>3.4. Banda C: denominação correspondente às faixas de frequências de 5.850 MHz a 6.425 MHz e 6.725 MHz a 7.025 MHz (enlace de subida) e de 3.625 MHz a 4.200 MHz e 4.500 MHz a 4.800 MHz (enlace de descida);</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item3.4.1"></a>3.4.1. Banda C convencional: denominação correspondente às faixas de frequências de 5.925 MHz a 6.425 MHz (enlace de subida) e de 3.700 MHz a 4.200 MHz (enlace de descida);</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item3.4.2"></a>3.4.2. Banda C estendida: denominação correspondente às faixas de frequências de 5.850 MHz a 5.925 MHz (enlace de subida) e de 3.625 MHz a 3.700 MHz (enlace de descida);</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item3.4.3"></a>3.4.3. Banda C do Apêndice 30B: denominação correspondente às faixas de frequências de 6.725 MHz a 7.025 MHz (enlace de subida) e 4.500 MHz a 4.800 MHz (enlace de descida);</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item3.5"></a>3.5. Banda X: denominação correspondente às faixas de frequências de 7.900 MHz a 8.400 MHz (enlace de subida) e 7.250 MHz a 7.750 MHz (enlace de descida);</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item3.6"></a>3.6. Banda Ku: denominação correspondente às faixas de frequências de 12,75 GHz a 13,25 GHz, 13,75 GHz a 14,75 GHz e 17,3 GHz a 17,8 GHz (enlace de subida) e de 10,7 GHz a 12,7 GHz (enlace de descida);</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item3.6.1"></a>3.6.1. Banda Ku convencional: denominação correspondente às faixas de frequências de 13,75 GHz a 14,75 GHz (enlace de subida), 10,95 GHz a 11,20 GHz e 11,45 GHz a 12,20 GHz (enlace de descida);</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item3.6.2"></a>3.6.2. Banda Ku do Apêndice 30-30A: denominação correspondente às faixas de frequências de 17,3 GHz a 17,8 GHz (enlace de subida) e 12,2 GHz a 12,7 GHz (enlace de descida);</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item3.6.3"></a>3.6.3. Banda Ku do Apêndice 30B: denominação correspondente às faixas de frequências de 12,75 GHz a 13,25 GHz (enlace de subida), 10,70 GHz a 10,95 GHz e 11,20 GHz a 11,45 GHz (enlace de descida);</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item3.7"></a>3.7. Banda Ka: denominação correspondente às faixas de frequências de 27 GHz a 31 GHz (enlace de subida) e 17,7 GHz a 21,2 GHz (enlace de descida);</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item3.7.1"></a>3.7.1. Banda Ka convencional: denominação correspondente às faixas de frequências de 27 GHz a 30 GHz (enlace de subida) e 17,7 GHz a 20,2 GHz (enlace de descida);</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item3.7.2"></a>3.7.2. Banda Ka militar: denominação correspondente às faixas de frequências de 30 GHz a 31 GHz (enlace de subida) e 20,2 GHz a 21,2 GHz (enlace de descida);</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item3.8"></a>3.8. Bandas Q/V: denominação correspondente às faixas de frequências de 42,5 GHz a 43,5 GHz, 47,2 GHz a 50,2 GHz e 50,4 GHz a 52,4 GHz (enlace de subida) e de 37,5 GHz a 42,5 GHz (enlace de descida);</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item3.9"></a>3.9. Céu claro: condição de propagação na qual não se considera o efeito de atenuação causado por chuva e por nuvens;</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item3.10"></a>3.10. e.i.r.p. (do inglês, <em>equivalent isotropically radiated power</em>): potência equivalente isotropicamente radiada; </p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item3.11"></a>3.11. epfd (do inglês, <em>equivalent power flux-density</em>): densidade de fluxo de potência equivalente que corresponde à soma da contribuição de todas as estações transmissoras de uma mesma rede de satélites, considerando o apontamento da antena da estação receptora;</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item3.12"></a>3.12. epfd agregada: densidade de fluxo de potência equivalente agregada que corresponde à soma da contribuição de todas as estações de diversas redes de satélites operando simultaneamente;</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item3.13"></a>3.13. Enlace de descida: enlace de radiocomunicação no sentido do satélite para estação terrena receptora;</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item3.14"></a>3.14. Enlace de subida: enlace de radiocomunicação no sentido da estação terrena transmissora para o satélite;</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item3.15"></a>3.15. Estação terrena: estação de radiocomunicação que se comunica com satélites ou, ainda, com outras estações terrenas por meio de satélites;</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item3.16"></a>3.16. Estação terrena em plataforma móvel: estação terrena instalada em uma estrutura móvel marítima, aeronáutica ou terrestre, que se comunica com satélites que operem em faixas de radiofrequências atribuídas ao serviço fixo por satélite;</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item3.17"></a>3.17. Interferência inaceitável: interferência que esteja acima dos limites permitidos ou que, mesmo observados os limites e métodos aplicáveis, degrade significativamente a operação de serviços de radiocomunicação regularmente autorizados. </p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item3.18"></a>3.18. Modulação analógica: processo pelo qual alguma característica da onda portadora (frequência, fase, amplitude ou combinação destas) é variada de acordo com um sinal analógico (sinal contínuo que varia no tempo);</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item3.19"></a>3.19. Modulação digital: processo pelo qual alguma característica da onda portadora (frequência, fase, amplitude ou combinação destas) é variada de acordo com um sinal digital (sinal constituído de pulsos codificados ou de estados derivados de informação quantizada);</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item3.20"></a>3.20. pfd (do inglês, <em>power flux-density</em>): densidade de fluxo de potência;</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item3.21"></a>3.21. pfd agregada: densidade de fluxo de potência agregada que corresponde à soma da contribuição de todas as estações de uma ou mais redes de satélites, conforme o caso.</p>
+<p class="Paragrafo_Numerado_Nivel1" style="text-align: justify;"><a name="item4"></a>4. CONDIÇÕES GERAIS</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item4.1"></a>4.1. As operadoras de satélite deverão envidar os devidos esforços para utilizar os recursos de órbita e espectro de forma racional, eficiente e econômica, observando e aplicando os mais recentes avanços tecnológicos referentes à operação de satélites.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item4.2"></a>4.2. O apontamento das antenas das estações terrenas deve ser realizado de tal maneira que a direção de máxima radiação da antena, referente à polarização principal da onda radiada, esteja alinhada à direção do satélite associado.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item4.3"></a>4.3. Para fins de coordenação, as operadoras de satélites envolvidas devem trocar todas as informações técnicas necessárias para elaboração e avaliação apropriada das propostas técnicas.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item4.4"></a>4.4. Não é permitido o uso de modulação analógica nas faixas de frequências das bandas Ku, Ka e Q/V, exceto para fins de telemetria, rastreio, comando e durante os testes em órbita.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a id="item4.5"></a>4.5. O uso das faixas de radiofrequências atribuídas aos serviços de radiocomunicação por satélite, quando associado a serviços de telecomunicações de interesse restrito compatíveis, pode se dar sob a canalização mais adequada à aplicação pretendida, desde que sejam observados os limites inferior e superior da faixa de radiofrequências autorizada. (<a title="Acesse o ato " href="https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2024/1964-ato-11190">Incluído pelo Ato nº 11.190, de 31 de julho de 2024</a>)</p>
+<p class="Paragrafo_Numerado_Nivel1" style="text-align: justify;"><a name="item5"></a>5. CRITÉRIOS E REQUISITOS TÉCNICOS PARA COORDENAÇÃO</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item5.1"></a>5.1. Sistemas de Satélites Geoestacionários</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item5.1.1"></a>5.1.1. Para fins de coordenação de sistemas de satélites geoestacionários com outros sistemas de satélites geoestacionários que tenham prioridade de coordenação no âmbito nacional, é requerido acordo de coordenação com as operadoras responsáveis por satélites geoestacionários dentro do arco de coordenação estabelecido na <a title="Acesse a Tabela" href="#tabela1">Tabela 1</a>.</p>
+<p class="Tabela_Texto_8" style="text-align: center;"><a name="tabela1"></a> Tabela 1 - Arco de coordenação</p>
+<table style="margin-left: auto; margin-right: auto;" border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>Serviço de Radiocomunicação associado</strong></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>Faixa de frequência</strong></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>Arco de coordenação<br />(em longitude)</strong></p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;" rowspan="3">
+<p class="Tabela_Texto_Centralizado">Serviço Fixo por Satélite</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Faixas de frequências abaixo de 3,4 GHz</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Não se aplica <sup>1</sup></p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Faixas de frequências entre 3,4 GHz e 8,4 GHz</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">± 6°</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Faixas de frequências acima de 8,4 GHz</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">± 4°</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;" rowspan="2">
+<p class="Tabela_Texto_Centralizado">Serviço de Radiodifusão por Satélite</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">Faixas de frequências abaixo de 12,2 GHz</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Não se aplica <sup>1</sup></p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Faixas de frequências acima de 12,2 GHz</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">± 6°</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Serviço Móvel por Satélite</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Todas as faixas de frequências</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Não se aplica </p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;"><sup>1</sup> Para fins de coordenação no âmbito nacional de satélites associados a esse serviço, nessas faixas de frequências, não se aplica o critério de arco de coordenação, sendo requerido acordo de coordenação com todas as operadoras de satélite que tenham prioridade de coordenação no âmbito nacional, independente da posição orbital.</p>
+<p style="text-align: justify; padding-left: 60px;"><a name="item5.1.2"></a>5.1.2. Para fins de coordenação de sistemas de satélites geoestacionários com sistemas de satélites não-geoestacionários que tenham prioridade de coordenação no âmbito nacional, é requerido acordo de coordenação com as operadoras responsáveis por sistemas de satélites não-geoestacionários nas faixas de frequências sujeitas à disposição 9.13 do Regulamento de Rádio da União Internacional de Telecomunicações, não sendo necessária a apresentação de acordo de coordenação para as demais faixas de frequências.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item5.2"></a>5.2. Sistemas de Satélites Não-geoestacionários</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item5.2.1"></a>5.2.1. As regras estabelecidas pelo § 8º do artigo 10 do Regulamento Geral de Exploração de Satélites se aplicam às faixas de frequências sujeitas à disposição 22.2 do Regulamento de Rádio da União Internacional de Telecomunicações.</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item5.2.2"></a>5.2.2. Para fins de coordenação de sistemas de satélites não-geoestacionários com sistemas de satélites geoestacionários que tenham prioridade de coordenação no âmbito nacional, é requerido acordo de coordenação com as operadoras responsáveis por sistemas de satélites não-geoestacionários nas faixas de frequências sujeitas à disposição 9.12A do Regulamento de Rádio da União Internacional de Telecomunicações, não sendo necessária a apresentação de acordo de coordenação para as demais faixas de frequências.</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item5.2.3"></a>5.2.3. Para fins de coordenação de sistemas de satélites não-geoestacionários com outros sistemas de satélites não-geoestacionários é requerido acordo de coordenação com as operadoras responsáveis por sistemas de satélites que tenham prioridade de coordenação no âmbito nacional.</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item5.2.4"></a>5.2.4. Na hipótese de ser detectada a existência de interferência agregada em satélites geoestacionários, proveniente de sinais de interferência oriundos de diferentes sistemas de satélites não-geoestacionários, as operadoras dos sistemas de satélites não-geoestacionários devem cooperar mutuamente, adotando as medidas técnicas necessárias para eliminar a interferência.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item5.3"></a>5.3. Coordenação Internacional de Estações Terrenas</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item5.3.1"></a>5.3.1. A operação de estações terrenas em plataformas móveis marítimas nas faixas de frequências de 5.925 MHz a 6.425 MHz, de 14 GHz a 14,5 GHz e de 27,5 GHz a 29,5 GHz, a distâncias inferiores a 300 km, 125 km e 70 km, respectivamente, do ponto da costa definido pela marca de maré baixa oficialmente reconhecida por outros Estados costeiros está sujeita à obtenção de acordo de coordenação específico com as Administrações de tais Estados costeiros.</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;">5.3.1.   A operação de estações terrenas em plataformas móveis está sujeita à obtenção de acordo de coordenação específico com outras administrações nas situações descritas nos subitens abaixo. <a title="Acesse o Ato " href="https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2025/2082-ato-18530">(Redação dada pelo Ato nº 18530, de 30 de novembro de 2025)</a></p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;">5.3.1.1.   Para estações terrenas em plataformas móveis marítimas, deve ser obtido acordo de coordenação específico com as Administrações de Estados costeiros, quando a operação se der a distâncias inferiores aos seguintes limites, medidas a partir do ponto da costa definido pela marca de maré baixa oficialmente reconhecida por outros Estados costeiros: <a title="Acesse o Ato " href="https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2025/2082-ato-18530">(Incluído pelo Ato nº 18530, de 30 de novembro de 2025)</a><br /><br />I – 300 km, para a faixa de 5.925 MHz a 6.425 MHz;<br /><br />II – 158 km, para a faixa de 12,75 GHz a 13,25 GHz;<br /><br />III – 125 km, para a faixa de 14 GHz a 14,5 GHz;<br /><br />IV – 70 km, para a faixa de 27,5 GHz a 29,5 GHz.<br /><br />5.3.1.2.   Para estações terrenas em plataformas móveis em terra, deve ser obtido acordo de coordenação específico com outras Administrações, quando a operação se der a distâncias inferiores aos seguintes limites, medidas a partir da fronteira com o território de outras administrações: <a title="Acesse o Ato " href="https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2025/2082-ato-18530">(Incluído pelo Ato nº 18530, de 30 de novembro de 2025)</a><br /><br />I – 125 km, para a faixa de 14 GHz a 14,5 GHz;<br /><br />II – 70 km, para a faixa de 27,9 GHz a 28,4 GHz.</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item5.3.2"></a>5.3.2. A operação de estações terrenas em plataformas móveis aeronáuticas nas faixas de frequências de 27,5 GHz a 29,5 GHz, dentro do território de outras Administrações, está sujeita à obtenção de acordo de coordenação específico com as Administrações envolvidas.</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item5.3.3"></a>5.3.3. A operação de estações terrenas do serviço fixo por satélite na faixa de frequências de 14,5 GHz a 14,75 GHz, a distâncias inferiores a 200 km das fronteiras de outras Administrações está sujeita à obtenção de acordo de coordenação específico com estas Administrações.</p>
+<p class="Paragrafo_Numerado_Nivel1" style="text-align: justify;"><a name="item6"></a>6. PARÂMETROS E REQUISITOS TÉCNICOS E OPERACIONAIS ESPECÍFICOS</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item6.1"></a>6.1. Características técnico-operacionais dos satélites e das estações terrenas associadas</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item6.1.1"></a>6.1.1. O satélite geoestacionário deve ser mantido com uma precisão de ± 0,05° em relação à posição orbital nominal, salvo quando autorizado pela Anatel.</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item6.1.2"></a>6.1.2. Quando do final da vida útil, deve-se promover a retirada dos satélites geoestacionários brasileiros para uma órbita com perigeu não inferior a 200 Km acima da órbita de satélites geoestacionários.</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item6.1.3"></a>6.1.3. A operação dos sistemas de satélites não-geoestacionários deve observar a separação angular adequada com relação ao arco de satélites geoestacionários de forma a não operar na zona orbital definida por tal ângulo de separação, a fim de evitar interferências inaceitáveis sobre os sistemas de satélites geoestacionários.</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item6.1.4"></a>6.1.4. As características de desempenho das antenas utilizadas pelas estações terrenas devem, preferencialmente, ser iguais ou melhores do que aquelas estabelecidas pelas Recomendações da União Internacional de Telecomunicações referentes às características mínimas de radiação de antenas.</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><span style="text-decoration: line-through;">6.1.5. A operação de sistemas de comunicação via satélite deve atender os requisitos estabelecidos nas Resoluções e artigos do Regulamento de Rádio da União Internacional de Telecomunicações, em especial aqueles das Resoluções 76, 739, 750, 769, 770 e dos Artigos 21 e 22 do RR.</span></p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item6.1.5"></a>6.1.5. A operação de sistemas de comunicação via satélite deve atender aos requisitos e limites estabelecidos nas Resoluções e artigos do Regulamento de Rádio da União Internacional de Telecomunicações, observadas as regras específicas previstas na regulamentação nacional. <a title="Acesse o Ato" href="https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2025/2082-ato-18530">(Redação dada pelo Ato nº 18530, de 30 de novembro de 2025)</a></p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item6.2"></a>6.2. Operação de sistemas de comunicação via satélite nas faixas de frequências da banda L</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item6.2.1"></a>6.2.1. Na faixa de frequências de 1.610 MHz a 1.626,5 MHz, estações terrenas móveis associadas a satélites do serviço móvel por satélite ou do serviço de radiodeterminação por satélite não devem exceder a densidade espectral de e.i.r.p. de -15 dBW/4 kHz, nas porções da faixa onde haja uso de dispositivos eletrônicos para auxílio à navegação aérea instalados a bordo de aeronaves, no solo ou em satélites.</p>
+<p class="Paragrafo_Numerado_Nivel4" style="text-align: justify; padding-left: 90px;"><a name="item6.2.1.1"></a>6.2.1.1. Nas porções da faixa de frequências onde os mencionados dispositivos eletrônicos para auxílio à navegação não estejam operando, estações terrenas móveis não devem exceder a densidade espectral de e.i.r.p. de -3 dBW/4 kHz.</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item6.2.2"></a>6.2.2. Na faixa de frequências de 1.668 MHz a 1.670 MHz, estações terrenas móveis de uma rede do serviço móvel por satélite não devem exceder o limite de densidade de fluxo de potência agregada de -181 dB(W/m<sup>2</sup>) em 10 MHz e de -194 dB(W/m<sup>2</sup>) em 20 kHz sobre qualquer estação de radioastronomia, por mais de 2% do tempo em um período de integração de 2000 segundos.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item6.3"></a>6.3. Operação de sistemas de comunicação via satélite nas faixas de frequências da banda C</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item6.3.1"></a>6.3.1. Satélites geoestacionários não devem exceder o limite de densidade espectral de e.i.r.p. no enlace de descida de -29 dBW/Hz.</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item6.3.2"></a>6.3.2. Estações terrenas transmissoras associadas a satélites geoestacionários do serviço fixo por satélite deverão atender as seguintes condições:</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">a) O diâmetro nominal das antenas das estações terrenas não deve ser inferior a 1,8 m;</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">b) A densidade espectral de e.i.r.p. fora do eixo da antena da estação terrena, na polarização principal, para condição de céu claro, não deve exceder o seguinte limite:</p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">d <sub>e.i.r.p. </sub>(θ) = - 16 - 25 log (θ) dBW/Hz, para 2,17° ≤ θ &lt; 36°</p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">= - 55 dBW/Hz, para 36° ≤ θ &lt; 180°</p>
+<p class="Texto_Alinhado_Esquerda_Espacamento_Simples" style="text-align: justify; padding-left: 90px;">sendo que:</p>
+<p class="Texto_Alinhado_Esquerda_Espacamento_Simples" style="text-align: justify; padding-left: 90px;">θ = ângulo, expresso em graus, numa direção qualquer do espaço, medido a partir da direção de ganho máximo da antena referente à polarização principal da onda radiada.</p>
+<p class="Paragrafo_Numerado_Nivel4" style="text-align: justify; padding-left: 90px;"><a name="item6.3.2.1"></a>6.3.2.1. O limite estabelecido na alínea b) do <a title="Acesse o Item" href="#item6.3.2">Item 6.3.2</a> deve ser atendido, fora do eixo do lóbulo principal, na direção perpendicular ao arco de satélites geoestacionários, até 3°, conforme ilustrado na <a title="Acesse a Figura" href="#figura1">Figura 1</a>.</p>
+<p class="Paragrafo_Numerado_Nivel4" style="text-align: justify; padding-left: 90px;"><a name="item6.3.2.2"></a>6.3.2.2. A discriminação de ganho de polarização cruzada no eixo deve ser de, no mínimo, 25 dB.</p>
+<p class="Paragrafo_Numerado_Nivel4" style="text-align: justify; padding-left: 90px;"><a name="item6.3.2.3"></a>6.3.2.3. A densidade espectral de e.i.r.p. de polarização cruzada, fora do eixo, deve ser, no mínimo, 6 dB abaixo do limite estabelecido no <a title="Acesse o Item" href="#item6.3.2">item 6.3.2</a>.</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item6.3.3"></a>6.3.3. Excepcionalmente, podem ser usadas antenas com diâmetro nominal inferior a 1,8 m, desde que não seja solicitada maior proteção do que aquela decorrente do uso de antenas com diâmetro nominal maior ou igual a 1,8 m ou causada interferência prejudicial em relação a outros sistemas de comunicação via satélite.</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item6.3.4"></a>6.3.4. Os limites operacionais estabelecidos nos itens <a title="Acesse o Item" href="#item6.3.1">6.3.1</a> e <a title="Acesse o Item" href="#item6.3.2">6.3.2</a> poderão ser excedidos, desde que haja acordo de coordenação com as exploradoras de satélites que tenham prioridade de coordenação no âmbito nacional, sem a possibilidade de aplicação da prerrogativa de autorização sob a condição de não reclamar proteção e de não causar interferência prejudicial.</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item6.3.5"></a>6.3.5. O controle automático de potência pode ser usado para aumentar a densidade espectral de e.i.r.p. das estações terrenas para compensar a atenuação de chuva, desde que a densidade de fluxo de potência no satélite associado à estação terrena em questão não exceda o valor resultante da densidade de fluxo de potência correspondente ao limite de densidade espectral de e.i.r.p. para condições de céu claro.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item6.4"></a>6.4. Operação de sistemas de comunicação via satélite nas faixas de frequências das bandas Ku convencional e Ku do Apêndice 30B</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item6.4.1"></a>6.4.1. Satélites geoestacionários não devem exceder o limite de densidade espectral de e.i.r.p. no enlace de descida de -22 dBW/Hz.</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a id="item6.4.2"></a>6.4.2. Estações terrenas transmissoras associadas a satélites geoestacionários do serviço fixo por satélite não devem exceder o seguinte limite de densidade espectral de e.i.r.p. fora do eixo da antena da estação terrena, na polarização principal, para condição de céu claro:</p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">d <sub>e.i.r.p. </sub>(θ) = - 19 - 25 log (θ) dBW/Hz, para 2,17° ≤ θ &lt; 36°</p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">= - 58 dBW/Hz, para 36° ≤ θ &lt; 180°</p>
+<p class="Texto_Alinhado_Esquerda_Espacamento_Simples" style="text-align: justify; padding-left: 60px;">sendo que:</p>
+<p class="Texto_Alinhado_Esquerda_Espacamento_Simples" style="text-align: justify; padding-left: 60px;">θ = ângulo, expresso em graus, numa direção qualquer do espaço, medido a partir da direção de ganho máximo da antena referente à polarização principal da onda radiada.</p>
+<p class="Tabela_Texto_8" style="text-align: justify; padding-left: 90px;"><a name="item6.4.2.1"></a>6.4.2.1. O limite estabelecido no <a title="Acesse o Item" href="#item6.4.2">Item 6.4.2 </a>deve ser atendido, fora do eixo do lóbulo principal, na direção perpendicular ao arco de satélites geoestacionários, até 3°, conforme ilustrado na <a title="Acesse a Figura" href="#figura1">Figura 1</a>.</p>
+<p class="Paragrafo_Numerado_Nivel4" style="text-align: justify; padding-left: 90px;"><a name="item6.4.2.2"></a>6.4.2.2. A discriminação de ganho de polarização cruzada no eixo deve ser de, no mínimo, 25 dB.</p>
+<p class="Paragrafo_Numerado_Nivel4" style="text-align: justify; padding-left: 90px;"><a name="item6.4.2.3"></a>6.4.2.3. A densidade espectral de e.i.r.p. de polarização cruzada, fora do eixo, deve ser, no mínimo, 10 dB abaixo do limite estabelecido no <a title="Acesse o Item" href="#item6.4.2">item 6.4.2</a>.</p>
+<p class="Paragrafo_Numerado_Nivel4" style="text-align: justify; padding-left: 60px;"><a name="item6.4.3"></a>6.4.3. Os limites operacionais estabelecidos nos itens <a title="Acesse o Item" href="#item6.4.1">6.4.1</a> e <a title="Acesse o Item" href="#item6.4.2">6.4.2</a> poderão ser excedidos, desde que haja acordo de coordenação com as exploradoras de satélites que tenham prioridade de coordenação no âmbito nacional, sem a possibilidade de aplicação da prerrogativa de autorização sob a condição de não reclamar proteção e de não causar interferência prejudicial.</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item6.4.4"></a>6.4.4. Na faixa de frequências de 13,75 GHz a 14 GHz, estações terrenas:</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">a) associadas a sistemas de satélite geoestacionários do serviço fixo por satélite devem possuir diâmetro mínimo de 1,2 m;</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">b) associadas a sistemas de satélites não-geoestacionários do serviço fixo por satélite devem possuir diâmetro mínimo de 4,5 m;</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">c) com diâmetro menor do que 4,5 m não devem exceder o limite de densidade de fluxo de potência de -115 dB(W/m<sup>2</sup>) em 10 MHz a 36 m acima do ponto da costa definido pela marca de maré baixa, oficialmente reconhecida por cada Estado costeiro, e a 3 m acima do nível do solo na fronteira com administrações que utilizem radares móveis terrestres, por mais de 1% do tempo.</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item6.4.5"></a>6.4.5. Na faixa de frequências de 13,77 GHz a 13,78 GHz, estações terrenas associadas a sistemas de satélites geoestacionários do serviço fixo por satélite:</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">a) com diâmetro maior ou igual a 1,2 m e menor que 4,5 m não devem exceder o limite de densidade espectral de e.i.r.p. de 4,7<i>D</i> + 28 dB(W/40 kHz), onde <i>D</i> é o diâmetro da antena em metros;</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">b) com diâmetro maior ou igual a 4,5 m e menor que 31,9 m não devem exceder o limite de densidade espectral de e.i.r.p. de 49,2 + 20.log(<i>D/</i>4,5) dB(W/40 kHz), onde <i>D</i> é o diâmetro da antena em metros;</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">c) com diâmetro maior ou igual a 31,9 m não devem exceder o limite de densidade espectral de e.i.r.p. de 66,2 dB(W/40 kHz);</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">d) com diâmetro maior ou igual a 4,5 m, não devem exceder o limite de densidade espectral de e.i.r.p de 56,2 dB(W/4 kHz) para emissões com largura de faixa menor que 40 kHz.</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item6.4.6"></a>6.4.6. Na faixa de frequências de 13,772 GHz a 13,778 GHz, estações terrenas associadas a sistemas de satélites não-geoestacionários do serviço fixo por satélite não devem exceder o limite de densidade espectral de e.i.r.p. de 51 dBW/6 MHz.</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item6.4.7"></a>6.4.7. Na faixa de frequências de 14,5 GHz a 14,75 GHz, as estações terrenas transmissoras associadas ao serviço fixo por satélite que não sejam para enlaces de alimentação do serviço de Radiodifusão por Satélite devem possuir antenas com diâmetro mínimo de 6 m e não devem exceder o limite de densidade espectral de potência de -44,5 dBW/Hz na entrada da antena.</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item6.4.8"></a>6.4.8. Na faixa de frequências de 14,5 GHz a 14,75 GHz, as estações terrenas transmissoras associadas ao serviço fixo por satélite que não sejam para enlaces de alimentação do serviço de Radiodifusão por Satélite não devem exceder o limite de densidade de fluxo de potência de -151,5 dB(W/m<sup>2</sup>) em 4 kHz, produzida em todas as altitudes de 0 a 19.000 m acima do nível do mar, a uma distância de 22 km do ponto da costa definido pela marca de maré baixa oficialmente reconhecida por cada Estado costeiro.</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item6.4.9"></a>6.4.9. O controle automático de potência pode ser usado para aumentar a densidade espectral de e.i.r.p. das estações terrenas para compensar a atenuação de chuva, desde que a densidade de fluxo de potência no satélite associado à estação terrena em questão não exceda o valor resultante da densidade de fluxo de potência correspondente ao limite de densidade espectral de e.i.r.p. para condições de céu claro.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item6.5"></a>6.5. Operação de sistemas de comunicação via satélite nas faixas de frequências da banda Ku do Apêndice 30-30A</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item6.5.1"></a>6.5.1. Satélites geoestacionários não devem exceder o limite de densidade espectral de e.i.r.p. no enlace de descida de -21 dBW/Hz;</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item6.5.2"></a>6.5.2. O limite operacional estabelecido no item 6.5.1 poderá ser excedido, desde que haja acordo de coordenação com as exploradoras de satélites que tenham prioridade de coordenação no âmbito nacional, sem a possibilidade de aplicação da prerrogativa de autorização sob a condição de não reclamar proteção e de não causar interferência prejudicial.</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a id="item6.5.3"></a>6.5.3. Na faixa de frequências de 17,3 GHz a 17,7 GHz, consignações (<em>assignments</em>) do serviço fixo por satélite (espaço-Terra) de uma rede de satélite geoestacionário não devem exceder, sob condições de propagação de espaço livre, o limite de densidade de fluxo de potência de -98 dB(W/(m<sup>2</sup>*27 MHz)), nos pontos da órbita de satélites geoestacionários com ângulos geocêntricos de separação orbital entre 152,6° e 162,6°. <a title="Acesse o Ato " href="https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2025/2082-ato-18530">(Incluído pelo Ato nº 18530, de 30 de novembro de 2025)</a></p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item6.6"></a>6.6. Operação de sistemas de comunicação via satélite nas faixas de frequências da banda Ka convencional</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item6.6.1"></a>6.6.1. Satélites geoestacionários não devem exceder o limite de densidade espectral de e.i.r.p. no enlace de descida de -16,5 dBW/Hz;</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item6.6.2"></a>6.6.2. Estações terrenas transmissoras associadas a satélites geoestacionários do serviço fixo por satélite não devem exceder os seguintes limites de densidade espectral de e.i.r.p. fora do eixo da antena da estação terrena, na polarização principal, para condição de céu claro:</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">a) quando se tratar da estação terrena de acesso:</p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">d <sub>e.i.r.p. </sub>(θ) = - 35 - 25 log (θ) dBW/Hz, para 2,17° ≤ θ &lt; 48°</p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">= - 74dBW/Hz, para 48° ≤ θ &lt; 180°</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">b) quando se tratar da estação terrena do usuário:</p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">d <sub>e.i.r.p. </sub>(θ) = - 29 - 25 log (θ) dBW/Hz, para 2,17° ≤ θ &lt; 48°</p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">= - 68 dBW/Hz, para 48° ≤ θ &lt; 180°</p>
+<p class="Texto_Alinhado_Esquerda_Espacamento_Simples" style="text-align: justify; padding-left: 90px;">sendo que:</p>
+<p class="Texto_Alinhado_Esquerda_Espacamento_Simples" style="text-align: justify; padding-left: 90px;"> θ = ângulo, expresso em graus, numa direção qualquer do espaço, medido a partir da direção de ganho máximo da antena referente à polarização principal da onda radiada.</p>
+<p class="Paragrafo_Numerado_Nivel4" style="text-align: justify; padding-left: 90px;"><a name="item6.6.2.1"></a>6.6.2.1. Excepcionalmente, para 7° &lt; θ ≤ 48°, o limite de densidade estabelecido na alínea b) poderá ser excedido em até 3 dB.</p>
+<p class="Paragrafo_Numerado_Nivel4" style="text-align: justify; padding-left: 90px;"><a name="item6.6.2.2"></a>6.6.2.2. Os limites estabelecidos no <a title="Acesse o Item" href="#item6.6.2">Item 6.6.2</a> devem ser atendidos, fora do eixo do lóbulo principal, na direção perpendicular ao arco de satélites geoestacionários, até 3°, conforme ilustrado na Figura 1.</p>
+<p class="Paragrafo_Numerado_Nivel4" style="text-align: justify; padding-left: 90px;"><a name="item6.6.2.3"></a>6.6.2.3. A discriminação de ganho de polarização cruzada no eixo deve ser de, no mínimo, 25 dB.</p>
+<p class="Paragrafo_Numerado_Nivel4" style="text-align: justify; padding-left: 90px;"><a name="item6.6.2.4"></a>6.6.2.4. A densidade espectral de e.i.r.p. de polarização cruzada, entre os ângulos 2,17° e 7° em relação ao eixo do lóbulo principal, deve ser, no mínimo, 7 dB abaixo do limite estabelecido no <a title="Acesse o Item" href="#item6.6.2">item 6.6.2</a>.</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item6.6.3"></a>6.6.3. Os limites operacionais estabelecidos nos itens <a title="Acesse o Item" href="#item6.6.1">6.6.1</a> e <a title="Acesse o Item" href="#item6.6.2">6.6.2</a> poderão ser excedidos, desde que haja acordo de coordenação com as exploradoras de satélites que tenham prioridade de coordenação no âmbito nacional, sem a possibilidade de aplicação da prerrogativa de autorização sob a condição de não reclamar proteção e de não causar interferência prejudicial.</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item6.6.4"></a>6.6.4. O controle automático de potência pode ser usado para aumentar a densidade espectral de e.i.r.p. das estações terrenas para compensar a atenuação de chuva, desde que a densidade de fluxo de potência no satélite associado à estação terrena em questão não exceda o valor resultante da densidade de fluxo de potência correspondente ao limite de densidade espectral de e.i.r.p. para condições de céu claro.</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a id="item6.6.5"></a>6.6.5. Na faixa de frequências de 19,3 GHz a 19,7 GHz, estações espaciais do serviço entre satélites, operando de acordo com a Resolução 679 (CMR-23), não devem exceder o limite de densidade de fluxo de potência de -140 dB(W/m<sup>2</sup>) em qualquer 1 MHz, produzida na superfície da Terra para todos os ângulos de chegada, dentro de 150 km de distância de estações de enlaces de alimentação de redes de satélites não-geoestacionários do serviço móvel por satélite que estejam registradas no Registro Mestre Internacional de Frequências da UIT. <a title="Acesse o Ato " href="https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2025/2082-ato-18530">(Incluído pelo Ato nº 18530, de 30 de novembro de 2025)</a></p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item6.7"></a>6.7. Operação de sistemas de comunicação via satélite nas faixas de frequências das bandas Q/V</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item6.7.1"></a>6.7.1. Na faixa de frequências de 42,5 GHz a 43,5 GHz, satélites não-geoestacionários associados ao serviço fixo por satélite ou ao serviço de radiodifusão por satélite, operando na faixa de frequências adjacente de 42 GHz a 42,5 GHz, não devem exceder, por mais de 2% do tempo<a target="_blank">, </a>os limites de densidade de fluxo de potência equivalente (epfd) de:</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">a) -230 dB(W/m<sup>2</sup>) em 1 GHz e -246 dB(W/m<sup>2</sup>) em 500 kHz sobre estações de radioastronomia registradas como telescópios de refletor único;</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">b) -209 dB(W/m<sup>2</sup>) em 500 kHz sobre estações de radioastronomia registradas como estações de interferometria de longa linha de base.</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item6.7.2"></a>6.7.2. Na faixa de frequências de 42,5 GHz a 43,5 GHz, satélites geoestacionários associados ao serviço fixo por satélite ou ao serviço de radiodifusão por satélite, operando na faixa de frequências adjacente de 42 GHz a 42,5 GHz, não devem exceder os limites de densidade de fluxo de potência de:</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">a) -137 dB(W/m<sup>2</sup>) em 1 GHz e -153 dB(W/m<sup>2</sup>) em 500 kHz sobre estações de radioastronomia registradas como telescópios de refletor único;</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">b) -116 dB(W/m<sup>2</sup>) em 500 kHz sobre estações de radioastronomia registradas como estações de interferometria de longa linha de base.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;"><a name="item6.7.3"></a>6.7.3. Na faixa de frequências de 51,4 GHz a 52,4 GHz, estações terrenas de acesso associadas a sistemas de satélites geoestacionários do serviço fixo por satélite devem possuir antenas com diâmetro mínimo de 2,4 m.</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 60px;"><a id="item6.7.4"></a>6.7.4. Na faixa de frequências de 37,5 GHz a 38 GHz, sistemas de satélites não-geoestacionários do serviço fixo por satélite, operando com altitude de apogeu entre 407 km e 2000 km, não devem exceder o limite de densidade de e.i.r.p. de emissões indesejáveis de -21 dB(W/100 MHz), por estação espacial, para ângulos acima de 65° a partir do ponto da superfície terrestre que está diretamente abaixo da estação espacial do serviço fixo por satélite na faixa de frequências de 36 GHz a 37 GHz, a fim de proteger o serviço de exploração da Terra por satélite (passivo) operando nessa faixa. <a title="Acesse o Ato " href="https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2025/2082-ato-18530">(Incluído pelo Ato nº 18530, de 30 de novembro de 2025)</a></p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item6.8"></a>6.8. Operação de sistemas de comunicação via satélite em outras faixas de frequências</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item6.8.1"></a>6.8.1. Na faixa de frequências de 137,025 MHz a 138 MHz, satélites não-geoestacionários associados ao serviço de operação espacial, em missões de curta duração, não devem exceder o limite de densidade de fluxo de potência de -140 dB(W/m<sup>2</sup>) em 4 kHz, na superfície da Terra.</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item6.8.2"></a>6.8.2. Na faixa de frequências de 148 MHz a 149,9 MHz, estações terrenas móveis<a target="_blank">:</a></p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">a) não podem transmitir em uma mesma radiofrequência que esteja sendo ativamente utilizada por estações dos serviços fixo ou móvel;</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">b) não podem transmitir por mais de 1% do tempo em qualquer período de 15 minutos;</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">c) que não tenham capacidade de evitar o uso de radiofrequências ativamente em uso por estações dos serviços fixo ou móvel, não devem exceder o limite de densidade espectral de potência de -16 dB(W/4 kHz) e não devem transmitir por mais de 0,25% do tempo em qualquer período de 15 minutos;</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">d) não devem realizar transmissões com duração superior a 450 ms, sendo que transmissões consecutivas de uma mesma estação terrena móvel, numa mesma faixa, devem estar separadas, no mínimo, por um período de 15 segundos.</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item6.8.3"></a>6.8.3. Na faixa de frequências de 399,9 MHz a 400,05 MHz, estações terrenas associadas ao serviço móvel por satélite não devem exceder a e.i.r.p. de 5 dBW em toda a faixa de frequências e em qualquer faixa de 4kHz.</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item6.8.4"></a>6.8.4. Na faixa de frequências de 401 MHz a 403 MHz, estações terrenas associadas aos serviços de meteorologia por satélite e exploração da Terra por satélite não devem exceder a e.i.r.p. de:</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">a) 22 dBW em toda a faixa de frequências e em qualquer faixa de 4kHz, no caso de estações terrenas comunicando-se com satélites geoestacionários ou satélites não-geoestacionários em órbitas com apogeu acima de 35.786 km;</p>
+<p class="Item_Alinea_Letra" style="text-align: justify; padding-left: 90px;">b) 7 dBW em toda a faixa de frequências e em qualquer faixa de 4kHz, no caso de estações terrenas comunicando-se com satélites não-geoestacionários em órbitas com apogeu abaixo de 35.786 km.</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item6.8.5"></a>6.8.5. Na faixa de frequências de 5.030 MHz a 5.150 MHz, satélites associados a uma rede do serviço de radionavegação por satélite, operando na faixa de frequências adjacente de 5.010 MHz a 5.030 MHz, não devem exceder o limite de densidade de fluxo de potência agregada de -124,5 dB(W/m<sup>2</sup>) em 150 kHz, na superfície da Terra.</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item6.8.6"></a>6.8.6. Na faixa de frequências de 5.150 MHz a 5.216 MHz, satélites associados ao serviço de radiodeterminação por satélite não devem exceder o limite de densidade de fluxo de potência de -159 dB(W/m<sup>2</sup>) em 4 kHz, na superfície da Terra.</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item6.8.7"></a>6.8.7. Na faixa de frequências de 5.150 MHz a 5.216 MHz, satélites não-geoestacionários associados ao serviço fixo por satélite não devem exceder o limite de densidade de fluxo de potência de -164 dB(W/m<sup>2</sup>) em 4 kHz, na superfície da Terra.</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item6.8.8"></a>6.8.8. Na faixa de frequências de 35,5 GHz a 36 GHz, sensores ativos de satélites associados aos serviços de exploração da Terra por satélite e pesquisa espacial não devem exceder o limite de densidade de fluxo de potência média na superfície da Terra de -73 dB(W/m<sup>2</sup>), em toda a faixa em questão, para qualquer ângulo superior a 0,8° a partir do centro do feixe.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item6.9"></a><span style="text-decoration: line-through;">6.9. Operação de Estações Terrenas em Plataforma Móvel</span> <a title="Acesse o Ato" href="https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2025/2082-ato-18530">(Revogado pelo Ato nº 18530, de 30 de novembro de 2025)</a></p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item6.9.1"></a><span style="text-decoration: line-through;">6.9.1. Estações terrenas em plataforma móvel deverão atender os parâmetros e critérios técnico-operacionais estabelecidos nos itens anteriores, de acordo com as faixas de frequências de operação.</span> <a title="Acesse o Ato" href="https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2025/2082-ato-18530">(Revogado pelo Ato nº 18530, de 30 de novembro de 2025)</a></p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item6.9.2"></a><span style="text-decoration: line-through;">6.9.2. Estações terrenas em plataforma móvel devem possuir capacidade de rastreamento e manutenção do apontamento para o satélite geoestacionário associado e capacidade operacional que permita à prestadora responsável pela estação a interrupção de emissões de radiofrequências remotamente.</span> <a title="Acesse o Ato" href="https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2025/2082-ato-18530">(Revogado pelo Ato nº 18530, de 30 de novembro de 2025)</a></p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item6.9.3"></a><span style="text-decoration: line-through;">6.9.3. Na faixa de frequências de 5.925 MHz a 6.425 MHz, as estações terrenas em plataformas móveis marítimas<a target="_blank"> </a>devem possuir antenas com diâmetro de no mínimo 2,4 m, e não devem exceder o limite de densidade espectral de e.i.r.p. de 17 dBW/MHz na direção do horizonte.</span> <a title="Acesse o Ato" href="https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2025/2082-ato-18530">(Revogado pelo Ato nº 18530, de 30 de novembro de 2025)</a></p>
+<p class="Paragrafo_Numerado_Nivel4" style="text-align: justify; padding-left: 90px;"><a name="item6.9.3.1"></a><span style="text-decoration: line-through;">6.9.3.1.  Podem ser usadas antenas com diâmetro de no mínimo 1,2 m, desde que a operação das estações não cause interferência em nível superior àquele decorrente do uso de antenas de 2,4 m.</span> <a title="Acesse o Ato" href="https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2025/2082-ato-18530">(Revogado pelo Ato nº 18530, de 30 de novembro de 2025)</a></p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item6.9.4"></a><span style="text-decoration: line-through;">6.9.4. Na faixa de frequências de 14 GHz a 14,5 GHz, as estações terrenas em plataformas móveis​ marítimas<a target="_blank"> </a>devem possuir antenas com diâmetro de no mínimo 1,2 m, e não devem exceder o limite de densidade espectral de e.i.r.p. de 12,5 dBW/MHz na direção do horizonte.</span> <a title="Acesse o Ato" href="https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2025/2082-ato-18530">(Revogado pelo Ato nº 18530, de 30 de novembro de 2025)</a></p>
+<p class="Paragrafo_Numerado_Nivel4" style="text-align: justify; padding-left: 90px;"><a name="item6.9.4.1"></a><span style="text-decoration: line-through;">6.9.4.1. Podem ser usadas antenas com diâmetro de no mínimo 60 cm, desde que a operação das estações não cause interferência em nível superior àquele decorrente do uso de antenas de 1,2 m.</span> <a title="Acesse o Ato" href="https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2025/2082-ato-18530">(Revogado pelo Ato nº 18530, de 30 de novembro de 2025)</a></p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item6.9.5"></a><span style="text-decoration: line-through;">6.9.5. Na faixa de frequências de 27,5 GHz a 27,9 GHz e de 28,4 GHz a 29,5 GHz, as estações terrenas<a target="_blank"> </a>em plataformas móveis​ marítimas<a target="_blank"> </a>não devem exceder o limite de densidade de fluxo de potência de -109 dB(W/m<sup>2</sup>) em 14 MHz produzida na altitude de 20 m acima do nível do mar, no ponto da costa definido pela marca de maré baixa oficialmente reconhecida pelo Estado brasileiro.</span> <a title="Acesse o Ato" href="https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2025/2082-ato-18530">(Revogado pelo Ato nº 18530, de 30 de novembro de 2025)</a></p>
+<p class="Paragrafo_Numerado_Nivel4" style="text-align: justify; padding-left: 90px;"><a name="item6.9.5.1"></a><span style="text-decoration: line-through;">6.9.5.1. Na faixa de frequências de 27,5 GHz a 29,5 GHz, as estações terrenas<a target="_blank"> </a>em plataformas móveis​ marítimas<a target="_blank"> </a>não devem exceder o limite de densidade espectral de e.i.r.p. de 24,44 dBW/14 MHz na direção do horizonte para outros Estados costeiros, quando em distâncias inferiores a 70 km do ponto da costa definido pela marca de maré baixa oficialmente reconhecida pelo Estado costeiro, salvo em casos em que houver acordo de coordenação internacional que especifique outros limites operacionais.</span> <a title="Acesse o Ato" href="https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2025/2082-ato-18530">(Revogado pelo Ato nº 18530, de 30 de novembro de 2025)</a></p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item6.9.6"></a><span style="text-decoration: line-through;">6.9.6. Na faixa de frequências de 27,5 GHz a 27,9 GHz e de 28,4 GHz a 29,5 GHz, as estações terrenas em plataformas móveis aeronáuticas, quando em linha de visada para o território brasileiro, devem atender os limites de densidade de fluxo de potência na superfície da Terra estabelecidos na <a title="Acesse a Tabela" href="#tabela2">Tabela 2</a>.</span> <a title="Acesse o Ato" href="https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2025/2082-ato-18530">(Revogado pelo Ato nº 18530, de 30 de novembro de 2025)</a></p>
+<p class="Paragrafo_Numerado_Nivel4" style="text-align: justify; padding-left: 90px;"><a name="item6.9.6.1"></a><span style="text-decoration: line-through;">6.9.6.1. Na faixa de frequências de 27,5 GHz a 29,5 GHz, as estações terrenas em plataformas móveis aeronáuticas, quando em linha de visada para o território de outra Administração, devem atender os limites de densidade de fluxo de potência na superfície da Terra estabelecidos na <a title="Acesse a Tabela" href="#tabela2">Tabela 2</a>, salvo em casos em que houver acordo de coordenação internacional que especifique outros limites operacionais.</span> <a title="Acesse o Ato" href="https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2025/2082-ato-18530">(Revogado pelo Ato nº 18530, de 30 de novembro de 2025)</a></p>
+<p class="Tabela_Texto_8" style="text-align: center;"> <a name="tabela2 -"></a>Tabela 2 - Limites de pfd para estações terrenas em plataformas móveis aeronáuticas</p>
+<table style="margin-left: auto; margin-right: auto;" border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td style="text-align: center; width: 322.401px;">
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><strong>Limite de densidade de fluxo de potência</strong></p>
+<p class="Tabela_Texto_Centralizado"><strong>dB(W/m</strong><b><sup>2</sup></b><strong>) em 14 MHz</strong></p>
+</td>
+<td style="text-align: center; width: 486.051px;">
+<p class="Tabela_Texto_Centralizado"><b>Ângulo de chegada da emissão, em graus, acima do horizonte</b></p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 322.401px;" rowspan="1">
+<p class="Tabela_Texto_Centralizado">- 124,7</p>
+</td>
+<td style="text-align: center; width: 486.051px;">
+<p class="Tabela_Texto_Centralizado">0° ≤ θ ≤ 0,01°</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 322.401px;">
+<p class="Tabela_Texto_Centralizado">-120,9 + 1,9 ∙ log(θ)</p>
+</td>
+<td style="text-align: center; width: 486.051px;">
+<p class="Tabela_Texto_Centralizado">0,01° &lt; θ ≤ 0,3°</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 322.401px;">
+<p class="Tabela_Texto_Centralizado">-116,2 + 11 ∙ log(θ)</p>
+</td>
+<td style="text-align: center; width: 486.051px;">
+<p class="Tabela_Texto_Centralizado">0,3° &lt; θ ≤ 1°</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 322.401px;">
+<p class="Tabela_Texto_Centralizado">-116,2 + 18 ∙ log(θ) </p>
+</td>
+<td style="text-align: center; width: 486.051px;">
+<p class="Tabela_Texto_Centralizado">1° &lt; θ ≤ 2°</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 322.401px;">
+<p class="Tabela_Texto_Centralizado">-117,9 + 23.7 ∙ log(θ)</p>
+</td>
+<td style="text-align: center; width: 486.051px;">
+<p class="Tabela_Texto_Centralizado">2° &lt; θ ≤ 8°</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 322.401px;">
+<p class="Tabela_Texto_Centralizado">-96,5</p>
+</td>
+<td style="text-align: center; width: 486.051px;">
+<p class="Tabela_Texto_Centralizado">8° &lt; θ ≤ 90°</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="Tabela_Texto_8" style="padding-left: 60px;"><a name="item6.9.7"></a><span style="text-decoration: line-through;">6.9.7. Para a operação de estações terrenas em plataformas móveis na faixa de frequências de 29,5 GHz a 30 GHz, não se aplicam os limites dos itens <a title="Acesse o item" href="#item6.9.5">6.9.5</a> e <a title="Acesse o Item" href="#item6.9.6">6.9.6</a>, devendo ser observado o disposto nos demais itens aplicáveis a esta faixa de frequências.</span> <a title="Acesse o Ato" href="https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2025/2082-ato-18530">(Revogado pelo Ato nº 18530, de 30 de novembro de 2025)</a></p>
+<p class="Paragrafo_Numerado_Nivel1"><a name="item7"></a><span style="text-decoration: line-through;">7. DISPOSIÇÕES FINAIS</span> </p>
+<p class="Paragrafo_Numerado_Nivel2" style="padding-left: 30px;"><a name="item7.1"></a><span style="text-decoration: line-through;">7.1. Os casos omissos e as excepcionalidades serão dirimidos pela Gerência competente pela administração dos recursos de órbita e espectro de radiofrequências. </span></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha">7.   OPERAÇÃO DE ESTAÇÕES TERRENAS EM PLATAFORMA MÓVEL <a title="Acesse o Ato" href="https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2025/2082-ato-18530">(Redação dada pelo Ato nº 18530, de 30 de novembro de 2025)</a></p>
+<p class="Texto_Justificado" style="padding-left: 30px;">7.1.<strong>   Características Técnico-Operacionais das Estações Terrenas em Plataforma Móvel </strong><a title="Acesse o Ato" href="https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2025/2082-ato-18530">(Redação dada pelo Ato nº 18530, de 30 de novembro de 2025)</a></p>
+<p class="Texto_Justificado" style="padding-left: 60px;">7.1.1.   Estações terrenas em plataforma móvel associadas ao serviço fixo por satélite devem possuir capacidade de rastreamento e manutenção do apontamento para a estação espacial correspondente e ter capacidade operacional que permita a interrupção de emissões de radiofrequências remotamente. <a title="Acesse o Ato " href="https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2025/2082-ato-18530">(Incluído pelo Ato nº 18530, de 30 de novembro de 2025)</a></p>
+<p class="Texto_Justificado" style="padding-left: 60px;">7.1.2.   Estações terrenas em plataforma móvel podem realizar transmissões apenas nas faixas indicadas nos subitens abaixo e receber sinais nas faixas devidamente atribuídas ao serviço fixo por satélite, para as quais haja destinação correspondente. <a title="Acesse o Ato " href="https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2025/2082-ato-18530">(Incluído pelo Ato nº 18530, de 30 de novembro de 2025)</a></p>
+<p class="Texto_Justificado" style="padding-left: 90px;">7.1.2.1.   Estações terrenas em plataformas móveis marítimas podem realizar transmissões na faixa de frequências de 5.925 MHz a 6.425 MHz para comunicação com satélites geoestacionários. <a title="Acesse o Ato " href="https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2025/2082-ato-18530">(Incluído pelo Ato nº 18530, de 30 de novembro de 2025)</a></p>
+<p class="Texto_Justificado" style="padding-left: 90px;">7.1.2.2.   Estações terrenas em plataformas móveis marítimas ou aeronáuticas podem realizar transmissões na faixa de frequências de 12,75 GHz a 13,25 GHz para comunicação com satélites geoestacionários. <a title="Acesse o Ato " href="https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2025/2082-ato-18530">(Incluído pelo Ato nº 18530, de 30 de novembro de 2025)</a></p>
+<p class="Texto_Justificado" style="padding-left: 90px;">7.1.2.3.   Estações terrenas em plataformas móveis marítimas, aeronáuticas ou em terra podem realizar transmissões na faixa de frequências de 14 GHz a 14,5 GHz para comunicação com satélites geoestacionários ou não geoestacionários. <a title="Acesse o Ato " href="https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2025/2082-ato-18530">(Incluído pelo Ato nº 18530, de 30 de novembro de 2025)</a></p>
+<p class="Texto_Justificado" style="padding-left: 90px;">7.1.2.4.   Estações terrenas em plataformas móveis marítimas ou aeronáuticas podem realizar transmissões na faixa de frequências de 27,5 GHz a 30 GHz para comunicação com satélites geoestacionários. <a title="Acesse o Ato " href="https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2025/2082-ato-18530">(Incluído pelo Ato nº 18530, de 30 de novembro de 2025)</a></p>
+<p class="Texto_Justificado" style="padding-left: 90px;">7.1.2.5.   Estações terrenas em plataformas móveis marítimas ou aeronáuticas podem realizar transmissões na faixa de frequências de 27,5 GHz a 29,1 GHz e de 29,5 GHz a 30 GHz para comunicação com satélites não geoestacionários. <a title="Acesse o Ato " href="https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2025/2082-ato-18530">(Incluído pelo Ato nº 18530, de 30 de novembro de 2025)</a></p>
+<p class="Texto_Justificado" style="padding-left: 90px;">7.1.2.6.   Estações terrenas em plataformas móveis em terra podem realizar transmissões na faixa de frequências de 27,9 GHz a 28,4 GHz e de 29,5 GHz a 30 GHz para comunicação com satélites geoestacionário ou não geoestacionários. <a title="Acesse o Ato " href="https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2025/2082-ato-18530">(Incluído pelo Ato nº 18530, de 30 de novembro de 2025)</a></p>
+<p class="Texto_Justificado" style="padding-left: 60px;">7.1.3.   Estações terrenas em plataforma móvel marítimas, aeronáuticas ou em terra não devem causar interferência prejudicial nem solicitar proteção de estações associadas a outros sistemas de radiocomunicação. <a title="Acesse o Ato " href="https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2025/2082-ato-18530">(Incluído pelo Ato nº 18530, de 30 de novembro de 2025)</a></p>
+<p class="Texto_Justificado" style="padding-left: 90px;">7.1.3.1. Estações terrenas em plataforma móvel que causem interferência prejudicial devem ter sua operação imediatamente interrompida até a remoção da causa da interferência. <a title="Acesse o Ato " href="https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2025/2082-ato-18530">(Incluído pelo Ato nº 18530, de 30 de novembro de 2025)</a></p>
+<p class="Texto_Justificado" style="padding-left: 60px;">7.1.4.   Estações terrenas em plataforma móvel deverão atender os parâmetros e critérios técnico-operacionais estabelecidos nos itens anteriores, observados os requisitos específicos para cada frequência de operação e os acordos de coordenação firmados. <a title="Acesse o Ato " href="https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2025/2082-ato-18530">(Incluído pelo Ato nº 18530, de 30 de novembro de 2025)</a></p>
+<p class="Texto_Justificado" style="padding-left: 30px;">7.2.   <strong>Operação de Estações Terrenas em Plataforma Móvel nas faixas de frequências da banda C </strong><a title="Acesse o Ato " href="https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2025/2082-ato-18530">(Incluído pelo Ato nº 18530, de 30 de novembro de 2025)</a></p>
+<p class="Texto_Justificado" style="padding-left: 60px;">7.2.1.   Na faixa de frequências de 5.925 MHz a 6.425 MHz, as <a target="_blank">estações terrenas </a>em plataformas móveis marítimas<a target="_blank"> </a>devem possuir antenas com diâmetro de no mínimo 2,4 m, e não devem exceder os limites de e.i.r.p de 20,8 dBW e de densidade espectral de e.i.r.p. de 17 dBW/MHz, na direção do horizonte. <a title="Acesse o Ato " href="https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2025/2082-ato-18530">(Incluído pelo Ato nº 18530, de 30 de novembro de 2025)</a></p>
+<p class="Texto_Justificado" style="padding-left: 90px;">7.2.1.1.   Podem ser usadas antenas com diâmetro de no mínimo 1,2 m, desde que a operação das estações não cause interferência em nível superior àquele decorrente do uso de antenas de 2,4 m. <a title="Acesse o Ato " href="https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2025/2082-ato-18530">(Incluído pelo Ato nº 18530, de 30 de novembro de 2025)</a></p>
+<p class="Texto_Justificado" style="padding-left: 30px;">7.3.   <strong>Operação de Estações Terrenas em Plataforma Móvel nas faixas de frequências da banda Ku </strong><a title="Acesse o Ato " href="https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2025/2082-ato-18530">(Incluído pelo Ato nº 18530, de 30 de novembro de 2025)</a></p>
+<p class="Texto_Justificado" style="padding-left: 60px;">7.3.1.   Na faixa de frequências de 12,75 GHz a 13,25 GHz: <a title="Acesse o Ato " href="https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2025/2082-ato-18530">(Incluído pelo Ato nº 18530, de 30 de novembro de 2025)</a></p>
+<p class="Texto_Justificado" style="padding-left: 90px;">a) as <a target="_blank">estações terrenas </a>em plataformas móveis​ marítimas<a target="_blank"> </a>não devem exceder o limite de densidade espectral de e.i.r.p. de 12,5 dBW/MHz na direção do horizonte, salvo em casos em que houver acordo de coordenação que especifique outros limites operacionais. <a title="Acesse o Ato " href="https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2025/2082-ato-18530">(Incluído pelo Ato nº 18530, de 30 de novembro de 2025)</a></p>
+<p class="Texto_Justificado" style="padding-left: 90px;">b) as estações terrenas em plataformas móveis aeronáuticas devem atender os limites de densidade de fluxo de potência na superfície da Terra estabelecidos na Tabela 2, salvo em casos em que houver acordo de coordenação que especifique outros limites operacionais. <a title="Acesse o Ato " href="https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2025/2082-ato-18530">(Incluído pelo Ato nº 18530, de 30 de novembro de 2025)</a></p>
+<p class="Tabela_Texto_8"> </p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">Tabela 2 - Limites de pfd para estações terrenas em plataformas móveis aeronáuticas na banda Ku</p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><a title="Acesse o Ato " href="https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2025/2082-ato-18530">(Incluído pelo Ato nº 18530, de 30 de novembro de 2025)</a></p>
+<table style="margin-left: auto; margin-right: auto;" border="1" cellpadding="0">
+<tbody>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>Altitude da aeronave</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><strong>Limite de densidade de fluxo de potência</strong></p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado"><b>Ângulo de chegada da emissão, em graus, acima do horizonte</b></p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;" colspan="1" rowspan="3">
+<p class="Tabela_Texto_Centralizado">Até 3 km</p>
+</td>
+<td rowspan="1">
+<p class="Tabela_Texto_Centralizado">- 123,5 dB(W/m2) em 1 MHz</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">0° ≤ θ ≤ 5°</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado">-128,5 + θ dB(W/m2) em 1 MHz</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">5° &lt; θ ≤ 40°</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado">-88,5 dB(W/m2) em 1 MHz</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">40° &lt; θ ≤ 90°</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;" colspan="1" rowspan="3">
+<p class="Tabela_Texto_Centralizado">Acima de 3 km</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">- 112 dB(W/m2) em 14 MHz</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">0° ≤ θ ≤ 5°</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado">-117 + θ dB(W/m2) em 14 MHz</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">5° &lt; θ ≤ 40°</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Tabela_Texto_Centralizado">-77 dB(W/m2) em 14 MHz</p>
+</td>
+<td>
+<p class="Tabela_Texto_Centralizado">40° &lt; θ ≤ 90°</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="Texto_Justificado" style="padding-left: 90px;">7.3.1.1.   Para proteção dos sistemas de satélites não geoestacionários, as <a target="_blank">estações terrenas </a>em plataformas móveis​ marítimas<a target="_blank"> e aeronáuticas operando na faixa de </a>12,75 GHz a 13,25 GHz<a target="_blank"> não devem exceder a densidade de e.i.r.p. de: </a><a title="Acesse o Ato " href="https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2025/2082-ato-18530">(Incluído pelo Ato nº 18530, de 30 de novembro de 2025)</a></p>
+<p class="Texto_Justificado" style="padding-left: 120px;">a) 49 dB(W/ MHz) com antenas com ganho máximo inferior a 38,5 dBi; <a title="Acesse o Ato " href="https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2025/2082-ato-18530">(Incluído pelo Ato nº 18530, de 30 de novembro de 2025)</a></p>
+<p class="Texto_Justificado" style="padding-left: 120px;">b) 54 dB(W/1 MHz) com antenas com ganho máximo igual ou superior a 38,5 dBi, mas inferior a 45 dBi; <a title="Acesse o Ato " href="https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2025/2082-ato-18530">(Incluído pelo Ato nº 18530, de 30 de novembro de 2025)</a></p>
+<p class="Texto_Justificado" style="padding-left: 120px;">c) 57,5 dB(W/1 MHz) com antenas com ganho máximo superior a 45 dBi. <a title="Acesse o Ato " href="https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2025/2082-ato-18530">(Incluído pelo Ato nº 18530, de 30 de novembro de 2025)</a></p>
+<p class="Texto_Justificado" style="padding-left: 60px;">7.3.2.   Na faixa de frequências de 14 GHz a 14,5 GHz: <a title="Acesse o Ato " href="https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2025/2082-ato-18530">(Incluído pelo Ato nº 18530, de 30 de novembro de 2025)</a></p>
+<p class="Texto_Justificado" style="padding-left: 90px;">a) as <a target="_blank">estações terrenas </a>em plataformas móveis​ marítimas não devem exceder os limites de e.i.r.p. de 16,3 dBW e de densidade espectral de e.i.r.p. de 12,5 dBW/MHz, na direção do horizonte, e devem possuir antenas com diâmetro de no mínimo 1,2 m. Podem ser usadas antenas com diâmetro mínimo de 60 cm, desde que a operação dessas estações não cause interferência em nível superior àquele decorrente do uso de antenas de 1,2 m. <a title="Acesse o Ato " href="https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2025/2082-ato-18530">(Incluído pelo Ato nº 18530, de 30 de novembro de 2025)</a></p>
+<p class="Texto_Justificado" style="padding-left: 90px;">b) estações terrenas em plataformas móveis aeronáuticas devem atender os limites de densidade de fluxo de potência na superfície da Terra estabelecidos na Tabela 3, salvo em casos em que houver acordo de coordenação que especifique outros limites operacionais; <a title="Acesse o Ato " href="https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2025/2082-ato-18530">(Incluído pelo Ato nº 18530, de 30 de novembro de 2025)</a></p>
+<p class="Tabela_Texto_8"> </p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">Tabela 3 - Limites de pfd para estações terrenas em plataformas móveis aeronáuticas na banda Ku</p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><a title="Acesse o Ato " href="https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2025/2082-ato-18530">(Incluído pelo Ato nº 18530, de 30 de novembro de 2025)</a></p>
+<table style="margin-left: auto; margin-right: auto;" border="1" cellpadding="0">
+<tbody>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>Limite de densidade de fluxo de potência</strong></p>
+<p class="Tabela_Texto_Centralizado"><strong>dB(W/m</strong><b><sup>2 </sup></b><strong>) em 1 MHz</strong></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><b>Ângulo de chegada da emissão, em graus, acima do horizonte</b></p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;" rowspan="1">
+<p class="Tabela_Texto_Centralizado">- 132 + 0,5 ∙ θ</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">θ ≤ 40°</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">-112</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">40° &lt; θ ≤ 90°</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="Tabela_Texto_8"> </p>
+<p class="Texto_Justificado" style="padding-left: 30px;">7.4.   <strong>Operação de Estações Terrenas em Plataforma Móvel nas faixas de frequências da banda Ka </strong><a title="Acesse o Ato " href="https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2025/2082-ato-18530">(Incluído pelo Ato nº 18530, de 30 de novembro de 2025)</a></p>
+<p class="Texto_Justificado" style="padding-left: 60px;">7.4.1. Na faixa de 27,5 GHz a 29,5 GHz, observadas as disposições dos itens 7.1.1.4 e 7.1.1.5: <a title="Acesse o Ato " href="https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2025/2082-ato-18530">(Incluído pelo Ato nº 18530, de 30 de novembro de 2025)</a></p>
+<p class="Texto_Justificado" style="padding-left: 90px;">a) as <a target="_blank">estações terrenas </a>em plataformas móveis​ marítimas não devem exceder o limite de densidade espectral de e.i.r.p. de 24,44 dBW em 14 MHz na direção do horizonte, salvo em casos em que houver acordo de coordenação que especifique outros limites operacionais. <a title="Acesse o Ato " href="https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2025/2082-ato-18530">(Incluído pelo Ato nº 18530, de 30 de novembro de 2025)</a></p>
+<p class="Texto_Justificado" style="padding-left: 90px;">b) as estações terrenas em plataformas móveis aeronáuticas devem atender os limites de densidade de fluxo de potência na superfície da Terra estabelecidos na Tabela 4, salvo em casos em que houver acordo de coordenação que especifique outros limites operacionais. <a title="Acesse o Ato " href="https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2025/2082-ato-18530">(Incluído pelo Ato nº 18530, de 30 de novembro de 2025)</a></p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;">Tabela 4 - Limites de pfd para estações terrenas em plataformas móveis aeronáuticas na banda Ka</p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><a title="Acesse o Ato " href="https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2025/2082-ato-18530">(Incluído pelo Ato nº 18530, de 30 de novembro de 2025)</a></p>
+<table style="margin-left: auto; margin-right: auto;" border="1" cellpadding="0">
+<tbody>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>Altitude da aeronave</strong></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><strong>Limite de densidade de fluxo de potência</strong></p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"><b>Ângulo de chegada da emissão, em graus, acima do horizonte</b></p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;" colspan="1" rowspan="5">
+<p class="Tabela_Texto_Centralizado">Até 3 km</p>
+</td>
+<td style="text-align: center;" rowspan="1">
+<p class="Tabela_Texto_Centralizado">- 136,2 dB(W/m2) em 1 MHz</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">0° ≤ θ ≤ 0,01°</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">-132,4 + 1,9 ∙ log(θ) dB(W/m2) em 1 MHz </p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">0,01° &lt; θ ≤ 0,3°</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">-127,7 + 11 ∙ log(θ) dB(W/m2) em 1 MHz</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">0,3° &lt; θ ≤ 1°</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">-127,7 + 18 ∙ log(θ) dB(W/m2) em 1 MHz</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">1° &lt; θ ≤ 12,4°</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">-108 dB(W/m2) em 1 MHz</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">12,4° &lt; θ ≤ 90°</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;" colspan="1" rowspan="6">
+<p class="Tabela_Texto_Centralizado">Acima de 3 km</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">- 124,7 dB(W/m2) em 14 MHz</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">0° ≤ θ ≤ 0,01°</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">-120,9 + 1,9 ∙ log(θ) dB(W/m2) em 14 MHz</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">0,01° &lt; θ ≤ 0,3°</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">-116,2 + 11 ∙ log(θ) dB(W/m2) em 14 MHz</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">0,3° &lt; θ ≤ 1°</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">-116,2 + 18 ∙ log(θ) dB(W/m2) em 14 MHz</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">1° &lt; θ ≤ 2°</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">-117,9 + 23,7 ∙ log(θ) dB(W/m2) em 14 MHz</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">2° &lt; θ ≤ 8°</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">-96,5 dB(W/m2) em 14 MHz</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">8° &lt; θ ≤ 90°</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="Texto_Justificado" style="padding-left: 90px;">7.4.1.1. Para a faixa de 27,9 GHz a 28,4 GHz, não se aplicam os limites previstos na alínea a), na direção da costa brasileira, e na alínea b), na direção do território brasileiro. <a title="Acesse o Ato " href="https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2025/2082-ato-18530">(Incluído pelo Ato nº 18530, de 30 de novembro de 2025)</a></p>
+<p class="Texto_Justificado" style="padding-left: 60px;">7.4.2. Na faixa de frequências de 29,1 GHz a 29,5 GHz, a operação de <a target="_blank">estações terrenas </a>em plataformas móveis está sujeita à obtenção de acordo de coordenação com as operadoras responsáveis por estações terrenas utilizadas para enlaces de alimentação de sistemas de satélites não-geoestacionários no serviço móvel por satélite, que estejam licenciadas em território brasileiro. <a title="Acesse o Ato " href="https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2025/2082-ato-18530">(Incluído pelo Ato nº 18530, de 30 de novembro de 2025)</a></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha">8.   DISPOSIÇÕES FINAIS <a title="Acesse o Ato " href="https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2025/2082-ato-18530">(Incluído pelo Ato nº 18530, de 30 de novembro de 2025)</a></p>
+<p class="Texto_Justificado" style="padding-left: 30px;">8.1.   Excepcionalmente, a Anatel pode autorizar o uso de radiofrequências ou o licenciamento de estações em desconformidade com os Requisitos Técnicos e Operacionais para Sistemas de Comunicação via Satélite, mediante fundamentação técnica a ser avaliada e aprovada pela Superintendência responsável pela administração do espectro de radiofrequências da Anatel, conforme a possibilidade e convivência, desde que não cause interferência prejudicial em sistemas regularmente autorizados, observado o previsto na regulamentação aplicável e os limites estritos (<em>hard limits</em>) definidos no Regulamento de Rádio da União Internacional de Telecomunicações. <a title="Acesse o Ato " href="https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2025/2082-ato-18530">(Incluído pelo Ato nº 18530, de 30 de novembro de 2025)</a></p>
+<p class="Texto_Justificado" style="padding-left: 60px;">8.1.1. Em caso de ocorrência de interferência prejudicial em sistemas regularmente autorizados, a entidade responsável pelo sistema autorizado em desconformidade com os Requisitos Técnicos e Operacionais estabelecidos deve proceder com a interrupção imediata das transmissões de seu sistema, até que a interferência prejudicial seja sanada. <a title="Acesse o Ato " href="https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2025/2082-ato-18530">(Incluído pelo Ato nº 18530, de 30 de novembro de 2025)</a></p>
+<p class="Texto_Justificado" style="padding-left: 60px;"> </p>
+<p class="Paragrafo_Numerado_Nivel2" style="padding-left: 30px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="/legislacao/arquivos_e_imagens/imagens/Atos_Requisitos_Certificacao/Ato-9523/Figura1.jpg" alt="" width="639" height="471" /></p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><a id="figura1"></a>Figura 1 - Zona de aplicabilidade de limites de densidade espectral de e.i.r.p. das estações terrenas.</p> <div class="attachmentsContainer">
+
+<div class="attachmentsList" id="attachmentsList_com_content_default_1598"></div>
+
+</div>
+	
+</div>
+<div class="below-content">
+		<div class="line">
+		registrado em:
+			<span><a class="link-categoria" rel="tag" href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro">Atos de Requisitos Técnicos de Gestão do Espectro</a></span><span class="separator">,</span><span><a class="link-categoria" rel="tag" href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2021">2021</a></span>	</div>
+		
+		<div class="line">
+		Assunto(s):
+					<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Aprovação" class="link-categoria">Aprovação</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Requisito%20Técnico" class="link-categoria">Requisito Técnico</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Operacionais" class="link-categoria">Operacionais</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Sistemas%20de%20Comunicação" class="link-categoria">Sistemas de Comunicação</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Satélite" class="link-categoria">Satélite</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Território%20Brasileiro" class="link-categoria">Território Brasileiro</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=AtoVigente" class="link-categoria">AtoVigente</a>
+							</span>
+					
+	</div>
+	
+	
+</div>
+                                                                                    
+                                    
+                                    
+                                
+                                <!--<span class="hide">Fim do conteúdo da página</span> -->
+								
+                                </section>
+                            </div>
+                            <!-- fim #content.span9 -->
+                        </div>
+                        <!-- fim .row-fluid -->
+                </div>
+                <!-- fim .container -->
+
+
+                <!-- Chamada da posição paginas de Serviços -->
+                 
+               <!--Fim da chamada de chamada-segundaria-destaque -->
+
+                <!-- Chamada da posição chamada de chamada segundaria destaque -->
+                 
+               <!--Fim da chamada de chamada de chamada segundaria destaque -->
+
+                </main>
+                <footer id="portal-footer">
+                    <div class="footer-atalhos">
+                        <div class="container tmpl-custom">
+                            <div class="pull-right voltar-ao-topo"><a href="#main-navigation">Voltar ao topo</a></div>
+                        </div>
+                    </div>
+                    <div class="container tmpl-custom container-menus">
+                        <div class="govbr-logo"></div>
+                        <div id="footer" class="row footer-menus">
+                            <span class="hide">Início da navegação de rodapé</span>
+                            	
+		<div class="spanfooter">		
+			<nav class="row  nav">
+				 			
+				<h2>Assuntos </h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter">
+	<li class="item-443"><a href="https://www.gov.br/anatel/pt-br/assuntos/5G" > 5G</a></li><li class="item-502"><a href="https://www.gov.br/anatel/pt-br/assuntos/acessibilidade" >Acessibilidade</a></li><li class="item-540"><a href="https://www.gov.br/anatel/pt-br/assuntos/adaptacao" >Adaptação</a></li><li class="item-541"><a href="https://www.gov.br/anatel/pt-br/assuntos/agenda-2030" >Agenda 2030</a></li><li class="item-441"><a href="https://www.gov.br/anatel/pt-br/assuntos/atuacao-internacional" >Atuação Internacional</a></li><li class="item-442"><a href="https://www.gov.br/anatel/pt-br/assuntos/celular-legal" >Celular Legal</a></li><li class="item-503"><a href="https://www.gov.br/anatel/pt-br/assuntos/noticias/acoes-do-setor-de-telecomunicacoes-no-combate-ao-coronavirus" >Coronavírus</a></li><li class="item-504"><a href="https://www.gov.br/anatel/pt-br/assuntos/dicas-contra-fraudes" >Dicas contra Fraudes</a></li><li class="item-440"><a href="https://www.gov.br/anatel/pt-br/assuntos/noticias" > Notícias</a></li><li class="item-505"><a href="https://www.gov.br/anatel/pt-br/regulado/acompanhamento-e-controle/processo-sancionador" >Processo Sancionador</a></li><li class="item-444"><a href="https://www.gov.br/anatel/pt-br/assuntos/seguranca-cibernetica" > Segurança Cibernética</a></li><li class="item-445"><a href="https://www.gov.br/anatel/pt-br/assuntos/seguranca-publica" > Segurança Pública</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Acesso à Informação</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-446"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/institucional" > Institucional</a></li><li class="item-447"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/acoes-e-programas" > Ações e Programas</a></li><li class="item-448"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/participacao-social" > Participação Social</a></li><li class="item-449"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/auditorias" >Auditorias</a></li><li class="item-450"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/convenios-e-transferencias" >Convênios e Transferências</a></li><li class="item-451"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/receitas-e-despesas" > Receitas e Despesas</a></li><li class="item-452"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/licitacoes-e-contratos" >Licitações e Contratos</a></li><li class="item-454"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/servidores" >Servidores</a></li><li class="item-455"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/informacoes-classificadas" > Informações Classificadas</a></li><li class="item-456"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/servico-de-informacao-ao-cidadao-sic" >Serviço de Informação ao Cidadão (SIC)</a></li><li class="item-458"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/perguntas-frequentes" > Perguntas Frequentes</a></li><li class="item-457"><a href="https://www.gov.br/anatel/pt-br/dados/dados-abertos" >Dados Abertos</a></li><li class="item-506"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/governanca" >Governança</a></li><li class="item-453"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais" > Tratamento de Dados Pessoais</a></li><li class="item-459"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/transparencia-e-prestacao-de-contas" >Transparência e Prestação de Contas</a></li><li class="item-507"><a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_processo_pesquisar.php?acao_externa=protocolo_pesquisar&amp;acao_origem_externa=protocolo_pesquisar&amp;id_orgao_acesso_externo=0" >Pesquisa Pública do SEI</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Canais de Atendimento </h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-471"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/aplicativo" >Aplicativo</a></li><li class="item-472"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/internet" >Internet</a></li><li class="item-473"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/presencial" >Presencial</a></li><li class="item-474"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/telefone" > Telefone</a></li><li class="item-475"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/ouvidoria" >Ouvidoria</a></li><li class="item-476"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/imprensa" >Imprensa</a></li><li class="item-477"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/sistemas" >Sistemas</a></li><li class="item-542"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/apoio-institucional" >Apoio Institucional</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2> Centrais de Conteúdo</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-464"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/publicacoes" > Publicações</a></li><li class="item-465"><a href="https://www.flickr.com/photos/anatel_informa/albums" >Imagens</a></li><li class="item-466"><a href="https://www.youtube.com/user/Anatel" >Vídeos </a></li><li class="item-468"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/processo-eletronico" >Processo Eletrônico (SEI)</a></li><li class="item-470"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/jurisprudencia" > Repositório de Jurisprudência</a></li><li class="item-469"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/solicitacao-de-vistas" > Solicitação de Vistas de Processo e Documento</a></li><li class="item-467"><a href="https://informacoes.anatel.gov.br/legislacao/" >Legislação</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Composição</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-460"><a href="https://www.gov.br/anatel/pt-br/composicao/estrutura-organizacional" >Estrutura Organizacional</a></li><li class="item-461"><a href="https://www.gov.br/anatel/pt-br/composicao/conselho-diretor" > Conselho Diretor</a></li><li class="item-462"><a href="https://www.gov.br/anatel/pt-br/composicao/conselho-consultivo" > Conselho Consultivo</a></li><li class="item-508"><a href="https://www.gov.br/anatel/pt-br/composicao/ceadi" >Ceadi</a></li><li class="item-463"><a href="https://www.gov.br/anatel/pt-br/composicao/comissao-de-etica" >Comissão de Ética</a></li><li class="item-509"><a href="https://www.gov.br/anatel/pt-br/composicao/comites" >Comitês</a></li><li class="item-510"><a href="https://www.gov.br/anatel/pt-br/composicao/grupos-de-trabalho" >Grupos de Trabalho</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter">		
+			<nav class="row  nav">
+				 			
+				<h2>Consumidor</h2>
+								
+<ul>
+<li class="item-410"><a href="https://www.gov.br/anatel/pt-br/consumidor/quer-reclamar" >Quer Reclamar?</a></li><li class="item-411"><a href="https://www.gov.br/anatel/pt-br/consumidor/conheca-seus-direitos" >Conheça Seus Direitos</a></li><li class="item-412"><a href="https://www.gov.br/anatel/pt-br/consumidor/participe-dos-debates" > Participe dos Debates</a></li><li class="item-413"><a href="https://www.gov.br/anatel/pt-br/consumidor/compare-as-prestadoras" >Compare as Prestadoras</a></li><li class="item-511"><a href="https://www.gov.br/anatel/pt-br/consumidor/habilidades-digitais" >Habilidades Digitais</a></li><li class="item-512"><a href="https://www.gov.br/anatel/pt-br/consumidor/oi-movel" >Oi Móvel </a></li><li class="item-513"><a href="https://www.gov.br/anatel/pt-br/consumidor/projetosproconsumidor" >Projetos pró Consumidor</a></li><li class="item-514"><a href="https://www.gov.br/anatel/pt-br/consumidor/telemarketing" >Telemarketing</a></li><li class="item-482"><a href="https://www.gov.br/anatel/pt-br/consumidor/perguntas-frequentes" >Perguntas Frequentes</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter break width">		
+			<nav class="row  nav">
+				 			
+				<h2>Dados</h2>
+								
+<ul>
+<li class="item-519"><a href="https://www.gov.br/anatel/pt-br/dados/paineis" >Painéis</a></li><li class="item-520"><a href="https://www.gov.br/anatel/pt-br/dados/coleta-de-dados-setoriais" >Coleta de Dados Setoriais</a></li><li class="item-417"><a href="https://www.gov.br/anatel/pt-br/dados/infraestrutura" >Infraestrutura</a></li><li class="item-414"><a href="https://www.gov.br/anatel/pt-br/dados/qualidade" >Qualidade</a></li><li class="item-415"><a href="https://www.gov.br/anatel/pt-br/dados/relatorios-de-acompanhamento" >Relatórios de Acompanhamento</a></li><li class="item-416"><a href="https://www.gov.br/anatel/pt-br/dados/utilidade-publica" >Utilidade Pública</a></li><li class="item-521"><a href="https://www.gov.br/anatel/pt-br/dados/dados-abertos" >Dados Abertos</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter width">		
+			<nav class="row  nav">
+				 			
+				<h2>Legislação</h2>
+								
+<ul>
+<li class="item-183"><a href="https://informacoes.anatel.gov.br/legislacao/resolucoes" >Resoluções</a></li><li class="item-196"><a href="https://informacoes.anatel.gov.br/legislacao/sumulas" >Súmulas</a></li><li class="item-522"><a href="https://informacoes.anatel.gov.br/legislacao/portarias-de-delegacao" >Portarias de Delegação</a></li><li class="item-523"><a href="https://informacoes.anatel.gov.br/legislacao/portarias-normativas" >Portarias Normativas</a></li><li class="item-524"><a href="https://informacoes.anatel.gov.br/legislacao/resolucoes-internas" >Resoluções Internas</a></li><li class="item-525"><a href="https://informacoes.anatel.gov.br/legislacao/metodologias-de-calculo-de-multa" >Metodologias de Cálculo de Multa</a></li><li class="item-526"><a href="https://informacoes.anatel.gov.br/legislacao/glossario-anatel" >Glossário</a></li><li class="item-527"><a href="https://www.gov.br/anatel/pt-br/legislacao/atos" >Atos</a></li><li class="item-528"><a href="https://www.gov.br/anatel/pt-br/legislacao/fiscalizacao" >Fiscalização</a></li><li class="item-529"><a href="https://www.gov.br/anatel/pt-br/legislacao/demais-normas" >Demais Normas</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter width">		
+			<nav class="row  nav">
+				 			
+				<h2>Regulado</h2>
+								
+<ul>
+<li class="item-530"><a href="https://www.gov.br/anatel/pt-br/regulado/acompanhamento-e-controle" >Acompanhamento e Controle</a></li><li class="item-531"><a href="https://www.gov.br/anatel/pt-br/regulado/agenda-regulatoria" >Agenda Regulatória</a></li><li class="item-418"><a href="https://www.gov.br/anatel/pt-br/regulado/arrecadacao" >Arrecadação</a></li><li class="item-422"><a href="https://www.gov.br/anatel/pt-br/regulado/certificacao-de-produtos" >Certificação de Produtos</a></li><li class="item-532"><a href="https://www.gov.br/anatel/pt-br/regulado/competicao" >Competição</a></li><li class="item-533"><a href="https://www.gov.br/anatel/pt-br/regulado/espectro" >Espectro</a></li><li class="item-534"><a href="https://www.gov.br/anatel/pt-br/regulado/fiscalizacao" >Fiscalização</a></li><li class="item-421"><a href="https://www.gov.br/anatel/pt-br/regulado/numeracao" >Numeração</a></li><li class="item-420"><a href="https://www.gov.br/anatel/pt-br/regulado/outorga" >Outorga</a></li><li class="item-535"><a href="https://www.gov.br/anatel/pt-br/regulado/prestadoras-de-pequeno-porte" >Prestadoras de Pequeno Porte</a></li><li class="item-419"><a href="https://www.gov.br/anatel/pt-br/regulado/radiodifusao" >Radiodifusão</a></li><li class="item-536"><a href="https://www.gov.br/anatel/pt-br/regulado/radiofrequencia" >Radiofrequência</a></li><li class="item-537"><a href="https://www.gov.br/anatel/pt-br/regulado/satelite" >Satélite</a></li><li class="item-538"><a href="https://www.gov.br/anatel/pt-br/regulado/universalizacao" >Universalização e Ampliação do Acesso</a></li><li class="item-539"><a href="https://www.gov.br/anatel/pt-br/regulado/perguntas-frequentes" >Perguntas Frequentes</a></li></ul>
+			</nav>					
+		</div>
+	
+	
+                            <span class="hide">Fim da navegação de rodapé</span>
+                        </div>
+                        <!-- fim .row -->
+
+                        <!-- Redes Sociais Agência Nacional de Telecomunicações -->
+                        <div class="container-redes-anatel">
+                            <div class="redes-sociais">
+                                <h3>Redes Sociais</h3>
+                                <ul class="portal-redes">
+                                    <li class="portalredes-twitter portalredes-item">
+                                        <a href="https://twitter.com/anatel_oficial">Twitter</a>
+                                    </li>
+                                    <li class="portalredes-youtube portalredes-item">
+                                        <a href="https://www.youtube.com/anatel">YouTube</a>
+                                    </li>
+                                    <li class="portalredes-facebook portalredes-item">
+                                       <a href="https://www.facebook.com/anatel.oficial">Facebook</a>
+                                    </li>
+                                    <li class="portalredes-flickr portalredes-item">
+                                        <a href="https://www.flickr.com/photos/anatel_informa/albums">Flickr</a>
+                                    </li>
+                                    <li class="portalredes-instagram portalredes-item">
+                                        <a href="https://www.instagram.com/anatel.oficial">Instagram</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Final do container redes sociais -->
+
+                    </div>
+                    <!-- fim .container -->
+                    <div class="footer-logos">
+                        <div class="container tmpl-custom">
+                            
+                            
+                                 <!-- separador para fins de acessibilidade -->
+                                 <span class="hide">&nbsp;</span><!-- fim separador para fins de acessibilidade -->
+                                    <a href="http://www.brasil.gov.br/" class="brasil pull-right">
+                                        <img src="/legislacao/arquivos_e_imagens/imagens/logogoverno.jpg" alt="Brasil - Governo Federal">
+                                    </a>
+
+                                                                                        <a href="http://www.acessoainformacao.gov.br/" class="logo-acesso pull-right"><img src="/legislacao/templates/padraogoverno01/images/acesso-a-informacao.png" alt="Acesso a Informação"></a>
+                            
+                        </div>
+                    </div>
+                    <div class="footer-ferramenta">
+                        <div class="container tmpl-custom">
+                            Todo o conteúdo deste site está publicado sob a licença <a href=https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR>Creative Commons Atribuição-SemDerivações 3.0 Não Adaptada</a>.                        </div>
+                    </div>
+                </footer>
+            </div>
+            <!-- fim div#wrapper -->
+            <!-- scripts principais do template -->
+                    <script src="/legislacao/templates/padraogoverno01/bootstrap/js/bootstrap.min.js" type="b41d008067d7be1a1ba85c6e-text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+        <script src="/legislacao/templates/padraogoverno01/js/jquery.cookie.js" type="b41d008067d7be1a1ba85c6e-text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+        <script src="/legislacao/templates/padraogoverno01/js/template.js" type="b41d008067d7be1a1ba85c6e-text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+                                                <script type="b41d008067d7be1a1ba85c6e-text/javascript">
+                    var _gaq = _gaq || [];
+                    _gaq.push(['_setAccount', 'UA-61388073-6']);
+                    _gaq.push(['_trackPageview']);
+                            (function () {
+                        var ga = document.createElement('script');
+                        ga.type = 'text/javascript';
+                        ga.async = true;
+                        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                        var s = document.getElementsByTagName('script')[0];
+                        s.parentNode.insertBefore(ga, s);
+                    })();
+                </script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+                        <!-- debug -->
+            
+<!--****************************** COOKIES HTML CODE START HERE ******************************-->
+<div class="notice_div_ribbin ebsticky_bottom" id="eu_cookies">
+  <div class="inner1">
+    <div class="inner3 eb_contentwrap">
+      <div class="heading_title">Nós protegemos seus dados</div>      <p>Para melhorar a sua experiência na plataforma e prover serviços personalizados, utilizamos cookies. Saiba como usamos seus dados em nosso <a style ="color: #ffffff;" href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais/aviso-de-privacidade">Aviso de Privacidade</a>. Ao clicar em “Aceitar cookies”, você concorda com os Termos de Serviço e a Política de Privacidade da Anatel e terá acesso a todas as funcionalidades do site.</p>      
+    </div>
+<div class="button_message eb_privacypolicy"> 
+			<a  href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais" class="button_cookie eb_papbtn" aria-label="Cookie Policy">Saiba mais</a>
+        <a class="button_cookie" href="javascript:void(0);" onclick="if (!window.__cfRLUnblockHandlers) return false; calltohide()" id="hideme" data-cf-modified-b41d008067d7be1a1ba85c6e-="">Aceitar cookies</a>
+	</div>
+  </div>
+</div>
+<!--****************************** COOKIES HTML CODE END HERE ******************************-->
+
+<!--****************************** COOKIES JAVSCRIPT CODE START HERE -- FOR ACCEPT ******************************-->
+<script type="b41d008067d7be1a1ba85c6e-text/javascript">
+	check_cookie(getBaseURL());
+</script>
+<!--****************************** COOKIES JAVSCRIPT CODE END HERE ******************************-->
+
+<!--****************************** COOKIES CSS START HERE ******************************-->
+<style>
+.notice_div_simplebar,.notice_div_ribbin{background:rgba(12,30,63,0.85)!important;}
+.inner3 .heading_title{color:#ffffff!important; font-size: 16px;}
+.inner3 p{color:#ffffff!important; font-size: 14px;}
+.button_cookie{background:transparent!important; color:#ffffff!important;}
+.eb_papbtn{background:transparent!important; color:#ffffff!important;}
+</style>
+<!--****************************** COOKIES CSS END HERE ******************************-->
+            
+    <script defer="defer" src="//barra.brasil.gov.br/barra_2.0.js" type="b41d008067d7be1a1ba85c6e-text/javascript"></script>        
+
+<!-- Piwik -->
+<script type="b41d008067d7be1a1ba85c6e-text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://sistemas.anatel.gov.br/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 3]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+    g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="http://sistemas.anatel.gov.br/piwik/piwik.php?idsite=3" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+</body>
+ </html>

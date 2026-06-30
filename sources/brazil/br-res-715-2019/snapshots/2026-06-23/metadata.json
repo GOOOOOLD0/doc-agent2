@@ -1,0 +1,14 @@
+{
+  "source_id": "br-res-715-2019",
+  "country": "brazil",
+  "norm": "Resolution No. 715/2019, conformity assessment and homologation of telecom products",
+  "url": "https://informacoes.anatel.gov.br/legislacao/resolucoes/2019/1350-resolucao-715",
+  "fetched_at": "2026-06-23T01:17:39+00:00",
+  "title": "Anatel - Resolução nº 715, de 23 de outubro de 2019 Agência Nacional de Telecomunicações Anatel - Resolução nº 715, de 23 de outubro de 2019",
+  "charset": "utf-8",
+  "source_format": "html",
+  "capture_method": "anatel_html",
+  "normalized_sha256": "6cc77db63e7826c2d4d43c36d4410b0e0d73d9f08fd418071275fe56d3e61c5c",
+  "status": "updated",
+  "compared_to": "/Users/fish/Desktop/卫星落地许可/sources/brazil/br-res-715-2019/snapshots/2026-06-23/normalized.txt"
+}

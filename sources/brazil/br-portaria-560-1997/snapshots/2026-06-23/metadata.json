@@ -1,0 +1,14 @@
+{
+  "source_id": "br-portaria-560-1997",
+  "country": "brazil",
+  "norm": "Portaria No. 560/1997, Norma No. 16/97 for non-geostationary SMGS",
+  "url": "https://informacoes.anatel.gov.br/legislacao/normas-do-mc/185-portaria-560",
+  "fetched_at": "2026-06-23T01:17:45+00:00",
+  "title": "Anatel - Portaria nº 560, de 03 de novembro de 1997 Agência Nacional de Telecomunicações Anatel - Portaria nº 560, de 03 de novembro de 1997",
+  "charset": "utf-8",
+  "source_format": "html",
+  "capture_method": "anatel_html",
+  "normalized_sha256": "625cf04b8509b9bcef7f9765c90fbc7a62eadc3cf85a5288088422ee5a90b9ed",
+  "status": "updated",
+  "compared_to": "/Users/fish/Desktop/卫星落地许可/sources/brazil/br-portaria-560-1997/snapshots/2026-06-23/normalized.txt"
+}

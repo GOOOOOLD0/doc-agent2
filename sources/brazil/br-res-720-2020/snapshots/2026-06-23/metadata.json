@@ -1,0 +1,14 @@
+{
+  "source_id": "br-res-720-2020",
+  "country": "brazil",
+  "norm": "Resolution No. 720/2020, General Regulation of Grants (RGO)",
+  "url": "https://informacoes.anatel.gov.br/legislacao/resolucoes/2020/1382-resolucao-720",
+  "fetched_at": "2026-06-23T01:17:42+00:00",
+  "title": "Anatel - Resolução nº 720, de 10 de fevereiro de 2020 Agência Nacional de Telecomunicações Anatel - Resolução nº 720, de 10 de fevereiro de 2020",
+  "charset": "utf-8",
+  "source_format": "html",
+  "capture_method": "anatel_html",
+  "normalized_sha256": "1909b7aeea45031924f46aea0102afaa05c8b4036c6fe14a14ef12d3221a0118",
+  "status": "updated",
+  "compared_to": "/Users/fish/Desktop/卫星落地许可/sources/brazil/br-res-720-2020/snapshots/2026-06-23/normalized.txt"
+}
