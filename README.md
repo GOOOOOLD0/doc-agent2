@@ -12,6 +12,8 @@
 
 ## 运行方式
 
+### 本地运行
+
 创建或更新快照：
 
 ```bash
@@ -30,8 +32,20 @@ python3 scripts/check_sources.py --dry-run
 python3 scripts/check_sources.py --date 2026-06-23
 ```
 
+### GitHub 每月自动运行
+
+仓库已配置 `.github/workflows/monthly-regulatory-check.yml`：
+
+- 每月 1 日北京时间 09:00 自动运行一次。
+- 也可以在 GitHub 的 Actions 页面手动触发 `Monthly regulatory source check`。
+- 脚本会抓取 `regulatory_sources/sources.json` 里启用监控的 URL。
+- 如果网页内容和上一次快照一致，会在对应 `checks.md` 里记录 `no-update`。
+- 如果网页内容发生变化，会保存新快照并由 GitHub Actions 自动提交到仓库。
+
+注意：GitHub 的定时任务只有在 workflow 文件合并到仓库默认分支后才会按月自动触发。当前分支可以先手动运行验证。
+
 ## 当前状态
 
 已监控 10 个巴西法规来源，重复运行验证结果为 `no-update`。`Act No. 9,526/2021` 尚未确认到官方 URL，暂未加入监控队列。
 
-下一步可以把脚本接入每月定时任务，并按同样结构补充泰国、蒙古等国家的法规来源。
+下一步可以按同样结构补充泰国、蒙古等国家的法规来源。
