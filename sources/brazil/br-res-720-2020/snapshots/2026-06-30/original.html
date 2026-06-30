@@ -1,0 +1,1154 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="pt-br" dir="ltr"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="pt-br" dir="ltr"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="pt-br" dir="ltr"> <![endif]-->
+<!--[if gt IE 8]><!--> 
+
+<html class="no-js" lang="pt-br" dir="ltr"> <!--<![endif]-->
+	<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-61388073-6" type="cc7ed307b852664bd9b11daf-text/javascript"></script>
+    <script type="cc7ed307b852664bd9b11daf-text/javascript">
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-61388073-6');
+    </script>
+
+    <!-- Compilar normas -->
+    <script type="cc7ed307b852664bd9b11daf-text/javascript">
+      // Função que ativa ou desativa a remoção dos elementos tachados
+      window.compila = function() {
+        var elems = document.body.getElementsByTagName('*');
+        var active = document.body.classList.toggle('compiled'); // Alterna o estado
+
+        for (var i = 0; i < elems.length; i++) {
+          var elemStyle = window.getComputedStyle(elems[i]);
+
+          // Verifica se o elemento tem 'line-through' e aplica/remova conforme o estado
+          if (elemStyle.getPropertyValue('text-decoration').startsWith('line-through')) {
+            elems[i].style.display = active ? 'none' : ''; // Oculta ou restaura o elemento
+          }
+        }
+
+        // Atualiza o título do botão conforme o estado atual
+        var botaoCompila = document.querySelector('.botao-compila');
+        botaoCompila.title = active ? 'Desativar Texto Compilado' : 'Ativar Texto Compilado';
+
+        // Adiciona ou remove o hash #compilado na URL
+        if (active) {
+          window.location.hash = 'compilado'; // Adiciona #compilado na URL
+          botaoCompila.classList.add('active'); // Adiciona a classe 'active' ao botão
+        } else {
+          history.pushState("", document.title, window.location.pathname + window.location.search); // Remove o hash
+          botaoCompila.classList.remove('active'); // Remove a classe 'active' do botão
+        }
+      }
+
+      // Verifica se a URL contém #compilado ao carregar a página
+      document.addEventListener("DOMContentLoaded", function() {
+        if (window.location.hash === '#compilado') {
+          window.compila(); // Ativa a compilação automaticamente
+        }
+      });
+    </script>
+
+	  <title>Anatel - Resolução nº 720, de 10 de fevereiro de 2020</title>
+      <title>Agência Nacional de Telecomunicações</title>
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <meta name="Description" content="Informações sobre a Agência Nacional de Telecomunicações"/>
+<meta name="keywords" content="Setor regulado, Consumidor, Anatel, Telecomunicações, Legislação, Telefonia Fixa, Telefonia Móvel, Celular, Banda Larga, Internet, Operadoras, Serviços de Telecomunicações, Infraestrutura de Telecomunicações, Radioamador, Radiofrequência"/>
+      <meta name="author" content="ANATEL"/>
+      <meta name="robots" content="index, follow"/>
+<!-- Telecomunicações, ANATEL, Regulação -->
+
+        <!--[if lt IE 9]>
+        <script src="/legislacao/templates/padraogoverno01/js/html5shiv.js"></script>
+        <![endif]-->
+		
+		
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/bootstrap/css/bootstrap.min.css" type='text/css'/>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/template-legislacao.css" type='text/css'/>
+                    <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/icones-bmp-institucional.css" type='text/css'/>
+                    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" crossorigin="anonymous">
+        <!--[if lt IE 10]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie.css" />
+        <![endif]-->
+        <!--[if lt IE 9]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie8.css" />
+        <![endif]-->
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie7.css" />
+        <link rel="stylesheet" href="/legislacao/font-awesome/css/font-awesome-ie7.min.css" />
+        <![endif]-->
+            <base href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2020/1382-resolucao-720" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Aprovação, Regulamento, Outorga, Serviço Móvel Especializado, SME, Serviço Telefônico Fixo Comutado, STFC, Serviço de Radioamador, Regulamento do Serviço Móvel Pessoal, SMP, Plano Geral de Autorizações, PGA, Serviço de Rádio do Cidadão, TelefoniaMovel, TelefoniaFixa, SeAC, TvporAssinatura, RecursosPrestacao, ResolucaoVigente" />
+	<meta name="rights" content="Direitos reservados à Anatel. As normas podem ser utilizadas desde que informada a fonte." />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="Aprova o Regulamento Geral de Outorgas." />
+	<title>Anatel - Resolução nº 720, de 10 de fevereiro de 2020</title>
+	<link href="/legislacao/templates/padraogoverno01/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+	<link href="/legislacao/media/com_attachments/css/attachments_hide.css" rel="stylesheet" type="text/css" />
+	<link href="/legislacao/media/com_attachments/css/attachments_list.css" rel="stylesheet" type="text/css" />
+	<link href="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/css/cookie.css?v=143204157" rel="stylesheet" type="text/css" />
+	<link href="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/css/responsive.css?v=387959997" rel="stylesheet" type="text/css" />
+	<link href="/legislacao/media/mod_languages/css/template.css?7acd2053edfb97467c7bf73ffe8ac30f" rel="stylesheet" type="text/css" />
+	<style type="text/css">
+#scrollToTop {
+	cursor: pointer;
+	font-size: 0.9em;
+	position: fixed;
+	text-align: center;
+	z-index: 9999;
+	-webkit-transition: background-color 0.2s ease-in-out;
+	-moz-transition: background-color 0.2s ease-in-out;
+	-ms-transition: background-color 0.2s ease-in-out;
+	-o-transition: background-color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out;
+
+	background: #3e67b1;
+	color: #ffffff;
+	border-radius: 5px;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	right: 20px; bottom: 20px;
+}
+
+#scrollToTop:hover {
+	background: #3a72bc;
+	color: #ffffff;
+}
+
+#scrollToTop > img {
+	display: block;
+	margin: 0 auto;
+}
+	</style>
+	<script type="application/json" class="joomla-script-options new">{"csrf.token":"fc84e08e0c745c553bfcb2c54d7e8025","system.paths":{"root":"\/legislacao","base":"\/legislacao"}}</script>
+	<script src="/legislacao/media/jui/js/jquery.min.js?7acd2053edfb97467c7bf73ffe8ac30f" type="cc7ed307b852664bd9b11daf-text/javascript"></script>
+	<script src="/legislacao/media/jui/js/jquery-noconflict.js?7acd2053edfb97467c7bf73ffe8ac30f" type="cc7ed307b852664bd9b11daf-text/javascript"></script>
+	<script src="/legislacao/media/jui/js/jquery-migrate.min.js?7acd2053edfb97467c7bf73ffe8ac30f" type="cc7ed307b852664bd9b11daf-text/javascript"></script>
+	<script src="/legislacao/media/plg_system_sl_scrolltotop/js/scrolltotop_jq.js" type="cc7ed307b852664bd9b11daf-text/javascript"></script>
+	<script src="/legislacao/media/com_attachments/js/attachments_refresh.js" type="cc7ed307b852664bd9b11daf-text/javascript"></script>
+	<script src="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/js/cookie_script.js?v=2136898597" type="cc7ed307b852664bd9b11daf-text/javascript"></script>
+	<script type="cc7ed307b852664bd9b11daf-text/javascript">
+jQuery(document).ready(function() {
+	jQuery(document.body).SLScrollToTop({
+		'image':		'',
+		'text':			'Voltar ao topo',
+		'title':		'scroll top',
+		'className':	'scrollToTop',
+		'duration':		500
+	});
+});
+
+/*===  EASY GOOGLE ANALYTICS : START TRACKING CODE  ===*/
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-37108821-1']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+/*===  EASY GOOGLE ANALYTICS : END TRACKING CODE  ===*/
+
+	</script>
+
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+	
+                    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,800,700" rel='stylesheet' type='text/css'>
+            	
+	<!--CHAMADA CUSTOMIZACAO -->
+	<script src="/legislacao/templates/padraogoverno01/js/custom-portal.js" type="cc7ed307b852664bd9b11daf-text/javascript"></script>
+	 <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/customizacao-legislacao.css?30062026035059" type='text/css'/>
+	<style type="text/css">@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.2.8/cyrillic/400/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.2.8/vietnamese/400/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.2.8/cyrillic-ext/400/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.2.8/latin/400/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.2.8/latin-ext/400/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}</style>
+</head>
+<body  id="main-navigation">
+
+<a href="#conteudo" accesskey="1">
+<a href="#main-navigation" accesskey="2">
+<a href="#search" accesskey="3">  
+<a href="#portal-footer" accesskey="4">     
+
+    <a class="hide" id="topo" href="#accessibility">Ir direto para menu de acessibilidade.</a>
+    <noscript>
+    <div class="error minor-font">
+        Seu navegador de internet está sem suporte à JavaScript. Por esse motivo algumas funcionalidades do site podem não estar acessíveis.
+    </div>
+    </noscript>
+    <!--[if lt IE 7]><center><strong>Atenção, a versão de seu navegador não é compatível com este sítio. Atualize seu navegador.</strong></center><![endif]-->
+		
+<div class="layout">
+   
+    <header class="super-destaque">
+         <div class="noticia-destaque">
+        <div class="container tmpl-custom">
+            
+            <!-- fim .row-fluid -->
+            <div class="row-fluid">
+                <div id="logo" class="span4">
+				
+                    <a href="https://www.gov.br/mcom" title="Ministério das Comunicações">
+                        
+												
+						<span class="portal-title-1"></span>
+
+                                                        <span class="portal-description">Ministério das Comunicações</span>
+                                
+                        									
+                    </a>
+					
+                </div>
+                  
+                <!-- fim .span4 -->
+                <div id="menulateral" class="span8">
+                    	<nav id="" class="row">
+    	<p class="hidden">Opções de acessibilidade</p>
+    	
+<ul class="pull-right" id="portal-siteactions">
+<li class="item-478 siteaction-outros"><a class="siteaction-outros" href="https://www.gov.br/pt-br/orgaos-do-governo"  accesskey="0" >Órgãos do Governo</a></li><li class="item-479 siteaction-outros"><a class="siteaction-outros" href="http://www.acessoainformacao.gov.br"  accesskey="1" >Acesso à Informação</a></li><li class="item-480 siteaction-outros"><a class="siteaction-outros" href="http://www4.planalto.gov.br/legislacao"  accesskey="2" >Legislação</a></li><li class="item-481 siteaction-outros"><a class="siteaction-outros" href="https://www.gov.br/governodigital/pt-br/acessibilidade-digital"  accesskey="3" >Acessibilidade</a></li><li class="item-260 toggle-contraste"><a class="toggle-contraste" href="#"  accesskey="4" >⠀</a></li><li class="item-263 siteaction-vlibras"><a class="siteaction-vlibras" href="https://acesso.gov.br/"  accesskey="5" >⠀</a></li></ul>
+    </nav>
+		<nav id="" class="row">
+    	<p class="hidden">Seleção de Idioma</p>
+    	<div class="mod-languages">
+
+	<ul class="lang-inline">
+						<li class="lang-active" dir="ltr">
+			<a href="/legislacao/resolucoes/2020/1382-resolucao-720">
+							PT						</a>
+			</li>
+								<li dir="ltr">
+			<a href="/legislacao/en/">
+							EN						</a>
+			</li>
+								<li dir="ltr">
+			<a href="/legislacao/es/">
+							ES						</a>
+			</li>
+				</ul>
+
+</div>
+    </nav>
+	
+                </div>
+                <!-- fim .span8 -->
+            </div>
+            <!-- fim .row-fluid -->
+        </div>
+        <!-- fim div.container -->  
+        <div class="sobre" id="search">
+            <div class="container tmpl-custom">
+                <div class="menu-servicos">
+                    <div class="header-icons">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <a href="https://www.gov.br/anatel/pt-br" title="Agência Nacional de Telecomunicações - Anatel">
+                                            
+                             <h1 class="portal-title corto">Agência Nacional de Telecomunicações</h1>
+                        
+                                            </a>
+                    	<nav >
+        <p class="hide">Pesquisar</p>
+        <nav id="portal-searchbox">
+<form action="/legislacao/resolucoes/2020" method="post" class="pull-right">
+    <fieldset>
+        <legend class="hide">Busca</legend>
+        <h2 class="hidden">Buscar no portal</h2>
+        <div class="input-append">
+            <label for="portal-searchbox-field" class="hide">Busca: </label>
+            <input type="text" id="portal-searchbox-field" class="searchField" placeholder="O que você procura?" title="O que você procura?" name="searchword">       
+            <button type="submit" class="btn searchButton"><span class="hide">Buscar</span><i class="fas fa-search"></i></button>
+        </div>
+        <input type="hidden" name="task" value="search" />
+        <input type="hidden" name="option" value="com_search" />
+        <input type="hidden" name="Itemid" value="254" />
+    </fieldset>
+</form>    </nav>
+	
+                    <div class="header-search">
+                        <a href="/legislacao/component/pesquisa/view-results/module-188"><i class="fas fa-search"></i></a>
+                    </div>
+            </div>
+            <!-- .container -->
+        </div>  
+    </div>
+        <!-- fim .sobre -->
+        <div id="conteudo"></div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container tmpl-custom">
+            	<div class="row-fluid">
+		<section>
+						
+<div class="rastro-navegacao row-flutuante">
+<a title="Voltar para a Página Inicial" href="https://www.gov.br/anatel/pt-br"><i class='fas fa-home'></i></a><span class="separator">&gt;</span><a href="/legislacao/" class="pathway">Legislação</a> <span class="separator">&gt;</span> <a href="/legislacao/resolucoes" class="pathway">Resoluções</a> <span class="separator">&gt;</span> <a href="/legislacao/resolucoes/2020" class="pathway">2020</a> <span class="separator">&gt;</span> <span>Resolução nº 720, de 10 de fevereiro de 2020</span></div>
+		</section>
+	</div>
+	
+            <div class="row-fluid" >
+                                    <!-- Menus Principal -->
+                    <div class="navigation-wrapper">
+                        <div class="container tmpl-custom tmpl-before">
+                            <div id="navigation">
+                                <section id="navigation-section">
+        				
+                                    <!-- <span class="hide">Início do menu principal</span> -->
+        							
+                                    	<nav class="  super-menus">
+		<!-- <h2 >Legislação da Anatel <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2  class="Legislação-da-Anatel"><span>Legislação da Anatel </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-105 active deeper parent"><a href="/legislacao/resolucoes" >Resoluções</a><ul><li class="item-545"><a href="/legislacao/resolucoes/2026" >2026</a></li><li class="item-516"><a href="/legislacao/resolucoes/2025" >2025</a></li><li class="item-501"><a href="/legislacao/resolucoes/2024" >2024</a></li><li class="item-493"><a href="/legislacao/resolucoes/2023" >2023</a></li><li class="item-488"><a href="/legislacao/resolucoes/2022" >2022</a></li><li class="item-438"><a href="/legislacao/resolucoes/2021" >2021</a></li><li class="item-430 current active"><a href="/legislacao/resolucoes/2020" >2020</a></li><li class="item-367"><a href="/legislacao/resolucoes/2019" >2019</a></li><li class="item-312"><a href="/legislacao/resolucoes/2018" >2018</a></li><li class="item-299"><a href="/legislacao/resolucoes/2017" >2017</a></li><li class="item-294"><a href="/legislacao/resolucoes/2016" >2016</a></li><li class="item-255"><a href="/legislacao/resolucoes/2015" >2015</a></li><li class="item-226"><a href="/legislacao/resolucoes/2014" >2014</a></li><li class="item-164"><a href="/legislacao/resolucoes/2013" >2013</a></li><li class="item-165"><a href="/legislacao/resolucoes/2012" >2012</a></li><li class="item-166"><a href="/legislacao/resolucoes/2011" >2011</a></li><li class="item-167"><a href="/legislacao/resolucoes/2010" >2010</a></li><li class="item-168"><a href="/legislacao/resolucoes/2009" >2009</a></li><li class="item-169"><a href="/legislacao/resolucoes/2008" >2008</a></li><li class="item-170"><a href="/legislacao/resolucoes/2007" >2007</a></li><li class="item-171"><a href="/legislacao/resolucoes/2006" >2006</a></li><li class="item-172"><a href="/legislacao/resolucoes/2005" >2005</a></li><li class="item-173"><a href="/legislacao/resolucoes/2004" >2004</a></li><li class="item-174"><a href="/legislacao/resolucoes/2003" >2003</a></li><li class="item-175"><a href="/legislacao/resolucoes/2002" >2002</a></li><li class="item-176"><a href="/legislacao/resolucoes/2001" >2001</a></li><li class="item-177"><a href="/legislacao/resolucoes/2000" >2000</a></li><li class="item-178"><a href="/legislacao/resolucoes/1999" >1999</a></li><li class="item-179"><a href="/legislacao/resolucoes/1998" >1998</a></li><li class="item-180"><a href="/legislacao/resolucoes/1997" >1997</a></li><li class="item-181"><a href="/legislacao/resolucoes/resolucoes-conjuntas" >Resoluções Conjuntas</a></li></ul></li><li class="item-118"><a href="/legislacao/sumulas" >Súmulas</a></li><li class="item-182"><a href="/legislacao/portarias-de-delegacao" >Portarias de Delegação</a></li><li class="item-319 parent"><a href="/legislacao/portarias-normativas" >Portarias Normativas</a></li><li class="item-435"><a href="/legislacao/resolucoes-internas" >Resoluções Internas</a></li><li class="item-264"><a href="/legislacao/metodologias-de-calculo-de-multa" >Metodologias de Cálculo de Multa</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Atos da Anatel <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2  class=""><span>Atos da Anatel </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-342 parent"><a href="/legislacao/atos-de-certificacao-de-produtos" >Atos de Certificação de Produtos</a></li><li class="item-369 parent"><a class="menu-normas" href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro" >Atos de Requisitos Técnicos de Gestão do Espectro</a></li><li class="item-483"><a href="/legislacao/atos-de-numeracao" >Atos de Numeração</a></li><li class="item-543"><a href="/legislacao/atos-complementares-de-regulacao" >Atos Complementares de Regulação</a></li><li class="item-547"><a href="/legislacao/atos-de-requisitos-operacionais-de-outorga-e-licenciamento" >Atos de Requisitos Operacionais de Outorga e Licenciamento</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Demais Normas <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2  class=""><span>Demais Normas </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-106"><a href="/legislacao/leis" >Leis</a></li><li class="item-107"><a href="/legislacao/decretos" >Decretos</a></li><li class="item-108"><a href="/legislacao/normas-do-mc" >Normas do MC</a></li><li class="item-293"><a href="/legislacao/instruções-do-dentel" >Instruções do Dentel</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Fiscalização <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2  class=""><span>Fiscalização </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-203"><a href="/legislacao/procedimentos-de-fiscalizacao" >Procedimentos de Fiscalização</a></li><li class="item-202"><a href="/legislacao/instrucoes-de-fiscalizacao" >Instruções de Fiscalização</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Glossário <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2  class=""><span>Glossário </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-256"><a href="/legislacao/glossario-anatel" >Termos de Telecomunicações</a></li></ul>
+	</nav>
+	
+                                    <span class="hide">Fim do menu principal</span>
+                                </section>
+                            </div>
+                        </div>    
+                    </div>   
+                    <!-- fim Menus Principal -->
+                
+                <div id="content" class="span9  internas">
+                    <section id="content-section">
+                    
+                    <div class="banner-destaque">
+                        
+                    </div>    
+                        <!-- <span class="hide">Início do conteúdo da página</span> -->
+
+                                    
+                    <!-- Chamada da posição paginas de Serviços -->
+                     
+
+                    <!--Fim da chamada de paginas de Serviços -->    
+
+                                                
+                        <!-- INÍCIO - Menu de tradução ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                         <!-- Local: template - html - mod_menu (menutraducao.php) -->
+                        <!-- FINAL - Menu de Tradução +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        
+                        <!-- INÍCIO - Chapéu do artigo ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        <!-- <div class="row-fluid">
+                            <p class="section" property="rnews:articleSection">Ciência e Tecnologia</p>
+                        </div> -->
+                        <!-- FINAL - Chapéu do artigo +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+                        <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        <!-- Local: template - html - mod_menu (default.php) -->
+                        <!--jdoc:include type="modules" name="modulo-contexto" />
+                        <!-- FINAL - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+                        
+                                                                                        
+                                <div class="row-fluid module">
+                                                                                    <!-- Escreve conteúdo das páginas internas -->
+                                                
+                                                ﻿﻿﻿<div class="content-header-options-1 row-fluid redes-sociais">
+
+		<div class="btns-social-like span5 hide">
+															<style>
+    @media print {
+      footer, #scrollToTop, #scrollToTop:hover, .icon-chevron-up:before, .icon-list:before, main .container #navigation .mainmenu-toggle, footer .footer-ferramenta, footer .footer-logos, #content.internas .below-content .line, main div.rastro-navegacao, #barra-brasil, header, #content.internas .content-header-options-1 .btns-social-like {
+        display: none !important;
+      }
+      img.access-button {
+      display: none;
+      }
+      img.pop-up {
+      display: none;
+      }
+      a:after, a[href^="javascript:"]:after, a[href^="#"]:after { 
+        display: none;
+      }
+    }
+
+    /* Estilos para os botões fixos */
+    .fixed-buttons {
+      position: fixed;
+      top: 36%;
+      left: 20px;
+      display: flex;
+      flex-direction: column;
+      z-index: 1000; /* Garante que os botões fiquem no topo */
+    }
+
+    .fixed-buttons div, .fixed-buttons p {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    /* Cor de botão ativa para o botão de compilação */
+    .botao-compila.active {
+      background-color: #4CAF50; /* Verde indica ativo */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Contêiner dos botões fixos -->
+  <div class="fixed-buttons">
+    <div class="facebook" title="Compartilhar no Facebook">
+      <span class="facebook-share" data-js="facebook-share"><i class="fab fa-facebook-f"></i></span>
+    </div>
+
+    <div class="twitter" title="Compartilhar no Twitter">
+      <span class="twitter-share-button" data-lang="pt" data-js="twitter-share"><i class="fab fa-twitter"></i></span>
+    </div>
+
+    <p class="botao-imprime" title="Imprimir">
+      <a href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.print();" data-cf-modified-cc7ed307b852664bd9b11daf-=""><i class="fas fa-print"></i></a>
+    </p>
+
+    <p class="botao-compila" title="Ativar Texto Compilado">
+      <a href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.compila(); return false;" data-cf-modified-cc7ed307b852664bd9b11daf-=""><i class="fas fa-file-alt"></i></a>
+    </p>
+  </div>
+
+  <script type="cc7ed307b852664bd9b11daf-text/javascript">
+    // Função de compartilhamento no Facebook
+    var facebookShare = document.querySelector('[data-js="facebook-share"]');
+    facebookShare.onclick = function(e) {
+      e.preventDefault();
+      var facebookWindow = window.open('https://www.facebook.com/sharer/sharer.php?u=' + document.URL, 'facebook-popup','height=350, width=600, left='+(window.innerWidth-600)/2+', top='+(window.innerHeight-600)/2);
+      if(facebookWindow.focus) { facebookWindow.focus(); }
+      return false;
+    }
+
+    // Função de compartilhamento no Twitter
+    var twitterShare = document.querySelector('[data-js="twitter-share"]');
+    twitterShare.onclick = function(e) {
+      e.preventDefault();
+      var twitterWindow = window.open('https://twitter.com/share?url=' + document.URL, 'twitter-popup','height=350, width=600, left='+(window.innerWidth-600)/2+', top='+(window.innerHeight-600)/2);
+      if(twitterWindow.focus) { twitterWindow.focus(); }
+      return false;
+    }
+
+    // Função que ativa ou desativa a remoção dos elementos tachados
+    window.compila = function() {
+      var elems = document.body.getElementsByTagName('*');
+      var active = document.body.classList.toggle('compiled'); // Alterna o estado
+
+      for (var i = 0; i < elems.length; i++) {
+        var elemStyle = window.getComputedStyle(elems[i]);
+        if (elemStyle.getPropertyValue('text-decoration').startsWith('line-through')) {
+          elems[i].style.display = active ? 'none' : ''; // Oculta ou restaura o elemento
+        }
+      }
+
+      // Atualiza o título e a cor do botão conforme o estado atual
+      var botaoCompila = document.querySelector('.botao-compila');
+      botaoCompila.title = active ? 'Desativar Texto Compilado' : 'Ativar Texto Compilado';
+      botaoCompila.classList.toggle('active', active);
+
+      // Adiciona ou remove o hash #compilado na URL
+      if (active) {
+        window.location.hash = 'compilado';
+      } else {
+        history.pushState("", document.title, window.location.pathname + window.location.search);
+      }
+    }
+
+    // Verifica se a URL contém #compilado ao carregar a página
+    document.addEventListener("DOMContentLoaded", function() {
+      if (window.location.hash === '#compilado') {
+        window.compila(); // Ativa a compilação automaticamente
+      }
+    });
+  </script>					<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="cc7ed307b852664bd9b11daf-|49" defer></script></div>		
+		
+
+</div>
+
+<div class="item-page">
+
+
+
+	
+
+
+	<h1 class="documentFirstHeading">
+			Resolução nº 720, de 10 de fevereiro de 2020		</h1>
+
+	<ul class="actions">
+					</ul>
+
+
+
+<div class="content-header-options-1 row-fluid">
+	<div class="documentByLine span7">
+				
+			
+
+					<span class="documentPublished">
+				Publicado: Quarta, 12 Fevereiro 2020 14:16			</span>
+			<span class="separator">|</span>			
+
+					<span class="documentModified">
+				Última atualização: Quarta, 20 Maio 2026 12:03			</span>
+			<span class="separator">|</span>			
+		
+					<span class="documentHits">
+				Acessos: 116115			</span>
+					
+		
+	</div>
+</div>
+<!-- fim .content-header-options-1 -->
+
+
+
+	
+		<table style="width: 98%;" border="0" cellspacing="2" cellpadding="20" align="center">
+<tbody>
+<tr>
+<td style="padding-right: 25px; width: 50%; text-align: left;" valign="middle"> </td>
+<td style="width: 50%; text-align: justify;" valign="middle">
+<p style="text-align: justify;">Aprova o Regulamento Geral de Outorgas.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;"> </p>
+<p style="text-align: justify;"><span style="color: #ff0000;"><strong>Observação</strong></span>: Este texto não substitui o publicado no DOU de <a title="Acesse o DOU" href="http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=12/02/2020&amp;jornal=515&amp;pagina=115">12/2/2020</a>, retificada em <a title="Acesse o DOU" href="http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=01/06/2020&amp;jornal=515&amp;pagina=18">1/6/2020</a>.</p>
+<p style="text-align: justify;"> </p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"><b>O CONSELHO DIRETOR DA AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES</b>, no uso das atribuições que lhe foram conferidas pelo <a title="Acesse o Aritgo" href="https://www.anatel.gov.br/legislacao/leis/2-lei-9472#art22">art. 22</a> da Lei nº 9.472, de 16 de julho de 1997, e pelo <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/decretos/3-decreto-2338#art35">art. 35 </a>do Regulamento da Agência Nacional de Telecomunicações, aprovado pelo Decreto nº 2.338, de 7 de outubro de 1997,</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">CONSIDERANDO os comentários recebidos decorrentes da <a title="Acesse a Consulta Pública" href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_documento_consulta_externa.php?eEP-wqk1skrd8hSlk5Z3rN4EVg9uLJqrLYJw_9INcO7SWKryJ4eitp29LGiniwo6BvkbitqUTEjfvWLoiyPVnEjuIY9J1zNp24Z_6OLMNPzsFUpNXhzzhxVvJA5OJYq3">Consulta Pública nº 38, de 4 de outubro de 2018</a>, publicada no Diário Oficial da União do dia 8 de outubro de 2018;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">CONSIDERANDO a deliberação tomada em sua <a title="Acesse a Pauta da Reunião" href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_documento_consulta_externa.php?eEP-wqk1skrd8hSlk5Z3rN4EVg9uLJqrLYJw_9INcO5XXR6Gq7_znHwpCfLVZz0mnMkmp4LTjVW7A1LbxMkqm9Tsk9K2sj02PPvIMeTyORwxiuEnkeUbnOxiAGJnAqMe">Reunião nº 881, de 6 de fevereiro de 2020</a>;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">CONSIDERANDO o constante dos autos do <a title="Acesse o SEI" href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_processo_exibir.php?5gYoR1KAsC6DjRCbPhmMOOVg9zRBSU6KM_dMM2dffV6uXABkpM3AC_FvsJjJLZawJGpS7XJ2Cix36pBUfTFiDS4nr4vxMWAXTYYwsiCOe_VworKmg5ZOVB9tIm5_j5Ye">Processo nº 53500.014706/2016-50;</a></p>
+<p class="Texto_Espaco_Duplo_Recuo_Primeira_Linha resolve">RESOLVE:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art1"></a>Art. 1º Aprovar o Regulamento Geral de Outorgas, na forma do <a title="Acesse o Regulamento" href="#AnexoI">Anexo</a> a esta Resolução.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art2"></a><span style="text-decoration: line-through;">Art. 2º O <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/1998/34-resolucao-73#art53Anexo">art. 53 </a>do Regulamento dos Serviços de Telecomunicações, aprovado pela Resolução nº 73, de 25 de novembro de 1998, passa a vigorar com a seguinte redação:</span> <a title="Acesse a Resolução" href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2022-resolucao-777">(Revogado pela Resolução Anatel nº 777, de 28 de abril de 2025)</a></p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;"><span style="text-decoration: line-through;">“Art. 53. A exploração de serviço no regime privado dependerá de prévia autorização e de notificação à Agência pela interessada, nos termos da regulamentação.</span></p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;"><span style="text-decoration: line-through;">Parágrafo único. A regulamentação disciplinará as hipóteses de dispensa da autorização, em conformidade com o § 2º do <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/leis/2-lei-9472#art131">art. 131</a> da Lei nº 9.472, de 16 de julho de 1997.” (NR)</span></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art3"></a><span style="text-decoration: line-through;">Art. 3º O<a title="Acesse o Artigo" href="/legislacao/resolucoes/2005/210-resolucao-404#art6anexo"> art. 6º</a> do Regulamento do Serviço Móvel Especializado - SME, aprovado pela Resolução nº 404, de 5 de maio de 2005, passa a vigorar com a seguinte redação:</span> <a title="Acesse a Resolução" href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2022-resolucao-777">(Revogado pela Resolução Anatel nº 777, de 28 de abril de 2025)</a></p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;"><span style="text-decoration: line-through;">“Art. 6º O SME é prestado em regime privado, mediante autorização, observado o disposto no Regulamento Geral de Outorgas, aprovado pela <a title="Acesse a Resolução" href="https://www.anatel.gov.br/legislacao/resolucoes/2020/1382-resolucao-720">Resolução nº 720, de 10 de fevereiro de 2020</a>.” (NR)</span></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art4"></a><span style="text-decoration: line-through;">Art. 4º Incluir o<a title="Acesse o Artigo" href="/legislacao/resolucoes/2005/210-resolucao-404#art85anexo"> art. 85</a> ao Regulamento do Serviço Móvel Especializado, aprovado pela Resolução nº 404, de 5 de maio de 2005, com a seguinte redação:</span> <a title="Acesse a Resolução" href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2022-resolucao-777">(Revogado pela Resolução Anatel nº 777, de 28 de abril de 2025)</a></p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;"><span style="text-decoration: line-through;">“Art. 85. A transferência da autorização para exploração de SME bem como as modificações societárias que importem ou não transferência de controle da autorizada observarão o disposto no Regulamento Geral de Outorgas, aprovado pela <a title="Acesse a Resolução" href="https://www.anatel.gov.br/legislacao/resolucoes/2020/1382-resolucao-720">Resolução nº 720, de 10 de fevereiro de 2020</a>.”</span></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art5"></a><span style="text-decoration: line-through;">Art. 5º O <strong>caput</strong> do<a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/20-2005/7-resolucao-426#art10A"> art. 10-A </a>do Regulamento do Serviço Telefônico Fixo Comutado – STFC, aprovado pela Resolução nº 426, de 9 de dezembro de 2005, passa a vigorar com a seguinte redação:</span> <a title="Acesse a Resolução" href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2022-resolucao-777">(Revogado pela Resolução Anatel nº 777, de 28 de abril de 2025)</a></p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;"><span style="text-decoration: line-through;">“Art. 10-A. A exploração do STFC em regime privado depende de prévia autorização, nos termos e condições estabelecidos no Regulamento Geral de Outorgas, aprovado pela <a title="Acesse a Resolução" href="https://www.anatel.gov.br/legislacao/resolucoes/2020/1382-resolucao-720">Resolução nº 720, de 10 de fevereiro de 2020</a>.” (NR)</span></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art6"></a><span style="text-decoration: line-through;">Art. 6º O <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/20-2005/7-resolucao-426#art10H">art. 10-H </a>do Regulamento do Serviço Telefônico Fixo Comutado – STFC, aprovado pela Resolução nº 426, de 9 de dezembro de 2005, passa a vigorar com a seguinte redação:</span> <a title="Acesse a Resolução" href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2022-resolucao-777">(Revogado pela Resolução Anatel nº 777, de 28 de abril de 2025)</a></p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;"><span style="text-decoration: line-through;">“Art. 10-H. A transferência da autorização para exploração do serviço bem como as modificações societárias que importem ou não transferência de controle da autorizada observarão o disposto no Regulamento Geral de Outorgas, aprovado pela <a title="Acesse a Resolução" href="https://www.anatel.gov.br/legislacao/resolucoes/2020/1382-resolucao-720">Resolução nº 720, de 10 de fevereiro de 2020</a>.” (NR)</span></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art7"></a><span style="text-decoration: line-through;">Art. 7º O <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/21-2006/93-resolucao-449#art6">art. 6º</a> do Regulamento do Serviço de Radioamador, aprovado pela Resolução nº 449, de 17 de novembro de 2006, passa a vigorar com a seguinte redação:</span> <a title="Acesse a Resolução" href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2022-resolucao-777">(Revogado pela Resolução Anatel nº 777, de 28 de abril de 2025)</a></p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;"><span style="text-decoration: line-through;">“Art. 6º A autorização para execução do Serviço de Radioamador deverá atender ao disposto no Regulamento Geral de Outorgas, aprovado pela <a title="Acesse a Resolução" href="https://www.anatel.gov.br/legislacao/resolucoes/2020/1382-resolucao-720">Resolução nº 720, de 10 de fevereiro de 2020.</a>” (NR)</span></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art8"></a><span style="text-decoration: line-through;">Art. 8º O <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2007/9-resolucao-477#art1Anexo">art. 1º</a> do Regulamento do Serviço Móvel Pessoal – SMP, aprovado pela Resolução nº 477, de 7 de agosto de 2007, passa a vigorar acrescido do seguinte inciso:</span> <a title="Acesse a Resolução" href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2022-resolucao-777">(Revogado pela Resolução Anatel nº 777, de 28 de abril de 2025)</a></p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;"><span style="text-decoration: line-through;">“XVII - Regulamento Geral de Outorgas, aprovado pela <a title="Acesse a Resolução" href="https://www.anatel.gov.br/legislacao/resolucoes/2020/1382-resolucao-720">Resolução nº 720, de 10 de fevereiro de 2020</a>.”</span></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art9"></a><span style="text-decoration: line-through;">Art. 9º O<a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2007/9-resolucao-477#art111Anexo"> art. 111</a> do Regulamento do Serviço Móvel Pessoal – SMP, aprovado pela Resolução nº 477, de 7 de agosto de 2007, passa a vigorar com a seguinte redação:</span> <a title="Acesse a Resolução" href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2022-resolucao-777">(Revogado pela Resolução Anatel nº 777, de 28 de abril de 2025)</a></p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;"><span style="text-decoration: line-through;">“Art. 111. O processo de expedição de autorização para exploração do SMP obedece ao disposto no Plano Geral de Autorizações do SMP - PGA-SMP e no Regulamento Geral de Outorgas, aprovado pela<a title="Acesse a Resolução" href="https://www.anatel.gov.br/legislacao/resolucoes/2020/1382-resolucao-720"> Resolução nº 720, de 10 de fevereiro de 2020</a>, bem como no Regulamento de Licitação para Concessão, Permissão e Autorização de Serviço de Telecomunicações e de Uso de Radiofrequência, aprovado pela <a title="Acesse a Resolução" href="https://www.anatel.gov.br/legislacao/resolucoes/13-1998/164-resolucao-65">Resolução nº 65, de 29 de outubro de 1998</a>.” (NR)</span></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art10"></a><span style="text-decoration: line-through;">Art. 10. O<a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2002/267-resolucao-321#art9anexo"> art. 9º</a> do Plano Geral de Autorizações do Serviço Móvel Pessoal, aprovado pela Resolução nº 321, de 27 de setembro de 2002, passa a vigorar com a seguinte redação:</span> <a title="Acesse a Resolução" href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2022-resolucao-777">(Revogado pela Resolução Anatel nº 777, de 28 de abril de 2025)</a></p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;"><span style="text-decoration: line-through;">“Art. 9º. A transferência e a consolidação da autorização para exploração de SMP, bem como as modificações societárias que importem ou não transferência de controle da autorizada, observarão o disposto no Regulamento Geral de Outorgas, aprovado pela <a title="Acesse a Resolução" href="https://www.anatel.gov.br/legislacao/resolucoes/2020/1382-resolucao-720">Resolução nº 720, de 10 de fevereiro de 2020</a>.” (NR)</span></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art11"></a><span style="text-decoration: line-through;">Art. 11. O <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2010/46-resolucao-550#art42Anexo">art. 42</a> do Regulamento do Serviço Móvel Pessoal por meio de Rede Virtual, aprovado pela Resolução nº 550, de 22 de novembro de 2010, passa a vigorar com a seguinte redação:</span> <a title="Acesse a Resolução" href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2022-resolucao-777">(Revogado pela Resolução Anatel nº 777, de 28 de abril de 2025)</a></p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;"><span style="text-decoration: line-through;">“Art. 42. Quando do requerimento de autorização para Prestação do SMP por meio de Rede Virtual, a pretendente deve apresentar, além do contrato de compartilhamento de uso de rede com Prestadora Origem, a documentação prevista no Regulamento Geral de Outorgas, aprovado pela <a title="Acesse a Resolução" href="https://www.anatel.gov.br/legislacao/resolucoes/2020/1382-resolucao-720">Resolução nº 720, de 10 de fevereiro de 2020</a>, para o requerimento de autorização envolvendo serviço de interesse coletivo.”</span></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art12"></a><span style="text-decoration: line-through;">Art. 12. Incluir o<a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2010/46-resolucao-550#art46Anexo"> art. 46-A </a>ao Regulamento do Serviço Móvel Pessoal por meio de Rede Virtual, aprovado pela Resolução nº 550, de 22 de novembro de 2010, com a seguinte redação:</span> <a title="Acesse a Resolução" href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2022-resolucao-777">(Revogado pela Resolução Anatel nº 777, de 28 de abril de 2025)</a></p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;"><span style="text-decoration: line-through;">“Art. 46-A. A transferência da autorização para exploração de SMP por meio de Rede Virtual, bem como as modificações societárias que importem ou não transferência de controle da autorizada, observarão o disposto no Regulamento Geral de Outorgas, aprovado pela <a title="Acesse a Resolução" href="https://www.anatel.gov.br/legislacao/resolucoes/2020/1382-resolucao-720">Resolução nº 720, de 10 de fevereiro de 2020</a>.”</span></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art13"></a><span style="text-decoration: line-through;">Art. 13. Incluir parágrafo único ao <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2011/77-resolucao-578#art3Anexo">art. 3º </a>do Regulamento do Serviço de Rádio do Cidadão, aprovado pela Resolução nº 578, de 30 de novembro de 2011, com a seguinte redação:</span> <a title="Acesse a Resolução" href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2022-resolucao-777">(Revogado pela Resolução Anatel nº 777, de 28 de abril de 2025)</a></p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;"><span style="text-decoration: line-through;">"Art. 3º ...............................</span></p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;"><span style="text-decoration: line-through;">Parágrafo Único. Caracterizam-se como equipamentos de radiocomunicação de radiação restrita todos aqueles que compõem o sistema de comunicação para operação na faixa definida no <strong>caput</strong> e que operam em conformidade com o disposto no Regulamento Sobre Canalização e Condições de Uso de Radiofrequências da faixa de 27 MHz pelo Serviço Rádio do Cidadão, aprovado pela <a title="Acesse a Resolução" href="https://www.anatel.gov.br/legislacao/resolucoes/2006/325-resolucao-444">Resolução nº 444, de 28 de setembro de 2006</a>." (NR)</span></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art14"></a><span style="text-decoration: line-through;">Art. 14. O<a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2011/77-resolucao-578#art7Anexo"> art. 7º</a> do Regulamento do Serviço Rádio do Cidadão, aprovado pela Resolução nº 578, de 30 de novembro de 2011, passa a vigorar com a seguinte redação:</span> <a title="Acesse a Resolução" href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2022-resolucao-777">(Revogado pela Resolução Anatel nº 777, de 28 de abril de 2025)</a></p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;"><span style="text-decoration: line-through;">“Art. 7º A autorização para execução do Serviço Rádio do Cidadão observará o disposto no Regulamento Geral de Outorgas, aprovado pela <a title="Acesse a Resolução" href="https://www.anatel.gov.br/legislacao/resolucoes/2020/1382-resolucao-720">Resolução nº 720, de 10 de fevereiro de 2020</a>.” (NR)</span></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art15"></a><span style="text-decoration: line-through;">Art. 15. O <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2012/139-resolucao-581#art10Anexo">art. 10</a> do Regulamento do Serviço de Acesso Condicionado (SeAC), aprovado pela Resolução nº 581, de 26 de março de 2012, passa a vigorar com a seguinte redação:</span> <a title="Acesse a Resolução" href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2022-resolucao-777">(Revogado pela Resolução Anatel nº 777, de 28 de abril de 2025)</a></p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;"><span style="text-decoration: line-through;">“Art. 10. A prestação do SeAC depende de prévia autorização da Anatel, nos termos e condições estabelecidos no Regulamento Geral de Outorgas, aprovado pela R<a title="Acesse a Resolução" href="https://www.anatel.gov.br/legislacao/resolucoes/2020/1382-resolucao-720">esolução nº 720, de 10 de fevereiro de 2020</a>.” (NR)</span></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art16"></a><span style="text-decoration: line-through;">Art. 16. O <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2012/139-resolucao-581#art30Anexo">art. 30 </a>do Regulamento do Serviço de Acesso Condicionado (SeAC), aprovado pela Resolução nº 581, de 26 de março de 2012, passa a vigorar com a seguinte redação:</span> <a title="Acesse a Resolução" href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2022-resolucao-777">(Revogado pela Resolução Anatel nº 777, de 28 de abril de 2025)</a></p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;"><span style="text-decoration: line-through;">“Art. 30. A transferência da autorização para exploração de SeAC, bem como as modificações societárias que importem ou não transferência de controle da autorizada, observarão o disposto no Regulamento Geral de Outorgas, aprovado pela <a title="Acesse a Resolução" href="https://www.anatel.gov.br/legislacao/resolucoes/2020/1382-resolucao-720">Resolução nº 720, de 10 de fevereiro de 2020</a>.” (NR)</span></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art17"></a><span style="text-decoration: line-through;">Art. 17. O <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2012/139-resolucao-581#art46Anexo">art. 46 </a>do Regulamento do Serviço de Acesso Condicionado (SeAC), aprovado pela Resolução nº 581, de 26 de março de 2012, passa a vigorar com a seguinte redação:</span> <a title="Acesse a Resolução" href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2022-resolucao-777">(Revogado pela Resolução Anatel nº 777, de 28 de abril de 2025)</a></p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;"><span style="text-decoration: line-through;">“Art. 46. A autorização para prestação do serviço extingue-se por cassação, caducidade, decaimento, renúncia ou anulação, observando-se o disposto nos arts. <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/leis/2-lei-9472#art138">138</a> a <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/leis/2-lei-9472#art144">144 </a>da Lei nº 9.472, de 16 de julho de 1997, e no Regulamento Geral de Outorgas, aprovado pela <a title="Acesse a Resolução" href="https://www.anatel.gov.br/legislacao/resolucoes/2020/1382-resolucao-720">Resolução nº 720, de 10 de fevereiro de 2020</a>.” (NR)</span></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art18"></a><span style="text-decoration: line-through;">Art. 18. O<a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2013/465-resolucao-614#art10Anexo"> art. 10 </a>do Regulamento do Serviço de Comunicação Multimídia, aprovado pela Resolução nº 614, de 28 de maio de 2013, passa a vigorar com a seguinte redação:</span> <a title="Acesse a Resolução" href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2022-resolucao-777">(Revogado pela Resolução Anatel nº 777, de 28 de abril de 2025)</a></p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;"><span style="text-decoration: line-through;">“Art. 10. A prestação do SCM depende de prévia autorização da Anatel, nos termos e condições estabelecidos no Regulamento Geral de Outorgas, aprovado pela <a title="Acesse a Resolução" href="https://www.anatel.gov.br/legislacao/resolucoes/2020/1382-resolucao-720">Resolução nº 720, de 10 de fevereiro de 2020</a>.” (NR)</span></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art19"></a><span style="text-decoration: line-through;">Art. 19. O <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2013/465-resolucao-614#art17Anexo">art. 17 </a>do Regulamento do Serviço de Comunicação Multimídia, aprovado pela Resolução nº 614, de 28 de maio de 2013, passa a vigorar com a seguinte redação:</span> <a title="Acesse a Resolução" href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2022-resolucao-777">(Revogado pela Resolução Anatel nº 777, de 28 de abril de 2025)</a></p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;"><span style="text-decoration: line-through;">“Art. 17. A autorização para exploração do SCM extingue-se por cassação, caducidade, decaimento, renúncia ou anulação, observando-se o disposto nos arts. <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/leis/2-lei-9472#art138">138</a> a <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/leis/2-lei-9472#art144">144</a> da Lei nº 9.472, de 16 de julho de 1997, e no Regulamento Geral de Outorgas, aprovado pela <a title="Acesse a Resolução" href="https://www.anatel.gov.br/legislacao/resolucoes/2020/1382-resolucao-720">Resolução nº 720, de 10 de fevereiro de 2020</a>.” (NR)</span></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art20"></a><span style="text-decoration: line-through;">Art. 20. O <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2013/465-resolucao-614#art29Anexo">art. 29</a> do Regulamento do Serviço de Comunicação Multimídia, aprovado pela Resolução nº 614, de 28 de maio de 2013, passa a vigorar com a seguinte redação:</span> <a title="Acesse a Resolução" href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2022-resolucao-777">(Revogado pela Resolução Anatel nº 777, de 28 de abril de 2025)</a></p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;"><span style="text-decoration: line-through;">“Art. 29. A transferência da autorização para exploração de SCM, bem como as modificações societárias que importem ou não transferência de controle da autorizada, observarão o disposto no Regulamento Geral de Outorgas, aprovado pela <a title="Acesse a Resolução" href="https://www.anatel.gov.br/legislacao/resolucoes/2020/1382-resolucao-720">Resolução nº 720, de 10 de fevereiro de 2020</a>.” (NR)</span></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art21"></a><span style="text-decoration: line-through;">Art. 21. O<a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2013/480-resolucao-617#art5anexoI"> art. 5º</a> do Regulamento do Serviço Limitado Privado, aprovado pela Resolução nº 617, de 19 de junho de 2013, passa a vigorar com a seguinte redação:</span> <a title="Acesse a Resolução" href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2022-resolucao-777">(Revogado pela Resolução Anatel nº 777, de 28 de abril de 2025)</a></p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;"><span style="text-decoration: line-through;">“Art. 5º. A exploração do SLP depende de prévia autorização da Anatel, nos termos e condições estabelecidos no Regulamento Geral de Outorgas, aprovado pela<a title="Acesse a Resolução" href="https://www.anatel.gov.br/legislacao/resolucoes/2020/1382-resolucao-720"> Resolução nº 720, de 10 de fevereiro de 2020</a>.” (NR)</span></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art22"></a><span style="text-decoration: line-through;">Art. 22. O <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2013/480-resolucao-617#art10anexoI">art. 10</a> do Regulamento do Serviço Limitado Privado, aprovado pela Resolução nº 617, de 19 de junho de 2013, passa a vigorar acrescido do seguinte parágrafo único:</span></p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;"><span style="text-decoration: line-through;">“Art. 10. ....................................................................</span></p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;"><span style="text-decoration: line-through;">..................................................................................</span></p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;"><span style="text-decoration: line-through;">Parágrafo único. No caso referido no <strong>caput</strong>, a descrição técnica do sistema proposto deverá incluir as características da rede de satélite, bem como as faixas de radiofrequências propostas para utilização.”</span> <a href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2024/1979-resolucao-769">(Revogado pela Resolução n769, de 30 de setembro de 2024)</a></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art23"></a>Art. 23. O <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2013/480-resolucao-617#art48anexoI">art. 48</a> do Regulamento do Serviço Limitado Privado, aprovado pela Resolução nº 617, de 19 de junho de 2013, passa a vigorar com a seguinte redação:</p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;">“Art. 48. A transferência da autorização para exploração de SLP, bem como as modificações societárias que importem ou não transferência de controle da autorizada, observarão o disposto no Regulamento Geral de Outorgas, aprovado pela<a title="Acesse a Resolução" href="https://www.anatel.gov.br/legislacao/resolucoes/2020/1382-resolucao-720"> Resolução nº 720, de 10 de fevereiro de 2020</a>.” (NR)</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art24"></a>Art. 24. O <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2013/480-resolucao-617#art51anexoI">art. 51</a> do Regulamento do Serviço Limitado Privado, aprovado pela Resolução nº 617, de 19 de junho de 2013, passa a vigorar com a seguinte redação:</p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;">“Art. 51. A autorização para exploração do SLP extingue-se por cassação, caducidade, decaimento, renúncia ou anulação, observando-se o disposto nos arts. <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/leis/2-lei-9472#art138">138</a> a <a title="Acesse a Resolução" href="https://www.anatel.gov.br/legislacao/leis/2-lei-9472#art144">144</a> da Lei nº 9.472, de 16 de julho de 1997, e no Regulamento Geral de Outorgas, aprovado pela <a title="Acesse a Resolução" href="https://www.anatel.gov.br/legislacao/resolucoes/2020/1382-resolucao-720">Resolução nº 720, de 10 de fevereiro de 2020</a>.” (NR)</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art25"></a>Art. 25. O <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2015/791-resolucao-651#art6Anexo">art. 6º </a>do Regulamento do Serviço Limitado Móvel Aeronáutico e do Serviço Limitado Móvel Marítimo, aprovado pela Resolução nº 651, de 13 de abril de 2015, passa a vigorar com a seguinte redação:</p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;">“Art. 6º A exploração do SLMA e do SLMM depende de prévia autorização da Anatel, nos termos e condições estabelecidos no Regulamento Geral de Outorgas, aprovado pela <a title="Acesse a Resolução" href="https://www.anatel.gov.br/legislacao/resolucoes/2020/1382-resolucao-720">Resolução nº 720, de 10 de fevereiro de 2020</a>.” (NR)</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art26"></a>Art. 26. O <strong>caput</strong> do <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2015/791-resolucao-651#art7Anexo">art. 7º</a> do Regulamento do Serviço Limitado Móvel Aeronáutico e do Serviço Limitado Móvel Marítimo, aprovado pela Resolução nº 651, de 13 de abril de 2015, passa a vigorar com a seguinte redação:</p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;"> “Art. 7º Sem prejuízo do disposto no Regulamento Geral de Outorgas, aprovado pela <a title="Acesse a Resolução" href="https://www.anatel.gov.br/legislacao/resolucoes/2020/1382-resolucao-720">Resolução nº 720, de 10 de fevereiro de 2020</a>, a Autorização para a Exploração do SLMA e do SLMM será expedida pela Anatel:</p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;">.................................................................................” (NR)</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art27"></a>Art. 27. O <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2015/791-resolucao-651#art38Anexo">art. 38</a> do Regulamento do Serviço Limitado Móvel Aeronáutico e do Serviço Limitado Móvel Marítimo, aprovado pela Resolução nº 651, de 13 de abril de 2015, passa a vigorar com a seguinte redação:</p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;"> “Art. 38. A transferência da autorização para exploração do serviço, bem como as modificações societárias que importem ou não transferência de controle da autorizada, observará o disposto no Regulamento Geral de Outorgas, aprovado pela <a title="Acesse a Resolução" href="https://www.anatel.gov.br/legislacao/resolucoes/2020/1382-resolucao-720">Resolução nº 720, de 10 de fevereiro de 2020</a>.” (NR)</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art28"></a>Art. 28. O <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2015/791-resolucao-651#art41Anexo">art. 41</a> do Regulamento do Serviço Limitado Móvel Aeronáutico e do Serviço Limitado Móvel Marítimo, aprovado pela Resolução nº 651, de 13 de abril de 2015, passa a vigorar com a seguinte redação:</p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;"> “Art. 41. A autorização para exploração do serviço extingue-se por cassação, caducidade, decaimento, renúncia ou anulação, observando-se o disposto nos arts. <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/leis/2-lei-9472#art138">138</a> a <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/leis/2-lei-9472#art144">144</a> da Lei nº 9.472, de 16 de julho de 1997, e no Regulamento Geral de Outorgas, aprovado pela <a title="Acesse a Resolução" href="https://www.anatel.gov.br/legislacao/resolucoes/2020/1382-resolucao-720">Resolução nº 720, de 10 de fevereiro de 2020</a>.” (NR)    </p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art29"></a>Art. 29. O Regulamento de Uso do Espectro de Radiofrequências, aprovado pela Resolução nº 671, de 3 de novembro de 2016, passa a vigorar acrescido do seguinte <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2016/911-resolu%C3%A7%C3%A3o-671#art7-AAnexoI">artigo 7º-A</a>:</p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;">“Art. 7º-A A Anatel poderá, em caráter excepcional, autorizar o uso de radiofrequências, faixa ou canal de radiofrequências sem prévia destinação ao serviço pretendido, por prazo não superior a 5 (cinco) anos, desde que associado à exploração de serviço de telecomunicações de interesse restrito, em área geográfica delimitada, mediante critérios definidos pela Agência por meio de Ato do Superintendente responsável após avaliação de viabilidade técnica.</p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;">§ 1º A autorização que trata o <strong>caput</strong> deste artigo será expedida preferencialmente para atender à necessidade de implantação de sistemas de telecomunicações em áreas não assistidas por serviços de interesse coletivo.</p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;">§ 2º A autorização que trata o <strong>caput</strong> deste artigo não pode ser utilizada para efeito de cumprimento de obrigação relativa à implantação e/ou ampliação de redes de telecomunicações para prestação de serviços de interesse coletivo.</p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;">§ 3º Na hipótese do <strong>caput</strong> deste artigo, a operação das estações de radiocomunicações não poderá causar interferência prejudicial ou reclamar proteção contra interferência prejudicial de qualquer sistema regularmente instalado."</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art30"></a>Art. 30. O § 5º do <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2016/911-resolu%C3%A7%C3%A3o-671#art16AnexoI">art. 16 </a>do Regulamento de Uso do Espectro de Radiofrequências, aprovado pela Resolução nº 671, de 3 de novembro de 2016, passa a vigorar com a seguinte redação:</p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;">“Art. 16. ...........................................................</p>
+<p class="Texto_Justificado" style="padding-left: 60px; text-align: justify;">§ 5º O disposto no § 2º não se aplica aos exploradores de Serviço Especial para Fins Científicos ou Experimentais, ao uso de radiofrequências autorizado conforme o art. 7º-A ou para o uso temporário de radiofrequências.”</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art31"></a>Art. 31. Substituem-se:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">I - os Capítulos <a title="Acesse o Item" href="https://www.anatel.gov.br/legislacao/normas-do-mc/185-portaria-560#item5">5</a> e <a title="Acesse o Item" href="https://www.anatel.gov.br/legislacao/normas-do-mc/185-portaria-560#item10">10</a> da Norma nº 16/97 – Serviço Móvel Global por Satélite Não-Geoestacionário, aprovada pela Portaria nº 560, de 3 de novembro de 1997, na forma do Anexo a esta Resolução; e,</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">II - os Capítulos <a title="Acesse o Item" href="https://www.anatel.gov.br/legislacao/normas-do-mc/466-portariamc-455#item8">8 </a>e <a title="Acesse o Item" href="https://www.anatel.gov.br/legislacao/normas-do-mc/466-portariamc-455#item12">12</a> da Norma nº 13/97 – Serviço Limitado, aprovada pela Portaria nº 455, de 18 de setembro de 1997, na forma do Anexo a esta Resolução.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art32"></a><span style="text-decoration: line-through;">Art. 32. Revogam-se:</span></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">I - os arts. <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/1998/34-resolucao-73#art66Anexo">66</a> e <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/1998/34-resolucao-73#art67Anexo">67</a> do Regulamento dos Serviços de Telecomunicações, aprovado pela Resolução nº 73, de 25 de novembro de 1998;</span></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">II - o <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2002/267-resolucao-321#art10anexo">art. 10</a> do Plano Geral de Autorizações do Serviço Móvel Pessoal, aprovado pela Resolução nº 321, de 27 de setembro de 2002;</span></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">III - os §§ 1º e 2º do <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/20-2005/7-resolucao-426#art10A">art. 10-A</a>, os arts. <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/20-2005/7-resolucao-426#art10B">10-B</a>, <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/20-2005/7-resolucao-426#art10I">10-I</a>, <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/20-2005/7-resolucao-426#art10J">10-J</a>, <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/20-2005/7-resolucao-426#art10K">10-K</a>, <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/20-2005/7-resolucao-426#art10L">10-L</a> e <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/20-2005/7-resolucao-426#art10M">10-M</a>, os Anexos <a title="Acesse o Anexo" href="https://www.anatel.gov.br/legislacao/resolucoes/20-2005/7-resolucao-426#anexoI">I</a>, <a title="Acesse o Anexo" href="https://www.anatel.gov.br/legislacao/resolucoes/20-2005/7-resolucao-426#anexoII">II </a>e<a title="Acesse o Anexo" href="https://www.anatel.gov.br/legislacao/resolucoes/20-2005/7-resolucao-426#anexoIII"> III</a>, todos do Regulamento do Serviço Telefônico Fixo Comutado – STFC, aprovado pela Resolução nº 426, de 9 de dezembro de 2005;</span></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">IV - o <a title="Acesse o Titulo" href="https://www.anatel.gov.br/legislacao/resolucoes/20-2005/210-resolucao-404#tituloIII">Título III </a>do Regulamento do Serviço Móvel Especializado - SME, aprovado pela Resolução nº 404, de 5 de maio de 2005;</span></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">V - os arts. <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2006/325-resolucao-444#art14Anexo">14</a> e <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2006/325-resolucao-444#art15Anexo">15</a> do Regulamento sobre Canalização e Condições de Uso da Faixa de Radiofrequências de 27 MHz para o Serviço de Rádio do Cidadão, aprovado pela Resolução nº 444, de 28 de setembro de 2006;</span></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">VI - o inciso III do<a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2011/77-resolucao-578#art5Anexo"> art. 5º</a> e os arts. <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2011/77-resolucao-578#art8Anexo">8º</a>, <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2011/77-resolucao-578#art9Anexo">9º</a>, <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2011/77-resolucao-578#art10Anexo">10</a>, <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2011/77-resolucao-578#art11Anexo">11</a>, <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2011/77-resolucao-578#art12Anexo">12</a>, <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2011/77-resolucao-578#art13Anexo">13</a>, <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2011/77-resolucao-578#art14Anexo">14</a>, <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2011/77-resolucao-578#art15Anexo">15</a>, <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2011/77-resolucao-578#art16Anexo">16</a>, <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2011/77-resolucao-578#art17Anexo">17</a>, <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2011/77-resolucao-578#art19Anexo">19</a>, <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2011/77-resolucao-578#art22Anexo">22</a>, <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2011/77-resolucao-578#art25Anexo">25</a> e <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2011/77-resolucao-578#art27Anexo">27</a> do Regulamento do Serviço Rádio do Cidadão, aprovado pela Resolução nº 578, de 30 de novembro de 2011;</span></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">VII - os arts. <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2012/139-resolucao-581#art11Anexo">11</a>, <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2012/139-resolucao-581#art12Anexo">12</a>, <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2012/139-resolucao-581#art14Anexo">14</a>, <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2012/139-resolucao-581#art15Anexo">15</a>, <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2012/139-resolucao-581#art16Anexo">16</a>, <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2012/139-resolucao-581#art17Anexo">17</a>, <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2012/139-resolucao-581#art18Anexo">18</a>, <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2012/139-resolucao-581#art19Anexo">19</a>, <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2012/139-resolucao-581#art20Anexo">20</a>, <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2012/139-resolucao-581#art21Anexo">21</a>, <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2012/139-resolucao-581#art31Anexo">31</a>, <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2012/139-resolucao-581#art32Anexo">32</a>, <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2012/139-resolucao-581#art34Anexo">34</a>, <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2012/139-resolucao-581#art37Anexo">37</a>, <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2012/139-resolucao-581#art38Anexo">38</a> e <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2012/139-resolucao-581#art39Anexo">39</a>, e os Anexos<a title="Acesse o Anexo" href="https://www.anatel.gov.br/legislacao/resolucoes/2012/139-resolucao-581#anexoI"> I</a> e<a title="Acesse o Anexo " href="https://www.anatel.gov.br/legislacao/resolucoes/2012/139-resolucao-581#anexoII"> II</a>, todos do Regulamento do Serviço de Acesso Condicionado (SeAC), aprovado pela Resolução nº 581, de 26 de março de 2012;</span></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">VIII - a <a title="Acesse a Resolução" href="https://www.anatel.gov.br/legislacao/resolucoes/2012/140-resolucao-582">Resolução nº 582, de 26 de março de 2012</a>, que aprova o Modelo de Termo de Autorização do Serviço de Acesso Condicionado (SeAC);</span></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">IX - os arts. <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2013/465-resolucao-614#art11Anexo">11</a>, <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2013/465-resolucao-614#art12Anexo">12</a>, <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2013/465-resolucao-614#art13Anexo">13</a>, <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2013/465-resolucao-614#art14Anexo">14</a>, <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2013/465-resolucao-614#art15Anexo">15</a>, <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2013/465-resolucao-614#art16Anexo">16</a>, <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2013/465-resolucao-614#art30Anexo">30</a>, <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2013/465-resolucao-614#art31Anexo">31</a>, <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2013/465-resolucao-614#art32Anexo">32</a>, <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2013/465-resolucao-614#art33Anexo">33</a>, <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2013/465-resolucao-614#art34Anexo">34</a> e <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2013/465-resolucao-614#art35Anexo">35</a>, e os Anexos <a title="Acesse o Anexo" href="https://www.anatel.gov.br/legislacao/resolucoes/2013/465-resolucao-614#anexoI">I</a>,<a title="Acesse o Anexo" href="https://www.anatel.gov.br/legislacao/resolucoes/2013/465-resolucao-614#anexoII"> II </a>e <a title="Acesse o Anexo" href="https://www.anatel.gov.br/legislacao/resolucoes/2013/465-resolucao-614#anexoIII">III</a>, todos do Regulamento do Serviço de Comunicação Multimídia, aprovado pela Resolução nº 614, de 28 de maio de 2013;</span></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">X - os arts. <a title="Acesse a Resolução" href="https://www.anatel.gov.br/legislacao/resolucoes/2013/480-resolucao-617#art9anexoI">9º</a>, <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2013/480-resolucao-617#art11anexoI">11</a>, <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2013/480-resolucao-617#art12anexoI">12</a>, <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2013/480-resolucao-617#art13anexoI">13</a>, <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2013/480-resolucao-617#art14anexoI">14</a>, <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2013/480-resolucao-617#art45anexoI">45</a>, <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2013/480-resolucao-617#art49anexoI">49</a> e <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2013/480-resolucao-617#art52anexoI">52</a>, todos do Regulamento do Serviço Limitado Privado, aprovado pela Resolução nº 617, de 19 de junho de 2013;</span></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">XI - os arts. <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2015/791-resolucao-651#art8Anexo">8º</a>, <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2015/791-resolucao-651#art9Anexo">9º</a>, <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2015/791-resolucao-651#art11Anexo">11</a>, <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2015/791-resolucao-651#art12Anexo">12</a>,<a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2015/791-resolucao-651#art39Anexo"> 39</a> e <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2015/791-resolucao-651#art40Anexo">40</a>, todos do Regulamento do Serviço Limitado Móvel Aeronáutico e do Serviço Limitado Móvel Marítimo, aprovado pela Resolução nº 651, de 13 de abril de 2015; e,</span></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">XII - os arts. <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2018/1183-resolucao-702#art3">3º</a>,<a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2018/1183-resolucao-702#art4"> 4º</a> e <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2018/1183-resolucao-702#art5">5º</a> da Resolução nº 702, de 1º de novembro de 2018.</span> <a href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2024/1979-resolucao-769">(Revogado pela Resolução n769, de 30 de setembro de 2024)</a></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art33"></a><span style="text-decoration: line-through;">Art. 33. Esta Resolução entra em vigor no prazo de 180 (cento e oitenta) dias da data de sua publicação, ressalvado o<a title="Acesse o Artigo" href="#art13"> art. 13 </a>desta Resolução e o <a href="#art13Anexo">art. 13</a> do Regulamento Geral de Outorgas, que têm vigência imediata.</span></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">Art. 33. Esta Resolução entra em vigor no prazo de 180 (cento e oitenta) dias da data de sua publicação, ressalvadas as seguintes disposições: <a title="Acesse a Resolução" href="https://www.anatel.gov.br/legislacao/resolucoes/2020/1444-resolucao-730#art2">(Redação dada pela Resolução nº 730, de 28 de julho de 2020)</a></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">I - o <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2020/1382-resolucao-720#art13">art. 13</a> desta Resolução entra em vigor na data de sua publicação; <a title="Acesse a Resolução" href="https://www.anatel.gov.br/legislacao/resolucoes/2020/1444-resolucao-730#art2">(Incluído pela Resolução nº 730, de 28 de julho de 2020)</a></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">II - o <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2020/1382-resolucao-720#art13Anexo">art. 13</a> do Regulamento Geral de Outorgas entra em vigor na data de sua publicação; <a title="Acesse a Resolução" href="https://www.anatel.gov.br/legislacao/resolucoes/2020/1444-resolucao-730#art2">(Incluído pela Resolução nº 730, de 28 de julho de 2020)</a></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha">III - o <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/resolucoes/2020/1382-resolucao-720#art29">art. 29</a> desta Resolução entra em vigor em 3 de novembro de 2020."<a title="Acesse a Resolução" href="https://www.anatel.gov.br/legislacao/resolucoes/2020/1444-resolucao-730#art2">(Incluído pela Resolução nº 730, de 28 de julho de 2020)</a> </p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;">LEONARDO EULER DE MORAIS</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;">Presidente do Conselho</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha" style="text-align: center;"> </p>
+<p class="Texto_Centralizado_Maiusculas" style="text-align: center;"><a id="AnexoI"></a><strong>ANEXO</strong></p>
+<p class="Texto_Centralizado_Maiusculas_Negrito" style="text-align: center;"><strong>REGULAMENTO GERAL DE OUTORGAS</strong></p>
+<p class="Texto_Centralizado_Maiusculas" style="text-align: center;">CAPÍTULO I</p>
+<p class="Texto_Centralizado_Maiusculas" style="text-align: center;">DAS DISPOSIÇÕES GERAIS</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art1Anexo"></a>Art. 1º Este Regulamento tem por objetivo disciplinar as condições e os procedimentos para expedição, transferência e extinção de outorgas de autorização para exploração de serviços de telecomunicações de interesse coletivo ou restrito em regime privado, as hipóteses de sua dispensa, bem como as obrigações de comunicar à Agência modificações societárias que importem ou não transferência de controle das autorizadas.</p>
+<p class="Texto_Centralizado_Maiusculas" style="text-align: center;"><span style="text-decoration: line-through;">CAPÍTULO II</span></p>
+<p class="Texto_Centralizado_Maiusculas" style="text-align: center;"><span style="text-decoration: line-through;">DAS DEFINIÇÕES</span></p>
+<p class="Texto_Centralizado_Maiusculas" style="text-align: center;"><a title="Acesse a Resolução" href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2029-resolucao-779">(Revogado pela Resolução Anatel nº 779, de 28 de abril de 2025)</a></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art2Anexo"></a><span style="text-decoration: line-through;">Art. 2º Para fins deste Regulamento, além das definições constantes na legislação e regulamentação, aplicam-se as seguintes: </span></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">I - Acesso em Serviço: acesso que está ativado e prestando serviço ao usuário;</span></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">II - Área de Prestação de Serviço: área geográfica onde o serviço de telecomunicações pode ser explorado conforme condições preestabelecidas pela Anatel;</span></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">III - Notificação: indicação, por parte da Autorizada, à Anatel de quais modalidades de serviços de telecomunicações ela pretende explorar;</span></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">IV - Ato de Autorização: instrumento por meio do qual a Autorização é conferida pela Anatel;</span></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">V - Autorização: ato administrativo vinculado que faculta a exploração, no regime privado, de Serviços de Telecomunicações, quando preenchidas as condições objetivas e subjetivas necessárias;</span></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">VI - Autorizada: pessoa natural ou jurídica que, mediante Autorização, explora um Serviço de Telecomunicações;</span></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">VII - Prestadora de Serviços de Telecomunicações (ou Prestadora): pessoa natural ou jurídica, de direito público ou privado, que, mediante autorização ou prévia notificação à Agência, explora o serviço de telecomunicações.</span></p>
+<p class="Texto_Centralizado_Maiusculas" style="text-align: center;">CAPÍTULO III</p>
+<p class="Texto_Centralizado_Maiusculas" style="text-align: center;">DAS DISPOSIÇÕES GERAIS</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art3Anexo"></a>Art. 3º A exploração de serviços de telecomunicações de interesse coletivo ou restrito em regime privado depende de prévia autorização da Anatel e notificação à Agência pela interessada, excepcionadas as hipóteses de dispensa previstas neste Regulamento. </p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 1º A autorização para a exploração de serviço de telecomunicações será expedida por prazo indeterminado e a título oneroso, e independerá de licitação, salvo em caso de impossibilidade técnica ou, excepcionalmente, quando o excesso de competidores puder comprometer a prestação de uma modalidade de serviço de interesse coletivo.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 2º As autorizações, sendo inexigível a licitação, serão expedidas de plano, desde que requeridas na forma e condições previstas.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art4Anexo"></a>Art. 4º A Área de Prestação de Serviço objeto da autorização para exploração de serviço de telecomunicações será constituída por todo o território nacional, salvo se disposto de forma distinta na regulamentação ou em edital de licitação. </p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">Parágrafo único. Nos casos em que seja admitida, na regulamentação, a detenção simultânea de mais de uma autorização do mesmo serviço de telecomunicações pela empresa, as notificações da prestação do serviço serão consideradas de forma independente.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art5Anexo"></a>Art. 5º Quando se tratar de serviços de telecomunicações de interesse coletivo, a obtenção da autorização está condicionada ao atendimento das seguintes condições gerais: </p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">I - ser pessoa jurídica, de direito público ou privado, constituída sob as leis brasileiras e com sede e administração no País;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">II - não estar proibida de licitar ou contratar com o Poder Público, não ter sido declarada inidônea ou não ter sido punida, nos 2 (dois) anos anteriores, com a decretação de caducidade de concessão, permissão ou autorização de serviço de telecomunicações, ou de caducidade de direito de uso de radiofrequências;</span></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">II - não estar proibida de licitar ou contratar com a Anatel, não ter sido declarada inidônea ou não ter sido punida, nos 2 (dois) anos anteriores, com a decretação de caducidade de concessão, permissão ou autorização de serviço de telecomunicações, ou de caducidade de direito de uso de radiofrequências; <a title="Acesse a Resolução" href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2057-resolu%C3%A7%C3%A3o-781">(Redação dada pela Resolução Anatel nº 781, de 1º de agosto de 2025)</a></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">III - dispor de qualificação jurídica e técnica para bem prestar o serviço, capacidade econômico-financeira e regularidade fiscal e estar em situação regular com o Fundo de Garantia por Tempo de Serviço; e,</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">IV - não deter autorização para a exploração de serviço de telecomunicações de interesse coletivo.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art6Anexo"></a>Art. 6º Visando impedir a concentração econômica do mercado, promover e preservar a justa e ampla competição e o atendimento de condicionamentos e metas dispostos na legislação, na regulamentação ou em Termos de Autorização, a Agência pode estabelecer restrições, limites ou condições a pessoas naturais ou jurídicas ou a grupos empresariais quanto à obtenção e à transferência de autorizações de serviços de telecomunicações, bem como transferências de controle. </p>
+<p class="Texto_Centralizado_Maiusculas" style="text-align: center;">CAPÍTULO IV</p>
+<p class="Texto_Centralizado_Maiusculas" style="text-align: center;">DO PROCESSO DE AUTORIZAÇÃO</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art7Anexo"></a>Art. 7º O interessado em explorar serviços de telecomunicações deve requerer autorização à Anatel por meio de formulário eletrônico próprio, constante de sistema informatizado da Agência.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 1º No requerimento previsto no <strong>caput</strong> é mandatória a notificação de pelo menos um serviço de telecomunicações.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 2º O requerimento para explorar serviços de telecomunicações de interesse coletivo deverá ser instruído eletronicamente com as informações e os documentos necessários para comprovação de habilitação jurídica, qualificação técnica e qualificação econômico-financeira, conforme descrito no Anexo a este Regulamento.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 3º No caso de requerimento para explorar serviços de telecomunicações de interesse restrito com notificação do serviço de radioamador apresentado por estrangeiro que não esteja inscrito no Cadastro de Pessoa Física - CPF, constará no Ato de autorização o número do passaporte ou da carteira de estrangeiro em vigor. <a title="Acesse a Resolução" href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2022-resolucao-777">(Incluído pela Resolução Anatel nº 777, de 28 de abril de 2025)</a> </p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art8Anexo"></a>Art. 8º Providas as informações exigidas no formulário eletrônico previsto no <a title="Acesse o Artigo" href="#art7Anexo">art. 7º </a>e verificado que a interessada possui regularidade fiscal, na forma do <a title="Acesse o Artigo" href="#art4Anexo">art. 4º</a> do Anexo a este Regulamento, bem como que preenche as condições para a prestação do serviço, a Anatel conferirá autorização para exploração de serviços de telecomunicações, formalizada mediante expedição de Ato. </p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 1º A expedição do Ato está condicionada à comprovação de pagamento do Preço Público pelo Direito de Exploração de Serviços de Telecomunicações e de Satélite (PPDESS).</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 2º Constarão do Ato de autorização o nome ou a denominação social da autorizada, o número de inscrição no Cadastro Nacional de Pessoas Jurídicas (CNPJ) ou o número de inscrição no Cadastro de Pessoa Física (CPF), e a indicação de que a autorizada pode prestar quaisquer serviços de telecomunicações, ou apenas aqueles de interesse restrito, mediante prévia notificação à Anatel.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 3º Será publicado, no Diário Oficial da União, extrato do Ato de autorização como condição para sua eficácia.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art9Anexo"></a>Art. 9º A autorização de que trata o <a title="Acesse o Artigo" href="#art8Anexo">art. 8º</a> confere à autorizada a possibilidade de: </p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">I - prestar quaisquer serviços de telecomunicações, de interesse coletivo ou restrito, caso tenham sido atendidas as condições gerais estabelecidas no<a title="Acesse o Artigo" href="#art5Anexo"> art. 5º</a>; ou,</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">II - prestar quaisquer serviços de telecomunicações de interesse restrito.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 1º A prévia notificação à Agência sobre qual(is) serviço(s) será(ão) prestado(s) é condição mandatória para a eficácia da autorização.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 2º A notificação será realizada mediante registro do(s) serviço(s) de interesse no sistema informatizado da Agência, podendo ser feita por ocasião do requerimento original ou em momento posterior.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 3º Após a expedição do Ato previsto no <a title="Acesse o Artigo" href="#art8Anexo">art. 8º</a>, caso a prestadora notifique a intenção de explorar novo serviço de telecomunicações, o cadastro existente será atualizado, não se exigindo documentação complementar ou nova autorização, salvo se a autorização inicial indicar que a autorizada pode prestar apenas serviços de telecomunicações de interesse restrito e o novo serviço for de interesse coletivo.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 4º Considera-se que a interessada somente está apta a prestar o serviço de telecomunicações após o recebimento da autorização e a realização da notificação daquele serviço, sendo exigível, a partir da data desta última, o cumprimento de todas as condições estabelecidas na regulamentação daquele serviço.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">§ 5º A validade da notificação de interesse em prestar serviço de telecomunicações que dependa do uso de radiofrequências está condicionada à prévia obtenção da autorização de uso de radiofrequências necessária.</span></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 5º A validade da notificação de interesse em prestar serviço de telecomunicações que dependa do uso de radiofrequências está condicionada à obtenção da autorização de uso de radiofrequências necessária ou à contratação de capacidade de satélite cujo direito de exploração abarque radiofrequências destinadas ao serviço. <a title="Acesse a Resolução" href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2022-resolucao-777">(Redação dada pela Resolução Anatel nº 777, de 28 de abril de 2025)</a></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 6º A Agência colocará à disposição, de forma gratuita, por meio de sua página na internet, informação atualizada contendo a data de notificação de cada serviço de telecomunicações.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 7º A autorização de uso de radiofrequências de que trata o § 5º pode ser obtida mediante contrato de compartilhamento com autorizada na faixa, nos termos do Regulamento de Uso do Espectro de Radiofrequências. <a title="Acesse a Resolução" href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2022-resolucao-777">(Incluído pela Resolução Anatel nº 777, de 28 de abril de 2025)</a></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art10Anexo"></a>Art. 10. Quando a autorização de serviço ou de uso de radiofrequências envolver o estabelecimento de obrigações e/ou compromissos específicos, a vigência do Ato de autorização estará condicionada à assinatura de Termo próprio, cuja eficácia dar-se-á com a publicação de seu extrato no Diário Oficial da União.</p>
+<p class="Texto_Centralizado_Maiusculas" style="text-align: center;">CAPÍTULO V</p>
+<p class="Texto_Centralizado_Maiusculas" style="text-align: center;">DA AUTORIZAÇÃO DE USO DE RADIOFREQUÊNCIAS</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art11Anexo"></a>Art. 11. O uso de radiofrequências destinadas à exploração de serviços de telecomunicações dependerá de prévia autorização da Anatel, cujas condições estão estabelecidas em regulamentação específica. </p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">Parágrafo único. Não será necessária a autorização para uso de radiofrequências quando forem utilizados apenas meios confinados ou equipamentos de radiocomunicação de radiação restrita, conforme definido pela Agência.</p>
+<p class="Texto_Centralizado_Maiusculas" style="text-align: center;">CAPÍTULO VI</p>
+<p class="Texto_Centralizado_Maiusculas" style="text-align: center;">DOS CASOS DE DISPENSA DE AUTORIZAÇÃO DE SERVIÇOS</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art12Anexo"></a>Art. 12. Independe de autorização a atividade de telecomunicações restrita aos limites de uma mesma edificação, inclusive condomínios de qualquer natureza, ou propriedade móvel ou imóvel, exceto quando envolver o uso de radiofrequências por meio de equipamentos de radiocomunicação que não se enquadrem na definição de radiação restrita. </p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art13Anexo"></a>Art. 13. É dispensada a autorização para a exploração de serviços de telecomunicações nos casos nos quais as redes de telecomunicações de suporte utilizem exclusivamente meios confinados e/ou equipamentos de radiocomunicação de radiação restrita, desde que não sejam empregados recursos de numeração em sua prestação. </p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 1º No caso dos serviços de telecomunicações de interesse coletivo, a dispensa prevista no <strong>caput</strong> aplica-se somente àquelas prestadoras com até 5.000 (cinco mil) acessos em serviço.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 2º A prestadora que fizer uso da dispensa prevista no <strong>caput</strong> deverá, por meio de sistema eletrônico próprio da Anatel, comunicar previamente o início de suas atividades.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 3º A dispensa prevista no <strong>caput</strong> não exime a prestadora da obrigatoriedade de atendimento das condições, requisitos e deveres estabelecidos na legislação e na regulamentação.</p>
+<p class="Texto_Centralizado_Maiusculas" style="text-align: center;">CAPÍTULO VII</p>
+<p class="Texto_Centralizado_Maiusculas" style="text-align: center;">DAS TRANSFERÊNCIAS</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art14Anexo"></a>Art. 14. A transferência da autorização para exploração de serviços de telecomunicações depende de prévia anuência da Anatel e poderá se dar a qualquer tempo, a título oneroso, de forma integral ou parcial. </p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 1º No caso descrito no <a title="Acesse o Artigo" href="https://www.anatel.gov.br/legislacao/leis/2-lei-9472#art136">art. 136</a>, § 2º, da Lei nº 9.472, de 16 de julho de 1997, deverá ser observado o prazo de 3 (três) anos, contado da entrada em operação do serviço, para efetivação da transferência da outorga.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 2º O pedido de transferência deve ser formulado pela primitiva autorizada, cabendo à sua sucessora aquiescer ao mesmo e atender ao disposto no <a title="Acesse o Anexo" href="#art7Anexo">art. 7º</a> deste Regulamento.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 3º Verificado o atendimento ao estabelecido na regulamentação e não tendo sido identificado potencial prejuízo à concorrência, a Anatel aprovará a transferência, que será formalizada mediante ato de transferência, cabendo, se for o caso, a assinatura de novo Termo de autorização.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 4º Sendo caso de transferência parcial, com sua aprovação pela Agência, considera-se realizada, pela autorizada primitiva, a notificação de desinteresse em relação aos serviços objeto da transferência aprovada.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 5º Na hipótese dos <a href="https://www.anatel.gov.br/legislacao/resolucoes/2020/1382-resolucao-720#art14Anexo">§§ 3º e 4º</a> deste artigo, concomitantemente à expedição de ato de transferência, será(ão):</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">I - expedido Ato de autorização à sucessora que não detenha previamente autorização ou cuja autorização não possibilite a exploração dos serviços correspondentes, contemplando a notificação de interesse na exploração desses serviços; e,</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">II - incluídos, no rol de serviços notificados da sucessora que já detenha a autorização de serviços necessária, os serviços objeto da transferência, mantidas todas as demais condições inalteradas.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art15Anexo"></a>Art. 15. No caso de transferência da autorização para exploração de serviços de telecomunicações, total ou parcial, na forma do <a href="#art14Anexo">art. 14 </a>deste Regulamento, a autorização de uso de radiofrequências associada, se houver, será transferida à sucessora, sem ônus, pelo prazo remanescente do antigo instrumento de outorga. </p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">Parágrafo único. Quando à autorização de uso de radiofrequências estiverem associadas obrigações ou compromissos, a sucessora deve apresentar declaração firmada por seu representante legal, sub-rogando-se nas obrigações e compromissos da primitiva autorizada.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art16Anexo"></a>Art. 16. Na hipótese de transferência da autorização de serviço de telecomunicações, total ou parcial, para empresa que já detenha autorização que contemple notificação para o mesmo serviço notificado pela primitiva autorizada, deverá ser realizada, sem ônus, a consolidação das outorgas daquele serviço no mesmo ato que aprovar a transferência, desde que não seja vedado pela regulamentação específica. </p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art17Anexo"></a>Art. 17. Deverá ser submetida previamente à Anatel alteração que possa vir a caracterizar transferência de controle, a ser apurado nos termos do Regulamento de Apuração de Controle e de Transferência de Controle em Empresas Prestadoras dos Serviços de Telecomunicações, aprovado pela <a title="Acesse a Resolução" href="https://www.anatel.gov.br/legislacao/resolucoes/1999/182-resolucao-101">Resolução nº 101, de 4 de fevereiro de 1999</a>, quando as partes envolvidas na operação se enquadrarem nas condições dispostas no <a title="Acesse o Artigo" href="http://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/lei/l12529.htm#art88">art. 88</a> da Lei nº 12.529, de 30 de novembro de 2011. </p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 1º A prestadora deverá enviar à Agência requerimento contendo sua composição societária, a descrição detalhada da operação pretendida e o quadro resultante da operação, acompanhado da documentação a seguir descrita:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">I - minuta da alteração contratual pretendida, no caso de sociedade por quotas de responsabilidade limitada;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">II - Ata da Assembleia Geral que tenha decidido pela modificação societária pretendida, no caso de sociedade por ações;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">III - contrato social ou estatuto consolidado, quando for o caso, e sua última alteração, devidamente registrados no órgão competente;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">IV - relação dos acionistas, com direito a voto ou que possuam qualquer outra condição que caracterize controle, indicando o número, o tipo e o valor de cada ação, bem como o número do registro no Cadastro Nacional de Pessoas Físicas (CPF) ou no Cadastro Nacional de Pessoas Jurídicas (CNPJ) dos sócios, assim como a Ata da Assembleia de eleição dos dirigentes, no caso de sociedade por ações;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">V - cópia das demonstrações financeiras do último exercício fiscal disponível, evidenciando a receita operacional, bruta e líquida, auferida com a prestação dos serviços de telecomunicações, que não inclui Serviços de Valor Adicionado (SVA), para fins de enquadramento no <a title="Acesse o Artigo" href="http://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/lei/l12529.htm#art88">art. 88 </a>da Lei nº 12.529, de 30 de novembro de 2011; e,</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">VI - declaração firmada pela prestadora de que não está, direta, indiretamente ou por meio de empresa sob controle comum, enquadrada em qualquer hipótese de restrição prevista no <a title="Acesse o Artigo" href="http://www.planalto.gov.br/ccivil_03/_Ato2011-2014/2011/Lei/L12485.htm#art5">art. 5º </a>da Lei nº 12.485, de 12 de setembro de 2011.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 2º Caso o requerimento e a declaração sejam firmados por representante da prestadora, deve ser encaminhado o respectivo instrumento que comprove os poderes do signatário para representá-la.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 3º A Anatel, a seu critério, poderá determinar que as alterações societárias que não se enquadrem nos termos definidos no <strong>caput</strong> sejam submetidas à anuência prévia.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§4º Excepcionalmente e de forma fundamentada, a Anatel poderá impor condicionantes adicionais em casos concretos.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art18Anexo"></a>Art. 18. Deverá ser submetida previamente à Anatel alteração que possa vir a caracterizar transferência de controle quando a operação envolver concessionária, permissionária ou autorizatária cuja outorga de serviços decorra de procedimento licitatório, acompanhada dos requisitos de habilitação constantes do Regulamento de Licitação para Concessão, Permissão e Autorização de Serviço de Telecomunicações e de Uso de Radiofrequência, aprovado pela <a title="Acesse a Resolução" href="https://www.anatel.gov.br/legislacao/resolucoes/1998/164-resolucao-65">Resolução nº 65, de 29 de outubro de 1998</a>.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art19Anexo"></a>Art. 19. A anuência prévia para a transferência de controle de que tratam os arts. <a title="Acesse o Artigo" href="#art14Anexo">17</a> e <a title="Acesse o Artigo" href="#art18Anexo">18</a> deste Regulamento somente será concedida se não prejudicar a competição e não colocar em risco a prestação do serviço.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">Parágrafo único. A Agência levará em consideração restrições, limites ou condicionamentos estabelecidos nas disposições legais, regulamentares, editalícias ou contratuais.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art20Anexo"></a>Art. 20. Nos casos de transferência de controle que se enquadram nos arts. <a title="Acesse o Artigo" href="#art17Anexo">17</a> e <a title="Acesse o Artigo" href="#art18Anexo">18 </a>deste Regulamento, quando a transferência ocorrer em função de sucessão hereditária, o serviço será mantido em funcionamento em caráter precário até que a Anatel decida sobre a transferência ocorrida. </p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 1º A transferência de controle de que trata o <strong>caput</strong> está sujeita a posterior aprovação pela Anatel.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 2º A Anatel levará em consideração as mesmas exigências estabelecidas no arts. <a title="Acesse o Artigo" href="#art17Anexo">17 </a>e <a title="Acesse o Artigo" href="#art18Anexo">18</a> deste Regulamento.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art21Anexo"></a>Art. 21. A concessão de anuência prévia para realização da transferência do controle valerá pelo prazo de 180 (cento e oitenta) dias, contado a partir da publicação do Ato que a formaliza, prorrogável, a pedido, uma única vez, por igual período, se mantidas as mesmas condições societárias.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">Parágrafo único. As cópias dos atos praticados para realização da operação devem ser encaminhadas à Anatel no prazo de 60 (sessenta) dias, contado do registro no órgão competente.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art22Anexo"></a>Art. 22. Caso a prestadora perca o interesse na realização da operação de transferência de controle já aprovada pela Anatel, deverá comunicar o fato dentro do prazo de validade de que trata o <a title="Acesse o Artigo" href="#art21Anexo">art. 21</a> deste Regulamento.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">Parágrafo único. Até o decurso do prazo de validade de que trata o <a title="Acesse o Artigo" href="#art21Anexo">art. 21 </a>deste Regulamento, novos requerimentos de anuência prévia para transferência de controle serão analisados pela Anatel mediante declaração formal de desinteresse ou comprovação dos atos praticados pela prestadora na efetivação da operação aprovada.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art23Anexo"></a>Art. 23. Os casos de transferência de controle que não se enquadrarem nos arts. <a title="Acesse o Artigo" href="#art17Anexo">17</a> e<a title="Acesse o Artigo" href="#art18Anexo"> 18</a>, os acordos de sócios que regulam as transferências de quotas e ações, bem como o exercício de direito a voto das prestadoras de serviços de telecomunicações e de suas sócias diretas e indiretas, devem ser comunicados à Agência, após o registro dos atos no órgão competente.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 1º As comunicações de que trata o <strong>caput</strong> devem ser instruídas com a íntegra do ato registrado no órgão competente, acompanhadas da cópia do último contrato social consolidado, no caso de sociedade por quotas de responsabilidade limitada, ou cópia do livro de ações, no caso de sociedade por ações.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 2º A Anatel certificará o registro dos atos encaminhados pelas prestadoras em decorrência das obrigações estabelecidas no <strong>caput</strong> deste artigo, quando obedecerem às restrições, aos limites ou aos condicionamentos estabelecidos nas disposições legais, regulamentares, editalícias ou contratuais.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">Art. 24. Aplicam-se, nos casos de transferência de outorgas de  serviços de telecomunicações classificados como de interesse restrito, exclusivamente as regras previstas no<a title="Acesse o Artigo" href="#art23Anexo"> art. 23</a> deste Capítulo.</span></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art24Anexo"></a>Art. 24. Aplicam-se, nos casos de transferência de controle societário de empresas que explorem apenas serviços de telecomunicações classificados como de interesse restrito, exclusivamente as regras previstas no <a href="#art23Anexo">art. 23</a> deste Capítulo quanto à comunicação à Agência após o registro dos atos no órgão competente. <a title="Acesse o DOU" href="http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=01/06/2020&amp;jornal=515&amp;pagina=18">(Retificação publicada no DOU de 1/6/2020)</a></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art25Anexo"></a>Art. 25. A Anatel poderá requisitar o envio de documentação adicional para fins de análise das modificações societárias pretendidas ou realizadas, devendo a prestadora atender à requisição no prazo fixado.</p>
+<p class="Texto_Centralizado_Maiusculas" style="text-align: center;">CAPÍTULO VIII</p>
+<p class="Texto_Centralizado_Maiusculas" style="text-align: center;">DO PREÇO PÚBLICO PELA AUTORIZAÇÃO, ADAPTAÇÃO E TRANSFERÊNCIA</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art26Anexo"></a>Art. 26. A autorização, a adaptação e a transferência de autorização, permissão e concessão de serviços de telecomunicações de interesse coletivo dará ensejo à cobrança de R$ 400,00 (quatrocentos reais), a ser pago, uma única vez, como condição para a expedição do instrumento de outorga.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">Parágrafo único. Aos órgãos da administração pública direta, autárquica e fundacional, de qualquer dos Poderes da União, dos Estados, do Distrito Federal e dos Municípios, a cobrança de que trata o <strong>caput</strong> será de R$ 40,00 (quarenta reais).</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art27Anexo"></a>Art. 27. A autorização, a adaptação e a transferência de autorização, permissão e concessão de serviços de telecomunicações de interesse restrito dará ensejo à cobrança de R$ 20,00 (vinte reais), a ser pago, uma única vez, como condição para a expedição do instrumento de outorga.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 1º Aos órgãos da administração pública direta, autárquica e fundacional, de qualquer dos Poderes da União, dos Estados, do Distrito Federal e dos Municípios, a cobrança de que trata o <strong>caput</strong> será de R$ 10,00 (dez reais).</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 2º Aplica-se o valor estabelecido no <strong>caput</strong> para a autorização de serviço de telecomunicações quando do uso temporário de radiofrequências, objeto de regulamentação específica.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art28Anexo"></a>Art. 28. O preço público de que tratam os arts. <a title="Acesse o Artigo" href="#art26Anexo">26</a> e<a title="Acesse o Artigo" href="#art27"> 27</a> deverá ser pago em parcela única.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 1º O prazo para quitação da parcela única será de 30 (trinta) dias.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 2º O inadimplemento após 30 (trinta) dias do vencimento do prazo a que se refere o § 1º implica a desistência do pedido.</p>
+<p class="Texto_Centralizado_Maiusculas" style="text-align: center;">CAPÍTULO IX</p>
+<p class="Texto_Centralizado_Maiusculas" style="text-align: center;">DA EXTINÇÃO DA AUTORIZAÇÃO</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art29Anexo"></a>Art. 29. A autorização para exploração de serviços de telecomunicações extingue-se por cassação, caducidade, decaimento, renúncia ou anulação, conforme disposto na <a title="Acesse a Lei" href="https://www.anatel.gov.br/legislacao/leis/2-lei-9472">Lei nº 9.472, de 1997</a>.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 1º A extinção da autorização para exploração de serviços de telecomunicações ou a notificação de desinteresse para exploração de um ou mais serviços de telecomunicações importará a extinção das autorizações de uso das radiofrequências a ela associadas.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 2º A extinção da autorização para exploração de serviços de telecomunicações ou a notificação de desinteresse para exploração de um ou mais serviços de telecomunicações não confere à prestadora direito a qualquer indenização e não a exime da responsabilidade pelos atos praticados.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 3º A prestadora que deixar de explorar serviço de telecomunicações sem formalizar sua manifestação de renúncia à respectiva autorização ou sem notificar seu desinteresse pela exploração daquele serviço permanece responsável pelas obrigações previstas na regulamentação.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art30Anexo" target="_blank"></a>Art. 30. Sem prejuízo de outras situações previstas em lei ou na regulamentação, será tornada sem efeito a notificação de interesse para exploração de um serviço no caso da extinção da autorização de uso das radiofrequências a ele associada que sejam indispensáveis à sua prestação.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">Parágrafo único. Na hipótese estabelecida no <strong>caput</strong>, caso a autorizada não tenha notificado seu interesse na exploração de outros serviços de telecomunicações, seu ato de autorização será cassado pela Anatel.</p>
+<p class="Texto_Centralizado_Maiusculas" style="text-align: center;">CAPÍTULO X</p>
+<p class="Texto_Centralizado_Maiusculas" style="text-align: center;">DAS DISPOSIÇÕES FINAIS E TRANSITÓRIAS</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art31Anexo"></a>Art. 31. As autorizações para exploração de serviços de telecomunicações expedidas até a data de entrada em vigor deste Regulamento serão consolidadas por empresa e adaptadas aos novos regramentos pela Anatel, de ofício e sem ônus, mediante publicação do ato respectivo no Boletim de Serviço Eletrônico da Agência, no prazo de 180 (cento e oitenta) dias, considerando-se notificado o interesse na exploração de todos os serviços de telecomunicações previamente outorgados.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 1º A critério da Agência, os instrumentos de outorga de direitos de uso de radiofrequências também poderão ser consolidados nos mesmos termos da consolidação das autorizações de serviços, sem alteração de seus respectivos prazos de vigência.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><span style="text-decoration: line-through;">Art. 32. Sem prejuízo do disposto na legislação aplicável, as autorizadas têm a obrigação de manter atualizados, junto à Anatel, os dados cadastrais relativos à razão social, ao endereço da sede, à identificação dos diretores e responsáveis e à composição acionária, quando for o caso.  </span></p>
+<p class="texto-recuo-1a-linha"><a id="art32Anexo"></a>Art. 32. Sem prejuízo do disposto na legislação aplicável, as autorizadas têm a obrigação de manter atualizados, junto à Anatel, os dados cadastrais relativos à razão social, ao endereço da sede, à identificação dos diretores e responsáveis e à composição acionária, quando for o caso; e o contrato de exploração industrial de radiofrequências ou de exploração industrial de rede de acesso necessário para prestação do serviço de telecomunicações. <a title="Acesse a Resolução" href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2022-resolucao-777">(Redação dada pela Resolução Anatel nº 777, de 28 de abril de 2025)</a></p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha"> </p>
+<p class="Texto_Centralizado_Maiusculas" style="text-align: center;"><strong>ANEXO AO REGULAMENTO GERAL DE OUTORGAS</strong></p>
+<p class="Texto_Centralizado_Maiusculas_Negrito" style="text-align: center;"><strong>DOCUMENTAÇÃO NECESSÁRIA AO REQUERIMENTO DE AUTORIZAÇÃO ENVOLVENDO SERVIÇO DE INTERESSE COLETIVO</strong></p>
+<p class="Texto_Centralizado_Maiusculas_Negrito" style="text-align: center;"> </p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art1AnexoII"></a>Art. 1º Para comprovação de qualificação jurídica, a pretendente deve:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">a) informar, por meio de sistema informatizado disponibilizado pela Anatel, sua qualificação, indicando sua razão social e o nome fantasia quando aplicável, o número de inscrição no Cadastro Nacional da Pessoa Jurídica (CNPJ) e o endereço;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">b) apresentar ato constitutivo e suas alterações vigentes, ou sua consolidação, devidamente registrados ou arquivados na repartição competente;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">c) apresentar, no caso de sociedade por ações, a composição acionária do controle societário e os documentos de eleição de seus administradores, exigência também necessária quando se tratar de sociedade que designe sua diretoria nos moldes das sociedades por ações;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">d) declarar, por meio de sistema informatizado disponibilizado pela Anatel, quando aplicável, a inexistência de impedimentos regulamentares para a obtenção da autorização; e,</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">e) apresentar prova de inscrição no cadastro de contribuintes estadual ou distrital, relativo à sede da entidade, pertinente a seu ramo de atividade e compatível com o objeto da autorização.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art2AnexoII"></a>Art. 2º Para comprovação de qualificação técnica, a pretendente deve declarar, por meio de sistema informatizado disponibilizado pela Anatel, que possui aptidão para o desempenho da atividade pertinente bem como a existência de pessoal técnico adequado e disponível para a realização do objeto da autorização.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art3AnexoII"></a>Art. 3º Para comprovação de qualificação econômico-financeira, a pretendente deve declarar, por meio de sistema informatizado disponibilizado pela Anatel, que está em boa situação financeira e que não se encontra em falência.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">Parágrafo único. A qualquer tempo, a Anatel pode exigir documentos e informações para a comprovação do requisito previsto no <strong>caput</strong>.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art4AnexoII"></a>Art. 4º. Antes da formalização do ato de autorização, a área técnica responsável verificará a regularidade fiscal da pretendente perante:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="incisoI"></a>I - a Fazenda Federal;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="incisoII"></a>II - o Fundo de Garantia por Tempo de Serviço (FGTS); e,</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">III - a Anatel.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 1º Não sendo possível realizar a consulta aos bancos de dados referidos nos incisos <a href="#incisoI">I</a> e <a href="#incisoII">II </a>do <strong>caput</strong> deste artigo ou sendo constatada a existência de débito, inclusive perante a Anatel, caberá à pretendente providenciar a emissão das respectivas certidões.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 2º A Anatel poderá, quando se mostrar relevante, requerer da interessada a comprovação de regularidade fiscal perante as esferas municipal e estadual do Poder Público.</p> <div class="attachmentsContainer">
+
+<div class="attachmentsList" id="attachmentsList_com_content_default_1382"></div>
+
+</div>
+	
+</div>
+<div class="below-content">
+		<div class="line">
+		registrado em:
+			<span><a class="link-categoria" rel="tag" href="/legislacao/resolucoes">Resoluções da Anatel</a></span><span class="separator">,</span><span><a class="link-categoria" rel="tag" href="/legislacao/resolucoes/2020">2020</a></span>	</div>
+		
+		<div class="line">
+		Assunto(s):
+					<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Aprovação" class="link-categoria">Aprovação</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Regulamento" class="link-categoria">Regulamento</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Outorga" class="link-categoria">Outorga</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Serviço%20Móvel%20Especializado" class="link-categoria">Serviço Móvel Especializado</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=SME" class="link-categoria">SME</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Serviço%20Telefônico%20Fixo%20Comutado" class="link-categoria">Serviço Telefônico Fixo Comutado</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=STFC" class="link-categoria">STFC</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Serviço%20de%20Radioamador" class="link-categoria">Serviço de Radioamador</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Regulamento%20do%20Serviço%20Móvel%20Pessoal" class="link-categoria">Regulamento do Serviço Móvel Pessoal</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=SMP" class="link-categoria">SMP</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Plano%20Geral%20de%20Autorizações" class="link-categoria">Plano Geral de Autorizações</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=PGA" class="link-categoria">PGA</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Serviço%20de%20Rádio%20do%20Cidadão" class="link-categoria">Serviço de Rádio do Cidadão</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=TelefoniaMovel" class="link-categoria">TelefoniaMovel</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=TelefoniaFixa" class="link-categoria">TelefoniaFixa</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=SeAC" class="link-categoria">SeAC</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=TvporAssinatura" class="link-categoria">TvporAssinatura</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=RecursosPrestacao" class="link-categoria">RecursosPrestacao</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=ResolucaoVigente" class="link-categoria">ResolucaoVigente</a>
+							</span>
+					
+	</div>
+	
+	
+</div>
+                                                                                    
+                                    
+                                    
+                                
+                                <!--<span class="hide">Fim do conteúdo da página</span> -->
+								
+                                </section>
+                            </div>
+                            <!-- fim #content.span9 -->
+                        </div>
+                        <!-- fim .row-fluid -->
+                </div>
+                <!-- fim .container -->
+
+
+                <!-- Chamada da posição paginas de Serviços -->
+                 
+               <!--Fim da chamada de chamada-segundaria-destaque -->
+
+                <!-- Chamada da posição chamada de chamada segundaria destaque -->
+                 
+               <!--Fim da chamada de chamada de chamada segundaria destaque -->
+
+                </main>
+                <footer id="portal-footer">
+                    <div class="footer-atalhos">
+                        <div class="container tmpl-custom">
+                            <div class="pull-right voltar-ao-topo"><a href="#main-navigation">Voltar ao topo</a></div>
+                        </div>
+                    </div>
+                    <div class="container tmpl-custom container-menus">
+                        <div class="govbr-logo"></div>
+                        <div id="footer" class="row footer-menus">
+                            <span class="hide">Início da navegação de rodapé</span>
+                            	
+		<div class="spanfooter">		
+			<nav class="row  nav">
+				 			
+				<h2>Assuntos </h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter">
+	<li class="item-443"><a href="https://www.gov.br/anatel/pt-br/assuntos/5G" > 5G</a></li><li class="item-502"><a href="https://www.gov.br/anatel/pt-br/assuntos/acessibilidade" >Acessibilidade</a></li><li class="item-540"><a href="https://www.gov.br/anatel/pt-br/assuntos/adaptacao" >Adaptação</a></li><li class="item-541"><a href="https://www.gov.br/anatel/pt-br/assuntos/agenda-2030" >Agenda 2030</a></li><li class="item-441"><a href="https://www.gov.br/anatel/pt-br/assuntos/atuacao-internacional" >Atuação Internacional</a></li><li class="item-442"><a href="https://www.gov.br/anatel/pt-br/assuntos/celular-legal" >Celular Legal</a></li><li class="item-503"><a href="https://www.gov.br/anatel/pt-br/assuntos/noticias/acoes-do-setor-de-telecomunicacoes-no-combate-ao-coronavirus" >Coronavírus</a></li><li class="item-504"><a href="https://www.gov.br/anatel/pt-br/assuntos/dicas-contra-fraudes" >Dicas contra Fraudes</a></li><li class="item-440"><a href="https://www.gov.br/anatel/pt-br/assuntos/noticias" > Notícias</a></li><li class="item-505"><a href="https://www.gov.br/anatel/pt-br/regulado/acompanhamento-e-controle/processo-sancionador" >Processo Sancionador</a></li><li class="item-444"><a href="https://www.gov.br/anatel/pt-br/assuntos/seguranca-cibernetica" > Segurança Cibernética</a></li><li class="item-445"><a href="https://www.gov.br/anatel/pt-br/assuntos/seguranca-publica" > Segurança Pública</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Acesso à Informação</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-446"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/institucional" > Institucional</a></li><li class="item-447"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/acoes-e-programas" > Ações e Programas</a></li><li class="item-448"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/participacao-social" > Participação Social</a></li><li class="item-449"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/auditorias" >Auditorias</a></li><li class="item-450"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/convenios-e-transferencias" >Convênios e Transferências</a></li><li class="item-451"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/receitas-e-despesas" > Receitas e Despesas</a></li><li class="item-452"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/licitacoes-e-contratos" >Licitações e Contratos</a></li><li class="item-454"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/servidores" >Servidores</a></li><li class="item-455"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/informacoes-classificadas" > Informações Classificadas</a></li><li class="item-456"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/servico-de-informacao-ao-cidadao-sic" >Serviço de Informação ao Cidadão (SIC)</a></li><li class="item-458"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/perguntas-frequentes" > Perguntas Frequentes</a></li><li class="item-457"><a href="https://www.gov.br/anatel/pt-br/dados/dados-abertos" >Dados Abertos</a></li><li class="item-506"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/governanca" >Governança</a></li><li class="item-453"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais" > Tratamento de Dados Pessoais</a></li><li class="item-459"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/transparencia-e-prestacao-de-contas" >Transparência e Prestação de Contas</a></li><li class="item-507"><a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_processo_pesquisar.php?acao_externa=protocolo_pesquisar&amp;acao_origem_externa=protocolo_pesquisar&amp;id_orgao_acesso_externo=0" >Pesquisa Pública do SEI</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Canais de Atendimento </h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-471"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/aplicativo" >Aplicativo</a></li><li class="item-472"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/internet" >Internet</a></li><li class="item-473"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/presencial" >Presencial</a></li><li class="item-474"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/telefone" > Telefone</a></li><li class="item-475"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/ouvidoria" >Ouvidoria</a></li><li class="item-476"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/imprensa" >Imprensa</a></li><li class="item-477"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/sistemas" >Sistemas</a></li><li class="item-542"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/apoio-institucional" >Apoio Institucional</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2> Centrais de Conteúdo</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-464"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/publicacoes" > Publicações</a></li><li class="item-465"><a href="https://www.flickr.com/photos/anatel_informa/albums" >Imagens</a></li><li class="item-466"><a href="https://www.youtube.com/user/Anatel" >Vídeos </a></li><li class="item-468"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/processo-eletronico" >Processo Eletrônico (SEI)</a></li><li class="item-470"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/jurisprudencia" > Repositório de Jurisprudência</a></li><li class="item-469"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/solicitacao-de-vistas" > Solicitação de Vistas de Processo e Documento</a></li><li class="item-467"><a href="https://informacoes.anatel.gov.br/legislacao/" >Legislação</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Composição</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-460"><a href="https://www.gov.br/anatel/pt-br/composicao/estrutura-organizacional" >Estrutura Organizacional</a></li><li class="item-461"><a href="https://www.gov.br/anatel/pt-br/composicao/conselho-diretor" > Conselho Diretor</a></li><li class="item-462"><a href="https://www.gov.br/anatel/pt-br/composicao/conselho-consultivo" > Conselho Consultivo</a></li><li class="item-508"><a href="https://www.gov.br/anatel/pt-br/composicao/ceadi" >Ceadi</a></li><li class="item-463"><a href="https://www.gov.br/anatel/pt-br/composicao/comissao-de-etica" >Comissão de Ética</a></li><li class="item-509"><a href="https://www.gov.br/anatel/pt-br/composicao/comites" >Comitês</a></li><li class="item-510"><a href="https://www.gov.br/anatel/pt-br/composicao/grupos-de-trabalho" >Grupos de Trabalho</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter">		
+			<nav class="row  nav">
+				 			
+				<h2>Consumidor</h2>
+								
+<ul>
+<li class="item-410"><a href="https://www.gov.br/anatel/pt-br/consumidor/quer-reclamar" >Quer Reclamar?</a></li><li class="item-411"><a href="https://www.gov.br/anatel/pt-br/consumidor/conheca-seus-direitos" >Conheça Seus Direitos</a></li><li class="item-412"><a href="https://www.gov.br/anatel/pt-br/consumidor/participe-dos-debates" > Participe dos Debates</a></li><li class="item-413"><a href="https://www.gov.br/anatel/pt-br/consumidor/compare-as-prestadoras" >Compare as Prestadoras</a></li><li class="item-511"><a href="https://www.gov.br/anatel/pt-br/consumidor/habilidades-digitais" >Habilidades Digitais</a></li><li class="item-512"><a href="https://www.gov.br/anatel/pt-br/consumidor/oi-movel" >Oi Móvel </a></li><li class="item-513"><a href="https://www.gov.br/anatel/pt-br/consumidor/projetosproconsumidor" >Projetos pró Consumidor</a></li><li class="item-514"><a href="https://www.gov.br/anatel/pt-br/consumidor/telemarketing" >Telemarketing</a></li><li class="item-482"><a href="https://www.gov.br/anatel/pt-br/consumidor/perguntas-frequentes" >Perguntas Frequentes</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter break width">		
+			<nav class="row  nav">
+				 			
+				<h2>Dados</h2>
+								
+<ul>
+<li class="item-519"><a href="https://www.gov.br/anatel/pt-br/dados/paineis" >Painéis</a></li><li class="item-520"><a href="https://www.gov.br/anatel/pt-br/dados/coleta-de-dados-setoriais" >Coleta de Dados Setoriais</a></li><li class="item-417"><a href="https://www.gov.br/anatel/pt-br/dados/infraestrutura" >Infraestrutura</a></li><li class="item-414"><a href="https://www.gov.br/anatel/pt-br/dados/qualidade" >Qualidade</a></li><li class="item-415"><a href="https://www.gov.br/anatel/pt-br/dados/relatorios-de-acompanhamento" >Relatórios de Acompanhamento</a></li><li class="item-416"><a href="https://www.gov.br/anatel/pt-br/dados/utilidade-publica" >Utilidade Pública</a></li><li class="item-521"><a href="https://www.gov.br/anatel/pt-br/dados/dados-abertos" >Dados Abertos</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter width">		
+			<nav class="row  nav">
+				 			
+				<h2>Legislação</h2>
+								
+<ul>
+<li class="item-183"><a href="https://informacoes.anatel.gov.br/legislacao/resolucoes" >Resoluções</a></li><li class="item-196"><a href="https://informacoes.anatel.gov.br/legislacao/sumulas" >Súmulas</a></li><li class="item-522"><a href="https://informacoes.anatel.gov.br/legislacao/portarias-de-delegacao" >Portarias de Delegação</a></li><li class="item-523"><a href="https://informacoes.anatel.gov.br/legislacao/portarias-normativas" >Portarias Normativas</a></li><li class="item-524"><a href="https://informacoes.anatel.gov.br/legislacao/resolucoes-internas" >Resoluções Internas</a></li><li class="item-525"><a href="https://informacoes.anatel.gov.br/legislacao/metodologias-de-calculo-de-multa" >Metodologias de Cálculo de Multa</a></li><li class="item-526"><a href="https://informacoes.anatel.gov.br/legislacao/glossario-anatel" >Glossário</a></li><li class="item-527"><a href="https://www.gov.br/anatel/pt-br/legislacao/atos" >Atos</a></li><li class="item-528"><a href="https://www.gov.br/anatel/pt-br/legislacao/fiscalizacao" >Fiscalização</a></li><li class="item-529"><a href="https://www.gov.br/anatel/pt-br/legislacao/demais-normas" >Demais Normas</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter width">		
+			<nav class="row  nav">
+				 			
+				<h2>Regulado</h2>
+								
+<ul>
+<li class="item-530"><a href="https://www.gov.br/anatel/pt-br/regulado/acompanhamento-e-controle" >Acompanhamento e Controle</a></li><li class="item-531"><a href="https://www.gov.br/anatel/pt-br/regulado/agenda-regulatoria" >Agenda Regulatória</a></li><li class="item-418"><a href="https://www.gov.br/anatel/pt-br/regulado/arrecadacao" >Arrecadação</a></li><li class="item-422"><a href="https://www.gov.br/anatel/pt-br/regulado/certificacao-de-produtos" >Certificação de Produtos</a></li><li class="item-532"><a href="https://www.gov.br/anatel/pt-br/regulado/competicao" >Competição</a></li><li class="item-533"><a href="https://www.gov.br/anatel/pt-br/regulado/espectro" >Espectro</a></li><li class="item-534"><a href="https://www.gov.br/anatel/pt-br/regulado/fiscalizacao" >Fiscalização</a></li><li class="item-421"><a href="https://www.gov.br/anatel/pt-br/regulado/numeracao" >Numeração</a></li><li class="item-420"><a href="https://www.gov.br/anatel/pt-br/regulado/outorga" >Outorga</a></li><li class="item-535"><a href="https://www.gov.br/anatel/pt-br/regulado/prestadoras-de-pequeno-porte" >Prestadoras de Pequeno Porte</a></li><li class="item-419"><a href="https://www.gov.br/anatel/pt-br/regulado/radiodifusao" >Radiodifusão</a></li><li class="item-536"><a href="https://www.gov.br/anatel/pt-br/regulado/radiofrequencia" >Radiofrequência</a></li><li class="item-537"><a href="https://www.gov.br/anatel/pt-br/regulado/satelite" >Satélite</a></li><li class="item-538"><a href="https://www.gov.br/anatel/pt-br/regulado/universalizacao" >Universalização e Ampliação do Acesso</a></li><li class="item-539"><a href="https://www.gov.br/anatel/pt-br/regulado/perguntas-frequentes" >Perguntas Frequentes</a></li></ul>
+			</nav>					
+		</div>
+	
+	
+                            <span class="hide">Fim da navegação de rodapé</span>
+                        </div>
+                        <!-- fim .row -->
+
+                        <!-- Redes Sociais Agência Nacional de Telecomunicações -->
+                        <div class="container-redes-anatel">
+                            <div class="redes-sociais">
+                                <h3>Redes Sociais</h3>
+                                <ul class="portal-redes">
+                                    <li class="portalredes-twitter portalredes-item">
+                                        <a href="https://twitter.com/anatel_oficial">Twitter</a>
+                                    </li>
+                                    <li class="portalredes-youtube portalredes-item">
+                                        <a href="https://www.youtube.com/anatel">YouTube</a>
+                                    </li>
+                                    <li class="portalredes-facebook portalredes-item">
+                                       <a href="https://www.facebook.com/anatel.oficial">Facebook</a>
+                                    </li>
+                                    <li class="portalredes-flickr portalredes-item">
+                                        <a href="https://www.flickr.com/photos/anatel_informa/albums">Flickr</a>
+                                    </li>
+                                    <li class="portalredes-instagram portalredes-item">
+                                        <a href="https://www.instagram.com/anatel.oficial">Instagram</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Final do container redes sociais -->
+
+                    </div>
+                    <!-- fim .container -->
+                    <div class="footer-logos">
+                        <div class="container tmpl-custom">
+                            
+                            
+                                 <!-- separador para fins de acessibilidade -->
+                                 <span class="hide">&nbsp;</span><!-- fim separador para fins de acessibilidade -->
+                                    <a href="http://www.brasil.gov.br/" class="brasil pull-right">
+                                        <img src="/legislacao/arquivos_e_imagens/imagens/logogoverno.jpg" alt="Brasil - Governo Federal">
+                                    </a>
+
+                                                                                        <a href="http://www.acessoainformacao.gov.br/" class="logo-acesso pull-right"><img src="/legislacao/templates/padraogoverno01/images/acesso-a-informacao.png" alt="Acesso a Informação"></a>
+                            
+                        </div>
+                    </div>
+                    <div class="footer-ferramenta">
+                        <div class="container tmpl-custom">
+                            Todo o conteúdo deste site está publicado sob a licença <a href=https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR>Creative Commons Atribuição-SemDerivações 3.0 Não Adaptada</a>.                        </div>
+                    </div>
+                </footer>
+            </div>
+            <!-- fim div#wrapper -->
+            <!-- scripts principais do template -->
+                    <script src="/legislacao/templates/padraogoverno01/bootstrap/js/bootstrap.min.js" type="cc7ed307b852664bd9b11daf-text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+        <script src="/legislacao/templates/padraogoverno01/js/jquery.cookie.js" type="cc7ed307b852664bd9b11daf-text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+        <script src="/legislacao/templates/padraogoverno01/js/template.js" type="cc7ed307b852664bd9b11daf-text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+                                                <script type="cc7ed307b852664bd9b11daf-text/javascript">
+                    var _gaq = _gaq || [];
+                    _gaq.push(['_setAccount', 'UA-61388073-6']);
+                    _gaq.push(['_trackPageview']);
+                            (function () {
+                        var ga = document.createElement('script');
+                        ga.type = 'text/javascript';
+                        ga.async = true;
+                        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                        var s = document.getElementsByTagName('script')[0];
+                        s.parentNode.insertBefore(ga, s);
+                    })();
+                </script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+                        <!-- debug -->
+            
+<!--****************************** COOKIES HTML CODE START HERE ******************************-->
+<div class="notice_div_ribbin ebsticky_bottom" id="eu_cookies">
+  <div class="inner1">
+    <div class="inner3 eb_contentwrap">
+      <div class="heading_title">Nós protegemos seus dados</div>      <p>Para melhorar a sua experiência na plataforma e prover serviços personalizados, utilizamos cookies. Saiba como usamos seus dados em nosso <a style ="color: #ffffff;" href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais/aviso-de-privacidade">Aviso de Privacidade</a>. Ao clicar em “Aceitar cookies”, você concorda com os Termos de Serviço e a Política de Privacidade da Anatel e terá acesso a todas as funcionalidades do site.</p>      
+    </div>
+<div class="button_message eb_privacypolicy"> 
+			<a  href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais" class="button_cookie eb_papbtn" aria-label="Cookie Policy">Saiba mais</a>
+        <a class="button_cookie" href="javascript:void(0);" onclick="if (!window.__cfRLUnblockHandlers) return false; calltohide()" id="hideme" data-cf-modified-cc7ed307b852664bd9b11daf-="">Aceitar cookies</a>
+	</div>
+  </div>
+</div>
+<!--****************************** COOKIES HTML CODE END HERE ******************************-->
+
+<!--****************************** COOKIES JAVSCRIPT CODE START HERE -- FOR ACCEPT ******************************-->
+<script type="cc7ed307b852664bd9b11daf-text/javascript">
+	check_cookie(getBaseURL());
+</script>
+<!--****************************** COOKIES JAVSCRIPT CODE END HERE ******************************-->
+
+<!--****************************** COOKIES CSS START HERE ******************************-->
+<style>
+.notice_div_simplebar,.notice_div_ribbin{background:rgba(12,30,63,0.85)!important;}
+.inner3 .heading_title{color:#ffffff!important; font-size: 16px;}
+.inner3 p{color:#ffffff!important; font-size: 14px;}
+.button_cookie{background:transparent!important; color:#ffffff!important;}
+.eb_papbtn{background:transparent!important; color:#ffffff!important;}
+</style>
+<!--****************************** COOKIES CSS END HERE ******************************-->
+            
+    <script defer="defer" src="//barra.brasil.gov.br/barra_2.0.js" type="cc7ed307b852664bd9b11daf-text/javascript"></script>        
+
+<!-- Piwik -->
+<script type="cc7ed307b852664bd9b11daf-text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://sistemas.anatel.gov.br/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 3]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+    g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="http://sistemas.anatel.gov.br/piwik/piwik.php?idsite=3" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+</body>
+ </html>

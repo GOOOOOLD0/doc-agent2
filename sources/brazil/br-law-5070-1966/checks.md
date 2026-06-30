@@ -164,3 +164,11 @@
  Lei nº 5.070, de 7 de julho de 1966
  Publicado: Segunda, 11 Julho 1966 10:17
 ```
+## 2026-06-30T06:50:57+00:00
+
+- source_id: `br-law-5070-1966`
+- norm: Law No. 5,070/1966, FISTEL Law
+- status: `no-update`
+- url: https://informacoes.anatel.gov.br/legislacao/leis/474-lei-5070
+- normalized_sha256: `d32592f5aa95956e061cebf7df5f553bcc5b01b64b3328ad3d83b8c933ab630a`
+- compared_to: `/home/runner/work/doc-agent2/doc-agent2/sources/brazil/br-law-5070-1966/snapshots/2026-06-23/normalized.txt`
