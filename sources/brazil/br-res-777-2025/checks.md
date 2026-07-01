@@ -172,3 +172,11 @@
 - url: https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2022-resolucao-777
 - normalized_sha256: `8d035fffab0103eb544e0bc04d9f8dd5697c7be5fc76dfd56ee9715fe50fc877`
 - compared_to: `/home/runner/work/doc-agent2/doc-agent2/sources/brazil/br-res-777-2025/snapshots/2026-06-23/normalized.txt`
+## 2026-07-01T05:21:50+00:00
+
+- source_id: `br-res-777-2025`
+- norm: Resolution No. 777/2025, General Regulation of Telecommunications Services (RGST)
+- status: `no-update`
+- url: https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2022-resolucao-777
+- normalized_sha256: `8d035fffab0103eb544e0bc04d9f8dd5697c7be5fc76dfd56ee9715fe50fc877`
+- compared_to: `/home/runner/work/doc-agent2/doc-agent2/sources/brazil/br-res-777-2025/snapshots/2026-06-30/normalized.txt`

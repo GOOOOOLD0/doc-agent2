@@ -172,3 +172,11 @@
 - url: https://informacoes.anatel.gov.br/legislacao/resolucoes/2021/1595-resolucao-748
 - normalized_sha256: `de5fc4b611f8e2bbea189d76610b4154f1bf5133e7fb515d6efcc85d6019a606`
 - compared_to: `/home/runner/work/doc-agent2/doc-agent2/sources/brazil/br-res-748-2021/snapshots/2026-06-23/normalized.txt`
+## 2026-07-01T05:21:45+00:00
+
+- source_id: `br-res-748-2021`
+- norm: Resolution No. 748/2021, General Regulation for the Exploitation of Satellites
+- status: `no-update`
+- url: https://informacoes.anatel.gov.br/legislacao/resolucoes/2021/1595-resolucao-748
+- normalized_sha256: `de5fc4b611f8e2bbea189d76610b4154f1bf5133e7fb515d6efcc85d6019a606`
+- compared_to: `/home/runner/work/doc-agent2/doc-agent2/sources/brazil/br-res-748-2021/snapshots/2026-06-30/normalized.txt`

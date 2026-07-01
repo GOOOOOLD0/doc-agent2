@@ -172,3 +172,11 @@
 - url: https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2021/1597-ato-9426
 - normalized_sha256: `64295bc6ec92065f9ecc3e49bcb8a3cbff6d9d86c7b6eeb28fb723dc15def1c5`
 - compared_to: `/home/runner/work/doc-agent2/doc-agent2/sources/brazil/br-act-9426-2021/snapshots/2026-06-23/normalized.txt`
+## 2026-07-01T05:21:47+00:00
+
+- source_id: `br-act-9426-2021`
+- norm: Act No. 9,426/2021, coexistence parameters between terrestrial and satellite stations
+- status: `no-update`
+- url: https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2021/1597-ato-9426
+- normalized_sha256: `64295bc6ec92065f9ecc3e49bcb8a3cbff6d9d86c7b6eeb28fb723dc15def1c5`
+- compared_to: `/home/runner/work/doc-agent2/doc-agent2/sources/brazil/br-act-9426-2021/snapshots/2026-06-30/normalized.txt`
