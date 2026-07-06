@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-06-23",
+  "updated_at": "2026-07-06",
   "sources": [
     {
       "source_id": "br-law-9472-1997",
@@ -157,6 +157,58 @@
       "process_step": "SMGS historical / transition source",
       "status": "transitional",
       "monitor": true
+    },
+    {
+      "source_id": "th-nbtc-portal",
+      "country": "thailand",
+      "norm": "NBTC official portal",
+      "authority": "Office of the National Broadcasting and Telecommunications Commission (NBTC)",
+      "url": "https://www.nbtc.go.th/",
+      "source_format": "html",
+      "capture_method": "generic_html",
+      "process_step": "Regulator source discovery for satellite landing rights, telecommunications service authorization, spectrum and licensing",
+      "status": "access-blocked-cloudflare",
+      "monitor": false,
+      "notes": "Pilot access probe on 2026-07-06 returned a Cloudflare challenge page without --fail and HTTP 403 in the monitor. Keep as source-discovery evidence only; do not include in monthly monitoring until a stable document URL or official API is identified."
+    },
+    {
+      "source_id": "th-nbtc-telecom-business",
+      "country": "thailand",
+      "norm": "NBTC telecommunications business section",
+      "authority": "Office of the National Broadcasting and Telecommunications Commission (NBTC)",
+      "url": "https://www.nbtc.go.th/Business/commu/telecom.aspx",
+      "source_format": "html",
+      "capture_method": "generic_html",
+      "process_step": "Service authorization and telecommunications licensing source discovery",
+      "status": "access-blocked-cloudflare",
+      "monitor": false,
+      "notes": "Pilot access probe on 2026-07-06 returned a Cloudflare challenge page without --fail and HTTP 403 in the monitor. Need a stable official document URL before monthly monitoring."
+    },
+    {
+      "source_id": "th-ratchakitcha-portal",
+      "country": "thailand",
+      "norm": "Royal Gazette official portal",
+      "authority": "Royal Gazette, Secretariat of the Cabinet",
+      "url": "https://ratchakitcha.soc.go.th/",
+      "source_format": "html",
+      "capture_method": "generic_html",
+      "process_step": "Official publication source discovery for laws, regulations and NBTC notifications",
+      "status": "access-blocked-cloudflare",
+      "monitor": false,
+      "notes": "Pilot access probe on 2026-07-06 returned a Cloudflare challenge page without --fail and HTTP 403 in the monitor. Direct PDF URLs may still be usable if discovered separately."
+    },
+    {
+      "source_id": "th-mdes-law-catalog",
+      "country": "thailand",
+      "norm": "MDES law catalog",
+      "authority": "Ministry of Digital Economy and Society (MDES)",
+      "url": "https://www.mdes.go.th/law",
+      "source_format": "html",
+      "capture_method": "generic_html",
+      "process_step": "Auxiliary legal-source discovery; not yet mapped to satellite landing rights",
+      "status": "access-confirmed-non-core",
+      "monitor": false,
+      "notes": "Pilot access probe on 2026-07-06 returned extractable HTML. The page is a broad law catalog, not yet a confirmed landing-rights regulatory source."
     }
   ]
 }

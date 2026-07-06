@@ -55,8 +55,9 @@ BLOCK_TAGS = {
 
 
 class TextExtractor(html.parser.HTMLParser):
-    def __init__(self) -> None:
+    def __init__(self, capture_method: str) -> None:
         super().__init__(convert_charrefs=True)
+        self.capture_method = capture_method
         self.skip_depth = 0
         self.capture_depth = 0
         self.in_title = False
@@ -70,12 +71,20 @@ class TextExtractor(html.parser.HTMLParser):
             self.in_title = True
             return
 
-        if self.capture_depth:
-            self.capture_depth += 1
-        elif tag == "div" and attrs_dict.get("id") == "content":
-            self.capture_depth = 1
+        if self.capture_method == "generic_html":
+            if self.capture_depth:
+                self.capture_depth += 1
+            elif tag == "body":
+                self.capture_depth = 1
+            else:
+                return
         else:
-            return
+            if self.capture_depth:
+                self.capture_depth += 1
+            elif tag == "div" and attrs_dict.get("id") == "content":
+                self.capture_depth = 1
+            else:
+                return
 
         if tag in SKIP_TAGS:
             self.skip_depth += 1
@@ -126,6 +135,17 @@ def normalize_lines(value: str) -> list[str]:
     return [line for line in lines if line and not re.fullmatch(r"Acessos:\s*\d+", line)]
 
 
+def detect_blocked_page(html_text: str) -> str | None:
+    lowered = html_text.lower()
+    if "challenges.cloudflare.com" in lowered or "__cf_chl" in lowered or "cf_chl_" in lowered:
+        return "cloudflare challenge page"
+    if "enable javascript and cookies to continue" in lowered:
+        return "javascript/cookie challenge page"
+    if "access denied" in lowered and "reference #" in lowered:
+        return "access denied page"
+    return None
+
+
 def sha256_text(value: str) -> str:
     return hashlib.sha256(value.encode("utf-8")).hexdigest()
 
@@ -155,6 +175,8 @@ def should_process(source: dict[str, Any], args: argparse.Namespace) -> tuple[bo
         return False, "missing url"
     if source.get("source_format") != "html":
         return False, f"unsupported format: {source.get('source_format')}"
+    if source.get("capture_method") not in {"anatel_html", "generic_html"}:
+        return False, f"unsupported capture method: {source.get('capture_method')}"
     return True, ""
 
 
@@ -199,10 +221,19 @@ def download_with_urllib(url: str, timeout: int) -> tuple[bytes, str]:
 
 def normalize_html(raw: bytes, charset: str, source: dict[str, Any], fetched_at: str) -> tuple[str, str]:
     html_text = raw.decode(charset, errors="replace")
-    extractor = TextExtractor()
+    blocked_reason = detect_blocked_page(html_text)
+    if blocked_reason:
+        raise ValueError(f"blocked response detected: {blocked_reason}")
+
+    capture_method = source.get("capture_method") or "generic_html"
+    extractor = TextExtractor(capture_method)
     extractor.feed(html_text)
     extractor.close()
     title = extractor.title
+    text = extractor.text
+    if not text.strip():
+        raise ValueError(f"no extractable text found with capture_method={capture_method}")
+
     header = [
         f"source_id: {source['source_id']}",
         f"country: {source.get('country', '')}",
@@ -211,7 +242,7 @@ def normalize_html(raw: bytes, charset: str, source: dict[str, Any], fetched_at:
         f"title: {title}",
         "",
     ]
-    return title, "\n".join(header) + extractor.text + "\n"
+    return title, "\n".join(header) + text + "\n"
 
 
 def latest_snapshot(root: Path, run_date: str) -> Path | None:
@@ -354,6 +385,7 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--limit", type=int, help="Process at most N eligible sources.")
     parser.add_argument("--include-archive", action="store_true", help="Also process archive_only sources.")
     parser.add_argument("--include-unmonitored", action="store_true", help="Also process monitor=false sources with valid URLs.")
+    parser.add_argument("--allow-errors", action="store_true", help="Return success even if some requested sources fail.")
     parser.add_argument("--dry-run", action="store_true", help="Download and compare without writing snapshots or logs.")
     return parser
 
@@ -379,7 +411,7 @@ def main() -> int:
         try:
             source_id, status = process_source(source, args)
             print(f"{source_id}: {status}")
-        except (OSError, urllib.error.URLError, urllib.error.HTTPError, TimeoutError, ValueError) as exc:
+        except (OSError, RuntimeError, urllib.error.URLError, urllib.error.HTTPError, TimeoutError, ValueError) as exc:
             errors += 1
             source_id = source.get("source_id", "<unknown>")
             print(f"{source_id}: error: {exc}", file=sys.stderr)
@@ -390,7 +422,7 @@ def main() -> int:
 
     print(f"processed: {len(eligible)}")
     print(f"skipped: {len(skipped)}")
-    return 1 if errors else 0
+    return 1 if errors and not args.allow_errors else 0
 
 
 if __name__ == "__main__":
