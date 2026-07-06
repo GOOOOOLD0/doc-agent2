@@ -1,0 +1,14 @@
+{
+  "source_id": "mn-crc-radio-frequency-license",
+  "country": "mongolia",
+  "norm": "Radio frequency and frequency band use special license page",
+  "url": "https://crc.gov.mn/for-new-license-applicants/tusgai-zovsoorol-4/radio-davtamz-asiglax-tusgai-zovsoorol",
+  "fetched_at": "2026-07-06T12:26:38+00:00",
+  "title": "Радио давтамж ашиглах тусгай зөвшөөрөл email email",
+  "charset": "utf-8",
+  "source_format": "html",
+  "capture_method": "generic_html",
+  "normalized_sha256": "5f5042ec9dfcd9fd41e48d7cefdba97befe02803396626bf1a3d9e887938b162",
+  "status": "baseline-created",
+  "compared_to": null
+}

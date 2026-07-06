@@ -7,9 +7,11 @@
 - `Report_Spacesail_EN.docx`: 原始巴西落地许可流程报告。
 - `regulatory_sources/brazil.md`: 人工可读的巴西法规来源台账。
 - `regulatory_sources/thailand.md`: 泰国试点来源台账和访问问题记录。
+- `regulatory_sources/mongolia.md`: 蒙古试点来源台账和可监控官方 URL。
 - `regulatory_sources/sources.json`: 机器可读的法规 URL 配置。
 - `scripts/check_sources.py`: 法规页面抓取、正文归一化、快照保存和更新比对脚本。
-- `sources/brazil/`: 2026-06-23 生成的第一版 baseline 快照和检查日志。
+- `sources/brazil/`: 巴西法规来源 baseline 快照和检查日志。
+- `sources/mongolia/`: 蒙古试点来源 baseline 快照和检查日志。
 
 ## 运行方式
 
@@ -51,4 +53,6 @@ python3 scripts/check_sources.py --date 2026-06-23
 
 泰国已完成第一轮试点：NBTC 与 Royal Gazette 官方入口在脚本环境中返回 Cloudflare / HTTP 403，暂不加入每月监控；MDES 法规目录可抓取，但尚未确认属于卫星落地许可核心来源。
 
-下一步可以继续为泰国定位具体官方文件直链，并按同样结构补充蒙古等国家的法规来源。
+蒙古已完成第一轮试点：CRC 官方许可、无线电频率、设备认证、法律目录页面可抓取；已启用 7 个蒙古来源进入每月监控。三部较大的 legalinfo.mn 法律正文已记录 URL，但暂不启用，待确定快照体积策略后再加入。
+
+下一步可以继续为泰国定位具体官方文件直链，并把蒙古监控源映射成“落地许可流程回答模板”。

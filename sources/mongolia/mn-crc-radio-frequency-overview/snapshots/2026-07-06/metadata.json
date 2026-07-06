@@ -1,0 +1,14 @@
+{
+  "source_id": "mn-crc-radio-frequency-overview",
+  "country": "mongolia",
+  "norm": "CRC radio frequency overview",
+  "url": "https://crc.gov.mn/radio-davtamzh/tanilcuulga-3",
+  "fetched_at": "2026-07-06T12:26:41+00:00",
+  "title": "Танилцуулга email email",
+  "charset": "utf-8",
+  "source_format": "html",
+  "capture_method": "generic_html",
+  "normalized_sha256": "54161c2be9e169fbccdef7181c095e78a91bb8fd73721c4d48ab53292b10f05e",
+  "status": "baseline-created",
+  "compared_to": null
+}

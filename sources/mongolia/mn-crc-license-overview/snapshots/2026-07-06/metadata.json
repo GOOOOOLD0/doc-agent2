@@ -1,0 +1,14 @@
+{
+  "source_id": "mn-crc-license-overview",
+  "country": "mongolia",
+  "norm": "CRC new license applicant overview",
+  "url": "https://crc.gov.mn/for-new-license-applicants/tusgai-zovsoorol-4",
+  "fetched_at": "2026-07-06T12:26:36+00:00",
+  "title": "Тусгай зөвшөөрөл email email",
+  "charset": "utf-8",
+  "source_format": "html",
+  "capture_method": "generic_html",
+  "normalized_sha256": "31db95446d6e2d1dba8606a29702df95b77d44fcba46656245c9b884576537bc",
+  "status": "baseline-created",
+  "compared_to": null
+}
