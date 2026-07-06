@@ -43,6 +43,7 @@
 - [[concepts/landing_rights/cases/brazil/07_brazil_fee_list|巴西费用清单]] — 汇总外国卫星开发权、服务授权、TFI、TFF 等费用。
 - [[concepts/landing_rights/cases/brazil/08_brazil_regulations|巴西法规依据]] — 汇总巴西落地许可涉及的主要法律、决议和监管文件。
 - [[concepts/landing_rights/cases/brazil/09_brazil_reusable_experience|巴西案例可复用经验]] — 提炼巴西案例中可复用于其他国家分析的经验。
+- [[concepts/landing_rights/cases/brazil/10_brazil_answer_template|巴西落地许可 Agent 回答模板]] — 将巴西案例压缩成可直接回答用户问题的标准结构。
 
 ---
 

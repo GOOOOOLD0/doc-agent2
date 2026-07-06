@@ -8,6 +8,8 @@
 - `regulatory_sources/brazil.md`: 人工可读的巴西法规来源台账。
 - `regulatory_sources/thailand.md`: 泰国试点来源台账和访问问题记录。
 - `regulatory_sources/mongolia.md`: 蒙古试点来源台账和可监控官方 URL。
+- `wiki/raw/articles/landing_rights/brazil/source_inventory.md`: 巴西知识抽取用来源清单。
+- `wiki/concepts/landing_rights/cases/brazil/10_brazil_answer_template.md`: 巴西落地许可 Agent 回答模板。
 - `regulatory_sources/sources.json`: 机器可读的法规 URL 配置。
 - `scripts/check_sources.py`: 法规页面抓取、正文归一化、快照保存和更新比对脚本。
 - `sources/brazil/`: 巴西法规来源 baseline 快照和检查日志。
