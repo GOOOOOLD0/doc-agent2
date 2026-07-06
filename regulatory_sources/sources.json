@@ -198,6 +198,45 @@
       "notes": "Pilot access probe on 2026-07-06 returned a Cloudflare challenge page without --fail and HTTP 403 in the monitor. Direct PDF URLs may still be usable if discovered separately."
     },
     {
+      "source_id": "th-nbtc-foreign-satellite-service-notice",
+      "country": "thailand",
+      "norm": "NBTC notice on use of foreign satellite channels for domestic service provision",
+      "authority": "Office of the National Broadcasting and Telecommunications Commission (NBTC)",
+      "url": "https://nbtc.go.th/getattachment/a46c757a-2767-4568-bf76-c0c78757df89/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%B2%E0%B8%A8.pdf.aspx?lang=th-TH&ext=.pdf",
+      "source_format": "pdf",
+      "capture_method": "pdf_direct",
+      "process_step": "Foreign satellite channel / landing-rights authorization",
+      "status": "url-confirmed-curl-403",
+      "monitor": false,
+      "notes": "Google indexes this as an official NBTC PDF and external web fetch reports application/pdf with 2 pages. Local curl returned HTTP 403 on 2026-07-06, so keep as a core candidate but do not enable monthly monitoring yet."
+    },
+    {
+      "source_id": "th-nbtc-foreign-satellite-channel-guide",
+      "country": "thailand",
+      "norm": "NBTC guide for preparing information to request use of foreign satellite channels",
+      "authority": "Office of the National Broadcasting and Telecommunications Commission (NBTC)",
+      "url": "https://nbtc.go.th/getattachment/fe5e5d54-19a7-4211-b012-29370d211096/%E0%B8%84%E0%B8%B9%E0%B9%88%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%88%E0%B8%B1%E0%B8%94%E0%B8%97%E0%B8%B3%E0%B8%82%E0%B9%89%E0%B8%AD%E0%B8%A1%E0%B8%B9%E0%B8%A5%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%AD%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%87%E0%B8%B2%E0%B8%99-%E0%B8%82%E0%B9%89%E0%B8%AD-16_update-2022.pdf.aspx?lang=th-TH&ext=.pdf",
+      "source_format": "pdf",
+      "capture_method": "pdf_direct",
+      "process_step": "Application materials for foreign satellite channel authorization",
+      "status": "url-confirmed-curl-403",
+      "monitor": false,
+      "notes": "Google indexes this as an official NBTC PDF and external web fetch reports application/pdf with 22 pages. Local curl returned HTTP 403 on 2026-07-06, so keep as a core candidate but do not enable monthly monitoring yet."
+    },
+    {
+      "source_id": "th-nbtc-starlink-background",
+      "country": "thailand",
+      "norm": "Starlink in Thailand article",
+      "authority": "Office of the National Broadcasting and Telecommunications Commission (NBTC)",
+      "url": "https://www.nbtc.go.th/getattachment/Services/serviceandarticleoftelecomeconomy/%E0%B8%9A%E0%B8%97%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B9%80%E0%B8%A8%E0%B8%A3%E0%B8%A9%E0%B8%90%E0%B8%A8%E0%B8%B2%E0%B8%AA%E0%B8%95%E0%B8%A3%E0%B9%8C%E0%B9%82%E0%B8%97%E0%B8%A3%E0%B8%84%E0%B8%A1%E0%B8%99%E0%B8%B2%E0%B8%84%E0%B8%A1/%E0%B8%9B%E0%B8%B5-2564/51584/%E0%B8%9A%E0%B8%97%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B9%84%E0%B8%95%E0%B8%A3%E0%B8%A1%E0%B8%B2%E0%B8%AA-1_2564-Starlink-in-Thailand.pdf?lang=th-TH",
+      "source_format": "pdf",
+      "capture_method": "pdf_direct",
+      "process_step": "Background context for satellite internet and Starlink in Thailand",
+      "status": "background-url-confirmed-curl-403",
+      "monitor": false,
+      "notes": "Google indexes this as an official NBTC PDF and external web fetch reports application/pdf with 6 pages. This is background material rather than a controlling regulation. Local curl returned HTTP 403 on 2026-07-06."
+    },
+    {
       "source_id": "th-mdes-law-catalog",
       "country": "thailand",
       "norm": "MDES law catalog",
