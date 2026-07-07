@@ -1,0 +1,1107 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="pt-br" dir="ltr"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="pt-br" dir="ltr"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="pt-br" dir="ltr"> <![endif]-->
+<!--[if gt IE 8]><!--> 
+
+<html class="no-js" lang="pt-br" dir="ltr"> <!--<![endif]-->
+	<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-61388073-6" type="fe51d2618747f8ed7f0ac240-text/javascript"></script>
+    <script type="fe51d2618747f8ed7f0ac240-text/javascript">
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-61388073-6');
+    </script>
+
+    <!-- Compilar normas -->
+    <script type="fe51d2618747f8ed7f0ac240-text/javascript">
+      // Função que ativa ou desativa a remoção dos elementos tachados
+      window.compila = function() {
+        var elems = document.body.getElementsByTagName('*');
+        var active = document.body.classList.toggle('compiled'); // Alterna o estado
+
+        for (var i = 0; i < elems.length; i++) {
+          var elemStyle = window.getComputedStyle(elems[i]);
+
+          // Verifica se o elemento tem 'line-through' e aplica/remova conforme o estado
+          if (elemStyle.getPropertyValue('text-decoration').startsWith('line-through')) {
+            elems[i].style.display = active ? 'none' : ''; // Oculta ou restaura o elemento
+          }
+        }
+
+        // Atualiza o título do botão conforme o estado atual
+        var botaoCompila = document.querySelector('.botao-compila');
+        botaoCompila.title = active ? 'Desativar Texto Compilado' : 'Ativar Texto Compilado';
+
+        // Adiciona ou remove o hash #compilado na URL
+        if (active) {
+          window.location.hash = 'compilado'; // Adiciona #compilado na URL
+          botaoCompila.classList.add('active'); // Adiciona a classe 'active' ao botão
+        } else {
+          history.pushState("", document.title, window.location.pathname + window.location.search); // Remove o hash
+          botaoCompila.classList.remove('active'); // Remove a classe 'active' do botão
+        }
+      }
+
+      // Verifica se a URL contém #compilado ao carregar a página
+      document.addEventListener("DOMContentLoaded", function() {
+        if (window.location.hash === '#compilado') {
+          window.compila(); // Ativa a compilação automaticamente
+        }
+      });
+    </script>
+
+	  <title>Anatel - Ato nº 9426, de 24 de outubro de 2021</title>
+      <title>Agência Nacional de Telecomunicações</title>
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <meta name="Description" content="Informações sobre a Agência Nacional de Telecomunicações"/>
+<meta name="keywords" content="Setor regulado, Consumidor, Anatel, Telecomunicações, Legislação, Telefonia Fixa, Telefonia Móvel, Celular, Banda Larga, Internet, Operadoras, Serviços de Telecomunicações, Infraestrutura de Telecomunicações, Radioamador, Radiofrequência"/>
+      <meta name="author" content="ANATEL"/>
+      <meta name="robots" content="index, follow"/>
+<!-- Telecomunicações, ANATEL, Regulação -->
+
+        <!--[if lt IE 9]>
+        <script src="/legislacao/templates/padraogoverno01/js/html5shiv.js"></script>
+        <![endif]-->
+		
+		
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/bootstrap/css/bootstrap.min.css" type='text/css'/>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/template-legislacao.css" type='text/css'/>
+                    <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/icones-bmp-institucional.css" type='text/css'/>
+                    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" crossorigin="anonymous">
+        <!--[if lt IE 10]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie.css" />
+        <![endif]-->
+        <!--[if lt IE 9]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie8.css" />
+        <![endif]-->
+        <!--[if lt IE 8]>
+        <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/ie7.css" />
+        <link rel="stylesheet" href="/legislacao/font-awesome/css/font-awesome-ie7.min.css" />
+        <![endif]-->
+            <base href="https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2021/1597-ato-9426" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Aprovação, Parâmetro, Requisito Técnico, Convivência, Estações Terrestres, Faixas, Frequências, Serviço Fixo por Satélite, AtoVigente" />
+	<meta name="rights" content="Direitos reservados à Anatel. As normas podem ser utilizadas desde que informada a fonte." />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="Aprova os parâmetros e requisitos técnicos para convivência entre estações terrestres operando na faixa de 3.300 MHz a 3.700 MHz e estações terrenas do serviço fixo por satélite operando na faixa de frequências de 3.700 MHz a 4.200 MHz." />
+	<title>Anatel - Ato nº 9426, de 24 de outubro de 2021</title>
+	<link href="/legislacao/templates/padraogoverno01/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+	<link href="/legislacao/media/com_attachments/css/attachments_hide.css" rel="stylesheet" type="text/css" />
+	<link href="/legislacao/media/com_attachments/css/attachments_list.css" rel="stylesheet" type="text/css" />
+	<link href="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/css/cookie.css?v=53516272" rel="stylesheet" type="text/css" />
+	<link href="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/css/responsive.css?v=1315046421" rel="stylesheet" type="text/css" />
+	<link href="/legislacao/media/mod_languages/css/template.css?7acd2053edfb97467c7bf73ffe8ac30f" rel="stylesheet" type="text/css" />
+	<style type="text/css">
+#scrollToTop {
+	cursor: pointer;
+	font-size: 0.9em;
+	position: fixed;
+	text-align: center;
+	z-index: 9999;
+	-webkit-transition: background-color 0.2s ease-in-out;
+	-moz-transition: background-color 0.2s ease-in-out;
+	-ms-transition: background-color 0.2s ease-in-out;
+	-o-transition: background-color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out;
+
+	background: #3e67b1;
+	color: #ffffff;
+	border-radius: 5px;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	right: 20px; bottom: 20px;
+}
+
+#scrollToTop:hover {
+	background: #3a72bc;
+	color: #ffffff;
+}
+
+#scrollToTop > img {
+	display: block;
+	margin: 0 auto;
+}
+	</style>
+	<script type="application/json" class="joomla-script-options new">{"csrf.token":"8b87d83aa7a34a257526763d23faa7b7","system.paths":{"root":"\/legislacao","base":"\/legislacao"}}</script>
+	<script src="/legislacao/media/jui/js/jquery.min.js?7acd2053edfb97467c7bf73ffe8ac30f" type="fe51d2618747f8ed7f0ac240-text/javascript"></script>
+	<script src="/legislacao/media/jui/js/jquery-noconflict.js?7acd2053edfb97467c7bf73ffe8ac30f" type="fe51d2618747f8ed7f0ac240-text/javascript"></script>
+	<script src="/legislacao/media/jui/js/jquery-migrate.min.js?7acd2053edfb97467c7bf73ffe8ac30f" type="fe51d2618747f8ed7f0ac240-text/javascript"></script>
+	<script src="/legislacao/media/plg_system_sl_scrolltotop/js/scrolltotop_jq.js" type="fe51d2618747f8ed7f0ac240-text/javascript"></script>
+	<script src="/legislacao/media/com_attachments/js/attachments_refresh.js" type="fe51d2618747f8ed7f0ac240-text/javascript"></script>
+	<script src="https://informacoes.anatel.gov.br/legislacao/modules/mod_ebstickycookienotice/tmpl/assets/js/cookie_script.js?v=1866929274" type="fe51d2618747f8ed7f0ac240-text/javascript"></script>
+	<script type="fe51d2618747f8ed7f0ac240-text/javascript">
+jQuery(document).ready(function() {
+	jQuery(document.body).SLScrollToTop({
+		'image':		'',
+		'text':			'Voltar ao topo',
+		'title':		'scroll top',
+		'className':	'scrollToTop',
+		'duration':		500
+	});
+});
+
+/*===  EASY GOOGLE ANALYTICS : START TRACKING CODE  ===*/
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-37108821-1']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+/*===  EASY GOOGLE ANALYTICS : END TRACKING CODE  ===*/
+
+	</script>
+
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+	
+                    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,800,700" rel='stylesheet' type='text/css'>
+            	
+	<!--CHAMADA CUSTOMIZACAO -->
+	<script src="/legislacao/templates/padraogoverno01/js/custom-portal.js" type="fe51d2618747f8ed7f0ac240-text/javascript"></script>
+	 <link rel="stylesheet" href="/legislacao/templates/padraogoverno01/css/customizacao-legislacao.css?01072026022147" type='text/css'/>
+	<style type="text/css">@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.2.8/latin/400/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.2.8/vietnamese/400/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.2.8/latin-ext/400/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.2.8/cyrillic-ext/400/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Raleway;font-style:normal;font-weight:400;src:url(/cf-fonts/s/raleway/5.2.8/cyrillic/400/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}</style>
+</head>
+<body  id="main-navigation">
+
+<a href="#conteudo" accesskey="1">
+<a href="#main-navigation" accesskey="2">
+<a href="#search" accesskey="3">  
+<a href="#portal-footer" accesskey="4">     
+
+    <a class="hide" id="topo" href="#accessibility">Ir direto para menu de acessibilidade.</a>
+    <noscript>
+    <div class="error minor-font">
+        Seu navegador de internet está sem suporte à JavaScript. Por esse motivo algumas funcionalidades do site podem não estar acessíveis.
+    </div>
+    </noscript>
+    <!--[if lt IE 7]><center><strong>Atenção, a versão de seu navegador não é compatível com este sítio. Atualize seu navegador.</strong></center><![endif]-->
+		
+<div class="layout">
+   
+    <header class="super-destaque">
+         <div class="noticia-destaque">
+        <div class="container tmpl-custom">
+            
+            <!-- fim .row-fluid -->
+            <div class="row-fluid">
+                <div id="logo" class="span4">
+				
+                    <a href="https://www.gov.br/mcom" title="Ministério das Comunicações">
+                        
+												
+						<span class="portal-title-1"></span>
+
+                                                        <span class="portal-description">Ministério das Comunicações</span>
+                                
+                        									
+                    </a>
+					
+                </div>
+                  
+                <!-- fim .span4 -->
+                <div id="menulateral" class="span8">
+                    	<nav id="" class="row">
+    	<p class="hidden">Opções de acessibilidade</p>
+    	
+<ul class="pull-right" id="portal-siteactions">
+<li class="item-478 siteaction-outros"><a class="siteaction-outros" href="https://www.gov.br/pt-br/orgaos-do-governo"  accesskey="0" >Órgãos do Governo</a></li><li class="item-479 siteaction-outros"><a class="siteaction-outros" href="http://www.acessoainformacao.gov.br"  accesskey="1" >Acesso à Informação</a></li><li class="item-480 siteaction-outros"><a class="siteaction-outros" href="http://www4.planalto.gov.br/legislacao"  accesskey="2" >Legislação</a></li><li class="item-481 siteaction-outros"><a class="siteaction-outros" href="https://www.gov.br/governodigital/pt-br/acessibilidade-digital"  accesskey="3" >Acessibilidade</a></li><li class="item-260 toggle-contraste"><a class="toggle-contraste" href="#"  accesskey="4" >⠀</a></li><li class="item-263 siteaction-vlibras"><a class="siteaction-vlibras" href="https://acesso.gov.br/"  accesskey="5" >⠀</a></li></ul>
+    </nav>
+		<nav id="" class="row">
+    	<p class="hidden">Seleção de Idioma</p>
+    	<div class="mod-languages">
+
+	<ul class="lang-inline">
+						<li class="lang-active" dir="ltr">
+			<a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2021">
+							PT						</a>
+			</li>
+								<li dir="ltr">
+			<a href="/legislacao/en/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2021">
+							EN						</a>
+			</li>
+								<li dir="ltr">
+			<a href="/legislacao/es/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2021">
+							ES						</a>
+			</li>
+				</ul>
+
+</div>
+    </nav>
+	
+                </div>
+                <!-- fim .span8 -->
+            </div>
+            <!-- fim .row-fluid -->
+        </div>
+        <!-- fim div.container -->  
+        <div class="sobre" id="search">
+            <div class="container tmpl-custom">
+                <div class="menu-servicos">
+                    <div class="header-icons">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <a href="https://www.gov.br/anatel/pt-br" title="Agência Nacional de Telecomunicações - Anatel">
+                                            
+                             <h1 class="portal-title corto">Agência Nacional de Telecomunicações</h1>
+                        
+                                            </a>
+                    	<nav >
+        <p class="hide">Pesquisar</p>
+        <nav id="portal-searchbox">
+<form action="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2021" method="post" class="pull-right">
+    <fieldset>
+        <legend class="hide">Busca</legend>
+        <h2 class="hidden">Buscar no portal</h2>
+        <div class="input-append">
+            <label for="portal-searchbox-field" class="hide">Busca: </label>
+            <input type="text" id="portal-searchbox-field" class="searchField" placeholder="O que você procura?" title="O que você procura?" name="searchword">       
+            <button type="submit" class="btn searchButton"><span class="hide">Buscar</span><i class="fas fa-search"></i></button>
+        </div>
+        <input type="hidden" name="task" value="search" />
+        <input type="hidden" name="option" value="com_search" />
+        <input type="hidden" name="Itemid" value="254" />
+    </fieldset>
+</form>    </nav>
+	
+                    <div class="header-search">
+                        <a href="/legislacao/component/pesquisa/view-results/module-188"><i class="fas fa-search"></i></a>
+                    </div>
+            </div>
+            <!-- .container -->
+        </div>  
+    </div>
+        <!-- fim .sobre -->
+        <div id="conteudo"></div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container tmpl-custom">
+            	<div class="row-fluid">
+		<section>
+						
+<div class="rastro-navegacao row-flutuante">
+<a title="Voltar para a Página Inicial" href="https://www.gov.br/anatel/pt-br"><i class='fas fa-home'></i></a><span class="separator">&gt;</span><a href="/legislacao/" class="pathway">Legislação</a> <span class="separator">&gt;</span> <a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro" class="pathway">Atos de Requisitos Técnicos de Gestão do Espectro</a> <span class="separator">&gt;</span> <a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2021" class="pathway">2021</a> <span class="separator">&gt;</span> <span>Ato nº 9426, de 24 de outubro de 2021</span></div>
+		</section>
+	</div>
+	
+            <div class="row-fluid" >
+                                    <!-- Menus Principal -->
+                    <div class="navigation-wrapper">
+                        <div class="container tmpl-custom tmpl-before">
+                            <div id="navigation">
+                                <section id="navigation-section">
+        				
+                                    <!-- <span class="hide">Início do menu principal</span> -->
+        							
+                                    	<nav class="  super-menus">
+		<!-- <h2 >Legislação da Anatel <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2  class="Legislação-da-Anatel"><span>Legislação da Anatel </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-105 parent"><a href="/legislacao/resolucoes" >Resoluções</a></li><li class="item-118"><a href="/legislacao/sumulas" >Súmulas</a></li><li class="item-182"><a href="/legislacao/portarias-de-delegacao" >Portarias de Delegação</a></li><li class="item-319 parent"><a href="/legislacao/portarias-normativas" >Portarias Normativas</a></li><li class="item-435"><a href="/legislacao/resolucoes-internas" >Resoluções Internas</a></li><li class="item-264"><a href="/legislacao/metodologias-de-calculo-de-multa" >Metodologias de Cálculo de Multa</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Atos da Anatel <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2  class=""><span>Atos da Anatel </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-342 parent"><a href="/legislacao/atos-de-certificacao-de-produtos" >Atos de Certificação de Produtos</a></li><li class="item-369 active deeper parent"><a class="menu-normas" href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro" >Atos de Requisitos Técnicos de Gestão do Espectro</a><ul><li class="item-546"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2026" >2026</a></li><li class="item-518"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2025" >2025</a></li><li class="item-495"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2024" >2024</a></li><li class="item-491"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2023" >2023</a></li><li class="item-489"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2022" >2022</a></li><li class="item-497 current active"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2021" >2021</a></li><li class="item-433"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2020" >2020</a></li><li class="item-370"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2019" >2019</a></li><li class="item-371"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2018" >2018</a></li><li class="item-372"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2017" >2017</a></li><li class="item-373"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2016" >2016</a></li><li class="item-374"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2015" >2015</a></li><li class="item-375"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2014" >2014</a></li><li class="item-376"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2013" >2013</a></li><li class="item-377"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2012" >2012</a></li><li class="item-378"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2011" >2011</a></li><li class="item-379"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2010" >2010</a></li><li class="item-380"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2009" >2009</a></li><li class="item-381"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2008" >2008</a></li><li class="item-382"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2007" >2007</a></li><li class="item-383"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2006" >2006</a></li><li class="item-384"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2005" >2005</a></li><li class="item-385"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2004" >2004</a></li><li class="item-386"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2003" >2003</a></li><li class="item-387"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2002" >2002</a></li><li class="item-388"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2001" >2001</a></li><li class="item-389"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2000" >2000</a></li><li class="item-390"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/1999" >1999</a></li><li class="item-391"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/1998" >1998</a></li><li class="item-392"><a href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/1997" >1997</a></li></ul></li><li class="item-483"><a href="/legislacao/atos-de-numeracao" >Atos de Numeração</a></li><li class="item-543"><a href="/legislacao/atos-complementares-de-regulacao" >Atos Complementares de Regulação</a></li><li class="item-547"><a href="/legislacao/atos-de-requisitos-operacionais-de-outorga-e-licenciamento" >Atos de Requisitos Operacionais de Outorga e Licenciamento</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Demais Normas <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2  class=""><span>Demais Normas </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-106"><a href="/legislacao/leis" >Leis</a></li><li class="item-107"><a href="/legislacao/decretos" >Decretos</a></li><li class="item-108"><a href="/legislacao/normas-do-mc" >Normas do MC</a></li><li class="item-293"><a href="/legislacao/instruções-do-dentel" >Instruções do Dentel</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Fiscalização <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2  class=""><span>Fiscalização </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-203"><a href="/legislacao/procedimentos-de-fiscalizacao" >Procedimentos de Fiscalização</a></li><li class="item-202"><a href="/legislacao/instrucoes-de-fiscalizacao" >Instruções de Fiscalização</a></li></ul>
+	</nav>
+		<nav class="  super-menus">
+		<!-- <h2 >Glossário <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>-->
+		<h2  class=""><span>Glossário </span><i class="icon-chevron-up pull-right"></i></h2>
+		
+
+<ul>
+<li class="item-256"><a href="/legislacao/glossario-anatel" >Termos de Telecomunicações</a></li></ul>
+	</nav>
+	
+                                    <span class="hide">Fim do menu principal</span>
+                                </section>
+                            </div>
+                        </div>    
+                    </div>   
+                    <!-- fim Menus Principal -->
+                
+                <div id="content" class="span9  internas">
+                    <section id="content-section">
+                    
+                    <div class="banner-destaque">
+                        
+                    </div>    
+                        <!-- <span class="hide">Início do conteúdo da página</span> -->
+
+                                    
+                    <!-- Chamada da posição paginas de Serviços -->
+                     
+
+                    <!--Fim da chamada de paginas de Serviços -->    
+
+                                                
+                        <!-- INÍCIO - Menu de tradução ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                         <!-- Local: template - html - mod_menu (menutraducao.php) -->
+                        <!-- FINAL - Menu de Tradução +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        
+                        <!-- INÍCIO - Chapéu do artigo ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        <!-- <div class="row-fluid">
+                            <p class="section" property="rnews:articleSection">Ciência e Tecnologia</p>
+                        </div> -->
+                        <!-- FINAL - Chapéu do artigo +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+                        <!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        <!-- Local: template - html - mod_menu (default.php) -->
+                        <!--jdoc:include type="modules" name="modulo-contexto" />
+                        <!-- FINAL - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+                        
+                                                                                        
+                                <div class="row-fluid module">
+                                                                                    <!-- Escreve conteúdo das páginas internas -->
+                                                
+                                                ﻿﻿﻿<div class="content-header-options-1 row-fluid redes-sociais">
+
+		<div class="btns-social-like span5 hide">
+															<style>
+    @media print {
+      footer, #scrollToTop, #scrollToTop:hover, .icon-chevron-up:before, .icon-list:before, main .container #navigation .mainmenu-toggle, footer .footer-ferramenta, footer .footer-logos, #content.internas .below-content .line, main div.rastro-navegacao, #barra-brasil, header, #content.internas .content-header-options-1 .btns-social-like {
+        display: none !important;
+      }
+      img.access-button {
+      display: none;
+      }
+      img.pop-up {
+      display: none;
+      }
+      a:after, a[href^="javascript:"]:after, a[href^="#"]:after { 
+        display: none;
+      }
+    }
+
+    /* Estilos para os botões fixos */
+    .fixed-buttons {
+      position: fixed;
+      top: 36%;
+      left: 20px;
+      display: flex;
+      flex-direction: column;
+      z-index: 1000; /* Garante que os botões fiquem no topo */
+    }
+
+    .fixed-buttons div, .fixed-buttons p {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    /* Cor de botão ativa para o botão de compilação */
+    .botao-compila.active {
+      background-color: #4CAF50; /* Verde indica ativo */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Contêiner dos botões fixos -->
+  <div class="fixed-buttons">
+    <div class="facebook" title="Compartilhar no Facebook">
+      <span class="facebook-share" data-js="facebook-share"><i class="fab fa-facebook-f"></i></span>
+    </div>
+
+    <div class="twitter" title="Compartilhar no Twitter">
+      <span class="twitter-share-button" data-lang="pt" data-js="twitter-share"><i class="fab fa-twitter"></i></span>
+    </div>
+
+    <p class="botao-imprime" title="Imprimir">
+      <a href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.print();" data-cf-modified-fe51d2618747f8ed7f0ac240-=""><i class="fas fa-print"></i></a>
+    </p>
+
+    <p class="botao-compila" title="Ativar Texto Compilado">
+      <a href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.compila(); return false;" data-cf-modified-fe51d2618747f8ed7f0ac240-=""><i class="fas fa-file-alt"></i></a>
+    </p>
+  </div>
+
+  <script type="fe51d2618747f8ed7f0ac240-text/javascript">
+    // Função de compartilhamento no Facebook
+    var facebookShare = document.querySelector('[data-js="facebook-share"]');
+    facebookShare.onclick = function(e) {
+      e.preventDefault();
+      var facebookWindow = window.open('https://www.facebook.com/sharer/sharer.php?u=' + document.URL, 'facebook-popup','height=350, width=600, left='+(window.innerWidth-600)/2+', top='+(window.innerHeight-600)/2);
+      if(facebookWindow.focus) { facebookWindow.focus(); }
+      return false;
+    }
+
+    // Função de compartilhamento no Twitter
+    var twitterShare = document.querySelector('[data-js="twitter-share"]');
+    twitterShare.onclick = function(e) {
+      e.preventDefault();
+      var twitterWindow = window.open('https://twitter.com/share?url=' + document.URL, 'twitter-popup','height=350, width=600, left='+(window.innerWidth-600)/2+', top='+(window.innerHeight-600)/2);
+      if(twitterWindow.focus) { twitterWindow.focus(); }
+      return false;
+    }
+
+    // Função que ativa ou desativa a remoção dos elementos tachados
+    window.compila = function() {
+      var elems = document.body.getElementsByTagName('*');
+      var active = document.body.classList.toggle('compiled'); // Alterna o estado
+
+      for (var i = 0; i < elems.length; i++) {
+        var elemStyle = window.getComputedStyle(elems[i]);
+        if (elemStyle.getPropertyValue('text-decoration').startsWith('line-through')) {
+          elems[i].style.display = active ? 'none' : ''; // Oculta ou restaura o elemento
+        }
+      }
+
+      // Atualiza o título e a cor do botão conforme o estado atual
+      var botaoCompila = document.querySelector('.botao-compila');
+      botaoCompila.title = active ? 'Desativar Texto Compilado' : 'Ativar Texto Compilado';
+      botaoCompila.classList.toggle('active', active);
+
+      // Adiciona ou remove o hash #compilado na URL
+      if (active) {
+        window.location.hash = 'compilado';
+      } else {
+        history.pushState("", document.title, window.location.pathname + window.location.search);
+      }
+    }
+
+    // Verifica se a URL contém #compilado ao carregar a página
+    document.addEventListener("DOMContentLoaded", function() {
+      if (window.location.hash === '#compilado') {
+        window.compila(); // Ativa a compilação automaticamente
+      }
+    });
+  </script>					<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="fe51d2618747f8ed7f0ac240-|49" defer></script></div>		
+		
+
+</div>
+
+<div class="item-page">
+
+
+
+	
+
+
+	<h1 class="documentFirstHeading">
+			Ato nº 9426, de 24 de outubro de 2021		</h1>
+
+	<ul class="actions">
+					</ul>
+
+
+
+<div class="content-header-options-1 row-fluid">
+	<div class="documentByLine span7">
+				
+			
+
+					<span class="documentPublished">
+				Publicado: Segunda, 25 Outubro 2021 08:32			</span>
+			<span class="separator">|</span>			
+
+					<span class="documentModified">
+				Última atualização: Quarta, 06 Março 2024 11:23			</span>
+			<span class="separator">|</span>			
+		
+					<span class="documentHits">
+				Acessos: 3555			</span>
+					
+		
+	</div>
+</div>
+<!-- fim .content-header-options-1 -->
+
+
+
+	
+		<table style="width: 98%;" border="0" cellspacing="2" cellpadding="20" align="center">
+<tbody>
+<tr>
+<td style="padding-right: 25px; width: 50%; text-align: left;" valign="middle"> </td>
+<td style="width: 50%; text-align: justify;" valign="middle">
+<p style="text-align: justify;"> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;"> </p>
+<p style="text-align: justify;"><span style="color: #ff0000;"><strong>Observação</strong></span>: Este texto não substitui o publicado no DOU de <a title="Acesse o DOU" href="https://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=25/10/2021&amp;jornal=600&amp;pagina=1&amp;totalArquivos=2">25/10/2021</a>.</p>
+<p style="text-align: justify;"> </p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><b>O CONSELHO DIRETOR DA AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES</b>, no uso da prerrogativa estabelecida no <a title="Acesse o Artigo" href="https://www.planalto.gov.br/ccivil_03/leis/l9784.htm#art15">art. 15</a> da Lei nº 9.784, de 29 de janeiro de 1999, que regula o processo administrativo no âmbito da Administração Pública Federal,</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">CONSIDERANDO a competência dada pelos incisos XIII e XIV do <a title="Acesse o Artigo" href="https://informacoes.anatel.gov.br/legislacao/leis/2-lei-9472#art19">art. 19</a> da Lei nº 9.472/97 – Lei Geral de Telecomunicações;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">CONSIDERANDO o disposto no inciso VIII do <a title="Acesse o Artigo" href="https://informacoes.anatel.gov.br/legislacao/leis/2-lei-9472#art19">art. 19 </a>da Lei nº 9.472, de 1997, cabe à Anatel administrar o espectro de radiofrequências, expedindo as respectivas normas;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">CONSIDERANDO o disposto no <a title="Acesse o Artigo" href="https://informacoes.anatel.gov.br/legislacao/leis/2-lei-9472#art161">art. 161</a> da Lei nº 9.472, de 1997, que determina que a qualquer tempo poderá ser modificada a destinação de radiofrequências ou faixas, bem como ordenada a alteração de potências ou de outras características técnicas, desde que o interesse público ou o cumprimento de convenções ou tratados internacionais assim o determine;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">CONSIDERANDO o disposto nos arts. <a title="Acesse o Artigo" href="https://informacoes.anatel.gov.br/legislacao/leis/2-lei-9472#art157">157</a> e <a title="Acesse o Artigo" href="https://informacoes.anatel.gov.br/legislacao/leis/2-lei-9472#art159">159</a> da Lei nº 9.472, de 1997, que estabelece a competência da Anatel para administrar o espectro de radiofrequências objetivando evitar interferências prejudiciais;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">CONSIDERANDO a competência da Anatel para regular a utilização eficiente e adequada do espectro, restringindo o emprego, ou modificando a destinação de determinadas radiofrequências ou faixas;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">CONSIDERANDO o fato de o espectro de radiofrequências ser um bem público e escasso, administrado pela Agência;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">CONSIDERANDO a necessidade de otimizar o uso das faixas de radiofrequências;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">CONSIDERANDO a Proposta de Atuações Regulatórias <a title="Acesse o SEI" href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_documento_consulta_externa.php?eEP-wqk1skrd8hSlk5Z3rN4EVg9uLJqrLYJw_9INcO7nm3SQbuN3TVoDP6aJjfc9rU__w7sZqZZWONRHMBoWZl7nvPqBaxOWsmNIbo40wvxw6LZ1mwWENrr3nbsVFXr1">(SEI nº 3077101)</a>, aprovada pelo Acórdão nº 651, de 1º de novembro de 2018 <a title="Acesse o SEI" href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_documento_consulta_externa.php?eEP-wqk1skrd8hSlk5Z3rN4EVg9uLJqrLYJw_9INcO6rxGT2rD0MihODXYL0NVSlANt8ytzB87ey1Yx1jIRWulOTXLAcPf9ESzjNaQXwoBvViNoFAT07PDDEmYtNMMlE">(SEI nº 3434164)</a>, nos autos do <a title="Acesse o Processo" href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_processo_exibir.php?5gYoR1KAsC6DjRCbPhmMOOVg9zRBSU6KM_dMM2dffV6uXABkpM3AC_FvsJjJLZawJGpS7XJ2Cix36pBUfTFiDbXL-2CeqgKMP8ok7jFDG33m4IMeU-MK0DJ7vJToUSuY">Processo nº 53500.014958/2016-89</a>;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">CONSIDERANDO o disposto no Regulamento Anexo à <a title="Acesse a Resolução " href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2019/1285-resolucao-711">Resolução nº 711, de 28 de maio de 2019</a>;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">CONSIDERANDO o disposto na alínea “b” do item 1.2, na alínea “h” do item 9 e na alínea “h” do item 14, todos do Anexo IV-A do Edital de Licitação nº 1/2021-SOR/SPR/CD-ANATEL (Edital 5G), que tratam dos custos associados à mitigação dos problemas de interferência prejudicial na recepção do sinal das estações do Serviço Fixo por Satélite que operem na faixa de 3.700 MHz a 4.200 MHz, atribuindo ao Grupo de Acompanhamento da Implantação das Soluções para os Problemas de Interferência na faixa de 3.625 a 3.700 MHz (GAISPI) a prerrogativa de discutir e aprovar as soluções técnicas necessárias e à Entidade Administradora da Faixa de 3,5 GHz (EAF) o encargo de operacionalizar a mitigação de interferências;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">CONSIDERANDO a decisão tomada por meio do <a title="Acesse a Pauta" href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_documento_consulta_externa.php?eEP-wqk1skrd8hSlk5Z3rN4EVg9uLJqrLYJw_9INcO4XU2MP8pFrUZIZFfa04mT-cmM3vNSazi07oREXXnWDzW7Oh7Fk14oA4lT7Efs2FzLPiCNlag9Jrk3M2_Rz1YXk">Circuito Deliberativo nº 194, de 24 de outubro de 2021</a>;</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">CONSIDERANDO o constante dos autos do <a title="Acesse o Processo" href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_processo_exibir.php?exIsiWoPbTSMJNP15y_TiUpWIfXjgqaCc-xbh3o0V5ttS0uQqIkRDNDdsrlbDPN0z9DjOh_HT6NYS_BYkN5mlPdg9YWr6mgRaNsbI_gZMUlBR5jPZqSIHr_lQvWTNUHf">Processo nº 53500.032937/2021-11</a>,</p>
+<p class="resolve texto-recuo-1a-linha" style="text-align: justify;">RESOLVE:</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a name="art1"></a>Art. 1º Aprovar os parâmetros e requisitos técnicos para convivência entre estações terrestres operando na faixa de 3.300 MHz a 3.700 MHz e estações terrenas do serviço fixo por satélite operando na faixa de frequências de 3.700 MHz a 4.200 MHz, conforme o <a title="Acesse o Anexo" href="#anexo">Anexo</a> a este Ato.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">Parágrafo único. Alterações subsequentes dos requisitos técnicos do Anexo deverão ser realizadas pelo Superintendente de Outorga e Recursos à Prestação, obedecendo à Proposta de Atuações Regulatórias <a title="Acesse o SEI" href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_documento_consulta_externa.php?eEP-wqk1skrd8hSlk5Z3rN4EVg9uLJqrLYJw_9INcO7nm3SQbuN3TVoDP6aJjfc9rU__w7sZqZZWONRHMBoWZl7nvPqBaxOWsmNIbo40wvxw6LZ1mwWENrr3nbsVFXr1">(SEI nº 3077101)</a>, aprovada pelo Acórdão nº 651, de 1º de novembro de 2018 <a title="Acesse o SEI" href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_documento_consulta_externa.php?eEP-wqk1skrd8hSlk5Z3rN4EVg9uLJqrLYJw_9INcO6rxGT2rD0MihODXYL0NVSlANt8ytzB87ey1Yx1jIRWulOTXLAcPf9ESzjNaQXwoBvViNoFAT07PDDEmYtNMMlE">(SEI nº 3434164)</a>.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art2"></a>Art. 2º O GAISPI, no exercício das atividades relacionadas à mitigação de interferências de que trata o item 1.2 do Anexo IV-A do Edital de Licitação nº 1/2021-SOR/SPR/CD-ANATEL, poderá, motivadamente, adotar soluções técnicas distintas das previstas no Anexo a este Ato.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 1º O GAISPI poderá considerar a eficiência técnica, a economicidade, a disponibilidade de dispositivos e equipamentos ou as melhores práticas de engenharia, dentre outros, para motivar sua decisão.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 2º Em atendimento às disposições específicas do Edital mencionado no <strong>caput</strong>, o GAISPI atribuirá à EAF, de forma motivada, integralmente ou em partes, as responsabilidades estabelecidas no Anexo a este Ato aos responsáveis pelos sistemas terrestres ou terrenos.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 3º Na hipótese prevista no § 2º, os responsáveis pelos sistemas terrestres ou terrenos ficam, na mesma medida, isentos de suas responsabilidades estabelecidas no Anexo a este Ato até 31 de dezembro de 2026 ou enquanto não forem concluídas as obrigações da EAF quanto à mitigação de interferências de que trata o Edital mencionado no <strong>caput</strong>.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;">§ 4º A EAF, durante o exercício de suas atribuições relacionadas à mitigação de interferências, deverá ser notificada de todas as situações de interferência prejudicial na recepção do sinal das estações do Serviço Fixo por Satélite que operem na faixa de 3.700 MHz a 4.200 MHz.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: justify;"><a id="art3"></a>Art. 3º Este Ato entra em vigor na data de sua publicação no Boletim de Serviço Eletrônico da Anatel.</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: center;">LEONARDO EULER DE MORAIS<br />Presidente do Conselho</p>
+<p class="Texto_Justificado_Recuo_Primeira_Linha texto-recuo-1a-linha" style="text-align: center;"> </p>
+<p class="Texto_Centralizado_Maiusculas_Negrito" style="text-align: center;"><a id="anexo"></a>ANEXO </p>
+<p class="Texto_Centralizado" style="text-align: center;"><b>REQUISITOS TÉCNICOS PARA CONVIVÊNCIA ENTRE ESTAÇÕES TERRESTRES OPERANDO NA FAIXA DE 3.300 MHz A 3.700 MHz E ESTAÇÕES TERRENAS OPERANDO NA FAIXA DE 3.700 MHz A 4.200 MHz</b> </p>
+<p class="Paragrafo_Numerado_Nivel1" style="text-align: justify;"><a id="item1"></a>1. OBJETIVO </p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item1.1"></a>1.1. Estabelecer requisitos técnicos para convivência entre estações terrestres operando na faixa de 3.300 MHz a 3.700 MHz e estações terrenas do serviço fixo por satélite operando na faixa de frequências de 3.700 MHz a 4.200 MHz, com o objetivo de estabelecer as condições de convivência e evitar interferências prejudiciais intersistêmicas.</p>
+<p class="Paragrafo_Numerado_Nivel1" style="text-align: justify;"><a id="item2"></a>2. REFERÊNCIAS </p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a id="item2.1"></a>2.1. <a title="Acesse a Resolução " href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2019/1285-resolucao-711">Resolução nº 711, de 28 de maio de 2019</a>, que destina faixas de radiofrequências e aprova o Regulamento sobre Condições de Uso da Faixa de Radiofrequências de 3,5 GHz.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item2.2"></a>2.2.<a title="Acesse a Resolução " href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2021/1512-resolucao-742"> Resolução nº 742, de 1º de março de 2021</a>, que altera a <a title="Acesse a Resolução" href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2019/1285-resolucao-711">Resolução nº 711, de 28 de maio de 2019</a>, e o Regulamento sobre Condições de Uso da Faixa de Radiofrequências de 3,5 GHz a ela anexo, bem como aprova o Regulamento sobre Condições de Uso da Faixa de Radiofrequências de 24,25 GHz a 27,90 GHz.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item2.3"></a>2.3. <a title="Acesse o Ato" href="https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2021/1521-ato-1477">Ato SOR nº 1.477, de 5 de março de 2021</a>, que aprova os requisitos técnicos e operacionais de condições de uso da subfaixa 3.300 MHz e 3.700 MHz, por estações no SMP, no SCM, no STFC e no SLP.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a id="item2.4"></a>2.4. <a title="Acesse a Portaria " href="https://informacoes.anatel.gov.br/legislacao/portarias-normativas/2018/1026-portaria-415">Portaria nº 415, de 9 de março de 2018</a>, que aprova o Procedimento para Tratamento de Conflitos na Coordenação de Uso de Radiofrequências.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item2.5"></a>2.5. ECC Report 281 (2018-06):  <em>Analysis of the suitability of the regulatory technical conditions for 5G MFCN operation in the 3400-3800 MHz band</em>.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item2.6"></a>2.6. Recomendação UIT-R SM. 1541-6: <em>Unwanted emissions in the out-of-band domain</em>.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item2.7"></a>2.7. Recomendação UIT-R SM. 328-11: <em>Spectra and bandwidth of emissions</em>.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item2.8"></a>2.8. Recomendação UIT-R SM. 329-12: <em>Unwanted emissions in the spurious domain</em>.</p>
+<p class="Paragrafo_Numerado_Nivel1" style="text-align: justify;"><a name="item3"></a>3. DEFINIÇÕES </p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item3.1"></a>3.1. BDTA: Banco de Dados Técnico-Administrativo da Anatel.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item3.2"></a>3.2. Coordenação: atividade que consiste em acordar valores e parâmetros considerados necessários para garantir a convivência harmônica entre sistemas.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item3.3"></a>3.3. Emissões espúrias: são emissões causadas por efeitos indesejáveis do transmissor, como emissão de harmônicos, emissão parasitária, produtos de intermodulação e produtos de conversão de frequência, excluídas as emissões fora de faixa. </p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item3.4"></a>3.4. Emissões fora de faixa: são emissões indesejáveis imediatamente fora da largura de faixa do canal, resultantes do processo de modulação e da não linearidade no transmissor, excluídas as emissões espúrias. </p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item3.5"></a>3.5. Emissões indesejáveis: emissões fora de faixa e emissões espúrias. </p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item3.6"></a>3.6. Estação terrestre: estação de radiocomunicação que não se comunica com satélites.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item3.7"></a>3.7. Estação terrena: estação de radiocomunicação que se comunica com satélites ou, ainda, com outras estações terrenas por meio de satélites.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item3.8"></a>3.8. Filtro do tipo padrão: filtro que possui uma curva de rejeição a uma taxa um pouco superior a 0,5 dB/MHz.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item3.9"></a>3.9. Filtro <em>enhanced</em>: filtro com desempenho de seletividade aprimorado.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item3.10"></a>3.10. OBUE (do inglês, <em>Operating Band Unwanted Emissions</em>): emissões indesejáveis compreendidas na faixa de operação do sistema acrescidas de um deslocamento de frequências (<em>f_offset</em>) abaixo e acima das extremidades inferior e superior da faixa de operação, respectivamente.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item3.11"></a>3.11. Saturação: é a condição na qual o dispositivo perde a capacidade de executar suas funções adequadamente, de acordo com suas especificações técnicas, devido à presença de um nível de sinal de entrada que excede seu nível operacional máximo.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify;"><a name="item4"></a>4. REQUISITOS TÉCNICOS GERAIS</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item4.1"></a>4.1. Para operação das estações terrestres a largura de faixa ocupada nos blocos de radiofrequências deve ser a menor possível de modo a reduzir a possibilidade de interferências nas faixas adjacentes, não podendo ser superior aos valores estabelecidos no Regulamento sobre Condições de Uso da Faixa de Radiofrequências de 3,5 GHz.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item4.2"></a>4.2. A fim de viabilizar os estudos de coordenação técnica pelos interessados de maneira prévia à consignação de frequências, os parâmetros técnicos das estações terrestres e terrenas licenciadas ou cadastradas, constantes do BDTA, incluindo a identificação da entidade responsável, serão disponibilizados no sítio da Anatel.</p>
+<p class="Paragrafo_Numerado_Nivel1" style="text-align: justify;"><a name="item5"></a>5. CRITÉRIOS TÉCNICOS PARA CONVIVÊNCIA E COORDENAÇÃO </p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item5.1"></a>5.1. Para mitigação do potencial de interferência entre as estações terrestres operando na faixa de 3.300 MHz a 3.700 MHz e estações terrenas associadas aos sistemas de comunicação via satélite operando na faixa de 3.700 MHz a 4.200 MHz, devem ser usadas, preferencialmente, as seguintes técnicas:</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item5.1.1"></a>5.1.1. Para mitigação de problemas decorrentes de OBUE:</p>
+<p class="Paragrafo_Numerado_Nivel4" style="text-align: justify; padding-left: 90px;">5.1.1.1.Separação geográfica: estabelecimento de uma distância de afastamento mínima entre os transmissores e os receptores dos sistemas envolvidos.</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item5.1.2"></a>5.1.2. Para mitigação de problemas decorrentes de saturação no sistema receptor das estações terrenas:</p>
+<p class="Paragrafo_Numerado_Nivel4" style="text-align: justify; padding-left: 90px;"><a name="item5.1.2.1"></a>5.1.2.1. Aplicação de faixa de guarda: estabelecimento de uma faixa de guarda de operação para determinada configuração dos sistemas envolvidos;</p>
+<p class="Paragrafo_Numerado_Nivel4" style="text-align: justify; padding-left: 90px;"><a name="item5.1.2.2"></a>5.1.2.2. Utilização de filtros no sistema de recepção: estabelecimento de especificações de filtragem adicional, a ser empregada nos sistemas de recepção, com o intuito de melhorar a seletividade do canal adjacente, bem como o Limiar de Saturação do sistema.</p>
+<p class="Paragrafo_Numerado_Nivel4" style="text-align: justify; padding-left: 30px;"><a name="item5.2"></a>5.2. A Matriz de Convivência, constante da Tabela I, indica as técnicas que devem ser utilizadas para a mitigação das eventuais interferências prejudiciais em cada hipótese de interferência considerada, nos casos em que a estação terrestre for a entrante em relação a estações terrenas devidamente licenciadas ou cadastradas no BDTA, sem prejuízo da adoção de outros parâmetros ou técnicas de mitigação quem venham a ser definidos em acordo de coordenação entre as partes ou no âmbito do GAISPI.</p>
+<p class="Tabela_Texto_Centralizado" style="text-align: center;"><a id="tabelaI"></a>Tabela I - Especificação das técnicas de mitigação para convivência de estações terrestres e terrenas na faixa de 3,5 GHz</p>
+<table border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td style="text-align: center;" rowspan="2">
+<p class="Tabela_Texto_Centralizado"><strong>Cenário</strong></p>
+</td>
+<td style="text-align: center;" rowspan="2">
+<p class="Tabela_Texto_Centralizado"><strong>Principais hipóteses de interferência</strong></p>
+</td>
+<td style="text-align: center;" colspan="3">
+<p class="Tabela_Texto_Centralizado"><strong>Técnicas de Mitigação</strong></p>
+</td>
+<td style="text-align: center;" rowspan="2">
+<p class="Tabela_Texto_Centralizado"><strong>Observação</strong></p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Adicionar filtro de recepção na estação terrena</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Faixa de guarda</p>
+<p class="Tabela_Texto_Centralizado">(abaixo de 3.700 MHz)</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Separação geográfica</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Estações base, nodal ou repetidora operando dentro da faixa de 3.620 - 3.700 MHz e estação terrena operando na faixa de 3.700 - 3.720 MHz</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Saturação e </p>
+<p class="Tabela_Texto_Centralizado">Emissão fora de faixa</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">filtro <em>enhanced</em>  com corte em 3.700 MHz</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">20 MHz</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">2 km</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"> </p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Estações base, nodal ou repetidora operando dentro da faixa de 3.620 - 3.700 MHz e estação terrena operando na faixa de 3.720 e 3.800 MHz</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Saturação</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">​filtro <em>enhanced</em>  com corte em 3.720 MHz</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">N/A</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">N/A</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Nesse cenário, é improvável a ocorrência de interferência prejudicial oriunda de emissões fora de faixa ou espúrias</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Estações base, nodal ou repetidora operando dentro da faixa de 3.620 - 3.700 MHz e estação terrena operando acima de 3.800 MHz</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Saturação</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">​filtro tipo padrão com corte em 3.800 MHz</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">N/A</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">N/A</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"> </p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Estações base, nodal ou repetidora operando dentro da faixa de 3.300 - 3.620 MHz e estação terrena operando na faixa de 3.700 - 3.720 MHz</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Saturação e</p>
+<p class="Tabela_Texto_Centralizado">OBUE</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">​filtro <em>enhanced</em>  com corte em 3.700 MHz</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">N/A</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">2 km</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado"> </p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Estações base, nodal ou repetidora operando dentro da faixa de 3.300 - 3.620 MHz e estação terrena operando na faixa de 3.720 - 3.800 MHz</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Saturação</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">​filtro <em>enhanced</em>  com corte em 3.720 MHz</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">N/A</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">N/A</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Nesse cenário, é improvável a ocorrência de interferência prejudicial oriunda de emissões fora de faixa ou espúrias</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Estações base, nodal ou repetidora operando dentro da faixa de 3.300 - 3.620 MHz e estação terrena operando acima de 3.800 MHz</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">Saturação</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">​filtro padrão com corte em 3.800 MHz</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">N/A</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado">N/A</p>
+</td>
+<td style="text-align: center;">
+<p class="Tabela_Texto_Centralizado" style="text-align: justify;"> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item5.2.1"></a>5.2.1. Na hipótese de ser detectada interferência prejudicial causada por estações base, nodal ou repetidora em estações terrenas, tendo sido atendidos os requisitos estabelecidos na <a title="Acesse a Tabela" href="#tabelaI">Tabela I</a>, medidas alternativas ou adicionais deverão ser adotadas pela entidade responsável pelo sistema terrestre, para resolver a interferência prejudicial, de acordo com o caso concreto.</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item5.2.2"></a>5.2.2. Caso a interferência prejudicial seja causada pelo agregado de emissões de diferentes sistemas terrestres, e a depender do cenário de interferência, ações de mitigação deverão ser adotadas por todos os responsáveis pelos sistemas terrestres.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item5.3"></a>5.3. As estações terrenas receptoras devem ser projetadas com a filtragem e seletividade apropriadas, de modo a reduzir a suscetibilidade à interferência e evitar a saturação por acoplamento indevido de sinais transmitidos por estações terrestres operando em faixa adjacente, que estejam de acordo com a regulamentação, em conformidade com o estabelecido na <a title="Acesse a Tabela" href="#tabelaI">Tabela I</a>.</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item5.3.1"></a>5.3.1. O filtro <em>enhanced</em> com corte em 3.700 MHz deve promover rejeição igual ou superior a 55 dB em sua resposta em frequência abaixo de 3.680 MHz.</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item5.3.2"></a>5.3.2. O filtro <em>enhanced</em> com corte em 3.720 MHz deve promover rejeição igual ou superior a 55 dB em sua resposta em frequência abaixo de 3.700 MHz.</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item5.3.3"></a>5.3.3. O filtro do tipo padrão com corte em 3.800 MHz deve promover rejeição igual ou superior a 55 dB em sua resposta em frequência abaixo de 3.700 MHz.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item5.4"></a>5.4. Na hipótese de a estação terrena ser a entrante:</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item5.4.1"></a>5.4.1. Em caso de interferência prejudicial por emissão indesejável, a entidade responsável pelo sistema terrestre deve adotar medidas no sentido de mitigar tal interferência.</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item5.4.2"></a>5.4.2. Em caso de interferência prejudicial devido à saturação do sistema receptor, a entidade responsável pela estação terrena deve adotar medidas no sentido de mitigar tal interferência, e a entidade responsável pelo sistema terrestre deve aplicar faixa de guarda, se necessário.</p>
+<p class="Paragrafo_Numerado_Nivel2" style="text-align: justify; padding-left: 30px;"><a name="item5.5"></a>5.5. Para o licenciamento de estações base, nodal ou repetidora com separação geográfica inferior àquela prevista na Tabela I, a interessada deve obter aprovação do GAISPI ou acordo de coordenação da entidade responsável pela estação terrena.</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item5.5.1"></a>5.5.1. O responsável pela estação entrante que deseje realizar a coordenação deverá fundamentar sua proposta demonstrando que a estação terrena existente não será interferida prejudicialmente.</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item5.5.2"></a>5.5.2. A negativa em conceder acordo por parte da entidade responsável pela estação terrena deverá ser fundamentada, no mínimo, com o mesmo detalhamento apresentado pela entidade que solicitou a coordenação.</p>
+<p class="Paragrafo_Numerado_Nivel3" style="text-align: justify; padding-left: 60px;"><a name="item5.5.3"></a>5.5.3. No caso de alteração técnica de estação terrestre para a qual já tenha sido firmado acordo de coordenação, será necessária a revisão do acordo de coordenação já estabelecido.</p> <div class="attachmentsContainer">
+
+<div class="attachmentsList" id="attachmentsList_com_content_default_1597"></div>
+
+</div>
+	
+</div>
+<div class="below-content">
+		<div class="line">
+		registrado em:
+			<span><a class="link-categoria" rel="tag" href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro">Atos de Requisitos Técnicos de Gestão do Espectro</a></span><span class="separator">,</span><span><a class="link-categoria" rel="tag" href="/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2021">2021</a></span>	</div>
+		
+		<div class="line">
+		Assunto(s):
+					<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Aprovação" class="link-categoria">Aprovação</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Parâmetro" class="link-categoria">Parâmetro</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Requisito%20Técnico" class="link-categoria">Requisito Técnico</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Convivência" class="link-categoria">Convivência</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Estações%20Terrestres" class="link-categoria">Estações Terrestres</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Faixas" class="link-categoria">Faixas</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Frequências" class="link-categoria">Frequências</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=Serviço%20Fixo%20por%20Satélite" class="link-categoria">Serviço Fixo por Satélite</a>
+				<span class="separator">,</span>			</span>
+						<span>
+				<a href="/legislacao/component/search/?ordering=newest&amp;searchphrase=all&amp;limit=20&amp;areas[0]=contenttags&amp;Itemid=181&amp;searchword=AtoVigente" class="link-categoria">AtoVigente</a>
+							</span>
+					
+	</div>
+	
+	
+</div>
+                                                                                    
+                                    
+                                    
+                                
+                                <!--<span class="hide">Fim do conteúdo da página</span> -->
+								
+                                </section>
+                            </div>
+                            <!-- fim #content.span9 -->
+                        </div>
+                        <!-- fim .row-fluid -->
+                </div>
+                <!-- fim .container -->
+
+
+                <!-- Chamada da posição paginas de Serviços -->
+                 
+               <!--Fim da chamada de chamada-segundaria-destaque -->
+
+                <!-- Chamada da posição chamada de chamada segundaria destaque -->
+                 
+               <!--Fim da chamada de chamada de chamada segundaria destaque -->
+
+                </main>
+                <footer id="portal-footer">
+                    <div class="footer-atalhos">
+                        <div class="container tmpl-custom">
+                            <div class="pull-right voltar-ao-topo"><a href="#main-navigation">Voltar ao topo</a></div>
+                        </div>
+                    </div>
+                    <div class="container tmpl-custom container-menus">
+                        <div class="govbr-logo"></div>
+                        <div id="footer" class="row footer-menus">
+                            <span class="hide">Início da navegação de rodapé</span>
+                            	
+		<div class="spanfooter">		
+			<nav class="row  nav">
+				 			
+				<h2>Assuntos </h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter">
+	<li class="item-443"><a href="https://www.gov.br/anatel/pt-br/assuntos/5G" > 5G</a></li><li class="item-502"><a href="https://www.gov.br/anatel/pt-br/assuntos/acessibilidade" >Acessibilidade</a></li><li class="item-540"><a href="https://www.gov.br/anatel/pt-br/assuntos/adaptacao" >Adaptação</a></li><li class="item-541"><a href="https://www.gov.br/anatel/pt-br/assuntos/agenda-2030" >Agenda 2030</a></li><li class="item-441"><a href="https://www.gov.br/anatel/pt-br/assuntos/atuacao-internacional" >Atuação Internacional</a></li><li class="item-442"><a href="https://www.gov.br/anatel/pt-br/assuntos/celular-legal" >Celular Legal</a></li><li class="item-503"><a href="https://www.gov.br/anatel/pt-br/assuntos/noticias/acoes-do-setor-de-telecomunicacoes-no-combate-ao-coronavirus" >Coronavírus</a></li><li class="item-504"><a href="https://www.gov.br/anatel/pt-br/assuntos/dicas-contra-fraudes" >Dicas contra Fraudes</a></li><li class="item-440"><a href="https://www.gov.br/anatel/pt-br/assuntos/noticias" > Notícias</a></li><li class="item-505"><a href="https://www.gov.br/anatel/pt-br/regulado/acompanhamento-e-controle/processo-sancionador" >Processo Sancionador</a></li><li class="item-444"><a href="https://www.gov.br/anatel/pt-br/assuntos/seguranca-cibernetica" > Segurança Cibernética</a></li><li class="item-445"><a href="https://www.gov.br/anatel/pt-br/assuntos/seguranca-publica" > Segurança Pública</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Acesso à Informação</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-446"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/institucional" > Institucional</a></li><li class="item-447"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/acoes-e-programas" > Ações e Programas</a></li><li class="item-448"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/participacao-social" > Participação Social</a></li><li class="item-449"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/auditorias" >Auditorias</a></li><li class="item-450"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/convenios-e-transferencias" >Convênios e Transferências</a></li><li class="item-451"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/receitas-e-despesas" > Receitas e Despesas</a></li><li class="item-452"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/licitacoes-e-contratos" >Licitações e Contratos</a></li><li class="item-454"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/servidores" >Servidores</a></li><li class="item-455"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/informacoes-classificadas" > Informações Classificadas</a></li><li class="item-456"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/servico-de-informacao-ao-cidadao-sic" >Serviço de Informação ao Cidadão (SIC)</a></li><li class="item-458"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/perguntas-frequentes" > Perguntas Frequentes</a></li><li class="item-457"><a href="https://www.gov.br/anatel/pt-br/dados/dados-abertos" >Dados Abertos</a></li><li class="item-506"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/governanca" >Governança</a></li><li class="item-453"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais" > Tratamento de Dados Pessoais</a></li><li class="item-459"><a href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/transparencia-e-prestacao-de-contas" >Transparência e Prestação de Contas</a></li><li class="item-507"><a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_processo_pesquisar.php?acao_externa=protocolo_pesquisar&amp;acao_origem_externa=protocolo_pesquisar&amp;id_orgao_acesso_externo=0" >Pesquisa Pública do SEI</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Canais de Atendimento </h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-471"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/aplicativo" >Aplicativo</a></li><li class="item-472"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/internet" >Internet</a></li><li class="item-473"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/presencial" >Presencial</a></li><li class="item-474"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/telefone" > Telefone</a></li><li class="item-475"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/ouvidoria" >Ouvidoria</a></li><li class="item-476"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/imprensa" >Imprensa</a></li><li class="item-477"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/sistemas" >Sistemas</a></li><li class="item-542"><a href="https://www.gov.br/anatel/pt-br/canais_atendimento/apoio-institucional" >Apoio Institucional</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2> Centrais de Conteúdo</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-464"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/publicacoes" > Publicações</a></li><li class="item-465"><a href="https://www.flickr.com/photos/anatel_informa/albums" >Imagens</a></li><li class="item-466"><a href="https://www.youtube.com/user/Anatel" >Vídeos </a></li><li class="item-468"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/processo-eletronico" >Processo Eletrônico (SEI)</a></li><li class="item-470"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/jurisprudencia" > Repositório de Jurisprudência</a></li><li class="item-469"><a href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/solicitacao-de-vistas" > Solicitação de Vistas de Processo e Documento</a></li><li class="item-467"><a href="https://informacoes.anatel.gov.br/legislacao/" >Legislação</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter ">		
+			<nav class="row  nav">
+				 			
+				<h2>Composição</h2>
+								
+
+<!-- INÍCIO - Menu de contexto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="menu-contexto" class="row-fluid">
+	<ul class="menuspanfooter ">
+	<li class="item-460"><a href="https://www.gov.br/anatel/pt-br/composicao/estrutura-organizacional" >Estrutura Organizacional</a></li><li class="item-461"><a href="https://www.gov.br/anatel/pt-br/composicao/conselho-diretor" > Conselho Diretor</a></li><li class="item-462"><a href="https://www.gov.br/anatel/pt-br/composicao/conselho-consultivo" > Conselho Consultivo</a></li><li class="item-508"><a href="https://www.gov.br/anatel/pt-br/composicao/ceadi" >Ceadi</a></li><li class="item-463"><a href="https://www.gov.br/anatel/pt-br/composicao/comissao-de-etica" >Comissão de Ética</a></li><li class="item-509"><a href="https://www.gov.br/anatel/pt-br/composicao/comites" >Comitês</a></li><li class="item-510"><a href="https://www.gov.br/anatel/pt-br/composicao/grupos-de-trabalho" >Grupos de Trabalho</a></li></ul>
+</div>
+<!-- FIM - Menu de contexto +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter">		
+			<nav class="row  nav">
+				 			
+				<h2>Consumidor</h2>
+								
+<ul>
+<li class="item-410"><a href="https://www.gov.br/anatel/pt-br/consumidor/quer-reclamar" >Quer Reclamar?</a></li><li class="item-411"><a href="https://www.gov.br/anatel/pt-br/consumidor/conheca-seus-direitos" >Conheça Seus Direitos</a></li><li class="item-412"><a href="https://www.gov.br/anatel/pt-br/consumidor/participe-dos-debates" > Participe dos Debates</a></li><li class="item-413"><a href="https://www.gov.br/anatel/pt-br/consumidor/compare-as-prestadoras" >Compare as Prestadoras</a></li><li class="item-511"><a href="https://www.gov.br/anatel/pt-br/consumidor/habilidades-digitais" >Habilidades Digitais</a></li><li class="item-512"><a href="https://www.gov.br/anatel/pt-br/consumidor/oi-movel" >Oi Móvel </a></li><li class="item-513"><a href="https://www.gov.br/anatel/pt-br/consumidor/projetosproconsumidor" >Projetos pró Consumidor</a></li><li class="item-514"><a href="https://www.gov.br/anatel/pt-br/consumidor/telemarketing" >Telemarketing</a></li><li class="item-482"><a href="https://www.gov.br/anatel/pt-br/consumidor/perguntas-frequentes" >Perguntas Frequentes</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter break width">		
+			<nav class="row  nav">
+				 			
+				<h2>Dados</h2>
+								
+<ul>
+<li class="item-519"><a href="https://www.gov.br/anatel/pt-br/dados/paineis" >Painéis</a></li><li class="item-520"><a href="https://www.gov.br/anatel/pt-br/dados/coleta-de-dados-setoriais" >Coleta de Dados Setoriais</a></li><li class="item-417"><a href="https://www.gov.br/anatel/pt-br/dados/infraestrutura" >Infraestrutura</a></li><li class="item-414"><a href="https://www.gov.br/anatel/pt-br/dados/qualidade" >Qualidade</a></li><li class="item-415"><a href="https://www.gov.br/anatel/pt-br/dados/relatorios-de-acompanhamento" >Relatórios de Acompanhamento</a></li><li class="item-416"><a href="https://www.gov.br/anatel/pt-br/dados/utilidade-publica" >Utilidade Pública</a></li><li class="item-521"><a href="https://www.gov.br/anatel/pt-br/dados/dados-abertos" >Dados Abertos</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter width">		
+			<nav class="row  nav">
+				 			
+				<h2>Legislação</h2>
+								
+<ul>
+<li class="item-183"><a href="https://informacoes.anatel.gov.br/legislacao/resolucoes" >Resoluções</a></li><li class="item-196"><a href="https://informacoes.anatel.gov.br/legislacao/sumulas" >Súmulas</a></li><li class="item-522"><a href="https://informacoes.anatel.gov.br/legislacao/portarias-de-delegacao" >Portarias de Delegação</a></li><li class="item-523"><a href="https://informacoes.anatel.gov.br/legislacao/portarias-normativas" >Portarias Normativas</a></li><li class="item-524"><a href="https://informacoes.anatel.gov.br/legislacao/resolucoes-internas" >Resoluções Internas</a></li><li class="item-525"><a href="https://informacoes.anatel.gov.br/legislacao/metodologias-de-calculo-de-multa" >Metodologias de Cálculo de Multa</a></li><li class="item-526"><a href="https://informacoes.anatel.gov.br/legislacao/glossario-anatel" >Glossário</a></li><li class="item-527"><a href="https://www.gov.br/anatel/pt-br/legislacao/atos" >Atos</a></li><li class="item-528"><a href="https://www.gov.br/anatel/pt-br/legislacao/fiscalizacao" >Fiscalização</a></li><li class="item-529"><a href="https://www.gov.br/anatel/pt-br/legislacao/demais-normas" >Demais Normas</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="spanfooter width">		
+			<nav class="row  nav">
+				 			
+				<h2>Regulado</h2>
+								
+<ul>
+<li class="item-530"><a href="https://www.gov.br/anatel/pt-br/regulado/acompanhamento-e-controle" >Acompanhamento e Controle</a></li><li class="item-531"><a href="https://www.gov.br/anatel/pt-br/regulado/agenda-regulatoria" >Agenda Regulatória</a></li><li class="item-418"><a href="https://www.gov.br/anatel/pt-br/regulado/arrecadacao" >Arrecadação</a></li><li class="item-422"><a href="https://www.gov.br/anatel/pt-br/regulado/certificacao-de-produtos" >Certificação de Produtos</a></li><li class="item-532"><a href="https://www.gov.br/anatel/pt-br/regulado/competicao" >Competição</a></li><li class="item-533"><a href="https://www.gov.br/anatel/pt-br/regulado/espectro" >Espectro</a></li><li class="item-534"><a href="https://www.gov.br/anatel/pt-br/regulado/fiscalizacao" >Fiscalização</a></li><li class="item-421"><a href="https://www.gov.br/anatel/pt-br/regulado/numeracao" >Numeração</a></li><li class="item-420"><a href="https://www.gov.br/anatel/pt-br/regulado/outorga" >Outorga</a></li><li class="item-535"><a href="https://www.gov.br/anatel/pt-br/regulado/prestadoras-de-pequeno-porte" >Prestadoras de Pequeno Porte</a></li><li class="item-419"><a href="https://www.gov.br/anatel/pt-br/regulado/radiodifusao" >Radiodifusão</a></li><li class="item-536"><a href="https://www.gov.br/anatel/pt-br/regulado/radiofrequencia" >Radiofrequência</a></li><li class="item-537"><a href="https://www.gov.br/anatel/pt-br/regulado/satelite" >Satélite</a></li><li class="item-538"><a href="https://www.gov.br/anatel/pt-br/regulado/universalizacao" >Universalização e Ampliação do Acesso</a></li><li class="item-539"><a href="https://www.gov.br/anatel/pt-br/regulado/perguntas-frequentes" >Perguntas Frequentes</a></li></ul>
+			</nav>					
+		</div>
+	
+	
+                            <span class="hide">Fim da navegação de rodapé</span>
+                        </div>
+                        <!-- fim .row -->
+
+                        <!-- Redes Sociais Agência Nacional de Telecomunicações -->
+                        <div class="container-redes-anatel">
+                            <div class="redes-sociais">
+                                <h3>Redes Sociais</h3>
+                                <ul class="portal-redes">
+                                    <li class="portalredes-twitter portalredes-item">
+                                        <a href="https://twitter.com/anatel_oficial">Twitter</a>
+                                    </li>
+                                    <li class="portalredes-youtube portalredes-item">
+                                        <a href="https://www.youtube.com/anatel">YouTube</a>
+                                    </li>
+                                    <li class="portalredes-facebook portalredes-item">
+                                       <a href="https://www.facebook.com/anatel.oficial">Facebook</a>
+                                    </li>
+                                    <li class="portalredes-flickr portalredes-item">
+                                        <a href="https://www.flickr.com/photos/anatel_informa/albums">Flickr</a>
+                                    </li>
+                                    <li class="portalredes-instagram portalredes-item">
+                                        <a href="https://www.instagram.com/anatel.oficial">Instagram</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Final do container redes sociais -->
+
+                    </div>
+                    <!-- fim .container -->
+                    <div class="footer-logos">
+                        <div class="container tmpl-custom">
+                            
+                            
+                                 <!-- separador para fins de acessibilidade -->
+                                 <span class="hide">&nbsp;</span><!-- fim separador para fins de acessibilidade -->
+                                    <a href="http://www.brasil.gov.br/" class="brasil pull-right">
+                                        <img src="/legislacao/arquivos_e_imagens/imagens/logogoverno.jpg" alt="Brasil - Governo Federal">
+                                    </a>
+
+                                                                                        <a href="http://www.acessoainformacao.gov.br/" class="logo-acesso pull-right"><img src="/legislacao/templates/padraogoverno01/images/acesso-a-informacao.png" alt="Acesso a Informação"></a>
+                            
+                        </div>
+                    </div>
+                    <div class="footer-ferramenta">
+                        <div class="container tmpl-custom">
+                            Todo o conteúdo deste site está publicado sob a licença <a href=https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR>Creative Commons Atribuição-SemDerivações 3.0 Não Adaptada</a>.                        </div>
+                    </div>
+                </footer>
+            </div>
+            <!-- fim div#wrapper -->
+            <!-- scripts principais do template -->
+                    <script src="/legislacao/templates/padraogoverno01/bootstrap/js/bootstrap.min.js" type="fe51d2618747f8ed7f0ac240-text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+        <script src="/legislacao/templates/padraogoverno01/js/jquery.cookie.js" type="fe51d2618747f8ed7f0ac240-text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+        <script src="/legislacao/templates/padraogoverno01/js/template.js" type="fe51d2618747f8ed7f0ac240-text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+                                                <script type="fe51d2618747f8ed7f0ac240-text/javascript">
+                    var _gaq = _gaq || [];
+                    _gaq.push(['_setAccount', 'UA-61388073-6']);
+                    _gaq.push(['_trackPageview']);
+                            (function () {
+                        var ga = document.createElement('script');
+                        ga.type = 'text/javascript';
+                        ga.async = true;
+                        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                        var s = document.getElementsByTagName('script')[0];
+                        s.parentNode.insertBefore(ga, s);
+                    })();
+                </script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+                        <!-- debug -->
+            
+<!--****************************** COOKIES HTML CODE START HERE ******************************-->
+<div class="notice_div_ribbin ebsticky_bottom" id="eu_cookies">
+  <div class="inner1">
+    <div class="inner3 eb_contentwrap">
+      <div class="heading_title">Nós protegemos seus dados</div>      <p>Para melhorar a sua experiência na plataforma e prover serviços personalizados, utilizamos cookies. Saiba como usamos seus dados em nosso <a style ="color: #ffffff;" href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais/aviso-de-privacidade">Aviso de Privacidade</a>. Ao clicar em “Aceitar cookies”, você concorda com os Termos de Serviço e a Política de Privacidade da Anatel e terá acesso a todas as funcionalidades do site.</p>      
+    </div>
+<div class="button_message eb_privacypolicy"> 
+			<a  href="https://www.gov.br/anatel/pt-br/acesso-a-informacao/tratamento-de-dados-pessoais" class="button_cookie eb_papbtn" aria-label="Cookie Policy">Saiba mais</a>
+        <a class="button_cookie" href="javascript:void(0);" onclick="if (!window.__cfRLUnblockHandlers) return false; calltohide()" id="hideme" data-cf-modified-fe51d2618747f8ed7f0ac240-="">Aceitar cookies</a>
+	</div>
+  </div>
+</div>
+<!--****************************** COOKIES HTML CODE END HERE ******************************-->
+
+<!--****************************** COOKIES JAVSCRIPT CODE START HERE -- FOR ACCEPT ******************************-->
+<script type="fe51d2618747f8ed7f0ac240-text/javascript">
+	check_cookie(getBaseURL());
+</script>
+<!--****************************** COOKIES JAVSCRIPT CODE END HERE ******************************-->
+
+<!--****************************** COOKIES CSS START HERE ******************************-->
+<style>
+.notice_div_simplebar,.notice_div_ribbin{background:rgba(12,30,63,0.85)!important;}
+.inner3 .heading_title{color:#ffffff!important; font-size: 16px;}
+.inner3 p{color:#ffffff!important; font-size: 14px;}
+.button_cookie{background:transparent!important; color:#ffffff!important;}
+.eb_papbtn{background:transparent!important; color:#ffffff!important;}
+</style>
+<!--****************************** COOKIES CSS END HERE ******************************-->
+            
+    <script defer="defer" src="//barra.brasil.gov.br/barra_2.0.js" type="fe51d2618747f8ed7f0ac240-text/javascript"></script>        
+
+<!-- Piwik -->
+<script type="fe51d2618747f8ed7f0ac240-text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://sistemas.anatel.gov.br/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 3]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+    g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="http://sistemas.anatel.gov.br/piwik/piwik.php?idsite=3" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+</body>
+ </html>
