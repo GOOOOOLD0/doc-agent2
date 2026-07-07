@@ -1,0 +1,39 @@
+name: Monthly regulatory source check
+
+on:
+  schedule:
+    # 09:00 Asia/Shanghai on the first day of every month.
+    - cron: "0 1 1 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  check-sources:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Run source monitor
+        run: python3 scripts/check_sources.py --date "$(date -u +'%Y-%m-%d')"
+
+      - name: Commit monitoring result
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          if [ -n "$(git status --porcelain sources)" ]; then
+            git add sources
+            git commit -m "Update regulatory source snapshots $(date -u +'%Y-%m-%d')"
+            git push origin HEAD:${{ github.ref_name }}
+          else
+            echo "No regulatory source changes to commit."
+          fi

@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-22
+> Last updated: 2026-07-07
 
 ---
 
@@ -12,10 +12,11 @@
 
 `wiki/concepts/landing_rights/`
 
-该知识库当前包括两部分：
+该知识库当前包括三部分：
 
 1. 通用规则：`wiki/concepts/landing_rights/common/`
 2. 巴西案例：`wiki/concepts/landing_rights/cases/brazil/`
+3. 蒙古案例：`wiki/concepts/landing_rights/cases/mongolia/`
 
 ---
 
@@ -43,6 +44,12 @@
 - [[concepts/landing_rights/cases/brazil/07_brazil_fee_list|巴西费用清单]] — 汇总外国卫星开发权、服务授权、TFI、TFF 等费用。
 - [[concepts/landing_rights/cases/brazil/08_brazil_regulations|巴西法规依据]] — 汇总巴西落地许可涉及的主要法律、决议和监管文件。
 - [[concepts/landing_rights/cases/brazil/09_brazil_reusable_experience|巴西案例可复用经验]] — 提炼巴西案例中可复用于其他国家分析的经验。
+- [[concepts/landing_rights/cases/brazil/10_brazil_answer_template|巴西落地许可 Agent 回答模板]] — 将巴西案例压缩成可直接回答用户问题的标准结构。
+
+#### Mongolia Case
+
+- [[concepts/landing_rights/cases/mongolia/00_mongolia_case_index|蒙古案例索引]] — 蒙古落地许可试点结果的入口文件。
+- [[concepts/landing_rights/cases/mongolia/10_mongolia_answer_template|蒙古落地许可 Agent 回答模板]] — 将蒙古官方来源压缩成可直接回答用户问题的标准结构。
 
 ---
 
