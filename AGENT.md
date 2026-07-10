@@ -341,10 +341,25 @@ Agent 回答用户时，应遵守以下风格：
 
 ---
 
-## 16. 运行位置提醒
+## 16. 附加 Skill：Long Regulation Document Wiki-ization
+
+当用户要求对超长法规/标准类原文（如整份《无线电规则》）建立 wiki、
+做条款级结构化整理时，应启用本 Skill。
+
+完整规则独立维护于项目根目录下的 `SKILL_LONG_DOC.md`。
+
+本 Skill 产出的数据存放在 `wiki/raw/regulations/` 和
+`wiki/concepts/regulations/` 下，与 landing_rights 使用的
+`wiki/raw/landing_rights/`、`wiki/concepts/landing_rights/`
+并列、互不嵌套、互不引用，仅共用 `wiki/` 这一层父目录。
+
+---
+
+## 17. 运行位置提醒
 
 1. `AGENT.md` 应与 `wiki/` 文件夹并列，放在项目根目录。
 2. 运行 Agent 时，应尽量在项目根目录运行。
 3. 如果在其他目录运行，Agent 可能无法正确读取当前项目的 `AGENT.md` 和 `wiki/`。
 4. 一个项目建议只保留一个主 `AGENT.md`。
 5. 后续新增 Skill 时，应继续扩充本文件，而不是新建多个互不关联的 AGENT.md 文件。
+

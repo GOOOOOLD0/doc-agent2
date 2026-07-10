@@ -60,3 +60,24 @@ python3 scripts/check_sources.py --date 2026-06-23
 蒙古已完成第一轮试点：CRC 官方许可、无线电频率、设备认证、法律目录页面可抓取；已启用 7 个蒙古来源进入每月监控。三部较大的 legalinfo.mn 法律正文已记录 URL，但暂不启用，待确定快照体积策略后再加入。
 
 下一步可以继续为泰国定位具体官方文件直链，并为蒙古补充 CRC 附件抽取、费用表和本地实体要求。
+
+
+
+    wiki/raw/regulations/radio_regulations_2020/
+    ├── source.pdf                          (原始PDF 2.6MB)
+    ├── structure.md                        (完整章-条款树 + 页码范围)
+    └── parse_notes.md                      (文本提取问题说明)
+
+    wiki/concepts/regulations/radio_regulations_2020/
+    ├── common/
+    │   ├── chunking_rules.md               (切分粒度规则)
+    │   ├── article_page_template.md        (单条wiki页模板)
+    │   └── cross_reference_rules.md        (交叉引用识别规则)
+    ├── articles/                           (OCR提取的条款正文)
+    │   ├── art_01.md ~ art_03.md           (第一章 术语和技术特性)
+    │   ├── art_15.md ~ art_16.md           (第四章 干扰)
+    │   ├── art_17.md ~ art_20.md           (第五章 行政管理)
+    │   └── ...其余条款待OCR
+    └── index/
+        ├── toc_index.md                    (按原文结构索引)
+        └── topic_index.md                  (按主题聚合索引)
