@@ -1,0 +1,51 @@
+profile_name: itu_radio_regulations
+document_type: regulation
+
+split:
+  hierarchy:
+    - chapter
+    - article
+    - section
+    - clause
+
+  preferred_level: article
+  max_chunk_tokens: 5000
+  fallback_chunk_tokens: 2000
+  overlap_tokens: 100
+  overlap_only_for_fallback: true
+
+patterns:
+  article: '^第\s*(\d+[A-Z]?)\s*条'
+  section: '^第\s*([IVXLCDM]+)\s*节'
+  clause: '^(\d+[A-Z]?\.\d+[A-Z]?)\s+'
+
+preserve:
+  pdf_page: true
+  printed_page: true
+  page_label: true
+  article_number: true
+  clause_number: true
+  tables: true
+  footnotes: true
+  cross_references: true
+  wrc_revision: true
+
+special_articles:
+  article_01:
+    split_by: section
+
+  article_05:
+    split_by:
+      - general_rules
+      - allocation_tables
+      - footnotes
+
+  article_22:
+    split_by:
+      - section
+      - table
+
+output:
+  parsed_dir: parsed
+  chunks_dir: chunks
+  source_notes_dir: source_notes

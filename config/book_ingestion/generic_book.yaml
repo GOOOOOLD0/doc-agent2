@@ -1,0 +1,25 @@
+profile_name: generic_book
+document_type: generic_book
+
+split:
+  hierarchy:
+    - chapter
+    - section
+    - subsection
+
+  preferred_level: section
+  max_chunk_tokens: 5000
+  fallback_chunk_tokens: 2500
+  overlap_tokens: 150
+
+preserve:
+  page_numbers: true
+  headings: true
+  tables: true
+  figures: true
+  footnotes: true
+
+output:
+  parsed_dir: parsed
+  chunks_dir: chunks
+  source_notes_dir: source_notes

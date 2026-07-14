@@ -1,0 +1,17 @@
+doc_id: itu_radio_regulations_2020
+title: 无线电规则：2020年第1卷——条款
+topic: radio_rules
+document_type: regulation
+version: "2020"
+language: zh-CN
+
+source_file: source/radio_regulations_2020.pdf
+profile: config/book_ingestion/itu_radio_regulations.yaml
+
+page_count: 442
+
+output:
+  parsed_dir: parsed
+  chunks_dir: chunks
+  source_notes_dir: source_notes
+  concepts_dir: wiki/concepts/radio_rules
