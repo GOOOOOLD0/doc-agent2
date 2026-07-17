@@ -1,56 +1,73 @@
-# Chunking Rules — Radio Regulations 2020
+# 切分规则(chunking_rules)
 
-## 1. Granularity
+## 默认粒度:一条 = 一个块
 
-Each chunk (article page) corresponds to **one Article** (条) in the Radio Regulations.
+结构层(`structure.json`)中的每一个"条"(article)默认作为一个原始层文本块,
+对应 `wiki/raw/regulations/<reg_name>/raw_chunks/<article_id>.txt`。
 
-## 2. Chunk Boundaries
+不按固定字数/token 数切分,原因:法规条款的语义完整性以"条"为单位,
+按字数切会切断一句法律表述,导致语义层加工时信息缺失或误判。
 
-### Primary boundary: Article number
-- Each article starts at a clear `第N条` or `第NA条` heading
-- An article ends at the next article heading, or at the chapter end
+## 超长条款的二次切分(条款内脚注级)
 
-### Exception: 第5条 (Frequency Allocation Table)
-- 第5条 spans pages 45–196 (152 pages), including the complete Frequency Allocation Table
-- Sub-chunks: Section 5.1 (general provisions), followed by the allocation table itself
-- The allocation table is treated as a single continuous chunk
+若某条跨页数 > 15 页(阈值可调),视为"超长条款",不得只生成一个整块摘要,
+必须在语义层做二次拆分。
 
-### Exception: 第10条
-- Marked as "（此号未使用）" — no content to chunk
+本法规(《无线电规则》)的第5条(频率划分)是典型案例:该条跨 45-196 页,
+共 152 页,是整份规则里唯一一个超大条款,内容是频率划分表 + 大量以
+`5.xxx`(如 `5.150`、`5.474A`)编号的脚注。这些脚注本身就是全文档里
+被引用最多的"条款级引用单元"——正文和其他条款里出现的"见 5.150"
+指的就是这里的某一条脚注,而不是整个第5条。
 
-## 3. Internal Structure Within an Article
+因此第5条的二次切分规则是:
 
-Each article may contain:
+1. 不生成"第5条"一个整体页面;
+2. 按脚注编号(`\d+\.\d+[A-Z]?` 格式)切分成多个独立页面,
+   每个脚注编号一个 wiki 页,如 `5.150.md`、`5.474A.md`;
+3. 频率划分表本身(表格部分,非脚注文字)作为附属内容单独保存为
+   `articles/5_table.md`,不与脚注文字混在一起,因为表格的语义
+   结构(频段-业务-国家/地区)和脚注文字的语义结构不同,混在一起
+   会让检索层的主题索引变得不可用;
+4. 二次切分后的脚注页面,`相关条款`字段需同时链接回 `5_table.md`
+   （因为脚注的意义依附于表格中的具体频段行）。
 
-1. **Preamble/WRC source notes** — paragraphs listing which WRC conference modified this article
-2. **Main paragraphs** — numbered or lettered (e.g., §1, §2, §3 or A, B, C)
-3. **Sub-paragraphs** — indented provisions (e.g., §1.1, §1.2)
-4. **Tables** — may appear inline
-5. **Footnotes** — appended at the end of the article or page bottom
+其他条款若出现类似情况(单条跨页异常多),按同样原则处理,不得因为
+条款冗长而只做部分摘要或跳过。
 
-## 4. OCR Chunking Strategy
+## 原始层的格式清洗子步骤
 
-Since text is extracted via OCR:
+条款文字切块(`raw_chunks/<article_id>.txt`)之后、语义加工之前,
+插入一个"格式重排层"(`clean_ocr_text.py`),只做一件事,且不改动
+任何原文字符:
 
-1. Process pages sequentially through the PDF
-2. For each page, detect whether it contains an article heading (`第N条`)
-3. When a new article heading is detected, finalize the previous article chunk
-4. Accumulate OCR text into article buffers
-5. Post-process: merge consecutive page chunks for the same article
+**按款号重排为结构化记录**:OCR/文字层按检测到的文本行切分,一句话
+经常被拆成三四行。这一步按"单独一行的款号"(如 `3.1`)重新分段,
+输出款级结构化记录 `.structured.json`,格式为:
 
-## 5. Article Page File Naming
+```json
+{
+  "clauses": [
+    {"clause_id": "3.1", "page": 37, "text": "……"},
+    {"clause_id": "3.2", "page": 37, "text": "……"}
+  ],
+  "unassigned": [
+    {"page": 37, "line": "27", "note": "疑似页码/页脚,已从款内容中排除"}
+  ]
+}
+```
 
-Format: `art_NN.md` where NN is the two-digit article number
+这样每一款都有明确的编号和页码,比纯文本更方便后续做款级的
+交叉引用定位、款级检索,也方便人工审查时按编号快速定位。这一步
+只是调整换行位置、拆分记录边界,不增删替换任何字符。
 
-| Article | Filename |
-|---------|----------|
-| 第1条 | `art_01.md` |
-| 第2条 | `art_02.md` |
-| ... | ... |
-| 第29A条 | `art_29A.md` |
-| 第59条 | `art_59.md` |
+**疑似OCR错字/异常符号不在这一步处理**:早期版本用过一个写死的
+字典(`ocr_correction_dictionary.json`)做匹配标记,但字典只能覆盖
+见过的错误模式,换一份文档、换一个OCR引擎就要重新维护,而且"这个
+字符是不是识别错了"本质上要靠上下文语义判断,规则脚本判断不了。
+现在这部分工作移到语义层的 LLM 去做(见
+`semantic_enrichment_prompt.md` 的"任务A:异常符号/错字清洗"),
+`clean_ocr_text.py` 只负责结构性重排,不再承担语义判断的职责。
 
-## 6. Cross-Article References
-
-- References to other articles within the text (e.g., "见第9条") should be converted to internal wiki links: `[[art_09]]`
-- Cannot resolve → mark as `[待链接: 原文引用文字]`
+切分严格依据 `structure.json` 中已抽取的页码范围,不允许在切分阶段
+重新猜测条款边界;若切分时发现某条实际内容与书签页码范围明显不符
+(如跨条内容混在一起),记录到 `parse_notes.md`,不得静默丢弃或臆断。

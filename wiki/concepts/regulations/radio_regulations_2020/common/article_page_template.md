@@ -1,68 +1,66 @@
-# Article Page Template — Radio Regulations 2020
+# 单条 Wiki 页面模板(article_page_template)
 
-Each article page follows this template.
-
-## Template
+每个条款/脚注页面必须包含以下字段,按顺序排列。加工字段(摘要/关键词/
+相关条款)与原文正文必须分区展示,不得混排。
 
 ```markdown
----
-article_id: <article_id>
-chapter: <chapter_number>
-title_zh: <中文标题>
-title_en: <English title>
-pages: <start_page>–<end_page>
-wrc_sources: [<WRC-XX>, ...]
-keywords: [<keyword1>, <keyword2>, ...]
----
+# 第<N>条 - <标题>
 
-# 第<N>条 — <标题>
+## 元信息
 
-## 一句话摘要
+- 条款编号: <article_id>
+- 所属章: <chapter_title>
+- 页码范围: <start_page>-<end_page>
+- 原文来源: text_layer | ocr | vision_llm_transcribe   <!-- 必填,不得省略 -->
+- 原文可信度: 高 | 中(存在OCR噪声,建议核对) | 低(需人工核对原PDF)
+- 版本: radio_regulations_2020
 
-<1–2 sentence summary of the article's purpose and main provisions>
+## 摘要
+
+<一到三句话摘要,由语义层LLM生成>
 
 ## 关键词
 
-- <keyword1>
-- <keyword2>
-- ...
+<逗号分隔的关键词列表>
 
-## 交叉引用
+## 相关条款
 
-| 引用来源 | 目标条款 | 状态 |
-|----------|----------|------|
-| 第N条第X款 | [[art_MM]] | ✅ 已链接 / ⚠️ 待确认 |
+- 见第<X>条 (<链接>)  <!-- 接地检查通过且定位到目标 -->
+- [待链接] 见附录1第X节  <!-- 接地检查通过,但规则匹配不到目标(如引用的是附录/决议),原样保留引用文字 -->
+- [疑似幻觉,原文未找到该引用文字] <引用文字>  <!-- 接地检查未通过:这句引用在原文里根本找不到,大概率是语义加工阶段的LLM编出来的,需要人工核查该条的语义加工步骤 -->
 
-## 原文
+## 原文正文
 
-<Full OCR-extracted text of the article, verbatim>
+<按款号分行的表格,每款一行,不合并成一大段文字。"原文"列是
+raw_chunks 里未经任何改动的文字;"清洗后"列是语义层LLM按
+semantic_enrichment_prompt.md 产出的结果,没有对应清洗结果时留空,
+不得用原文回填冒充"已清洗">
 
----
+| 款号 | 页码 | 原文(未改动) | 清洗后(LLM,见备注中的改动记录) |
+|---|---|---|---|
+| 3.1 | 37 | <原文> | <清洗后文字,或留空表示尚未清洗> |
+| 3.2 | 37 | <原文> | <清洗后文字> |
 
-*Source: Radio Regulations 2020 (Chinese edition), ITU*
-*Last updated: <date>*
-*Extraction method: OCR (EasyOCR)*
+## 备注/待确认项
+
+- <加工过程中标记的任何不确定内容>
+- <每一处清洗改动: 第X款 "原字符" -> "改动后字符"(理由)>
 ```
 
-## Field Definitions
+## 字段规则
 
-| Field | Required | Description |
-|-------|----------|-------------|
-| `article_id` | ✅ | e.g., `art_01`, `art_29A` |
-| `chapter` | ✅ | Chapter number (1–10) |
-| `title_zh` | ✅ | Chinese title from the official text |
-| `title_en` | ⚠️ | English title if available (from ITU English edition) |
-| `pages` | ✅ | Page range in the source PDF |
-| `wrc_sources` | ⚠️ | WRC conferences that adopted/amended this article |
-| `keywords` | ✅ | Relevant keywords for topic indexing |
-| 一句话摘要 | ✅ | Mandatory — max 2 sentences |
-| 关键词 | ✅ | At least 3 keywords |
-| 交叉引用 | ⚠️ | May be empty if no cross-references found |
-| 原文 | ✅ | Full verbatim text — never summarize or paraphrase |
-
-## Notes
-
-- The **原文** section MUST contain the FULL text of the article, not a summary
-- OCR extraction errors should be noted with `[OCR: unclear]` markers where confidence is low
-- WRC source notes (出现在条款开头的方括号文字，如 [WRC-19]）should be preserved verbatim
-- Line breaks within the original text should be preserved where they aid readability
+1. "原文来源"字段是本 Skill 的强制字段,任何页面不得省略,
+   目的是让阅读者一眼判断这段文字的可靠程度;
+2. "原文可信度"由生成脚本根据抽取方式自动打初始值
+   (text_layer→高,ocr→中,vision_llm_transcribe→视具体质量而定),
+   人工复核后可手动改为"高"并去掉提示语;
+3. "摘要"和"关键词"字段允许为空并标注"待生成"，但**不允许**
+   用编造内容填充空白,尤其是原文可信度为"低"时,应优先补全/核对
+   原文,而不是先生成摘要;
+4. "相关条款"字段中,无法定位目标的引用必须标记 `[待链接]`,
+   禁止省略这类引用或强行指向一个不确定的目标;
+5. "原文正文"必须是按款号的表格,不得合并成一整段文字——表格化
+   之后每一款的编号、页码、原文、清洗结果都是独立可核对的最小单元,
+   比一大段文字更方便审查和后续检索;
+6. "清洗后"列没有对应的语义加工结果时,必须留空或写"(待清洗)",
+   禁止用原文直接复制填充冒充"已清洗完成"。

@@ -341,12 +341,14 @@ Agent 回答用户时，应遵守以下风格：
 
 ---
 
+
 ## 16. 附加 Skill：Long Regulation Document Wiki-ization
 
 当用户要求对超长法规/标准类原文（如整份《无线电规则》）建立 wiki、
 做条款级结构化整理时，应启用本 Skill。
 
-完整规则独立维护于项目根目录下的 `SKILL_LONG_DOC.md`。
+完整规则独立维护于项目根目录下的 `SKILL_regulation_wiki.md`，
+配套脚本位于 `scripts/regulation_wiki/`。
 
 本 Skill 产出的数据存放在 `wiki/raw/regulations/` 和
 `wiki/concepts/regulations/` 下，与 landing_rights 使用的

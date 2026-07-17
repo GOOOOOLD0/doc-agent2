@@ -1,0 +1,1169 @@
+{
+  "position_type": "page",
+  "all_nodes": [
+    {
+      "title": "秘书处的说明",
+      "depth": 0,
+      "position": 3,
+      "type": "other",
+      "article_id": null,
+      "end_position": 12
+    },
+    {
+      "title": "第 一 章",
+      "depth": 0,
+      "position": 13,
+      "type": "chapter",
+      "article_id": null,
+      "end_position": 14
+    },
+    {
+      "title": "第1条",
+      "depth": 0,
+      "position": 15,
+      "type": "article",
+      "article_id": "1",
+      "end_position": 32
+    },
+    {
+      "title": "第2条",
+      "depth": 0,
+      "position": 33,
+      "type": "article",
+      "article_id": "2",
+      "end_position": 34
+    },
+    {
+      "title": "第3条",
+      "depth": 0,
+      "position": 35,
+      "type": "article",
+      "article_id": "3",
+      "end_position": 36
+    },
+    {
+      "title": "第 二 章",
+      "depth": 0,
+      "position": 37,
+      "type": "chapter",
+      "article_id": null,
+      "end_position": 38
+    },
+    {
+      "title": "第4条",
+      "depth": 0,
+      "position": 39,
+      "type": "article",
+      "article_id": "4",
+      "end_position": 42
+    },
+    {
+      "title": "第5条",
+      "depth": 0,
+      "position": 43,
+      "type": "article",
+      "article_id": "5",
+      "end_position": 208
+    },
+    {
+      "title": "第6条",
+      "depth": 0,
+      "position": 209,
+      "type": "article",
+      "article_id": "6",
+      "end_position": 210
+    },
+    {
+      "title": "第 三 章",
+      "depth": 0,
+      "position": 211,
+      "type": "chapter",
+      "article_id": null,
+      "end_position": 212
+    },
+    {
+      "title": "第7条",
+      "depth": 0,
+      "position": 213,
+      "type": "article",
+      "article_id": "7",
+      "end_position": 214
+    },
+    {
+      "title": "第8条",
+      "depth": 0,
+      "position": 215,
+      "type": "article",
+      "article_id": "8",
+      "end_position": 216
+    },
+    {
+      "title": "第9条",
+      "depth": 0,
+      "position": 217,
+      "type": "article",
+      "article_id": "9",
+      "end_position": 230
+    },
+    {
+      "title": "第10条（此号未使用）",
+      "depth": 0,
+      "position": 231,
+      "type": "article",
+      "article_id": "10",
+      "end_position": 232
+    },
+    {
+      "title": "第11条",
+      "depth": 0,
+      "position": 233,
+      "type": "article",
+      "article_id": "11",
+      "end_position": 246
+    },
+    {
+      "title": "第12条",
+      "depth": 0,
+      "position": 247,
+      "type": "article",
+      "article_id": "12",
+      "end_position": 250
+    },
+    {
+      "title": "第13条",
+      "depth": 0,
+      "position": 251,
+      "type": "article",
+      "article_id": "13",
+      "end_position": 254
+    },
+    {
+      "title": "第14条",
+      "depth": 0,
+      "position": 255,
+      "type": "article",
+      "article_id": "14",
+      "end_position": 256
+    },
+    {
+      "title": "第 四 章",
+      "depth": 0,
+      "position": 257,
+      "type": "chapter",
+      "article_id": null,
+      "end_position": 258
+    },
+    {
+      "title": "第15条",
+      "depth": 0,
+      "position": 259,
+      "type": "article",
+      "article_id": "15",
+      "end_position": 264
+    },
+    {
+      "title": "第16条",
+      "depth": 0,
+      "position": 265,
+      "type": "article",
+      "article_id": "16",
+      "end_position": 266
+    },
+    {
+      "title": "第 五 章",
+      "depth": 0,
+      "position": 267,
+      "type": "chapter",
+      "article_id": null,
+      "end_position": 268
+    },
+    {
+      "title": "第17条",
+      "depth": 0,
+      "position": 269,
+      "type": "article",
+      "article_id": "17",
+      "end_position": 270
+    },
+    {
+      "title": "第18条",
+      "depth": 0,
+      "position": 271,
+      "type": "article",
+      "article_id": "18",
+      "end_position": 272
+    },
+    {
+      "title": "第19条",
+      "depth": 0,
+      "position": 273,
+      "type": "article",
+      "article_id": "19",
+      "end_position": 284
+    },
+    {
+      "title": "第20条",
+      "depth": 0,
+      "position": 285,
+      "type": "article",
+      "article_id": "20",
+      "end_position": 286
+    },
+    {
+      "title": "第 六 章",
+      "depth": 0,
+      "position": 287,
+      "type": "chapter",
+      "article_id": null,
+      "end_position": 288
+    },
+    {
+      "title": "第21条",
+      "depth": 0,
+      "position": 289,
+      "type": "article",
+      "article_id": "21",
+      "end_position": 304
+    },
+    {
+      "title": "第22条",
+      "depth": 0,
+      "position": 305,
+      "type": "article",
+      "article_id": "22",
+      "end_position": 326
+    },
+    {
+      "title": "第23条",
+      "depth": 0,
+      "position": 327,
+      "type": "article",
+      "article_id": "23",
+      "end_position": 328
+    },
+    {
+      "title": "第24条",
+      "depth": 0,
+      "position": 329,
+      "type": "article",
+      "article_id": "24",
+      "end_position": 330
+    },
+    {
+      "title": "第25条",
+      "depth": 0,
+      "position": 331,
+      "type": "article",
+      "article_id": "25",
+      "end_position": 332
+    },
+    {
+      "title": "第26条",
+      "depth": 0,
+      "position": 333,
+      "type": "article",
+      "article_id": "26",
+      "end_position": 334
+    },
+    {
+      "title": "第27条",
+      "depth": 0,
+      "position": 335,
+      "type": "article",
+      "article_id": "27",
+      "end_position": 336
+    },
+    {
+      "title": "第28条",
+      "depth": 0,
+      "position": 337,
+      "type": "article",
+      "article_id": "28",
+      "end_position": 338
+    },
+    {
+      "title": "第29条",
+      "depth": 0,
+      "position": 339,
+      "type": "article",
+      "article_id": "29",
+      "end_position": 340
+    },
+    {
+      "title": "第29A条",
+      "depth": 0,
+      "position": 341,
+      "type": "article",
+      "article_id": "29A",
+      "end_position": 342
+    },
+    {
+      "title": "第29B条",
+      "depth": 0,
+      "position": 343,
+      "type": "article",
+      "article_id": "29B",
+      "end_position": 344
+    },
+    {
+      "title": "第 七 章",
+      "depth": 0,
+      "position": 345,
+      "type": "chapter",
+      "article_id": null,
+      "end_position": 346
+    },
+    {
+      "title": "第30条",
+      "depth": 0,
+      "position": 347,
+      "type": "article",
+      "article_id": "30",
+      "end_position": 348
+    },
+    {
+      "title": "第31条",
+      "depth": 0,
+      "position": 349,
+      "type": "article",
+      "article_id": "31",
+      "end_position": 350
+    },
+    {
+      "title": "第32条",
+      "depth": 0,
+      "position": 351,
+      "type": "article",
+      "article_id": "32",
+      "end_position": 362
+    },
+    {
+      "title": "第33条",
+      "depth": 0,
+      "position": 363,
+      "type": "article",
+      "article_id": "33",
+      "end_position": 372
+    },
+    {
+      "title": "第34条",
+      "depth": 0,
+      "position": 373,
+      "type": "article",
+      "article_id": "34",
+      "end_position": 374
+    },
+    {
+      "title": "第 八 章",
+      "depth": 0,
+      "position": 375,
+      "type": "chapter",
+      "article_id": null,
+      "end_position": 376
+    },
+    {
+      "title": "第35条",
+      "depth": 0,
+      "position": 377,
+      "type": "article",
+      "article_id": "35",
+      "end_position": 378
+    },
+    {
+      "title": "第36条",
+      "depth": 0,
+      "position": 379,
+      "type": "article",
+      "article_id": "36",
+      "end_position": 380
+    },
+    {
+      "title": "第37条",
+      "depth": 0,
+      "position": 381,
+      "type": "article",
+      "article_id": "37",
+      "end_position": 384
+    },
+    {
+      "title": "第38条",
+      "depth": 0,
+      "position": 385,
+      "type": "article",
+      "article_id": "38",
+      "end_position": 386
+    },
+    {
+      "title": "第39条",
+      "depth": 0,
+      "position": 387,
+      "type": "article",
+      "article_id": "39",
+      "end_position": 388
+    },
+    {
+      "title": "第40条",
+      "depth": 0,
+      "position": 389,
+      "type": "article",
+      "article_id": "40",
+      "end_position": 390
+    },
+    {
+      "title": "第41条",
+      "depth": 0,
+      "position": 391,
+      "type": "article",
+      "article_id": "41",
+      "end_position": 392
+    },
+    {
+      "title": "第42条",
+      "depth": 0,
+      "position": 393,
+      "type": "article",
+      "article_id": "42",
+      "end_position": 394
+    },
+    {
+      "title": "第43条",
+      "depth": 0,
+      "position": 395,
+      "type": "article",
+      "article_id": "43",
+      "end_position": 396
+    },
+    {
+      "title": "第44条",
+      "depth": 0,
+      "position": 397,
+      "type": "article",
+      "article_id": "44",
+      "end_position": 398
+    },
+    {
+      "title": "第45条",
+      "depth": 0,
+      "position": 399,
+      "type": "article",
+      "article_id": "45",
+      "end_position": 400
+    },
+    {
+      "title": "第 九 章",
+      "depth": 0,
+      "position": 401,
+      "type": "chapter",
+      "article_id": null,
+      "end_position": 402
+    },
+    {
+      "title": "第46条",
+      "depth": 0,
+      "position": 403,
+      "type": "article",
+      "article_id": "46",
+      "end_position": 404
+    },
+    {
+      "title": "第47条",
+      "depth": 0,
+      "position": 405,
+      "type": "article",
+      "article_id": "47",
+      "end_position": 410
+    },
+    {
+      "title": "第48条",
+      "depth": 0,
+      "position": 411,
+      "type": "article",
+      "article_id": "48",
+      "end_position": 412
+    },
+    {
+      "title": "第49条",
+      "depth": 0,
+      "position": 413,
+      "type": "article",
+      "article_id": "49",
+      "end_position": 414
+    },
+    {
+      "title": "第50条",
+      "depth": 0,
+      "position": 415,
+      "type": "article",
+      "article_id": "50",
+      "end_position": 416
+    },
+    {
+      "title": "第51条",
+      "depth": 0,
+      "position": 417,
+      "type": "article",
+      "article_id": "51",
+      "end_position": 422
+    },
+    {
+      "title": "第52条",
+      "depth": 0,
+      "position": 423,
+      "type": "article",
+      "article_id": "52",
+      "end_position": 442
+    },
+    {
+      "title": "第53条",
+      "depth": 0,
+      "position": 443,
+      "type": "article",
+      "article_id": "53",
+      "end_position": 444
+    },
+    {
+      "title": "第54条",
+      "depth": 0,
+      "position": 445,
+      "type": "article",
+      "article_id": "54",
+      "end_position": 446
+    },
+    {
+      "title": "第54A条",
+      "depth": 0,
+      "position": 447,
+      "type": "article",
+      "article_id": "54A",
+      "end_position": 448
+    },
+    {
+      "title": "第55条",
+      "depth": 0,
+      "position": 449,
+      "type": "article",
+      "article_id": "55",
+      "end_position": 450
+    },
+    {
+      "title": "第56条",
+      "depth": 0,
+      "position": 451,
+      "type": "article",
+      "article_id": "56",
+      "end_position": 452
+    },
+    {
+      "title": "第57条",
+      "depth": 0,
+      "position": 453,
+      "type": "article",
+      "article_id": "57",
+      "end_position": 454
+    },
+    {
+      "title": "第58条",
+      "depth": 0,
+      "position": 455,
+      "type": "article",
+      "article_id": "58",
+      "end_position": 456
+    },
+    {
+      "title": "第 十 章",
+      "depth": 0,
+      "position": 457,
+      "type": "chapter",
+      "article_id": null,
+      "end_position": 458
+    },
+    {
+      "title": "第59条",
+      "depth": 0,
+      "position": 459,
+      "type": "article",
+      "article_id": "59",
+      "end_position": 461
+    }
+  ],
+  "chapters": [
+    {
+      "title": "第 一 章",
+      "depth": 0,
+      "position": 13,
+      "type": "chapter",
+      "article_id": null,
+      "end_position": 14
+    },
+    {
+      "title": "第 二 章",
+      "depth": 0,
+      "position": 37,
+      "type": "chapter",
+      "article_id": null,
+      "end_position": 38
+    },
+    {
+      "title": "第 三 章",
+      "depth": 0,
+      "position": 211,
+      "type": "chapter",
+      "article_id": null,
+      "end_position": 212
+    },
+    {
+      "title": "第 四 章",
+      "depth": 0,
+      "position": 257,
+      "type": "chapter",
+      "article_id": null,
+      "end_position": 258
+    },
+    {
+      "title": "第 五 章",
+      "depth": 0,
+      "position": 267,
+      "type": "chapter",
+      "article_id": null,
+      "end_position": 268
+    },
+    {
+      "title": "第 六 章",
+      "depth": 0,
+      "position": 287,
+      "type": "chapter",
+      "article_id": null,
+      "end_position": 288
+    },
+    {
+      "title": "第 七 章",
+      "depth": 0,
+      "position": 345,
+      "type": "chapter",
+      "article_id": null,
+      "end_position": 346
+    },
+    {
+      "title": "第 八 章",
+      "depth": 0,
+      "position": 375,
+      "type": "chapter",
+      "article_id": null,
+      "end_position": 376
+    },
+    {
+      "title": "第 九 章",
+      "depth": 0,
+      "position": 401,
+      "type": "chapter",
+      "article_id": null,
+      "end_position": 402
+    },
+    {
+      "title": "第 十 章",
+      "depth": 0,
+      "position": 457,
+      "type": "chapter",
+      "article_id": null,
+      "end_position": 458
+    }
+  ],
+  "articles": [
+    {
+      "title": "第1条",
+      "depth": 0,
+      "position": 15,
+      "type": "article",
+      "article_id": "1",
+      "end_position": 32
+    },
+    {
+      "title": "第2条",
+      "depth": 0,
+      "position": 33,
+      "type": "article",
+      "article_id": "2",
+      "end_position": 34
+    },
+    {
+      "title": "第3条",
+      "depth": 0,
+      "position": 35,
+      "type": "article",
+      "article_id": "3",
+      "end_position": 36
+    },
+    {
+      "title": "第4条",
+      "depth": 0,
+      "position": 39,
+      "type": "article",
+      "article_id": "4",
+      "end_position": 42
+    },
+    {
+      "title": "第5条",
+      "depth": 0,
+      "position": 43,
+      "type": "article",
+      "article_id": "5",
+      "end_position": 208
+    },
+    {
+      "title": "第6条",
+      "depth": 0,
+      "position": 209,
+      "type": "article",
+      "article_id": "6",
+      "end_position": 210
+    },
+    {
+      "title": "第7条",
+      "depth": 0,
+      "position": 213,
+      "type": "article",
+      "article_id": "7",
+      "end_position": 214
+    },
+    {
+      "title": "第8条",
+      "depth": 0,
+      "position": 215,
+      "type": "article",
+      "article_id": "8",
+      "end_position": 216
+    },
+    {
+      "title": "第9条",
+      "depth": 0,
+      "position": 217,
+      "type": "article",
+      "article_id": "9",
+      "end_position": 230
+    },
+    {
+      "title": "第10条（此号未使用）",
+      "depth": 0,
+      "position": 231,
+      "type": "article",
+      "article_id": "10",
+      "end_position": 232
+    },
+    {
+      "title": "第11条",
+      "depth": 0,
+      "position": 233,
+      "type": "article",
+      "article_id": "11",
+      "end_position": 246
+    },
+    {
+      "title": "第12条",
+      "depth": 0,
+      "position": 247,
+      "type": "article",
+      "article_id": "12",
+      "end_position": 250
+    },
+    {
+      "title": "第13条",
+      "depth": 0,
+      "position": 251,
+      "type": "article",
+      "article_id": "13",
+      "end_position": 254
+    },
+    {
+      "title": "第14条",
+      "depth": 0,
+      "position": 255,
+      "type": "article",
+      "article_id": "14",
+      "end_position": 256
+    },
+    {
+      "title": "第15条",
+      "depth": 0,
+      "position": 259,
+      "type": "article",
+      "article_id": "15",
+      "end_position": 264
+    },
+    {
+      "title": "第16条",
+      "depth": 0,
+      "position": 265,
+      "type": "article",
+      "article_id": "16",
+      "end_position": 266
+    },
+    {
+      "title": "第17条",
+      "depth": 0,
+      "position": 269,
+      "type": "article",
+      "article_id": "17",
+      "end_position": 270
+    },
+    {
+      "title": "第18条",
+      "depth": 0,
+      "position": 271,
+      "type": "article",
+      "article_id": "18",
+      "end_position": 272
+    },
+    {
+      "title": "第19条",
+      "depth": 0,
+      "position": 273,
+      "type": "article",
+      "article_id": "19",
+      "end_position": 284
+    },
+    {
+      "title": "第20条",
+      "depth": 0,
+      "position": 285,
+      "type": "article",
+      "article_id": "20",
+      "end_position": 286
+    },
+    {
+      "title": "第21条",
+      "depth": 0,
+      "position": 289,
+      "type": "article",
+      "article_id": "21",
+      "end_position": 304
+    },
+    {
+      "title": "第22条",
+      "depth": 0,
+      "position": 305,
+      "type": "article",
+      "article_id": "22",
+      "end_position": 326
+    },
+    {
+      "title": "第23条",
+      "depth": 0,
+      "position": 327,
+      "type": "article",
+      "article_id": "23",
+      "end_position": 328
+    },
+    {
+      "title": "第24条",
+      "depth": 0,
+      "position": 329,
+      "type": "article",
+      "article_id": "24",
+      "end_position": 330
+    },
+    {
+      "title": "第25条",
+      "depth": 0,
+      "position": 331,
+      "type": "article",
+      "article_id": "25",
+      "end_position": 332
+    },
+    {
+      "title": "第26条",
+      "depth": 0,
+      "position": 333,
+      "type": "article",
+      "article_id": "26",
+      "end_position": 334
+    },
+    {
+      "title": "第27条",
+      "depth": 0,
+      "position": 335,
+      "type": "article",
+      "article_id": "27",
+      "end_position": 336
+    },
+    {
+      "title": "第28条",
+      "depth": 0,
+      "position": 337,
+      "type": "article",
+      "article_id": "28",
+      "end_position": 338
+    },
+    {
+      "title": "第29条",
+      "depth": 0,
+      "position": 339,
+      "type": "article",
+      "article_id": "29",
+      "end_position": 340
+    },
+    {
+      "title": "第29A条",
+      "depth": 0,
+      "position": 341,
+      "type": "article",
+      "article_id": "29A",
+      "end_position": 342
+    },
+    {
+      "title": "第29B条",
+      "depth": 0,
+      "position": 343,
+      "type": "article",
+      "article_id": "29B",
+      "end_position": 344
+    },
+    {
+      "title": "第30条",
+      "depth": 0,
+      "position": 347,
+      "type": "article",
+      "article_id": "30",
+      "end_position": 348
+    },
+    {
+      "title": "第31条",
+      "depth": 0,
+      "position": 349,
+      "type": "article",
+      "article_id": "31",
+      "end_position": 350
+    },
+    {
+      "title": "第32条",
+      "depth": 0,
+      "position": 351,
+      "type": "article",
+      "article_id": "32",
+      "end_position": 362
+    },
+    {
+      "title": "第33条",
+      "depth": 0,
+      "position": 363,
+      "type": "article",
+      "article_id": "33",
+      "end_position": 372
+    },
+    {
+      "title": "第34条",
+      "depth": 0,
+      "position": 373,
+      "type": "article",
+      "article_id": "34",
+      "end_position": 374
+    },
+    {
+      "title": "第35条",
+      "depth": 0,
+      "position": 377,
+      "type": "article",
+      "article_id": "35",
+      "end_position": 378
+    },
+    {
+      "title": "第36条",
+      "depth": 0,
+      "position": 379,
+      "type": "article",
+      "article_id": "36",
+      "end_position": 380
+    },
+    {
+      "title": "第37条",
+      "depth": 0,
+      "position": 381,
+      "type": "article",
+      "article_id": "37",
+      "end_position": 384
+    },
+    {
+      "title": "第38条",
+      "depth": 0,
+      "position": 385,
+      "type": "article",
+      "article_id": "38",
+      "end_position": 386
+    },
+    {
+      "title": "第39条",
+      "depth": 0,
+      "position": 387,
+      "type": "article",
+      "article_id": "39",
+      "end_position": 388
+    },
+    {
+      "title": "第40条",
+      "depth": 0,
+      "position": 389,
+      "type": "article",
+      "article_id": "40",
+      "end_position": 390
+    },
+    {
+      "title": "第41条",
+      "depth": 0,
+      "position": 391,
+      "type": "article",
+      "article_id": "41",
+      "end_position": 392
+    },
+    {
+      "title": "第42条",
+      "depth": 0,
+      "position": 393,
+      "type": "article",
+      "article_id": "42",
+      "end_position": 394
+    },
+    {
+      "title": "第43条",
+      "depth": 0,
+      "position": 395,
+      "type": "article",
+      "article_id": "43",
+      "end_position": 396
+    },
+    {
+      "title": "第44条",
+      "depth": 0,
+      "position": 397,
+      "type": "article",
+      "article_id": "44",
+      "end_position": 398
+    },
+    {
+      "title": "第45条",
+      "depth": 0,
+      "position": 399,
+      "type": "article",
+      "article_id": "45",
+      "end_position": 400
+    },
+    {
+      "title": "第46条",
+      "depth": 0,
+      "position": 403,
+      "type": "article",
+      "article_id": "46",
+      "end_position": 404
+    },
+    {
+      "title": "第47条",
+      "depth": 0,
+      "position": 405,
+      "type": "article",
+      "article_id": "47",
+      "end_position": 410
+    },
+    {
+      "title": "第48条",
+      "depth": 0,
+      "position": 411,
+      "type": "article",
+      "article_id": "48",
+      "end_position": 412
+    },
+    {
+      "title": "第49条",
+      "depth": 0,
+      "position": 413,
+      "type": "article",
+      "article_id": "49",
+      "end_position": 414
+    },
+    {
+      "title": "第50条",
+      "depth": 0,
+      "position": 415,
+      "type": "article",
+      "article_id": "50",
+      "end_position": 416
+    },
+    {
+      "title": "第51条",
+      "depth": 0,
+      "position": 417,
+      "type": "article",
+      "article_id": "51",
+      "end_position": 422
+    },
+    {
+      "title": "第52条",
+      "depth": 0,
+      "position": 423,
+      "type": "article",
+      "article_id": "52",
+      "end_position": 442
+    },
+    {
+      "title": "第53条",
+      "depth": 0,
+      "position": 443,
+      "type": "article",
+      "article_id": "53",
+      "end_position": 444
+    },
+    {
+      "title": "第54条",
+      "depth": 0,
+      "position": 445,
+      "type": "article",
+      "article_id": "54",
+      "end_position": 446
+    },
+    {
+      "title": "第54A条",
+      "depth": 0,
+      "position": 447,
+      "type": "article",
+      "article_id": "54A",
+      "end_position": 448
+    },
+    {
+      "title": "第55条",
+      "depth": 0,
+      "position": 449,
+      "type": "article",
+      "article_id": "55",
+      "end_position": 450
+    },
+    {
+      "title": "第56条",
+      "depth": 0,
+      "position": 451,
+      "type": "article",
+      "article_id": "56",
+      "end_position": 452
+    },
+    {
+      "title": "第57条",
+      "depth": 0,
+      "position": 453,
+      "type": "article",
+      "article_id": "57",
+      "end_position": 454
+    },
+    {
+      "title": "第58条",
+      "depth": 0,
+      "position": 455,
+      "type": "article",
+      "article_id": "58",
+      "end_position": 456
+    },
+    {
+      "title": "第59条",
+      "depth": 0,
+      "position": 459,
+      "type": "article",
+      "article_id": "59",
+      "end_position": 461
+    }
+  ]
+}

@@ -1,53 +1,56 @@
-# Cross-Reference Rules — Radio Regulations 2020
+# 交叉引用规则(cross_reference_rules)
 
-## 1. Reference Patterns to Detect
+## 识别模式(规则匹配,先于 LLM)
 
-The Radio Regulations use several standard cross-reference patterns in Chinese:
+在生成"相关条款"字段前,先用正则规则在原文中扫描以下模式,
+作为交叉引用候选,再交给 LLM 判断上下文里具体指向哪一个目标:
 
-| Pattern | Example | Internal Link |
-|---------|---------|---------------|
-| `第N条` | `按第9条的规定` | `[[art_09]]` |
-| `第N条第M款` | `第11条第2款` | `[[art_11#§2]]` |
-| `第N章` | `依照第五章的规定` | (link to chapter index) |
-| `附件N` | `见附件1` | (external annex reference) |
-| `附录N` | `按照附录15` | (appendix reference) |
-| `Resolution N` / `第N号决议` | `按第49号决议` | (resolution reference) |
-| `WRC-XX` | `WRC-19修改` | (conference source note) |
-| `《无线电规则》` | `根据《无线电规则》` | (self-reference) |
-| `RR N.N` | `RR 5.150` | (ITU standard notation) |
+- 条级引用: `第\s*\d+[A-Za-z]?\s*条` (如"第9条")
+- 脚注级引用: `\d+\.\d+[A-Za-z]?` (如"5.150"、"9.21")
+- 附录引用: `附录\s*\d+` (如"附录1")
+- 决议/建议书引用: `第\s*\d+\s*号决议`、`ITU-R\s*建议书` 等
 
-## 2. Mapping Rules
+## 定位规则
 
-| Source Text | Target Article ID | Notes |
-|-------------|-------------------|-------|
-| 第1条 | `art_01` | |
-| 第2条 | `art_02` | |
-| ... | ... | |
-| 第29A条 | `art_29A` | Note: no space between 29 and A |
-| 第59条 | `art_59` | |
+1. 条级引用 → 在 `structure.json` 的 `articles` 列表中按 `article_id` 匹配;
+2. 脚注级引用 → 在第5条二次切分后的脚注页面列表中按编号匹配
+   (见 `chunking_rules.md`);
+3. 匹配成功 → 生成内部链接,格式 `[第X条](../articles/X.md)` 或
+   `[5.150](../articles/5.150.md)`;
+4. 匹配失败(如引用的是附录、决议、其他未纳入本次处理范围的文件)
+   → 保留原始引用文字,标记 `[待链接]`,不得指向一个猜测的目标。
 
-## 3. Unresolvable References
+## 硬性限制
 
-If a reference cannot be mapped to a known article (e.g., references to:
-- Appendices not included in this PDF
-- Resolutions (not articles)
-- ITU-R Recommendations
-- Other ITU documents
+- 每一个交叉引用只做一次定位尝试,定位失败就是失败,不允许 LLM
+  为了"看起来完整"而编造一个不存在的条款号或链接;
+- 交叉引用的定位结果必须是确定性的(规则匹配的产物),LLM 只负责
+  在多个候选里选出上下文最贴切的一个,不负责创造新的引用目标;
+- 如果同一段原文里出现多个引用模式挤在一起且顺序混乱(常见于
+  表格/脚注密集区域,如第5条频率划分表),优先保证每个引用单独
+  处理,不合并成一条模糊的"相关条款"描述。
 
-→ preserve the original reference text and mark with `[待链接: <original text>]`
+## 接地检查(ground check)—— 定位之前必须先做
 
-## 4. Implementation
+实测发现过一次真实案例:语义加工步骤(LLM)在"相关条款"里生成了
+一条原文根本没提过的引用(某条明明只讲术语定义,却被加上了一条
+指向监测条款的引用)。事后核查发现,原文里压根没出现过这句引用
+文字——这不是"定位错了目标",而是 LLM 在语义加工阶段直接凭空
+编出了一条引用。
 
-During article text processing:
+为堵住这个漏洞,`generate_wiki_pages.py` 在做目标定位之前,
+必须先做接地检查:
 
-1. Scan OCR text for all known reference patterns
-2. For each match, resolve to the target article ID using the mapping table
-3. If resolvable → wrap as `[[art_NN]]` wiki link
-4. If NOT resolvable → add to article's "交叉引用" table with status ⚠️
-5. If the same reference appears multiple times, link all occurrences
+1. 把 LLM 产出的 `raw_cross_references` 里每一条,去掉"见"字前缀
+   和空白差异后,原样去原文(`raw_chunks/<article_id>.txt`)里做
+   子串匹配;
+2. 匹配不到 → 判定为**疑似幻觉**,页面上标注
+   `[疑似幻觉,原文未找到该引用文字]`,不进入目标定位步骤;
+3. 匹配得到 → 才进入原有的目标定位流程,定位不到目标时标
+   `[待链接]`。
 
-## 5. Special Cases
-
-- **Self-references:** The document referring to itself as "本规则" or "《无线电规则》" is NOT a cross-reference — do not link
-- **Article 10:** Marked as unused — references to Article 10 are likely errors or historical; flag with `[待确认: 第10条未使用]`
-- **Frequency bands:** Frequency range references (e.g., "在 1–3 GHz 频段内") are NOT cross-references — do not link
+"疑似幻觉"和"待链接"是两种性质完全不同的问题,不能混在一起:
+前者是"这句话原文里根本没有",需要回头检查语义加工这一步是不是
+出了问题;后者是"原文确实提到,但自动定位暂时找不到目标",可能
+只是目标条款还没处理、或者引用的是附录/决议这类本次流程没纳入
+处理范围的对象,不代表语义加工出错。
