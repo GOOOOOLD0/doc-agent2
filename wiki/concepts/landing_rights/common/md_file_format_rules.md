@@ -447,7 +447,7 @@ Agent 可参考以下规则选择文件位置。
 
 Agent 生成新文件前后，应检查以下事项：
 
-1. 是否读取了 `AGENT.md`；
+1. 是否读取了 `AGENTS.md`；
 2. 是否读取了本格式规则文件；
 3. 是否读取了 common SOP、source priority rules 和 information extraction checklist；
 4. 是否读取了巴西案例索引；

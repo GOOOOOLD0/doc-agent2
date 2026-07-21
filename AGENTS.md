@@ -193,7 +193,7 @@ Agent 必须读取并遵守：
 
 `wiki/concepts/landing_rights/common/source_priority_rules.md`
 
-AGENT.md 不重复维护资料来源优先级细节。
+AGENTS.md 不重复维护资料来源优先级细节。
 
 ---
 
@@ -206,7 +206,7 @@ AGENT.md 不重复维护资料来源优先级细节。
 - `open_questions_template.md`
 - `md_file_format_rules.md`
 
-AGENT.md 不重复维护完整报告模板。
+AGENTS.md 不重复维护完整报告模板。
 
 ---
 
@@ -343,8 +343,8 @@ Agent 回答用户时，应遵守以下风格：
 
 ## 16. 运行位置提醒
 
-1. `AGENT.md` 应与 `wiki/` 文件夹并列，放在项目根目录。
+1. `AGENTS.md` 应与 `wiki/` 文件夹并列，放在项目根目录。
 2. 运行 Agent 时，应尽量在项目根目录运行。
-3. 如果在其他目录运行，Agent 可能无法正确读取当前项目的 `AGENT.md` 和 `wiki/`。
-4. 一个项目建议只保留一个主 `AGENT.md`。
-5. 后续新增 Skill 时，应继续扩充本文件，而不是新建多个互不关联的 AGENT.md 文件。
+3. 如果在其他目录运行，Agent 可能无法正确读取当前项目的 `AGENTS.md` 和 `wiki/`。
+4. 一个项目建议只保留一个主 `AGENTS.md`。
+5. 后续新增 Skill 时，应继续扩充本文件，而不是新建多个互不关联的 AGENTS.md 文件。
