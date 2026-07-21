@@ -19,9 +19,9 @@ Purpose: this file is the first maintainable source register for Brazil. Each it
 Suggested local storage convention:
 
 ```text
-sources/brazil/<source_id>/snapshots/YYYY-MM-DD/original.html
-sources/brazil/<source_id>/snapshots/YYYY-MM-DD/normalized.txt
-sources/brazil/<source_id>/checks.md
+wiki/raw/landing_rights/brazil/sources/<source_id>/snapshots/YYYY-MM-DD/original.html
+wiki/raw/landing_rights/brazil/sources/<source_id>/snapshots/YYYY-MM-DD/normalized.txt
+wiki/raw/landing_rights/brazil/sources/<source_id>/checks.md
 ```
 
 ## Process map from the existing Brazil report

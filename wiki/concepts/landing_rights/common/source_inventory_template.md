@@ -24,11 +24,11 @@ source_inventory 用于记录某个国家卫星落地许可分析中找到的资
 
 国家来源清单应保存到：
 
-`wiki/raw/articles/landing_rights/<country>/source_inventory.md`
+`wiki/raw/landing_rights/<country>/source_inventory.md`
 
 例如：
 
-`wiki/raw/articles/landing_rights/thailand/source_inventory.md`
+`wiki/raw/landing_rights/thailand/source_inventory.md`
 
 ---
 
@@ -56,17 +56,15 @@ source_inventory.md 必须只使用以下表格格式，不得自行增加复杂
 
 保存规则：
 
-1. PDF、Word、官方通知、申请指南保存到：
+1. 每个来源使用稳定的 `source_id`，保存到：
 
-   `wiki/raw/papers/landing_rights/<country>/`
+   `wiki/raw/landing_rights/<country>/sources/<source_id>/`
 
-2. 网页正文、政府服务页面、法规页面、公告页面保存到：
+2. 自动抓取的 HTML、PDF、Word、表格和元数据按日期保存到：
 
-   `wiki/raw/articles/landing_rights/<country>/`
+   `wiki/raw/landing_rights/<country>/sources/<source_id>/snapshots/YYYY-MM-DD/`
 
-3. 截图、流程图、网页截图保存到：
-
-   `wiki/raw/assets/landing_rights/<country>/`
+3. 人工下载的附件或截图也应放在对应 `source_id` 目录，不再按文件格式拆分到 `articles/`、`papers/` 或 `assets/`。
 
 保存后，Agent 必须在 source_inventory.md 的“本地保存路径”中填写对应路径。
 

@@ -8,14 +8,14 @@
 - `regulatory_sources/brazil.md`: 人工可读的巴西法规来源台账。
 - `regulatory_sources/thailand.md`: 泰国试点来源台账和访问问题记录。
 - `regulatory_sources/mongolia.md`: 蒙古试点来源台账和可监控官方 URL。
-- `wiki/raw/articles/landing_rights/brazil/source_inventory.md`: 巴西知识抽取用来源清单。
+- `wiki/raw/landing_rights/brazil/source_inventory.md`: 巴西知识抽取用来源清单。
 - `wiki/concepts/landing_rights/cases/brazil/10_brazil_answer_template.md`: 巴西落地许可 Agent 回答模板。
-- `wiki/raw/articles/landing_rights/mongolia/source_inventory.md`: 蒙古知识抽取用来源清单。
+- `wiki/raw/landing_rights/mongolia/source_inventory.md`: 蒙古知识抽取用来源清单。
 - `wiki/concepts/landing_rights/cases/mongolia/10_mongolia_answer_template.md`: 蒙古落地许可 Agent 回答模板。
 - `regulatory_sources/sources.json`: 机器可读的法规 URL 配置。
 - `scripts/check_sources.py`: 法规页面抓取、正文归一化、快照保存和更新比对脚本。
-- `sources/brazil/`: 巴西法规来源 baseline 快照和检查日志。
-- `sources/mongolia/`: 蒙古试点来源 baseline 快照和检查日志。
+- `wiki/raw/landing_rights/brazil/sources/`: 巴西法规来源 baseline 快照和检查日志。
+- `wiki/raw/landing_rights/mongolia/sources/`: 蒙古法规来源 baseline 快照和检查日志。
 
 ## 运行方式
 
@@ -57,6 +57,6 @@ python3 scripts/check_sources.py --date 2026-06-23
 
 泰国已完成第一轮试点：NBTC 与 Royal Gazette 官方入口在脚本环境中返回 Cloudflare / HTTP 403，暂不加入每月监控；MDES 法规目录可抓取，但尚未确认属于卫星落地许可核心来源。
 
-蒙古已完成第一轮试点：CRC 官方许可、无线电频率、设备认证、法律目录页面可抓取；已启用 7 个蒙古来源进入每月监控。三部较大的 legalinfo.mn 法律正文已记录 URL，但暂不启用，待确定快照体积策略后再加入。
+蒙古已完成扩展试点：CRC 官方许可、无线电频率、设备认证、法律目录页面和 Legalinfo.mn 法规正文均可抓取；13 个蒙古官方来源已进入每月监控，其中包括第 37/2022 号决议附件、三部基础法律、《投资法》和频率收费规则。
 
-下一步可以继续为泰国定位具体官方文件直链，并为蒙古补充 CRC 附件抽取、费用表和本地实体要求。
+下一步可以继续为泰国定位具体官方文件直链，并根据蒙古 source notes 生成正式的 `01-09` cases 文件。

@@ -341,6 +341,19 @@
       "notes": "Pilot fetch on 2026-07-06 returned HTTP 200 and extractable HTML. This is directly linked from the CRC radio-frequency license page."
     },
     {
+      "source_id": "mn-legal-satellite-frequency-rules-annex",
+      "country": "mongolia",
+      "norm": "Annex to CRC Resolution No. 37/2022 on satellite frequency allocation and technical requirements",
+      "authority": "Legalinfo.mn / Communications Regulatory Commission of Mongolia (CRC)",
+      "url": "https://legalinfo.mn/mn/detail?lawId=16531361657351",
+      "source_format": "html",
+      "capture_method": "generic_html",
+      "process_step": "Satellite network and frequency licensing, earth stations, equipment conformity, NTN, technical requirements, and ITU registration",
+      "status": "url-confirmed",
+      "monitor": true,
+      "notes": "This is the substantive annex to CRC Resolution No. 37/2022. It is distinct from the resolution approval page and contains the operative satellite requirements."
+    },
+    {
       "source_id": "mn-legal-communications-law",
       "country": "mongolia",
       "norm": "Communications Law of Mongolia",
@@ -349,9 +362,9 @@
       "source_format": "html",
       "capture_method": "generic_html",
       "process_step": "General telecommunications authority and licensing powers",
-      "status": "url-confirmed-large-html",
-      "monitor": false,
-      "notes": "Pilot fetch on 2026-07-06 returned HTTP 200 and extractable HTML, but the page is large. Keep URL recorded; enable monthly monitoring after deciding snapshot-size policy."
+      "status": "url-confirmed",
+      "monitor": true,
+      "notes": "Official consolidated law text. Enabled for monthly monitoring because it directly supports the selection procedure, application criteria, and license term."
     },
     {
       "source_id": "mn-legal-radio-waves-law",
@@ -362,9 +375,9 @@
       "source_format": "html",
       "capture_method": "generic_html",
       "process_step": "Radio frequency ownership, allocation, and permit basis",
-      "status": "url-confirmed-large-html",
-      "monitor": false,
-      "notes": "Pilot fetch on 2026-07-06 returned HTTP 200 and extractable HTML, but the page is large. Keep URL recorded; enable monthly monitoring after deciding snapshot-size policy."
+      "status": "url-confirmed",
+      "monitor": true,
+      "notes": "Official consolidated law text. Enabled for monthly monitoring because it directly supports applicant eligibility, frequency authorization, application materials, term, and renewal."
     },
     {
       "source_id": "mn-legal-permits-law",
@@ -375,9 +388,35 @@
       "source_format": "html",
       "capture_method": "generic_html",
       "process_step": "General permit framework for issuance, extension, suspension, restoration, revocation and authorized bodies",
-      "status": "url-confirmed-large-html",
-      "monitor": false,
-      "notes": "Pilot fetch on 2026-07-06 returned HTTP 200 and extractable HTML, but the page is very large. Keep URL recorded; enable monthly monitoring after deciding snapshot-size policy."
+      "status": "url-confirmed",
+      "monitor": true,
+      "notes": "Official consolidated law text. Enabled for monthly monitoring because it identifies the CRC satellite-network and frequency permits and supplies the general permit procedure."
+    },
+    {
+      "source_id": "mn-legal-investment-law",
+      "country": "mongolia",
+      "norm": "Investment Law of Mongolia",
+      "authority": "Legalinfo.mn",
+      "url": "https://legalinfo.mn/mn/detail?lawId=9491",
+      "source_format": "html",
+      "capture_method": "generic_html",
+      "process_step": "Foreign investment framework and permit for qualifying foreign state-owned legal entities",
+      "status": "url-confirmed",
+      "monitor": true,
+      "notes": "Official consolidated law text. Article 21 is relevant when a foreign state-owned legal entity seeks 33 percent or more in an entity operating in specified strategic sectors, including communications and media."
+    },
+    {
+      "source_id": "mn-legal-radio-frequency-fee-rule",
+      "country": "mongolia",
+      "norm": "Procedure for setting radio-frequency usage and regulatory service fees",
+      "authority": "Legalinfo.mn / Communications Regulatory Commission of Mongolia (CRC)",
+      "url": "https://legalinfo.mn/mn/detail?lawId=16530825397721",
+      "source_format": "html",
+      "capture_method": "generic_html",
+      "process_step": "Radio-frequency usage and regulatory service fee methodology, including satellite service fee factors",
+      "status": "url-confirmed",
+      "monitor": true,
+      "notes": "Official fee methodology. Use it to identify calculation factors; do not treat it as a fixed project quote without applying the current tables and project parameters."
     }
   ]
 }

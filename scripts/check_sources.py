@@ -317,7 +317,7 @@ def write_check_log(
 def process_source(source: dict[str, Any], args: argparse.Namespace) -> tuple[str, str]:
     run_date = args.date
     fetched_at = dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat()
-    source_root = args.output_dir / source["country"] / source["source_id"]
+    source_root = args.output_dir / source["country"] / "sources" / source["source_id"]
     snapshot_dir = source_root / "snapshots" / run_date
     original_path = snapshot_dir / "original.html"
     normalized_path = snapshot_dir / "normalized.txt"
@@ -378,7 +378,12 @@ def build_parser() -> argparse.ArgumentParser:
     root = repo_root()
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--config", type=Path, default=root / "regulatory_sources" / "sources.json")
-    parser.add_argument("--output-dir", type=Path, default=root / "sources")
+    parser.add_argument(
+        "--output-dir",
+        type=Path,
+        default=root / "wiki" / "raw" / "landing_rights",
+        help="Landing-rights raw root; snapshots are stored under <country>/sources/<source_id>.",
+    )
     parser.add_argument("--date", default=dt.date.today().isoformat())
     parser.add_argument("--timeout", type=int, default=45)
     parser.add_argument("--source-id", action="append", help="Process only this source_id. Can be repeated.")

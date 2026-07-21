@@ -4,7 +4,7 @@ topic: landing_rights
 doc_type: source_inventory
 language: zh-CN
 review_status: draft
-last_reviewed: 2026-07-07
+last_reviewed: 2026-07-21
 ---
 
 # 蒙古卫星落地许可来源清单
@@ -27,32 +27,30 @@ last_reviewed: 2026-07-07
 | 4 | CRC radio frequency overview | https://crc.gov.mn/radio-davtamzh/tanilcuulga-3 | CRC | HTML | 是 | 频谱管理原则、公共用途频率的许可/权利基础 | 可访问 | 可提取正文 | 不需人工 | 已纳入月度监控，source_id: `mn-crc-radio-frequency-overview`。 |
 | 5 | CRC conformity certificate application page | https://crc.gov.mn/for-new-license-applicants/batalgaazuulalt-e/toxirlyn-gercilgee-batalgaazuulalt | CRC | HTML | 是 | 通信设备合格认证、证书申请和续期材料 | 可访问 | 可提取正文 | 不需人工 | 已纳入月度监控，source_id: `mn-crc-equipment-conformity`。 |
 | 6 | CRC catalog of Mongolian laws | https://crc.gov.mn/documents/mongol-ulsyn-xuuliud | CRC | HTML | 是 | 官方法律目录，链接通信法、无线电波法、许可法等 | 可访问 | 可提取正文 | 不需人工 | 已纳入月度监控，source_id: `mn-crc-laws-catalog`。 |
-| 7 | CRC Resolution No. 37/2022 on satellite communication system frequency allocation and technical requirements | https://legalinfo.mn/mn/detail?lawId=16531361633621 | Legalinfo.mn / CRC | HTML | 是 | 卫星通信系统频率划分和技术条件要求 | 可访问 | 可提取正文 | 不需人工 | 已纳入月度监控，source_id: `mn-legal-satellite-frequency-rules`。 |
-| 8 | Communications Law of Mongolia | https://legalinfo.mn/mn/detail/523 | Legalinfo.mn | HTML | 是 | 通信监管职权、通信许可基础 | 可访问 | 可提取正文 | 暂不监控 | 已确认 URL，但页面较大，source_id: `mn-legal-communications-law`，暂不启用月度监控。 |
-| 9 | Radio Waves Law of Mongolia | https://legalinfo.mn/mn/detail/443 | Legalinfo.mn | HTML | 是 | 频率国家所有、频率分配和使用许可基础 | 可访问 | 可提取正文 | 暂不监控 | 已确认 URL，但页面较大，source_id: `mn-legal-radio-waves-law`，暂不启用月度监控。 |
-| 10 | Law on Permits of Mongolia | https://legalinfo.mn/mn/detail?lawId=16530780109311 | Legalinfo.mn | HTML | 是 | 许可分类、特殊许可/普通许可框架 | 可访问 | 可提取正文 | 暂不监控 | 已确认 URL，但页面很大，source_id: `mn-legal-permits-law`，暂不启用月度监控。 |
+| 7 | CRC Resolution No. 37/2022 approval page | https://legalinfo.mn/mn/detail?lawId=16531361633621 | Legalinfo.mn / CRC | HTML | 是 | 决议编号、日期、废止旧决议及附件批准关系 | 可访问 | 可提取正文 | 不需人工 | 已纳入月度监控，source_id: `mn-legal-satellite-frequency-rules`。 |
+| 8 | Annex to CRC Resolution No. 37/2022 on satellite frequency allocation and technical requirements | https://legalinfo.mn/mn/detail?lawId=16531361657351 | Legalinfo.mn / CRC | HTML | 是 | 双许可、MSS、NTN、设备认证、地球站、费用依据和 ITU 协调 | 可访问 | 可提取正文 | 不需人工 | 已纳入月度监控，source_id: `mn-legal-satellite-frequency-rules-annex`；这是包含实质条款的附件页。 |
+| 9 | Communications Law of Mongolia | https://legalinfo.mn/mn/detail/523 | Legalinfo.mn | HTML | 是 | 卫星网络许可期限、材料和遴选程序 | 可访问 | 可提取正文 | 不需人工 | 已保存快照并纳入月度监控，source_id: `mn-legal-communications-law`。 |
+| 10 | Radio Waves Law of Mongolia | https://legalinfo.mn/mn/detail/443 | Legalinfo.mn | HTML | 是 | 频率持证主体、材料、协调、期限和续期 | 可访问 | 可提取正文 | 不需人工 | 已保存快照并纳入月度监控，source_id: `mn-legal-radio-waves-law`。页面英文译文有旧条款，关键结论以当前蒙古文为准。 |
+| 11 | Law on Permits of Mongolia | https://legalinfo.mn/mn/detail?lawId=16530780109311 | Legalinfo.mn | HTML | 是 | 卫星和频率许可清单、一般许可程序 | 可访问 | 可提取正文 | 不需人工 | 已保存快照并纳入月度监控，source_id: `mn-legal-permits-law`。 |
+| 12 | Investment Law of Mongolia | https://legalinfo.mn/mn/detail?lawId=9491 | Legalinfo.mn | HTML | 是 | 外国国有法人投资通信行业的许可门槛 | 可访问 | 可提取正文 | 不需人工 | 已保存快照并纳入月度监控，source_id: `mn-legal-investment-law`。33% 门槛不得扩大到所有外国投资者。 |
+| 13 | Procedure for setting radio-frequency usage and service fees | https://legalinfo.mn/mn/detail?lawId=16530825397721 | Legalinfo.mn / 数字发展和通信部 | HTML | 是 | 频率费构成、FSS 上行计费原则和监管服务费 | 可访问 | 可提取正文 | 不需人工 | 已保存快照并纳入月度监控，source_id: `mn-legal-radio-frequency-fee-rule`；不能替代具体项目报价。 |
 
 ## 3. 可直接用于生成回答的来源
 
-以下来源可直接用于生成蒙古落地许可回答：
+13 个来源均已保存官方页面快照并生成 source note，可按问题选择使用。关键法律结论应优先读取：
 
-1. `mn-crc-license-overview`
-2. `mn-crc-satellite-network-license`
-3. `mn-crc-radio-frequency-license`
-4. `mn-crc-radio-frequency-overview`
-5. `mn-crc-equipment-conformity`
-6. `mn-crc-laws-catalog`
-7. `mn-legal-satellite-frequency-rules`
+1. `mn-legal-satellite-frequency-rules-annex`
+2. `mn-legal-communications-law`
+3. `mn-legal-radio-waves-law`
+4. `mn-legal-permits-law`
+5. `mn-legal-investment-law`
+6. `mn-legal-radio-frequency-fee-rule`
 
-## 4. 已确认但暂不监控的来源
+具体申请材料还应结合 CRC 的卫星网络许可、频率许可和设备合格认证页面。
 
-以下来源已确认 URL，但因为 legalinfo.mn 法律正文页面体量较大，第一版暂不纳入月度监控：
+## 4. 月度监控状态
 
-1. `mn-legal-communications-law`
-2. `mn-legal-radio-waves-law`
-3. `mn-legal-permits-law`
-
-回答中可以把它们作为法律背景来源，但应说明其尚未进入自动监控队列。
+上述 13 个来源均已写入 `regulatory_sources/sources.json` 且设置为 `monitor: true`。2026-07-21 已为 6 个新增 Legalinfo.mn 来源建立 baseline；后续每月任务会与这些本地快照比较。
 
 ## 5. 附件和表格
 
@@ -67,16 +65,16 @@ CRC 频率许可页面中观察到卫星通信、卫星移动通信相关 PDF、
 
 ## 6. 仍不足的模块
 
-1. 卫星通信网络/服务特殊许可的完整申请材料清单；
-2. 是否必须通过本地实体申请，及外国投资/外资持股限制；
-3. 具体审批周期；
-4. 监管服务费、频率费、设备认证费的最新金额；
+1. 第 9.10 项下一轮遴选公告、名额、标准文件和实际申请入口；
+2. 外国公司分支机构能否满足频率许可主体资格，以及一般私人外资是否存在其他限制；
+3. 频率协调、遴选和签约合并后的实际项目周期；
+4. 当前具体费率表、设备认证费及项目参数对应的最终金额；
 5. CRC 电子许可系统的实际操作路径；
 6. D2D、IoT、宽带互联网、VSAT、MSS 等不同业务形态的分类差异。
 
 ## 7. 下一步建议
 
-1. 使用 `10_mongolia_answer_template.md` 作为 agent 回答蒙古问题的标准结构；
-2. 优先补充 CRC 附件抽取能力，尤其是频率申请表和卫星站 Excel；
-3. 决定 legalinfo.mn 大型法律页面的快照体积策略后，再启用 3 部基础法律的月度监控；
-4. 如找到费用表、申请系统说明或英文官方材料，应补入本 source inventory 和 `sources.json`。
+1. 基于 `source_notes/source_notes_index.md` 生成并人工复核蒙古正式 `01-09` cases 文件；
+2. 补充 CRC 频率申请表和卫星站 PDF、DOCX、XLSX 附件抽取；
+3. 查找第 9.10 项最新遴选公告、费用表和电子申请系统说明；
+4. 就 MSS 豁免范围、NTN/D2D 路径和分支机构资格取得 CRC 书面确认。

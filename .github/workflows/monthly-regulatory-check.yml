@@ -30,8 +30,8 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          if [ -n "$(git status --porcelain sources)" ]; then
-            git add sources
+          if [ -n "$(git status --porcelain wiki/raw/landing_rights)" ]; then
+            git add wiki/raw/landing_rights
             git commit -m "Update regulatory source snapshots $(date -u +'%Y-%m-%d')"
             git push origin HEAD:${{ github.ref_name }}
           else

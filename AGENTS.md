@@ -159,8 +159,8 @@ Agent 应优先读取以下文件：
 12. 对目标国家进行开放式资料检索；
 13. 创建或更新目标国家的 `source_inventory.md`；
 14. 将检索到的官方网站、官方通知、法规页面、PDF、政府门户页面和申请指南记录到 `source_inventory.md`；
-15. 对可访问来源尝试自动保存原始资料到 `sources/`；
-16. 对已保存的原始资料生成 `source_notes/` 摘要文件；
+15. 对可访问来源尝试自动保存原始资料到 `wiki/raw/landing_rights/<country>/sources/`；
+16. 对已保存的原始资料生成 `wiki/raw/landing_rights/<country>/source_notes/` 摘要文件；
 17. 在 source notes 足够支撑分析后，再按照 SOP 生成正式 `00-09` cases 文件；
 18. 如果来源不足、网页无法解析或 source notes 不足，不得生成空的正式 cases 文件；
 19. 如果需要生成正式 cases Markdown 文件，必须按照 `md_file_format_rules.md` 执行；

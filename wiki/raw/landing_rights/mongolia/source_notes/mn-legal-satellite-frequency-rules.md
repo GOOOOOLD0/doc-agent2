@@ -10,7 +10,7 @@ source_type: HTML
 local_source_path: wiki/raw/landing_rights/mongolia/sources/mn-legal-satellite-frequency-rules/snapshots/2026-07-06/original.html
 language: mn
 review_status: draft
-last_extracted: 2026-07-14
+last_extracted: 2026-07-21
 ---
 
 # Source Note：CRC 第 37/2022 号卫星通信系统频段和技术要求决议
@@ -34,7 +34,7 @@ last_extracted: 2026-07-14
 3. 决议引用《通信法》第 9.1.3 条和《无线电波法》第 51.1.2 条作为依据。
 4. 决议第 1 项批准更新后的规则作为决议附件。
 5. 决议第 2 项废止 CRC 2014 年 4 月 25 日第 12 号决议和 2014 年 7 月 4 日第 31 号决议。
-6. 当前 HTML 快照只提取到决议正文，没有提取附件内的具体频段和技术参数。
+6. 本页面是批准决定主页面；实质附件已作为独立来源 `mn-legal-satellite-frequency-rules-annex` 保存和提取。
 
 ## 3. 主要原始信息
 
@@ -71,7 +71,7 @@ Legalinfo 页面提供：
 - PDF 下载功能；
 - Word 下载功能。
 
-本地 HTML 中可见 Word 附件路径，但 PDF、Word 和附件正文尚未作为独立文件下载和提取。
+本地 HTML 中可见 Word 附件路径。附件 HTML 已以 `mn-legal-satellite-frequency-rules-annex` 独立保存；PDF 和 Word 版本尚未单独下载。
 
 ## 4. 关键原文依据
 
@@ -85,8 +85,8 @@ Legalinfo 页面提供：
 
 ## 5. 信息不足或需人工复核
 
-- 频段范围、上行和下行划分、功率限制、干扰保护、协调条件等核心技术内容位于附件，当前快照正文未包含这些内容。
-- 需要下载并提取附件、PDF 或 Word 后，才能生成关于具体技术条件的完整 note。
+- 频段范围、上行和下行划分、功率限制、干扰保护及协调条件不在本主页面内，应读取 `mn-legal-satellite-frequency-rules-annex.md`。
+- PDF 和 Word 版本尚未单独下载，正式引用前仍应核对附件 HTML 与下载版是否一致。
 - 页面正文没有说明许可申请流程、费用、有效期或申请主体资格。
 - 需核对 Legalinfo 页面所载附件是否为当前生效版本，以及是否存在后续修订。
 - 本 note 为蒙古语法规页面的中文提取结果，法规名称、条款号和人名译法仍需人工复核。
