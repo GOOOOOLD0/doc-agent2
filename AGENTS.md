@@ -8,6 +8,14 @@
 
 - Satellite Landing Rights Analysis
 
+正式 Skill 文件位于：
+
+`skills/satellite-landing-rights/SKILL.md`
+
+独立 Agent 程序入口为：
+
+`python3 -m landing_rights_agent`
+
 该 Skill 用于分析不同国家的卫星落地许可、外国卫星市场准入、电信服务授权、频率协调、设备认证、地面站许可和相关监管流程。
 
 本项目的知识库位于当前项目根目录下的 `wiki/` 文件夹。
