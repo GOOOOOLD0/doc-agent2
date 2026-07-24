@@ -1,58 +1,172 @@
 ---
 name: satellite-landing-rights
-description: 检索、分析和生成国家卫星落地许可知识，支持独立 CLI Agent。
+description: >
+  当用户要求查询、研究、核实、比较、生成或更新某个国家的卫星落地权
+  及市场准入要求时，请使用此技能；相关要求包括服务许可、频谱、设备、
+  网关、地球站、用户终端、费用以及监管程序。
 status: active
 ---
 
-# Satellite Landing Rights Analysis
+# Satellite Landing Rights
 
-## 使用场景
+## 目标
 
-当用户询问以下内容时使用本 Skill：
+基于可追溯的官方资料，回答、研究和维护各国卫星落地许可知识。
 
-- 某国卫星落地许可或 landing rights；
-- 外国卫星市场准入；
-- 卫星、电信或频率许可；
-- 地球站、网关、用户终端和设备认证；
-- 根据官方来源生成国家 `00-10` 案例；
-- 比较不同国家和巴西的监管流程。
+本 Skill 由当前 Agent 直接执行，不调用其他独立 Agent 或二次 LLM。
+可使用文件、网页检索、下载、解析和校验工具完成任务。
 
-## 独立 Agent 入口
+## 知识库路径
 
-在项目根目录运行：
+通用规则：
 
-```bash
-python3 -m landing_rights_agent doctor
-python3 -m landing_rights_agent answer --country mongolia --question "蒙古卫星宽带落地需要哪些许可？"
-python3 -m landing_rights_agent research --country indonesia --output indonesia-research.md
-python3 -m landing_rights_agent build-country --country mongolia
-```
+`wiki/concepts/landing_rights/common/`
 
-`build-country` 默认只写入 `.agent_runs/` 预览目录。只有用户明确要求更新 Wiki 时，才使用 `--apply`。
+国家原始资料：
 
-## 强制读取顺序
+`wiki/raw/landing_rights/<country>/`
 
-1. 根目录 `AGENTS.md`；
-2. `wiki/concepts/landing_rights/common/`；
-3. 目标国家 `wiki/raw/landing_rights/<country>/source_inventory.md`；
-4. 目标国家 `wiki/raw/landing_rights/<country>/source_notes/`；
-5. 目标国家已有 cases；
-6. 巴西案例仅作为结构和问题清单参考。
+国家正式案例：
 
-## 证据和写入边界
+`wiki/concepts/landing_rights/cases/<country>/`
 
-1. 目标国家官方来源才可支撑关键法律结论；
-2. 必须区分已确认信息、分析推断和待确认事项；
-3. 来源不足时不得生成正式 cases 空骨架；
-4. `research` 结果只是第一阶段研究报告，不自动等同于 source note；
-5. `build-country` 至少需要 source inventory 和三个 source notes；
-6. 自动生成文件必须保持 `review_status: draft`；
-7. 费用、期限、法规版本和主体资格必须标记最新复核要求；
-8. 不得自动提交 GitHub、发送外部信息或覆盖人工确认状态。
+国家对比结果：
 
-## 输出
+`wiki/comparisons/landing_rights/<country>/`
 
-- 问答结果：终端或 `--output` 指定文件；
-- 研究报告：终端或 `--output` 指定文件；
-- cases 预览：`.agent_runs/<timestamp>/<country>/cases/`；
-- 正式 cases：仅在 `--apply` 时写入 `wiki/concepts/landing_rights/cases/<country>/`。
+`<country>` 使用英文小写和下划线，例如：
+
+- `mongolia`
+- `south_africa`
+- `united_arab_emirates`
+
+## 任务类型
+
+根据用户要求选择一种或多种任务：
+
+1. **问答**：基于已有知识回答某国落地许可问题；
+2. **研究**：查找并整理一个新国家的官方资料；
+3. **更新**：根据新来源更新 Source Notes 或国家案例；
+4. **建档**：根据充分证据生成国家 `00-09` 案例；
+5. **比较**：比较多个国家的监管要求。
+
+## 执行流程
+
+### 1. 读取通用规则
+
+优先读取 `common/` 中实际存在的以下内容：
+
+- 国家落地许可分析 SOP；
+- 许可类型说明；
+- 信息抽取清单；
+- 来源优先级规则；
+- Source Inventory 模板；
+- Source Note 模板；
+- Markdown 格式规则；
+- 待确认问题模板。
+
+具体格式以这些文件为准，本 Skill 不重复维护完整模板。
+
+### 2. 检查已有国家资料
+
+依次检查：
+
+1. `source_inventory.md`；
+2. `source_notes/source_notes_index.md`；
+3. 与问题相关的 Source Notes；
+4. 已有国家 `00-09` 案例文件。
+
+回答已有问题时，先读取最相关内容，不要无条件加载全部文件。
+
+### 3. 收集和整理来源
+
+当现有证据不足或用户要求研究、更新时：
+
+1. 优先检索目标国家监管机构、政府门户和正式法规；
+2. 将有效来源登记到 `source_inventory.md`；
+3. 可获取的原始文件保存到 `sources/`；
+4. 每个来源生成独立 Source Note；
+5. 更新 `source_notes_index.md`；
+6. 无法访问的来源仍应登记，并标记需要人工处理。
+
+### 4. 生成国家案例
+
+只有 Source Notes 足以支持分析时，才能生成或更新正式案例。
+
+标准案例采用 `00-09` 文件体系；无法归入标准模块的国家特殊事项，可以增加 `10_` 及后续专题文件。
+
+生成文件时：
+
+- 使用 common SOP 和现有案例规定的文件名与结构；
+- 关键结论必须关联 Source Note 或官方来源；
+- 自动生成内容设置为 `review_status: draft`；
+- 更新国家案例索引；
+- 不生成只有标题、没有证据的空文件。
+
+### 5. 比较国家
+
+比较时只使用各国已经确认的资料，按照相同维度进行对照。
+
+某国信息缺失时，应明确写为“未确认”，不能根据其他国家制度推断。
+
+
+### 6. 国家案例模板约束
+
+生成或更新国家案例前，必须实际读取：
+
+- `wiki/concepts/landing_rights/common/country_landing_rights_sop.md`
+- `wiki/concepts/landing_rights/common/md_file_format_rules.md`
+- `wiki/concepts/landing_rights/common/information_extraction_checklist.md`
+- `wiki/concepts/landing_rights/common/open_questions_template.md`
+
+其中，`md_file_format_rules.md` 是 00-09 文件编号、文件名和正文结构的唯一依据。
+
+必须遵守：
+
+1. 00-09 应生成十个独立 Markdown 文件；
+2. 不得自行设计另一套 00-09 编号体系；
+3. 不得将全部内容合并为 `00-09.md`；
+4. 不得改变各编号的固定用途；
+5. 只有无法合理归入 00-09 的特殊事项，才允许从 `10_` 开始增加文件；
+6. 现有国家案例只能作为结构示例，不得覆盖 common 规则；
+7. 目标国家的事实内容只能来自目标国家 Source Notes 和官方来源；
+8. 如果上述 common 文件无法读取，应停止生成并报告问题，不得临时设计替代模板。
+
+
+## 证据规则
+
+1. 关键法律和许可结论优先使用目标国家官方来源；
+2. 巴西案例只作为结构、检查清单和比较基准，不能作为其他国家的法律依据；
+3. 明确区分：
+   - 已确认信息；
+   - 分析推断；
+   - 待确认事项；
+4. 当 Source Note、法规原文或官方说明明确指出某项一般程序、阶段时限或规则不能直接代表目标许可的完整流程、总时长或最终结论时，必须保留该适用范围限制。不得将多个阶段时限机械相加并表述为完整审批周期；公开资料不足以确认总周期时，应明确标记为“未确认”。
+5. 不得补充来源中没有的许可证、材料、费用、期限或资格要求；
+6. 多个来源冲突时保留差异，不得静默选择其中一个；
+7. 费用、期限、法规版本和主体资格应注明复核日期；
+8. 公开资料不足时，明确说明未能确认。
+
+## 写入规则
+
+- 用户只要求回答问题时，不修改 Wiki；
+- 用户明确要求研究、保存或更新时，才写入文件；
+- 不覆盖已经人工确认的内容，除非用户明确要求；
+- 不自动提交 Git、推送仓库或发送外部信息；
+- 写入后检查文件路径、来源、标题、frontmatter 和内部链接。
+
+## 输出要求
+
+回答默认使用中文，并优先给出：
+
+1. 直接结论；
+2. 监管机构和所需许可；
+3. 主要流程与条件；
+4. 来源依据；
+5. 风险和待确认事项。
+
+完成写入任务后，说明：
+
+- 创建或更新了哪些文件；
+- 使用了哪些主要来源；
+- 哪些内容仍需人工复核。

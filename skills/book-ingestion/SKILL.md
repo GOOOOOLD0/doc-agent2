@@ -1,7 +1,7 @@
 ---
 name: book-ingestion
 description: 将书籍、法规、技术标准或长文档解析并整理为 Wiki。
-status: draft
+status: active
 ---
 
 # Book Ingestion

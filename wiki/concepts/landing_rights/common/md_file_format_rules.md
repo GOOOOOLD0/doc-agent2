@@ -4,7 +4,7 @@ topic: landing_rights
 doc_type: format_rules
 language: zh-CN
 review_status: draft
---------------------
+---
 
 # 卫星落地许可 Markdown 文件格式规则
 

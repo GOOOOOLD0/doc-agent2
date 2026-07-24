@@ -8,16 +8,35 @@ split:
     - section
     - clause
 
+  # 普通条款优先以 Article 为一个语义单元
   preferred_level: article
+
+  # 结构单元超过该长度时继续向下切分
   max_chunk_tokens: 5000
+
+  # 无法按照条、节、款切分时，按该目标长度兜底切分
   fallback_chunk_tokens: 2000
+
+  # 仅在按 token 兜底切分时使用重叠
   overlap_tokens: 100
   overlap_only_for_fallback: true
 
+  # 优先保持原文的条、节、款边界
+  prefer_structural_boundaries: true
+
+  # 不允许在一个完整款号正文中间直接切断
+  allow_split_inside_clause: false
+
 patterns:
-  article: '^第\s*(\d+[A-Z]?)\s*条'
-  section: '^第\s*([IVXLCDM]+)\s*节'
-  clause: '^(\d+[A-Z]?\.\d+[A-Z]?)\s+'
+  # 支持：第1条、第22条、第29A条
+  # 若标题与条号位于同一行，也可以提取标题
+  article: '^\s*第\s*(\d+[A-Z]?)\s*条(?:\s*[—–-]?\s*(.*))?$'
+
+  # 支持：第I节、第 VIII 节、第III节 - 无线电业务
+  section: '^\s*第\s*([IVXLCDM]+)\s*节(?:\s*[—–-]\s*(.*))?\s*$'
+
+  # 支持：3.1、5.54A、1.117.1、29A.1
+  clause: '^\s*((?:\d+[A-Z]?)(?:\.\d+[A-Z]?)+)\s+'
 
 preserve:
   pdf_page: true
@@ -31,19 +50,39 @@ preserve:
   wrc_revision: true
 
 special_articles:
+  # 第1条包含八个主题差异明显的节，按 Section 切分
   article_01:
     split_by: section
 
+  # 第5条包含总则、频率划分表和大量脚注
   article_05:
     split_by:
       - general_rules
       - allocation_tables
       - footnotes
 
+  # 第22条的正文和限值表分别处理
   article_22:
     split_by:
       - section
       - table
+
+source_notes:
+
+  # 不是严格的一个chunk对应一个source_note；
+  one_note_per_chunk: false
+
+  # 普通短条款：一个 Article 生成一个 Source Note
+  short_article_as_one_note: true
+
+  # 长条款：一个 Section 生成一个 Source Note
+  section_as_one_note: true
+
+  # 同一节因长度原因拆出的多个 Chunk 合并生成一个 Source Note
+  merge_fallback_parts: true
+
+  # 表格默认不逐表生成 Source Note，可由多个相关表格共同生成一份
+  tables_require_individual_note: false
 
 output:
   parsed_dir: parsed
