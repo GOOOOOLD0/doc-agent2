@@ -5,7 +5,7 @@ topic: landing_rights
 doc_type: source_note_template
 language: zh-CN
 review_status: draft
---------------------
+---
 
 # Source Note 摘要模板
 

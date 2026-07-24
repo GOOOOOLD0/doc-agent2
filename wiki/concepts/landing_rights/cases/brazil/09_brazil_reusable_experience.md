@@ -198,8 +198,5 @@ Agent 在分析新国家时，应执行以下步骤：
 
 ### 15.2 通用分析文件
 
-- [[country_landing_rights_sop|国家落地许可分析 SOP]]
-- [[license_type_overview|卫星落地许可常见许可类型说明]]
-- [[information_extraction_checklist|国家落地许可信息抽取清单]]
+- [[case_spec|国家卫星落地许可案例规范]]
 - [[source_priority_rules|落地许可资料来源优先级规则]]
-- [[open_questions_template|待确认问题模板]]

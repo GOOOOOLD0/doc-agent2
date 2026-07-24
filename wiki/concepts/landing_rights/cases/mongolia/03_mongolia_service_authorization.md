@@ -118,6 +118,5 @@ CRC 许可总览列出第 9.3 项“使用信息网络并提供服务”和第 9
 - [[04_mongolia_frequency_coordination|蒙古频率许可与协调]]
 - [[00_brazil_case_index|巴西案例索引]]
 - [[09_brazil_reusable_experience|巴西案例可复用经验]]
-- [[country_landing_rights_sop|国家落地许可分析 SOP]]
+- [[case_spec|国家卫星落地许可案例规范]]
 - [[source_priority_rules|落地许可资料来源优先级规则]]
-- [[information_extraction_checklist|国家落地许可信息抽取清单]]

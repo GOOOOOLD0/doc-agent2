@@ -109,6 +109,5 @@ last_reviewed: 2026-07-21
 - [[08_mongolia_regulations|蒙古法规依据]]
 - [[00_brazil_case_index|巴西案例索引]]
 - [[09_brazil_reusable_experience|巴西案例可复用经验]]
-- [[country_landing_rights_sop|国家落地许可分析 SOP]]
+- [[case_spec|国家卫星落地许可案例规范]]
 - [[source_priority_rules|落地许可资料来源优先级规则]]
-- [[information_extraction_checklist|国家落地许可信息抽取清单]]
