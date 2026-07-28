@@ -1,6 +1,6 @@
 # Mongolia - satellite landing rights regulatory source pilot
 
-Last URL review: 2026-07-21
+Last URL review: 2026-07-26
 
 Purpose: this file records the first Mongolia pilot test for extending the Brazil regulatory-monitoring workflow. The goal of this pass is to identify official URLs that are relevant to satellite landing rights and can be downloaded by the monthly monitor.
 
@@ -9,14 +9,17 @@ Purpose: this file records the first Mongolia pilot test for extending the Brazi
 - The Communications Regulatory Commission of Mongolia (CRC) site returned HTTP 200 and extractable HTML for the tested licensing, radio-frequency, certification, and legal-catalog pages.
 - CRC is the core regulator for telecommunications licensing, radio-frequency use, satellite communications network/service licensing, and equipment conformity/certification.
 - Legalinfo.mn returned HTTP 200 and extractable HTML for the CRC resolution, its substantive annex, three foundation laws, the Investment Law, and the radio-frequency fee methodology.
-- Thirteen Mongolia official sources are enabled for monthly monitoring. The six expanded Legalinfo.mn sources total about 4.7 MB of original HTML per baseline run, which is acceptable for the current repository workflow.
+- The omission audit expanded the official source set from 13 to 27 sources.
+- Twenty current HTML sources are enabled for monthly monitoring. Six PDF/XLSX sources are saved and extracted but are not directly monitored because the current script supports HTML only. One 2015 CRC page is retained as historical evidence without monthly monitoring.
+- The most important omissions fixed were the 2026 equipment-certification procedure, the operational satellite-station forms, the current CRC fee schedules, the electronic application instructions, and the CRC notice-discovery page.
 
 ## Monitoring rule for Mongolia
 
 - Prefer CRC pages when they contain the practical application workflow and official links to legalinfo.mn.
 - Monitor Legalinfo.mn consolidated law pages when they directly support a landing-rights conclusion, even when the page is larger than a CRC guidance page.
 - Treat the CRC Resolution No. 37/2022 approval page and its substantive annex as separate sources.
-- Do not monitor CRC document attachments directly until PDF/Word extraction support is added. Monitor the containing CRC HTML pages instead.
+- Store and extract official PDF, DOCX, and XLSX attachments, but leave them at `monitor: false` until binary content comparison is supported. Monitor their containing CRC HTML pages for link or version changes.
+- Do not use the 2015 ITU registration guidance as the current procedural authority; retain it as historical context only.
 
 ## Source register
 
@@ -35,28 +38,43 @@ Purpose: this file records the first Mongolia pilot test for extending the Brazi
 | mn-legal-permits-law | Law on Permits of Mongolia | Legalinfo.mn | https://legalinfo.mn/mn/detail?lawId=16530780109311 | html | generic_html | Satellite and frequency permit list and general permit procedure | url-confirmed | true | Baseline saved on 2026-07-21. |
 | mn-legal-investment-law | Investment Law of Mongolia | Legalinfo.mn | https://legalinfo.mn/mn/detail?lawId=9491 | html | generic_html | Permit threshold for qualifying foreign state-owned investment in communications | url-confirmed | true | Baseline saved on 2026-07-21. The 33% rule is not a general private foreign-investment cap. |
 | mn-legal-radio-frequency-fee-rule | Radio-frequency usage and service fee methodology | Legalinfo.mn / Ministry of Digital Development and Communications | https://legalinfo.mn/mn/detail?lawId=16530825397721 | html | generic_html | Frequency-fee components, FSS uplink principle, and regulatory service fees | url-confirmed | true | Baseline saved on 2026-07-21. This methodology is not a fixed project quote. |
+| mn-crc-e-license-instructions | CRC electronic license platform instructions | CRC | https://crc.gov.mn/electronic-license-platform | html | generic_html | New and renewal applications, electronic signature, and portal entry | url-confirmed | true | The public instructions are monitorable; the logged-in portal timed out during this audit. |
+| mn-crc-license-conditions-catalog | CRC license conditions and technical requirements catalog | CRC | https://crc.gov.mn/terms-of-the-customer-service-contract | html | generic_html | Discovery of current satellite conditions and technical rules | url-confirmed | true | Currently points to the substantive annex of CRC Resolution No. 37/2022. |
+| mn-crc-regulatory-service-fees | CRC regulatory service fees page | CRC | https://crc.gov.mn/zoxicuulaltyn-uilcilgeenii-xols-2 | html | generic_html | Discovery and version control for regulatory and frequency fee documents | url-confirmed | true | Container page for the current methodology and amount schedules. |
+| mn-legal-equipment-certification-resolution-2026 | CRC Resolution No. 24/2026 approving the equipment certification procedure | Legalinfo.mn / CRC | https://legalinfo.mn/mn/detail?lawId=17435913766732 | html | generic_html | Current certification procedure approval and repeal of CRC Resolution No. 29/2019 | url-confirmed | true | Key current source discovered during the omission audit. |
+| mn-legal-equipment-certification-procedure-2026 | Information and communications equipment certification procedure | Legalinfo.mn / CRC | https://legalinfo.mn/mn/detail?lawId=17435914033652 | html | generic_html | Certification eligibility, documents, review period, schemes, and certificate terms | url-confirmed | true | Substantive annex to CRC Resolution No. 24/2026; DOCX also archived. |
+| mn-legal-standardization-conformity-law | Law on Standardization, Technical Regulation and Accreditation of Conformity Assessment | Legalinfo.mn | https://legalinfo.mn/mn/detail/13071 | html | generic_html | General legal basis for mandatory conformity assessment | url-confirmed | true | Does not by itself prove that every satellite terminal is mandatory-list equipment. |
+| mn-crc-satellite-fixed-frequency-form | Fixed and transportable satellite station frequency application form | CRC | https://crc.gov.mn/storage/%D0%A0%D0%B0%D0%B4%D0%B8%D0%BE%20%D0%B4%D0%B0%D0%B2%D1%82%D0%B0%D0%BC%D0%B6/last/%D0%A1%D0%90%D0%9D%D0%A1%D0%A0%D0%AB%D0%9D%20%D0%A5%D0%9E%D0%9B%D0%91%D0%9E%D0%9E%D0%9D%D0%AB%20%D2%AE%D0%99%D0%9B%D0%A7%D0%98%D0%9B%D0%93%D0%AD%D0%AD%D0%9D%D0%94%20%D0%A0%D0%90%D0%94%D0%98%D0%9E%20%D0%94%D0%90%D0%92%D0%A2%D0%90%D0%9C%D0%96,%20%D0%A0%D0%90%D0%94%D0%98%D0%9E%20%D0%94%D0%90%D0%92%D0%A2%D0%90%D0%9C%D0%96%D0%98%D0%99%D0%9D%20%D0%97%D0%A3%D0%A0%D0%92%D0%90%D0%A1%20%D0%90%D0%A8%D0%98%D0%93%D0%9B%D0%90%D0%A5%20%D0%A1%D0%A2%D0%90%D0%9D%D0%A6.pdf | pdf | archive_only | Fixed/transportable station, link budget, channel lease, and per-station fields | downloaded | false | Saved and extracted; direct binary monitoring is not supported. |
+| mn-crc-satellite-mobile-frequency-form | Mobile satellite service frequency application form | CRC | https://crc.gov.mn/storage/%D0%A0%D0%B0%D0%B4%D0%B8%D0%BE%20%D0%B4%D0%B0%D0%B2%D1%82%D0%B0%D0%BC%D0%B6/last/%D0%A1%D0%90%D0%9D%D0%A1%D0%A0%D0%AB%D0%9D%20%D0%A5%D3%A8%D0%94%D3%A8%D0%9B%D0%93%D3%A8%D3%A8%D0%9D%D0%A2%20%D0%A5%D0%9E%D0%9B%D0%91%D0%9E%D0%9D%D0%AB%20%D2%AE%D0%99%D0%9B%D0%A7%D0%98%D0%9B%D0%93%D0%AD%D0%AD%D0%9D%D0%94%20%D0%A0%D0%90%D0%94%D0%98%D0%9E%20%D0%94%D0%90%D0%92%D0%A2%D0%90%D0%9C%D0%96,%20%D0%A0%D0%90%D0%94%D0%98%D0%9E%20%D0%94%D0%90%D0%92%D0%A2%D0%90%D0%9C%D0%96%D0%98%D0%99%D0%9D%20%D0%97%D0%A3%D0%A0%D0%92%D0%90%D0%A1%20%D0%90%D0%A8%D0%98%D0%93%D0%9B%D0%90%D0%A5%20%D0%A1%D0%A2%D0%90%D0%9D%D0%A6.pdf | pdf | archive_only | MSS system, device, frequency, operator, and satellite fields | downloaded | false | Saved and extracted; direct binary monitoring is not supported. |
+| mn-crc-satellite-station-annex | Satellite station application spreadsheet | CRC | https://crc.gov.mn/storage/media/63982082-f9cb-41be-814c-b46d888ab122.xlsx | xlsx | archive_only | Per-site equipment, bandwidth, and coordinates | downloaded | false | Saved and extracted; direct binary monitoring is not supported. |
+| mn-crc-regulatory-service-fee-schedule | CRC regulatory service fee schedule, Resolution No. 61/2022 as amended by No. 203/2024 | CRC | https://crc.gov.mn/storage/documents/November2024/012-61-Ammend203-2024_Attach-Fee-MOJHA-2022-1222.pdf | pdf | archive_only | Annual regulatory service fee for the satellite-network permit | downloaded | false | Scanned PDF manually reviewed; monitor the CRC fee page for changes. |
+| mn-crc-radio-frequency-fee-schedule | CRC radio-frequency usage and service fee schedule, Resolution No. 94/2023 | CRC | https://crc.gov.mn/storage/%D0%97%D0%97%D2%AE%D0%A2%D0%97%D0%93/batoyun/%D0%A0%D0%B0%D0%B4%D0%B8%D0%BE%20%D0%B4%D0%B0%D0%B2%D1%82%D0%B0%D0%BC%D0%B6%D0%B8%D0%B9%D0%BD%20%D1%82%D3%A9%D0%BB%D0%B1%D3%A9%D1%80%D0%B8%D0%B9%D0%BD%20%D1%85%D1%8D%D0%BC%D0%B6%D1%8D%D1%8D%202023%20%D0%BE%D0%BD%D1%8B%2094.pdf | pdf | archive_only | GSO/NGSO earth-station, MSS, and frequency-right fee amounts | downloaded | false | Scanned PDF manually reviewed; calculations still require the methodology and project parameters. |
+| mn-crc-equipment-certification-fee-schedule | CRC equipment certification fee schedule, Resolution No. 13/2020 | CRC | https://crc.gov.mn/storage/PDF/2020/2020-togtool13.pdf | pdf | archive_only | Certification, renewal, and replacement fees | downloaded | false | CRC still links this schedule, but its mapping to the 2026 certification schemes requires confirmation. |
+| mn-crc-satellite-posts-search | CRC official posts search for satellite-related notices | CRC | https://crc.gov.mn/posts?q=%D1%81%D0%B0%D0%BD%D1%81%D1%80%D1%8B%D0%BD | html | generic_html | Discovery of satellite notices, consultations, and selection windows | url-confirmed | true | No current Article 8.1.9.10 selection window was found on 2026-07-26. |
+| mn-crc-itu-earth-station-registration-guidance | CRC guidance on registering satellite earth stations in the international frequency register | CRC | https://crc.gov.mn/posts/slug1510 | html | archive_only | Historical ITU registration context | url-confirmed | false | Published in 2015; current obligations must be checked against Resolution No. 37/2022 and current ITU procedures. |
 
-## Official attachments observed but not yet monitored directly
+## Official attachments saved and extracted
 
-These appear inside the CRC HTML pages and should be revisited after PDF/Word extraction support is added:
+The core operational attachments have been saved under `wiki/raw/landing_rights/mongolia/sources/` and summarized under `source_notes/`:
 
 - Satellite communications radio-frequency station PDF: `https://crc.gov.mn/storage/%D0%A0%D0%B0%D0%B4%D0%B8%D0%BE%20%D0%B4%D0%B0%D0%B2%D1%82%D0%B0%D0%BC%D0%B6/last/%D0%A1%D0%90%D0%9D%D0%A1%D0%A0%D0%AB%D0%9D%20%D0%A5%D0%9E%D0%9B%D0%91%D0%9E%D0%9E%D0%9D%D0%AB%20%D2%AE%D0%99%D0%9B%D0%A7%D0%98%D0%9B%D0%93%D0%AD%D0%AD%D0%9D%D0%94%20%D0%A0%D0%90%D0%94%D0%98%D0%9E%20%D0%94%D0%90%D0%92%D0%A2%D0%90%D0%9C%D0%96,%20%D0%A0%D0%90%D0%94%D0%98%D0%9E%20%D0%94%D0%90%D0%92%D0%A2%D0%90%D0%9C%D0%96%D0%98%D0%99%D0%9D%20%D0%97%D0%A3%D0%A0%D0%92%D0%90%D0%A1%20%D0%90%D0%A8%D0%98%D0%93%D0%9B%D0%90%D0%A5%20%D0%A1%D0%A2%D0%90%D0%9D%D0%A6.pdf`
 - Satellite mobile communications radio-frequency station PDF: `https://crc.gov.mn/storage/%D0%A0%D0%B0%D0%B4%D0%B8%D0%BE%20%D0%B4%D0%B0%D0%B2%D1%82%D0%B0%D0%BC%D0%B6/last/%D0%A1%D0%90%D0%9D%D0%A1%D0%A0%D0%AB%D0%9D%20%D0%A5%D3%A8%D0%94%D3%A8%D0%9B%D0%93%D3%A8%D3%A8%D0%9D%D0%A2%20%D0%A5%D0%9E%D0%9B%D0%91%D0%9E%D0%9E%D0%9D%D0%AB%20%D2%AE%D0%99%D0%9B%D0%A7%D0%98%D0%9B%D0%93%D0%AD%D0%AD%D0%9D%D0%94%20%D0%A0%D0%90%D0%94%D0%98%D0%9E%20%D0%94%D0%90%D0%92%D0%A2%D0%90%D0%9C%D0%96,%20%D0%A0%D0%90%D0%94%D0%98%D0%9E%20%D0%94%D0%90%D0%92%D0%A2%D0%90%D0%9C%D0%96%D0%98%D0%99%D0%9D%20%D0%97%D0%A3%D0%A0%D0%92%D0%90%D0%A1%20%D0%90%D0%A8%D0%98%D0%93%D0%9B%D0%90%D0%A5%20%D0%A1%D0%A2%D0%90%D0%9D%D0%A6.pdf`
 - Satellite station application XLSX: `https://crc.gov.mn/storage/media/63982082-f9cb-41be-814c-b46d888ab122.xlsx`
-- Satellite communications DOCX form: `https://crc.gov.mn/storage/Tusgai%20zowshoorol%20mayatuud/Radio%20dawtamj/radio%20dawtamj/20170123%20%D0%A2%D0%97-3%204%20%D0%A1%D0%B0%D0%BD%D1%81%D1%80%D1%8B%D0%BD%20%D1%85%D0%BE%D0%BB%D0%B1%D0%BE%D0%BE%20Edit.docx`
+- The page's DOCX source forms were not treated as separate evidence because the corresponding PDFs expose the operative fields. Revisit them if CRC publishes a different version.
 
 ## Open issues before expanding Mongolia
 
-- Add PDF/Word extraction support before monitoring CRC attachments directly.
-- Find the current selection notice, fee tables, and electronic application instructions for the Article 8.1.9.10 satellite-network permit.
-- Obtain CRC confirmation on the MSS exemption scope, NTN/D2D route, and foreign branch eligibility.
+- Add PDF/DOCX/XLSX content comparison before enabling direct binary monitoring.
+- Find the current selection notice and standard package for the Article 8.1.9.10 satellite-network permit.
+- Confirm the equipment-fee schedule applicable to the 2026 certification procedure and obtain the current mandatory-product list.
+- Obtain CRC confirmation on the MSS exemption scope, NTN/D2D route, foreign branch eligibility, logged-in portal workflow, and full project timeline.
 
 ## Pilot commands
 
 Run the Mongolia monitoring queue without writing:
 
 ```bash
-python3 scripts/check_sources.py --source-id mn-crc-license-overview --source-id mn-crc-satellite-network-license --source-id mn-crc-radio-frequency-license --source-id mn-crc-radio-frequency-overview --source-id mn-crc-equipment-conformity --source-id mn-crc-laws-catalog --source-id mn-legal-satellite-frequency-rules --source-id mn-legal-satellite-frequency-rules-annex --source-id mn-legal-communications-law --source-id mn-legal-radio-waves-law --source-id mn-legal-permits-law --source-id mn-legal-investment-law --source-id mn-legal-radio-frequency-fee-rule --dry-run
+python3 scripts/check_sources.py --source-id mn-crc-license-overview --source-id mn-crc-satellite-network-license --source-id mn-crc-radio-frequency-license --source-id mn-crc-radio-frequency-overview --source-id mn-crc-equipment-conformity --source-id mn-crc-laws-catalog --source-id mn-legal-satellite-frequency-rules --source-id mn-legal-satellite-frequency-rules-annex --source-id mn-legal-communications-law --source-id mn-legal-radio-waves-law --source-id mn-legal-permits-law --source-id mn-legal-investment-law --source-id mn-legal-radio-frequency-fee-rule --source-id mn-crc-e-license-instructions --source-id mn-crc-license-conditions-catalog --source-id mn-crc-regulatory-service-fees --source-id mn-legal-equipment-certification-resolution-2026 --source-id mn-legal-equipment-certification-procedure-2026 --source-id mn-legal-standardization-conformity-law --source-id mn-crc-satellite-posts-search --dry-run
 ```
 
 Run all enabled sources, including Brazil and Mongolia:

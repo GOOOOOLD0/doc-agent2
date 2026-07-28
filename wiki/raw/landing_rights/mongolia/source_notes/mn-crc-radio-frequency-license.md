@@ -10,7 +10,7 @@ source_type: HTML
 local_source_path: wiki/raw/landing_rights/mongolia/sources/mn-crc-radio-frequency-license/snapshots/2026-07-06/original.html
 language: mn
 review_status: draft
-last_extracted: 2026-07-14
+last_extracted: 2026-07-26
 ---
 
 # Source Note：无线电频率及频段使用特别许可页面
@@ -25,7 +25,7 @@ last_extracted: 2026-07-14
 | 原始链接 | https://crc.gov.mn/for-new-license-applicants/tusgai-zovsoorol-4/radio-davtamz-asiglax-tusgai-zovsoorol |
 | 本地来源路径 | `wiki/raw/landing_rights/mongolia/sources/mn-crc-radio-frequency-license/snapshots/2026-07-06/original.html`；规范化文本为同目录下的 `normalized.txt` |
 | 来源语言 | 蒙古语 |
-| 抽取日期 | 2026-07-14（基于 2026-07-06 快照） |
+| 抽取日期 | 2026-07-26（基于 2026-07-06 快照，并复核页面附件） |
 
 ## 2. 主要内容摘要
 
@@ -74,7 +74,13 @@ last_extracted: 2026-07-14
 - 页面内嵌的同主题 PDF；
 - 《卫星通信系统使用的无线电频段分配、技术条件和要求》，链接至 Legalinfo.mn 的 CRC 第 37/2022 号决议页面。
 
-上述附件链接存在于本地 `original.html` 中，但附件文件尚未单独下载和提取。
+上述核心附件已于 2026-07-26 单独保存并提取：
+
+- 固定和可搬移卫星站 PDF：[[mn-crc-satellite-fixed-frequency-form]]
+- 移动卫星业务 PDF：[[mn-crc-satellite-mobile-frequency-form]]
+- 多站点卫星站 XLSX：[[mn-crc-satellite-station-annex]]
+
+页面仍列有 DOCX“源文件”，其申请字段与对应 PDF 高度重合，本轮未将 DOCX 作为独立证据来源。
 
 ## 4. 关键原文依据
 
@@ -91,6 +97,6 @@ last_extracted: 2026-07-14
 - 页面提到申请前应了解收费标准，但没有在正文中列出具体金额。
 - 页面没有说明特别许可的有效期、续期要求和完整审批周期。
 - 页面未说明外国申请人资格、本地实体要求或外资限制。
-- XLSX、DOCX 和内嵌 PDF 尚未单独下载；其中可能包含更具体的技术字段和申请表要求，应继续提取。
+- DOCX“源文件”尚未作为独立来源提取；如 PDF 与 DOCX 后续出现版本差异，应补充核对。
 - 页面未解释卫星通信与卫星移动通信在许可范围和材料要求上的完整差异。
 - 本 note 为蒙古语网页的中文提取结果，关键法律和技术术语仍需人工复核。
