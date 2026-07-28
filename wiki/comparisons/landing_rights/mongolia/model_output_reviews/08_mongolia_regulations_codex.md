@@ -5,6 +5,7 @@ case_type: structured_case
 source_document: mongolia_official_sources
 language: zh-CN
 review_status: draft
+comparison_status: historical_model_output
 last_reviewed: 2026-07-21
 ---
 

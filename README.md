@@ -1,6 +1,6 @@
 # Satellite Landing Permit Regulatory Monitor
 
-这个项目用于整理、监控和分析各国卫星落地许可相关法规来源。当前已完成巴西和蒙古知识库，并提供可独立运行的命令行 Agent。
+这个项目用于整理、监控和分析各国卫星落地许可相关法规来源。正式知识由 Codex 或人工依据官方资料生成和审核，Hermes 读取正式知识库回答问题并执行更新研究。
 
 ## 当前内容
 
@@ -9,13 +9,17 @@
 - `regulatory_sources/thailand.md`: 泰国试点来源台账和访问问题记录。
 - `regulatory_sources/mongolia.md`: 蒙古试点来源台账和可监控官方 URL。
 - `wiki/raw/landing_rights/brazil/source_inventory.md`: 巴西知识抽取用来源清单。
-- `wiki/concepts/landing_rights/cases/brazil/10_brazil_answer_template.md`: 巴西落地许可 Agent 回答模板。
 - `wiki/raw/landing_rights/mongolia/source_inventory.md`: 蒙古知识抽取用来源清单。
-- `wiki/concepts/landing_rights/cases/mongolia/10_mongolia_answer_template.md`: 蒙古落地许可 Agent 回答模板。
+- `wiki/raw/landing_rights/<country>/source_notes/`: 从单个官方来源提取的结构化笔记。
+- `wiki/raw/landing_rights/<country>/evidence_matrix.md`: 正式案例生成前的证据矩阵。
+- `wiki/concepts/landing_rights/cases/<country>/`: 经审核的国家案例文件。
 - `regulatory_sources/sources.json`: 机器可读的法规 URL 配置。
 - `scripts/check_sources.py`: 法规页面抓取、正文归一化、快照保存和更新比对脚本。
-- `landing_rights_agent/`: 独立运行的卫星落地许可 Agent 程序。
+- `tools/landing_rights/`: Evidence Matrix 和正式案例的确定性校验工具。
 - `skills/satellite-landing-rights/SKILL.md`: 正式的 Satellite Landing Rights Analysis Skill。
+- `AGENT.md`: Hermes 项目入口和角色边界。
+- `AGENTS.md`: Codex 项目入口。
+- `landing_rights_agent/`: 保留的实验性命令行程序，不作为正式知识写入入口。
 - `wiki/raw/landing_rights/brazil/sources/`: 巴西法规来源 baseline 快照和检查日志。
 - `wiki/raw/landing_rights/mongolia/sources/`: 蒙古法规来源 baseline 快照和检查日志。
 
@@ -41,56 +45,54 @@ python3 scripts/check_sources.py --dry-run
 python3 scripts/check_sources.py --date 2026-06-23
 ```
 
-### 独立 Agent
+### 正式知识生产
 
-首次使用时创建本地环境文件：
+正式国家案例遵循以下流程：
 
-```bash
-cp .env.example .env
-```
+1. 收集目标国官方法规、监管页面、申请指南和附件；
+2. 更新 `source_inventory.md`，保存原始资料并逐个生成 source note；
+3. 由 Codex 或人工审核 source notes，建立 `evidence_matrix.md`；
+4. 依据 Evidence Matrix 和 common 规范生成或更新 `00-09`；
+5. 运行确定性校验，并对法律翻译、许可边界、费用和周期进行人工复核；
+6. 复核完成前保持 `review_status: draft`。
 
-在 `.env` 中填写 `DASHSCOPE_API_KEY`。该文件已加入 `.gitignore`，不得提交到 GitHub，也不要把密钥发送到聊天中。
+巴西案例只提供结构样板和检查清单，不得作为其他国家法律结论的依据。详细规则见：
 
-默认配置使用阿里云百炼的 `qwen3.6-flash` 和 OpenAI 兼容 Responses API。低成本批量摘要可以临时将 `LANDING_RIGHTS_MODEL` 改为 `qwen3.5-flash`。
+- `AGENT.md`
+- `skills/satellite-landing-rights/SKILL.md`
+- `wiki/concepts/landing_rights/common/`
 
-检查环境：
-
-```bash
-python3 -m landing_rights_agent doctor
-```
-
-回答已有国家问题：
-
-```bash
-python3 -m landing_rights_agent answer \
-  --country mongolia \
-  --question "蒙古卫星宽带落地需要哪些许可？"
-```
-
-同时检索最新官方网页：
+校验蒙古 Evidence Matrix：
 
 ```bash
-python3 -m landing_rights_agent answer \
-  --country mongolia \
-  --question "蒙古卫星宽带落地需要哪些许可？" \
-  --web
+python3 tools/landing_rights/validate_evidence_matrix.py --country mongolia
 ```
 
-研究新国家并保存报告：
+校验已经按新矩阵复核的蒙古正式 `08`：
 
 ```bash
-python3 -m landing_rights_agent research \
-  --country indonesia \
-  --output indonesia-research.md
+python3 tools/landing_rights/validate_cases.py --country mongolia --files 08
 ```
 
-根据已经核验的 source notes 生成 `00-10` 预览：
+检查整套 `01-09` 并列出尚未吸收的证据：
 
 ```bash
-python3 -m landing_rights_agent build-country --country mongolia
+python3 tools/landing_rights/validate_cases.py --country mongolia
 ```
 
-默认预览保存在 `.agent_runs/`，不会修改 Wiki。人工确认任务范围后，使用 `--apply` 写入正式 cases 目录；生成文件仍保持 `review_status: draft`。
+校验通过表示文件结构、证据登记和内部链接符合项目规则，不代表法律结论已经自动获得权威确认。
+
+### Hermes 问答与研究
+
+Hermes 读取正式 Wiki 回答已有国家问题，也可以研究新国家或检查更新，但不得直接覆盖正式 source notes、Evidence Matrix 或 `00-09`。
+
+Hermes 的研究草稿和更新建议统一写入：
+
+```text
+.agent_runs/hermes/
+```
+
+需要进入正式知识库的内容，由 Codex 或人工复核官方原文后再写入。旧的 `landing_rights_agent/` 保留用于实验和兼容测试，不作为正式知识生产入口。
 
 ### GitHub 每月自动运行
 
@@ -106,10 +108,10 @@ python3 -m landing_rights_agent build-country --country mongolia
 
 ## 当前状态
 
-已监控 10 个巴西法规来源，重复运行验证结果为 `no-update`。`Act No. 9,526/2021` 尚未确认到官方 URL，暂未加入监控队列。
+巴西已经建立官方来源台账、原始资料、source notes 和正式案例。月度监控可识别网页更新，但监控结果仍需经过正式知识生产流程后才能改变法律结论。
 
-泰国已完成第一轮试点：NBTC 与 Royal Gazette 官方入口在脚本环境中返回 Cloudflare / HTTP 403，暂不加入每月监控；MDES 法规目录可抓取，但尚未确认属于卫星落地许可核心来源。
+泰国已完成第一轮试点。部分 NBTC 页面和附件存在 Cloudflare / HTTP 403，当前资料尚不足以生成完整正式案例，需要继续补齐可复核的官方原文。
 
-蒙古已完成扩展试点：CRC 官方许可、无线电频率、设备认证、法律目录页面和 Legalinfo.mn 法规正文均可抓取；13 个蒙古官方来源已进入每月监控，其中包括第 37/2022 号决议附件、三部基础法律、《投资法》和频率收费规则。
+蒙古现有 27 份正式 source notes，覆盖 CRC 许可、无线电频率、设备认证、Legalinfo.mn 法规正文、投资和收费规则。Evidence Matrix 已完成正式审核，共登记 25 条证据；正式 `08_mongolia_regulations.md` 已据此重建。
 
-蒙古正式 `00-10` cases 已完成。下一步可使用独立 Agent 对新的试点国家执行 `research`，经人工核验并形成 source notes 后，再运行 `build-country`。
+蒙古其余 `01-07`、`09` 仍需按照已审核 Evidence Matrix 逐文件复核。后续新增国家必须先完成 research、source notes 和 Evidence Matrix，再进入正式 cases。

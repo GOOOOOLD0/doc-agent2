@@ -23,7 +23,7 @@ jobs:
           python-version: "3.x"
 
       - name: Run source monitor
-        run: python3 scripts/check_sources.py --date "$(date -u +'%Y-%m-%d')"
+        run: python3 scripts/check_sources.py --date "$(date -u +'%Y-%m-%d')" --timeout 300 --allow-errors
 
       - name: Commit monitoring result
         run: |

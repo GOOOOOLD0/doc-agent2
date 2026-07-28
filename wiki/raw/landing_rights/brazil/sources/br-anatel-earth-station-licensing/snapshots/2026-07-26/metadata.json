@@ -1,0 +1,14 @@
+{
+  "source_id": "br-anatel-earth-station-licensing",
+  "country": "brazil",
+  "norm": "Licenciamento de Estacoes Terrenas",
+  "url": "https://www.gov.br/anatel/pt-br/regulado/satelite/licenciamento-de-estacoes-terrenas",
+  "fetched_at": "2026-07-26T06:51:17+00:00",
+  "title": "Licenciamento de Estações Terrenas Portal Gov.br",
+  "charset": "utf-8",
+  "source_format": "html",
+  "capture_method": "generic_html",
+  "normalized_sha256": "2eb6e1d033e8005a476cf76da201f126ad1f1bf25784f1ac89de0e7fef34ec41",
+  "status": "baseline-created",
+  "compared_to": null
+}

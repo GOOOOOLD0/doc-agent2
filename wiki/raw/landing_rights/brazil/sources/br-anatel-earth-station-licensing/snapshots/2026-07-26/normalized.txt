@@ -1,0 +1,35 @@
+source_id: br-anatel-earth-station-licensing
+country: brazil
+norm: Licenciamento de Estacoes Terrenas
+url: https://www.gov.br/anatel/pt-br/regulado/satelite/licenciamento-de-estacoes-terrenas
+title: Licenciamento de Estações Terrenas Portal Gov.br
+Licenciamento de Estações Terrenas
+Publicado em 01/01/2016 18:16Modificado em 16/03/2026 08:54
+Compartilhe:
+O licenciamento de estações é uma fase posterior à outorga de um serviço de telecomunicações. Somente entidades que detêm autorização, permissão ou concessão para explorar serviços de telecomunicações podem proceder ao licenciamento de estações. Toda estação terrena transmissora precisa ser licenciada. Os serviços de telecomunicações que usualmente suportam aplicações via satélite são: Serviço Limitado Privado (SLP), Serviço de Comunicação Multimídia (SCM), Serviço Telefônico Fixo Comutado (STFC), Serviço de Acesso Condicionado (SeAC) e Serviço Móvel Global por Satélite (SMGS). Orientações sobre a obtenção de outorga de tais serviços podem ser verificadas em Outorga — Agência Nacional de Telecomunicações (www.gov.br).
+É necessário obter senha de acesso para efetuar o cadastramento de estações terrenas no Banco de Dados Técnicos e Administrativos (BDTA) da Anatel.
+Manual de exemplos para licenciamento de estações terrenas
+Roteiro para Cadastramento e Licenciamento de Estações Terrenas
+Informações adicionais plataformas móveis
+Formulário Simplificado para Licenciamento
+Formulário Simplificado para Licenciamento-Isentas
+Orientações para cadastro de estações terrenas exclusivamente receptoras:
+O cadastro de estações terrenas exclusivamente receptoras é para aquelas cuja recepção esteja vinculada a uma entidade com autorização de serviço de telecomunicações. Por exemplo, as geradoras de radiodifusão que também possuem autorização de serviço de telecomunicações e se comunicam com suas afiliadas, comumente via satélite, de tal forma que as afiliadas recebem a programação em banda C e retransmitem localmente por sistemas de radiodifusão.
+Assim, esse cadastro de estações terrenas exclusivamente receptoras é para esses casos de estações consideradas profissionais (estações do FSS), e não para aplicações TVRO em geral.
+O cadastro de estações terrenas exclusivamente receptoras profissionais (estações do FSS) deverá estar associado a serviço de telecomunicações previamente autorizado pela Agência, conforme regulamentação em vigor. Assim, indicamos que esteja associada ao Serviço Limitado Privado, SLP, código 181 (via satélite). Ou seja, deverão estar associadas ao CNPJ do autorizado a explorar o SLP, independente de quem esteja fazendo a transmissão do sinal.
+Caso a entidade seja autorizada do serviço de interesse restrito (002) ou serviço de interesse coletivo (001) mas não tenha notificado o SLP 181, deverá proceder com a notificação deste código de serviço. Caso a entidade não possua autorizado o serviço de interesse restrito (002) ou o serviço de interesse coletivo (001), deverá observar as informações constantes em resolveuid/41cbbe878dd8440b819a4387eb8a43c5 para obter a autorização de um desses serviços previamente.
+O representante legal com cadastro no SEI deverá acessar o MOSAICO disponível em (http://sistemas.anatel.gov.br/se) e, na aba outorgados, deverá localizar a linha referente ao serviço 002, selecionar a "ação" "notificação de interesse em prestar serviço" e seguir o fluxo de notificação para inserir o SLP 181 por satélite. Verifique as informações disponíveis no “Tutorial para Notificação de Interesse/Desinteresse em Prestar Serviço de Telecomunicações”. Ao final do preenchimento, conforme orientado no manual, deve ser usada a função enviar, senão não será criada a notificação (Fistel do Serviço Notificado - 181).
+Observações:
+A notificação de interesse em prestar novo serviço não é onerosa (não são devidos preço ou taxa).
+O requerente deve acompanhar o pedido de notificação. Não há expedição de novo ato de autorização para prestar o serviço notificado. O requerente deve receber e-mail com o deferimento do pedido.
+Após a notificação do 181, será criado o Fistel relativo a este código e o usuário indicado na notificação para realizar autocadastramento poderá efetuar o cadastro da estação.
+Com a criação do Fistel do SLP 181, a entidade poderá proceder com o licenciamento da estação exclusivamente receptora no STEL ou qualquer outra estação terrena.
+Orientamos a leitura do "Roteiro para cadastramento e licenciamento de estações terrenas", o qual indica o passo a passo para o cadastro e licenciamento de estação terrena.
+O cadastro deverá ser realizado no sistema STEL, com o preenchimento sequencial das telas 103, 104, 107 e 106 (todas as telas deverão ser preenchidas). Para o caso de estações cadastradas do tipo “Terrenas exclusivamente receptoras”, deverá ser cadastrado o código genérico “AN00000000026” no campo no campo "dados da antena", relativo à “ANTENA DE ESTAÇÃO TERRENA DISPENSADA DE HOMOLOGAÇÃO”. O campo “dados do HPA” poderá ser deixado sem preenchimento. Após clicar em confirmar, apesar do STEL retornar mensagem de erro, os dados serão devidamente registrados e poderá continuar com restante do cadastro da estação terrena. O cadastro de estação não gera qualquer taxa. Posteriormente, caso deseje a emissão de uma licença da estação terrena exclusivamente receptora, cujos efeitos são meramente para indicação de registro do seu cadastro no banco de dados da Anatel, basta efetuar os procedimentos indicados nos itens 9 e 10 do mencionado Roteiro. Na impressão de uma licença de uma estação terrena exclusivamente receptora, mesmo que haja indicação de "débito" na tela de impressão, poderá marcar a estação de interesse e proceder com a impressão, o sistema não fará qualquer crítica. Caso a estação não esteja disponível diretamente na tela de impressão, verifique se a estação se encontra na opção "Licenciamento de estações (109) - geração de débito". Caso afirmativo, proceda com a "geração" (não será gerada qualquer taxa) e verifique posteriormente se a estação aparece disponível para impressão da licença em "Licenciamento de estações (109) – impressão de licença".
+Para informações relacionadas com mitigação de interferências provenientes do 5G, entrar em contato com a EAF (Entidade Administradora da Faixa de 3,5 GHz), cujo nome fantasia é Siga Antenado, uma vez que é a entidade responsável e criada para este fim.
+A Siga Antenado, durante o exercício de suas atribuições relacionadas à mitigação de interferências, deverá ser notificada de todas as situações de interferência prejudicial na recepção do sinal das estações FSS.
+Para o caso de TVRO (parabólicas de uso doméstico que recebem sinais via satélite, de uso não profissional), tais estações não estão associadas a serviço de telecomunicações e há política pública específica para esse tipo de estação, devendo verificar junto à Siga Antenado sobre as condições para recebimento do kit para mitigação de interferências.
+Página na Internet da EAF (Siga Antenado): www.eaf.org.br.
+.
+Links de compartilhamento em redes sociais
+Compartilhe:

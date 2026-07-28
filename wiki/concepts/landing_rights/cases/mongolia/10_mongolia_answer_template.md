@@ -2,199 +2,161 @@
 country: Mongolia
 topic: landing_rights
 case_type: answer_template
-source_document: mongolia_official_sources
+source_document: mongolia_evidence_matrix_and_reviewed_cases
 language: zh-CN
 review_status: draft
-last_reviewed: 2026-07-21
+last_reviewed: 2026-07-28
 ---
 
 # 蒙古落地许可 Agent 回答模板
 
 ## 1. 文件用途
 
-本文件用于指导 Agent 在回答“蒙古卫星落地许可需要做什么”时，输出稳定、完整、可追溯的答案。
+本文件用于约束 Agent 回答蒙古卫星落地许可问题时的读取顺序、输出结构和禁止断言。它是回答辅助文件，不是独立证据来源，也不能替代正式 `01-09`、Source Notes、Evidence Matrix、蒙古律师意见或 CRC 针对具体项目的书面答复。
 
-回答时应优先读取：
+回答前按以下顺序读取：
 
-1. `00_mongolia_case_index.md` 和 `01_mongolia_landing_overview.md`；
-2. 与用户问题对应的 `02-09` 正式 cases 文件；
-3. `wiki/raw/landing_rights/mongolia/source_notes/source_notes_index.md`；
-4. `wiki/raw/landing_rights/mongolia/source_inventory.md`；
-5. 必要时回到 `wiki/raw/landing_rights/mongolia/sources/` 中的官方快照核对原文。
+1. [[00_mongolia_case_index|蒙古案例索引]]
+2. [[01_mongolia_landing_overview|蒙古落地许可总览]]
+3. 与问题直接相关的 `02-09` 正式案例
+4. [[evidence_matrix|蒙古卫星落地许可证据映射]]
+5. 与结论对应的单个 Source Note
+6. 必要时回到 `wiki/raw/landing_rights/mongolia/sources/` 核对官方原文或附件
 
-## 2. 推荐回答结构
+不得引用 `wiki/comparisons/landing_rights/mongolia/model_output_reviews/` 中的历史模型输出作为法律依据。
 
-当用户问“蒙古如何获取卫星落地许可”或类似问题时，按以下结构回答：
+## 2. 回答前需要明确的项目参数
+
+如果用户没有提供以下信息，应说明结论只能是初步分类，不能直接形成最终许可清单：
+
+1. 业务属于 FSS、MSS、BSS、VSAT、卫星宽带、IoT、NTN/D2D、容量批发还是只接收业务；
+2. 谁拥有卫星、运营网络、持有频率、设置网关、与用户签约和收费；
+3. 是否在蒙古设置网关、固定地球站、可搬移站或其他发射站；
+4. 终端属于固定、移动、发射、只接收还是直连手机；
+5. 使用的频段、带宽、功率、GSO/NGSO 系统和覆盖范围；
+6. 申请人是境外法人、外国公司分支机构、蒙古子公司还是蒙古合作方；
+7. 是否涉及外国国有法人投资、土地、设备进口或大规模终端部署。
+
+## 3. 推荐回答结构
+
+回答应依次包含：
 
 1. 结论摘要；
-2. 主管机关；
-3. 需要办理的许可和合规事项；
+2. 业务模型和适用前提；
+3. 已确认的许可及配套要求；
 4. 申请主体和本地安排；
-5. 卫星通信网络/服务许可；
-6. 无线电频率和频段许可；
-7. 设备合格认证；
-8. 费用和系统入口；
-9. 法规来源；
-10. 待确认问题；
-11. 建议下一步。
+5. 主要材料和程序；
+6. 费用、期限和完整周期边界；
+7. 分析推断；
+8. 待确认事项；
+9. 主要官方来源；
+10. 建议下一步。
 
-## 3. 标准回答正文
+每项关键结论应标注“已确认”“分析推断”或“待确认”，并尽量给出 Evidence ID 和 Source Note。
 
-### 3.1 结论摘要
+## 4. 当前可使用的基线结论
 
-蒙古卫星落地许可目前可按“CRC 许可 + 频率许可 + 设备认证 + 技术规则”四条主线理解。已确认的官方来源显示，蒙古 Communications Regulatory Commission (CRC) 管理通信领域特殊许可、无线电频率使用许可、卫星通信网络建设/运营/服务许可，以及通信设备合格认证。
+### 4.1 已确认信息
 
-和巴西不同，当前蒙古来源中尚未确认到一个名称上等同于巴西“外国卫星开发权 / Right to Exploit Foreign Satellite”的独立许可。因此回答时应避免直接套用巴西的许可名称，而应使用蒙古官方页面中出现的许可类别。
+1. 《许可法》第 8.1 条第 9.10 项将“建立、运营卫星通信网络并提供服务”列为 CRC 主管的特别许可（`E-002`）。
+2. 第 9.10 项许可通过遴选授予法人，有效期为五年；《通信法》规定 CRC 每年至少组织一次遴选，并至少提前 30 日发布邀请（`E-003`、`E-017`、`E-024`）。
+3. 第 37/2022 号决议附件第 4.4 条要求其所称一般卫星服务经营者同时持有卫星网络许可和无线电频率使用许可（`E-004`）。
+4. 公共用途频率持证主体须符合《无线电波法》第 7.1 条；频率许可期限为五年，续期申请至少在到期前 30 日提出（`E-005`、`E-025`）。
+5. CRC 分别提供固定和可搬移卫星站、移动卫星业务及多站点资料表；申请涉及站点、链路预算、卫星、转发器、信道使用权和覆盖等字段（`E-006`、`E-007`）。
+6. 卫星地球站发射机、接收机和用户设备原则上按型号取得合格证；现行通用认证程序来自 CRC 第 24/2026 号决议及其附件（`E-009`、`E-010`）。
+7. 一般卫星地球站原则上位于蒙古境内；申请人还需处理卫星信道使用权证明、土地及其他批准、ITU 登记和干扰问题（`E-015`、`E-020`、`E-021`、`E-022`）。
+8. TVRO 只接收终端的公开表格注释只确认频率许可例外，不能扩大为设备、进口或服务许可全面豁免（`E-023`）。
+9. CRC 已确认电子许可平台入口，但登录后字段和当前第 9.10 项窗口没有在本轮公开来源中完整确认（`E-011`、`E-016`）。
 
-### 3.2 主管机关
+### 4.2 分析推断
 
-蒙古核心监管机构是 Communications Regulatory Commission of Mongolia (CRC)。CRC 负责通信服务、通信网络、无线电频率、设备合格认证和相关许可监管。Legalinfo.mn 是蒙古官方法律信息来源，可用于核验基础法律和 CRC 决议。
+1. 本轮公开官方来源中未发现名称和制度结构上等同于巴西外国卫星开发权的独立蒙古许可。蒙古市场准入应从本国网络、频率和配套要求分析；这不是 CRC 出具的否定性法律意见（`E-001`）。
+2. 公开规则只给出若干阶段时限，不能将其机械相加为从项目准备到商业开通的完整总周期（`E-019`）。
 
-### 3.3 需要办理的许可和合规事项
+### 4.3 待确认信息
 
-| 模块 | 蒙古事项 | 作用 | 主要来源 |
-|---|---|---|---|
-| 许可总入口 | CRC special permit / ordinary permit framework | 确认通信业务许可类别、CRC 权限和申请入口 | `mn-crc-license-overview`, `mn-crc-laws-catalog` |
-| 卫星网络/服务 | Satellite communications network establishment, operation and service license | 处理卫星通信网络建设、运营和服务经营许可问题 | `mn-crc-satellite-network-license` |
-| 频率许可 | Radio frequency and frequency band use special license | 使用无线电频率、频段、卫星通信和卫星移动通信频率时的许可材料 | `mn-crc-radio-frequency-license`, `mn-crc-radio-frequency-overview` |
-| 技术规则 | Satellite communication system frequency allocation and technical requirements | 核验双许可、MSS、NTN、设备、地球站、频段和 ITU 要求 | `mn-legal-satellite-frequency-rules-annex` |
-| 设备认证 | Conformity certificate | 通信设备、无线电设备、终端和相关产品取得合格认证 | `mn-crc-equipment-conformity` |
-| 基础法律 | Communications Law, Radio Waves Law, Law on Permits | 作为 CRC 许可、频率和通信监管权的法律背景 | `mn-crc-laws-catalog`, `mn-legal-communications-law`, `mn-legal-radio-waves-law`, `mn-legal-permits-law` |
-| 外资 | Investment Law | 核验外国国有法人投资通信行业的特定许可门槛 | `mn-legal-investment-law` |
-| 费用 | Radio-frequency usage and service fee methodology | 核验频率费组成、FSS 计费方向和监管服务费原则 | `mn-legal-radio-frequency-fee-rule` |
+1. 当前或最近一次第 8.1.9.10 项遴选公告、评分文件、名额和申请窗口（`E-016`）。
+2. 2020 年设备认证收费表与 2026 年认证程序的对应关系和现行金额（`E-013`）。
+3. 现行强制合格评定产品清单及具体卫星终端的认证分类和方案（`E-018`）。
+4. 境外法人、外国公司分支机构和蒙古子公司的申请资格差异。
+5. MSS 第 4.5 条是否以及在何种范围内排除第 9.10 项许可。
+6. NTN 第 4.10 条下地面移动网络经营者、外国卫星运营商和用户之间的许可及商业关系。
+7. 宽带、VSAT、IoT、容量批发和直接零售在第 8.1.9.3、9.4、9.10 项之间的分类。
+8. 大规模用户终端采用逐站、批量还是网络级管理。
 
-### 3.4 申请主体和本地安排
+## 5. 各模块的回答入口
 
-《无线电波法》第 7.1 条规定，公共用途无线电频率由依蒙古法律设立并运营的法人或公民取得 CRC 许可、权利文件并登记后使用。
+| 用户问题 | 优先读取 | 回答重点 |
+| --- | --- | --- |
+| 整体需要什么许可 | [[01_mongolia_landing_overview|蒙古落地许可总览]] | 许可链、主管机关、流程和风险 |
+| 外国卫星或外国公司能否进入 | [[02_mongolia_foreign_satellite_rights|蒙古外国卫星准入]] | 独立落地权、本地主体和外资边界 |
+| 服务经营、MSS 或 NTN | [[03_mongolia_service_authorization|蒙古服务授权]] | 第 9.10 项、遴选及特殊业务 |
+| 频率、ITU 或干扰 | [[04_mongolia_frequency_coordination|蒙古频率许可与协调]] | 频率主体、材料、协调和续期 |
+| 终端或设备认证 | [[05_mongolia_equipment_certification|蒙古设备认证]] | 2026 年程序、逐型号要求和产品分类 |
+| 地球站、网关或 TVRO | [[06_mongolia_station_licensing|蒙古地面站与网关许可]] | 站址、土地、信道证明和频率例外 |
+| 费用或周期 | [[07_mongolia_fee_list|蒙古费用清单]] | 费用类别、表列金额和计算边界 |
+| 法规和官方链接 | [[08_mongolia_regulations|蒙古法规依据]] | 法规层级、版本和来源作用 |
+| 可否套用到其他国家 | [[09_mongolia_reusable_experience|蒙古可复用经验]] | 可迁移方法与不可迁移规则 |
 
-因此，在回答商业卫星服务落地时，应提示：
+## 6. 费用和期限的回答规则
 
-1. 频率申请主体必须满足《无线电波法》第 7.1 条，但该条不能直接改写为“必须设立蒙古子公司”；
-2. 当前来源尚未完整确认外国卫星运营商是否可以直接申请所有许可；
-3. 不应直接假设蒙古必须采用巴西 SBH/SBS 双主体结构；
-4. 外资准入、股权结构、当地代表或合作伙伴要求需要进一步核验。
+### 6.1 可以确认
 
-### 3.5 卫星通信网络/服务许可
+1. 卫星网络特别许可的 CRC 年度监管服务费公开表列为每年 `3,000,000` 图格里克（`E-012`）。
+2. 频率使用费受频段、带宽、功率、业务或覆盖类别、站点和 GSO/NGSO 等因素影响。
+3. 第 94/2023 号表还列示 MSS 和卫星网络频率权利费项目。
+4. 2020 年设备认证收费表可以作为公开历史金额记录，但其在 2026 年程序下的完整适用关系待确认（`E-013`）。
 
-《许可法》第 8.1 条第 9.10 项将“卫星通信网络建设、运营和服务”列为 CRC 特别许可。《通信法》第 12.1、14.3 条规定该许可向法人授予、有效期五年，并通过至少每年一次的遴选程序授予。
+### 6.2 不得直接回答
 
-回答时可以说明：
+1. 不得把年度监管服务费、频率费、权利费和认证费相加后称为固定“落地许可总费用”。
+2. 不得在缺少频段、带宽、功率、站点和设备型号时计算项目报价。
+3. 不得将付款后发证、设备认证决定或遴选公告期限表述为完整项目周期。
+4. 不得承诺当前申请窗口或商业开通日期。
 
-1. 一般卫星网络建设、运营和服务应把第 9.10 项作为核心许可核验；
-2. 第 9.10 项通过遴选授予，但下一轮公告、资格和名额仍需确认；
-3. MSS 第 4.5 条是否排除第 9.10 项、NTN 第 4.10 条如何适用，必须另行向 CRC 确认；
-4. 第 9.3、9.4 项与卫星宽带、IoT、VSAT 和零售服务的关系尚未确认。
+## 7. 禁止断言
 
-### 3.6 无线电频率和频段许可
+Agent 不得在缺少新增官方证据或 CRC 书面确认时断言：
 
-CRC 频率页面明确列出“卫星通信”和“卫星移动通信”相关的无线电频率使用许可材料。申请方通常需要准备：
+1. 蒙古已经正式确认不存在独立外国卫星落地权；
+2. 外国卫星直接覆盖蒙古不需要任何许可；
+3. 所有项目都必须设立蒙古子公司；
+4. 外国公司分支机构一定符合或一定不符合申请资格；
+5. MSS 已全面豁免第 9.10 项许可；
+6. NTN 登记允许外国卫星运营商独立向蒙古用户零售 D2D 服务；
+7. 所有用户终端都需要逐台频率许可；
+8. TVRO 例外同时豁免设备认证、进口或服务许可；
+9. 2020 年设备认证费已无条件适用于 2026 年程序；
+10. 法定阶段时限等于完整项目总周期。
 
-1. 组织结构、管理层和业务介绍；
-2. 申请无线电频率许可的必要性说明；
-3. 计划开展的业务说明；
-4. 拟使用设备的技术参数；
-5. 设备合格认证信息，例如 conformity certificate 或供应商声明；
-6. 无线电设备部署图、技术方案、工作原理、框图；
-7. 无线电发射设备的地理位置和覆盖范围图；
-8. 业务可行性或市场调研；
-9. 在目标地区开展业务的商业计划；
-10. 项目实施时间表；
-11. 如使用两个或更多地球站，应按站点分别填写申请表；
-12. 卫星站或相关技术信息表格附件。
+## 8. 最短回答版本
 
-回答时应补充：CRC 页面中提到的 PDF、DOCX、XLSX 附件尚未被项目自动抽取，正式申请前需要人工下载并核对表格字段。
+蒙古公开官方资料中未发现名称和制度结构等同于巴西外国卫星开发权的独立许可。一般商业卫星项目应先核验 CRC 第 8.1.9.10 项卫星通信网络特别许可和第 8.1.9.8 项频率许可，并同步处理设备逐型号认证、地球站及土地批准、卫星信道资料、ITU 登记和干扰协调。MSS、NTN/D2D、外国主体资格、具体服务分类、当前遴选窗口、完整周期和项目总费用仍需根据业务模型向 CRC 书面确认。
 
-### 3.7 技术规则
+## 9. 主要官方来源
 
-CRC Resolution No. 37/2022 的主页面只确认附件获批；实质要求位于独立附件页面 `mn-legal-satellite-frequency-rules-annex`。附件明确双许可原则、MSS 和 NTN 专门条款、设备型号认证、地球站和信道资料、土地批准以及 ITU 登记协调要求。
+1. [蒙古《许可法》](https://legalinfo.mn/mn/detail?lawId=16530780109311)（[[mn-legal-permits-law]]）
+2. [蒙古《通信法》](https://legalinfo.mn/mn/detail/523)（[[mn-legal-communications-law]]）
+3. [蒙古《无线电波法》](https://legalinfo.mn/mn/detail/443)（[[mn-legal-radio-waves-law]]）
+4. [CRC 第 37/2022 号决议附件](https://legalinfo.mn/mn/detail?lawId=16531361657351)（[[mn-legal-satellite-frequency-rules-annex]]）
+5. [CRC 第 24/2026 号决议](https://legalinfo.mn/mn/detail?lawId=17435913766732)（[[mn-legal-equipment-certification-resolution-2026]]）
+6. [2026 年信息通信设备认证程序](https://legalinfo.mn/mn/detail?lawId=17435914033652)（[[mn-legal-equipment-certification-procedure-2026]]）
+7. [[mn-crc-satellite-fixed-frequency-form|CRC 固定和可搬移卫星站申请表]]
+8. [[mn-crc-satellite-mobile-frequency-form|CRC 移动卫星业务申请表]]
 
-回答时应提示申请方至少准备：
+完整官方来源见 [[source_inventory|蒙古来源清单]] 和 [[source_notes_index|蒙古 Source Notes 索引]]。
 
-1. 使用频段；
-2. 卫星系统类型；
-3. 地面站或终端部署方式；
-4. 发射功率、带宽、调制方式、天线增益等技术参数；
-5. 与既有系统的兼容和干扰控制说明；
-6. 与 CRC 频率申请表要求一致的站点资料。
+## 10. 相关文件
 
-### 3.8 设备合格认证
-
-CRC 设备合格认证页面显示，申请通信设备 conformity certificate 通常需要：
-
-1. 正式申请函；
-2. 认证申请表；
-3. 制造商或供应商符合性声明；
-4. 制造商或供应商授权文件；
-5. 近 6 年内的测试报告，包括健康安全、EMC、RF 等；
-6. 企业登记证和章程副本；
-7. 设备使用说明和配置说明；
-8. 产品外部和内部结构图片；
-9. 用户手册；
-10. 证书样本；
-11. 设备详细信息，包括名称、型号、制造商、技术类型、生产国、用途、工作频段、输出功率、调制方式、信道间隔、天线增益等；
-12. 必要时提交设备样品和其他材料。
-
-流程上，CRC 页面列出材料准备、递交、审查、签订证书使用合同/缴费、对认证产品使用符合性标志等步骤。
-
-### 3.9 费用和系统入口
-
-当前已确认的蒙古来源尚未整理出类似巴西费用清单中的固定金额。已知信息包括：
-
-1. 频率使用费与频段、带宽、发射功率、业务类别或覆盖范围等因素有关；
-2. FSS 频段使用费按地球至空间方向计算，并按频率范围区别处理；
-3. 设备认证费用取决于 CRC 收费规则和评估方案；
-4. 缺少项目参数、现行费率表和 CRC 缴费通知时，不得给出固定金额。
-
-回答时应避免给出未核实金额，只能写“费用需向 CRC 最新费用表或申请系统复核”。
-
-### 3.10 官方来源
-
-回答中建议列出以下已确认来源：
-
-1. CRC new license applicant overview: https://crc.gov.mn/for-new-license-applicants/tusgai-zovsoorol-4
-2. CRC satellite communications network establishment, operation and service license page: https://crc.gov.mn/for-new-license-applicants/tusgai-zovsoorol-4/sansryn-xolboony-sulzee-baiguulax-tuunii-asiglalt-uilcilgee-erxlex-3
-3. CRC radio frequency and frequency band use special license page: https://crc.gov.mn/for-new-license-applicants/tusgai-zovsoorol-4/radio-davtamz-asiglax-tusgai-zovsoorol
-4. CRC radio frequency overview: https://crc.gov.mn/radio-davtamzh/tanilcuulga-3
-5. CRC conformity certificate page: https://crc.gov.mn/for-new-license-applicants/batalgaazuulalt-e/toxirlyn-gercilgee-batalgaazuulalt
-6. CRC catalog of Mongolian laws: https://crc.gov.mn/documents/mongol-ulsyn-xuuliud
-7. CRC Resolution No. 37/2022 approval page: https://legalinfo.mn/mn/detail?lawId=16531361633621
-8. Annex to CRC Resolution No. 37/2022: https://legalinfo.mn/mn/detail?lawId=16531361657351
-9. Communications Law: https://legalinfo.mn/mn/detail/523
-10. Radio Waves Law: https://legalinfo.mn/mn/detail/443
-11. Law on Permits: https://legalinfo.mn/mn/detail?lawId=16530780109311
-12. Investment Law: https://legalinfo.mn/mn/detail?lawId=9491
-13. Radio-frequency usage and service fee methodology: https://legalinfo.mn/mn/detail?lawId=16530825397721
-
-## 4. 不应直接断言的内容
-
-以下内容必须标注为待确认或需要复核：
-
-1. 蒙古是否存在独立的“外国卫星落地权 / foreign satellite exploitation right”许可；
-2. 外国卫星运营商能否直接申请，还是必须通过蒙古本地实体；
-3. 下一轮第 9.10 项遴选的公告时间、资格、名额和实际申请入口；
-4. 具体审批周期；
-5. 最新费用金额；
-6. CRC 电子许可系统实际提交路径；
-7. PDF、DOCX、XLSX 附件中的详细字段；
-8. D2D、IoT、VSAT、MSS、宽带互联网等具体业务的分类。
-
-## 5. Agent 最短回答版本
-
-如果用户只需要简短答案，可使用以下版本：
-
-蒙古公开官方资料中未发现名称和结构等同于巴西外国卫星开发权的独立许可。一般项目应核验第 9.10 项卫星通信网络特别许可和第 9.8 项频率许可，并同步处理设备型号认证、地球站及土地批准、卫星信道资料和 ITU/干扰协调。MSS、NTN/D2D、申请主体、服务许可组合、实际总周期和具体费用仍需 CRC 按业务模型书面确认。
-
-## 6. 相关文件
-
-- [[00_mongolia_case_index|返回蒙古案例索引]]
+- [[00_mongolia_case_index|蒙古案例索引]]
 - [[01_mongolia_landing_overview|蒙古落地许可总览]]
 - [[02_mongolia_foreign_satellite_rights|蒙古外国卫星准入]]
 - [[03_mongolia_service_authorization|蒙古服务授权]]
 - [[04_mongolia_frequency_coordination|蒙古频率许可与协调]]
-- [[05_mongolia_equipment_certification|蒙古设备合格认证]]
-- [[06_mongolia_station_licensing|蒙古站点许可]]
+- [[05_mongolia_equipment_certification|蒙古设备认证]]
+- [[06_mongolia_station_licensing|蒙古地面站与网关许可]]
 - [[07_mongolia_fee_list|蒙古费用清单]]
 - [[08_mongolia_regulations|蒙古法规依据]]
-- [[09_mongolia_reusable_experience|蒙古案例可复用经验]]
-- [[wiki/raw/landing_rights/mongolia/source_inventory|蒙古来源清单]]
-- [[wiki/raw/landing_rights/mongolia/source_notes/source_notes_index|蒙古 Source Notes 索引]]
+- [[09_mongolia_reusable_experience|蒙古可复用经验]]
+- [[evidence_matrix|蒙古卫星落地许可证据映射]]
+- [[case_spec|国家卫星落地许可案例规范]]

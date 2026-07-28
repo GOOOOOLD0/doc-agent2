@@ -1,0 +1,695 @@
+source_id: br-anatel-ocd-list
+country: brazil
+norm: Organismos de Certificacao Designados
+url: https://www.gov.br/anatel/pt-br/regulado/certificacao-de-produtos/ocds
+title: Organismos de Certificação Designados (OCD)
+
+Organismos de Certificação Designados (OCD)
+Organismo de Certificação Designado (OCD) é a instituição técnica legalmente constituída que, por delegação da Anatel, conduz processos de avaliação da conformidade de produtos para telecomunicações, no âmbito da certificação compulsória, e expede os certificados de conformidade correspondentes. Os certificados de conformidade de produtos para telecomunicações expedidos pelos OCD’s constituem pré-requisito necessário à expedição da homologação, pela Anatel, para fins de comercialização e utilização legais destes produtos no Brasil.
+Publicado em 02/01/2016 02:58
+Modificado em 24/07/2026 22:58
+Compartilhe:
+ABCP CERTIFICADORA DE PRODUTOS LTDA
+Página na internet: https://www.abcpcertificacao.com.br
+contato
+Contato
+Telefone de contato
+E-mail de contato
+Beatriz Moreira
+Paulo Sigrist
+(11) 91426-2168
+comercial@abcpcertificacao.com.br
+Ato de Designação
+Termo de Responsabilidade
+Escopo de Certificação
+Lista de especialistas
+Escopo INMETRO
+Av Dr. Hilário Pereira de Souza, 406, anexo 492 - salas 2608 e 2609 – Centro - Osasco/SP
+CEP: 06010-170
+ACERT ORGANISMO DE CERTIFICACAO DE PRODUTOS EM SISTEMAS
+Página na internet: https://acertcertifications.com/
+contato
+Contato
+Telefone de contato
+E-mail de contato
+Eduardo Dias da Costa
+(21) 98270-2651
+(21) 96970-2651
+acertocd@acertcertificadora.com
+Ato de Designação
+Termo de Responsabilidade
+Escopo de Certificação
+Lista de especialistas
+Escopo INMETRO
+Av Ayrton Senna, 2.600 – Sala 323/324, Barra da Tijuca – Rio de Janeiro/RJ.
+CEP: 22775-003
+ACTA - SUPERVISÃO TÉCNICA INDEPENDENTE
+Página na internet: http://www.acta.org.br/
+contato
+Contato
+Telefone de contato
+E-mail de contato
+Jaime Henrique Reich
+(21) 2524-3000
+diretoria@acta.org.br
+Ato de Designação
+Termo de Responsabilidade
+Escopo de Certificação
+Lista de especialistas
+Av. Franklin Roosevelt, 194-Gr:405, Castelo - Rio de Janeiro/RJ
+CEP: 20021-120
+ACTA - CERTIFICAÇÕES LTDA
+Página na internet: http://www.acta.org.br/
+contato
+Contato
+Telefone de contato
+E-mail de contato
+Jaime Henrique Reich
+(21) 2524- 3000
+diretoria@acta.org.br
+Ato de Designação
+Termo de Responsabilidade
+Escopo de Certificação
+Lista de especialistas
+Escopo INMETRO
+Av. Franklin Roosevelt, 194-Gr:405, Castelo - Rio de Janeiro/RJ
+CEP: 20021-120
+ASSOCIAÇÃO LMP CERTIFICAÇÕES
+Página na internet: http://www.lmpcertificacoes.com.br
+contato
+Contato
+Telefone de contato
+E-mail de contato
+Lourival Piovesan
+Marcelo Brandt Piovesan
+(19) 2660-1730
+(19) 3251-2768
+ocd@lmp.org.br
+marcelo@lmpcertificacoes.com.br
+Ato de Designação
+Termo de Responsabilidade
+Escopo de Certificação
+Lista de especialistas
+Escopo INMETRO
+Av. Antonio Artioli, 570 - sala 48A - Swiss Park - Condomínio ZUG, Campinas/SP
+CEP: 13049-253
+ASSOCIAÇÃO NCC CERTIFICAÇÕES DO BRASIL
+Página na internet: http://www.nccgroup.com.br
+contato
+Contato
+Telefone de contato
+E-mail de contato
+Leonardo Tozzi Pinheiro
+(19) 3731-6990
+ncc@ncc.org.br
+Ato de Designação
+Termo de Responsabilidade
+Escopo de Certificação
+Lista de especialistas
+Av. Orosimbo Maia, 360 - sala 111 - Centro - Campinas/SP
+CEP: 13010-211
+ASSOCIAÇÃO VERSYS DE TECNOLOGIA
+Página na internet: www.versys.org.br
+contato
+Contato
+Telefone de contato
+E-mail de contato
+Fernando Borges Bouças
+(19) 3208-3894
+Fernando_borges@versys.org.br
+Ato de Designação
+Termo de Responsabilidade
+Escopo de Certificação
+Lista de especialistas
+Escopo INMETRO
+Av. José Rocha Bomfim, 214 – Bloco D, Cj. 126 – Loteamento Center Santa Genebra, Campinas/SP
+CEP: 13.080-650
+BLUE CERTIFICAÇÕES LTDA
+Página na internet: https://bluecert.com.br/
+contato
+Contato
+Telefone de contato
+E-mail de contato
+Eric de Oliveira Cardoso
+(19) 99834 - 9353
+comercial@bluecert.com.br
+Ato de Designação
+Termo de Responsabilidade
+Escopo de Certificação
+Lista de especialistas
+Escopo INMETRO
+Rua Jurandir Martins Filho, nº 35 sala 307, Loteamento Residencial e Comercial Bosque Flamboyant - Taubaté – SP
+CEP: 12.041-065
+BR APPROVAL - ASSOCIAÇÃO TÉCNICA DE CERTIFICAÇÃO
+Página na internet: http://www.brapproval.com/
+contato
+Contato
+Telefone de contato
+E-mail de contato
+Luciana Aparecida de Freitas Davanzo
+(19) 3363-3076
+luciana@brapproval.com
+Ato de Designação
+Termo de Responsabilidade
+Escopo de Certificação
+Lista de especialistas
+Escopo INMETRO
+Rua Treze de Maio, 34 – sala A, Bairro Santa Cecília, Paulínia/SP
+CEP: 13.140-365
+BraCert - BRASIL CERTIFICACOES LTDA
+Página na internet: http://www.bracert.com.br/
+contato
+Contato
+Telefone de contato
+E-mail de contato
+Alexandre Sabatini
+Caio Vieira
+(19) 99209-1019
+(19) 98301-6183
+a.sabatini@bracert.com.br
+caio@bracert.com.br
+Ato de Designação
+Termo de Responsabilidade
+Escopo de Certificação
+Lista de especialistas
+Escopo INMETRO
+Rua Embiruçu, nº 250, Alphaville, Campinas/SP
+CEP: 13.098-320
+BRICS Certificações de Sistemas de Gestões e Produtos Ltda
+Página na internet: https://www.brics-ocp.com.br/certificacao-de-produtos-anatel/
+contato
+Contato
+Telefone de contato
+E-mail de contato
+Aline Feltrin
+(11) 2087-7051 - R. 149
+comercial@brics-ocp.com.br
+Ato de Designação
+Termo de Responsabilidade
+Escopo de Certificação
+Lista de especialistas
+Escopo INMETRO
+Rua Dr. Ramos de Azevedo, 159 – Sala 1802, Centro, Guarulhos/SP
+CEP: 07.012-020
+CCPE - CENTRO DE CERTIFICAÇÃO DE PRODUTOS ELETRÔNICOS
+Página na internet: http://www.ccpecertificacao.com.br/
+contato
+Contato
+Telefone de contato
+E-mail de contato
+Diego de Moura
+(48) 99155-3985
+(48) 3513-0352
+diego@ccpecertificacao.com
+admin@ccpecertificacao.com
+Ato de Designação
+Termo de Responsabilidade
+Escopo de Certificação
+Lista de especialistas
+Escopo INMETRO
+Rodovia SC 370, km 168 - Pouso Alto, Gravatal/SC
+CEP: 88.735-000
+CTCP - CENTRO TECNOLÓGICO DE CERTIFICAÇÃO E PESQUISA
+Página na internet: http://ctcp.org.br/
+contato
+Contato
+Telefone de contato
+E-mail de contato
+José Alberto
+José Marcondes
+(21) 98400-1039
+(21) 98463-1995 / 98463-1996
+(21) 98463-1995 / 98463-1996
+ctcp@ctcp.org.br
+Ato de Designação
+Termo de Responsabilidade
+Escopo de Certificação
+Lista de especialistas
+Escopo INMETRO
+Av. das Américas, 700, bloco 3, sala 119 - Barra da Tijuca, Rio de Janeiro/RJ
+CEP: 22.640-100
+DEKRA CERTIFICATION B.V.
+Página na internet: http://www.dekra.com.br
+contato
+Contato
+Telefone de contato
+E-mail de contato
+Paulo Faria
+Ivan Bornal
+(11) 99969-5383
+(11) 96489-1374
+(11) 4418-7077
+comercial.telecom@dekra.com
+Ato de Designação
+Termo de Responsabilidade
+Escopo de Certificação
+Lista de especialistas
+Rod. Dom Pedro I, Km 87 - Unid. 20 - Condomínio Empresarial Barão de Mauá – Ponte Alta, Atibaia/SP
+CEP: 12.952-821
+DEKRA TESTING, INSPECTION & CERTIFICATION LTDA
+Página na internet: http://www.dekra.com.br
+contato
+Contato
+Telefone de contato
+E-mail de contato
+Paulo Faria
+Ivan Bornal
+(11) 99969-5383
+(11) 96489-1374
+(11) 4418-7077
+comercial.telecom@dekra.com
+Ato de Designação
+Termo de Responsabilidade
+Escopo de Certificação
+Lista de especialistas
+Escopo INMETRO
+Rod. Dom Pedro I, Km 87 - Unid. 20 - Condomínio Empresarial Barão de Mauá – Ponte Alta, Atibaia/SP
+CEP: 12.952-821
+FUNDAÇÃO CPqD
+Página na internet: http://www.cpqd.com.br/
+contato
+Contato
+Telefone de contato
+E-mail de contato
+Reginaldo Matias Ribeiro
+(19) 99605-2378
+ocd_cpqd@cpqd.com.br
+Ato de Designação
+Termo de Responsabilidade
+Escopo de Certificação
+Lista de especialistas
+Escopo INMETRO
+Rod. Campinas - Mogi-Mirim km 118,5, Campinas/SP
+CEP: 13.088-902
+FUNDAÇÃO VANZOLINI
+Página na internet: http://www.vanzolini.org.br
+contato
+Contato
+Telefone de contato
+E-mail de contato
+Oswaldo Pinto Ribeiro
+(11) 3913-7100
+telecom@vanzolinicert.org.br
+Ato de Designação
+Termo de Responsabilidade
+Escopo de Certificação
+Lista de especialistas
+Rua Camburiú, 255 - Alto da Lapa, São Paulo/SP
+CEP: 05.058-020
+ICC - INSTITUTO DE CERTIFICAÇÕES E CONFORMIDADES
+Página na internet: www.icc-ocd.com.br
+contato
+Contato
+Telefone de contato
+E-mail de contato
+Gustavo Ferlin
+(19) 2660-2204
+contato@icc-ocd.com.br
+Ato de Designação
+Termo de Responsabilidade
+Escopo de Certificação
+Lista de especialistas
+Escopo INMETRO
+Rua Conceição, 233 - Andar 14, Sala 1414, Centro, Campinas/ SP
+CEP: 13.010-050
+INTERTEK DO BRASIL
+Página na internet: https://www.intertek-br.com
+contato
+Contato
+Telefone de contato
+E-mail de contato
+Amanda Strumiello
+(11) 94244-0295
+amanda.strumiello@intertek.com
+Ato de Designação
+Termo de Responsabilidade
+Escopo de Certificação
+Lista de especialistas
+Escopo INMETRO
+Rua Doutor Cochrane, 7 - 6º andar, Paquetá, Santos/SP
+CEP: 11.013-100
+INSTITUTO ALPHAGEOS DE TECNOLOGIA - IAT
+Página na internet: http://www.institutoalphageos.com.br
+contato
+Contato
+Telefone de contato
+E-mail de contato
+Paula Baillot Lacerda
+(11) 4196-5400
+iat@alphageos.com.br
+Ato de Designação
+Termo de Responsabilidade
+Escopo de Certificação
+Lista de especialistas
+Rua João Ferreira de Camargo, 601 - Bairro Tamboré, Barueri/SP
+CEP: 06.460-060
+INSTITUTO BRASIL DE TECNOLOGIA - IBRTEC
+Página na internet: www.ibrtec.org.br
+contato
+Contato
+Telefone de contato
+E-mail de contato
+Ezequias Ferreira
+Júlio César Fonseca
+(61) 99177-2400
+(61) 99972-8884
+ezequias@ibrtec.org.br
+juliocesar@ibrtec.org.br
+Ato de Designação
+Termo de Responsabilidade
+Escopo de Certificação
+Lista de especialistas
+Escopo INMETRO
+SCN - Setor Comercial Norte, Quadra 01, Bloco F, Loja 133 - Ed. América Office Tower, Brasília/DF
+CEP: 70.711-905
+INSTITUTO DE PESQUISAS ELDORADO
+Página na internet: http://www.eldorado.org.br/
+contato
+Contato
+Telefone de contato
+E-mail de contato
+Camila Lemos
+(19) 99603-5368
+certificacao@eldorado.org.br
+Ato de Designação
+Termo de Responsabilidade
+Escopo de Certificação
+Lista de especialistas
+Escopo INMETRO
+Av. Alan Turing, nº 275, Cid. Universitária - Barão Geraldo - Campinas/SP
+CEP: 13.083-898
+IPDE - INSTITUTO DE PESQUISA, DESENVOLVIMENTO E EDUCAÇÃO
+Página na internet: http://www.ipde.org.br/
+contato
+Contato
+Telefone de contato
+E-mail de contato
+Ronaldo Arruda
+(61) 3202-6574
+ipdeocd@ipde.org.br
+Ato de Designação
+Termo de Responsabilidade
+Escopo de Certificação
+Lista de especialistas
+SHCN-309 Bl. B - Salas 104, 106 e 108, Brasília/DF
+CEP: 70.7555-520
+IQA - INSTITUTO DA QUALIDADE AUTOMOTIVA
+Página na internet: https://www.iqa.org.br/
+contato
+Contato
+Telefone de contato
+E-mail de contato
+Alexandre Xavier
+(11) 3181-9181
+falecom@iqa.org.br
+Ato de Designação
+Termo de Responsabilidade
+Escopo de Certificação
+Lista de especialistas
+Escopo INMETRO
+Rua Nicolau Barreto, 643 - Vila Cordeiro, São Paulo/SP
+CEP: 04.583-001
+LENOR BRASIL CERTIFICADORA LTDA
+https://br.lenorgroup.com/
+contato
+Contato
+Telefone de contato
+E-mail de contato
+Magno Previero
+Ingridi Maximiano Mauris
+(11) 96480-2004
+(11) 94102-0747 e (11) 2674-3179
+magno.previero@lenorgroup.com
+comercial.brasil@lenorgroup.com
+MASTER Associação de Avaliação de Conformidade Telecom
+Página na internet: http://www.master.org.br/
+contato
+Contato
+Telefone de contato
+E-mail de contato
+Maristela Rodrigues Bento
+(19) 3295-4646 / 2121-9946 / 3241-7580
+contato@master.org.br
+Ato de Designação
+Termo de Responsabilidade
+Escopo de Certificação
+Lista de especialistas
+Escopo INMETRO
+Av. João Baldin, 464 - Betel, Paulínia/SP
+CEP: 13.148-195
+MODERNA TECNOLOGIA LTDA
+Página na internet: https://modernatec.com.br/
+contato
+Contato
+Telefone de contato
+E-mail de contato
+Ademir de Jesus Barbaro
+Antônio de Almeida e Silva Neto
+19) 3739-9680
+(19) 99498-5889 / 3739-9682
+(19) 99465-2608 / 3739-9681
+contato@modernatec.com.br
+ademir@modernatec.com.br
+ocd@modernatec.com.br
+antonio@modernatec.com.br
+Ato de Designação
+Termo de Responsabilidade
+Escopo de Certificação
+Lista de especialistas
+Escopo INMETRO
+Av. Barão de Itapura, 1518 - Sala 2 - Térreo - Ed. Empire Center - Botafogo - Campinas/SP
+CEP: 13.020-432
+NCC CERTIFICAÇÕES DO BRASIL LTDA
+Página na internet: https://nccgroup.com.br/
+contato
+Contato
+Telefone de contato
+E-mail de contato
+Leonardo Tozzi Pinheiro
+(19) 2517-9600
+qualidade_ncc@service.bureauveritas.com
+Ato de Designação
+Termo de Responsabilidade
+Escopo de Certificação
+Lista de especialistas
+Escopo INMETRO
+Av. Orosimbo Maia, 360 - sala 111 - Centro - Campinas/SP
+CEP: 13.010-211
+OCP-TELI - ORGANIZAÇÃO CERTIFICADORA
+Página na internet: http://www.ocp-teli.org.br/
+contato
+Contato
+Telefone de contato
+E-mail de contato
+Sabrina Castro Athayde
+(31) 3281-7470 (31) 3324-8623
+ocp-teli@ocp-teli.org.br
+Ato de Designação
+Termo de Responsabilidade
+Escopo de Certificação
+Lista de especialistas
+Escopo INMETRO
+Av. Afonso Pena, 3924 - Sala 608 - Bairro Cruzeiro, Belo Horizonte/MG
+CEP: 30.130-009
+PCN DO BRASIL TELECOMUNICAÇÕES
+Página na internet: www.pcntelecom.org.br
+contato
+Contato
+Telefone de contato
+E-mail de contato
+Charles Smiderle
+Kim Rieffel
+Marcondes Araújo
+(54) 99984-2209
+(51) 99621-1782
+(21) 96843-2240
+(54) 3066-0399
+certificacao@pcntelecom.org.br
+marcondesaraujo@pcntelecom.org.br
+Ato de Designação
+Termo de Responsabilidade
+Escopo de Certificação
+Lista de especialistas
+Escopo INMETRO
+Rua Caldas Júnior - Número 20 - Sala 44 - Centro Histórico - Porto Alegre/RS
+CEP: 90.010-260
+QC CERTIFICAÇÕES LTDA
+Página na internet: www.qccert.com.br
+contato
+Contato
+Telefone de contato
+E-mail de contato
+Marcelo Esposito Carrenho
+(19) 3778-4571
+(19) 3778-4572
+marcelo@qccert.com.br
+comercial@qccert.com.br
+Ato de Designação
+Termo de Responsabilidade
+Escopo de Certificação
+Lista de especialistas
+Escopo INMETRO
+Avenida Antonio Artioli, 570 - sala 9 Cond. FLIMS B2 - Swiss Park, Campinas - SP
+CEP: 13.049-253
+SCITEC CERTIFICAÇÕES
+Página na internet: https://scitec.com.br/certificacoes-scitec/
+contato
+Contato
+Telefone de contato
+E-mail de contato
+Gaston Reina
+(48) 3029-3994
+ocp@scitec.com.br
+Ato de Designação
+Termo de Responsabilidade
+Escopo de Certificação
+Lista de especialistas
+Escopo INMETRO
+Avenida Thiago Antunes Teixeira, N° 300, Bairro Bela Vista, Palhoça/SC
+CEP: 88.132-716
+SEVEN COMPLIANCE LTDA
+Página na internet: www.7compliance.com
+contato
+Contato
+Telefone de contato
+E-mail de contato
+Anderson Santos
+Fernanda Targa
+(35) 99982-0350
+(19) 99193-5723
+contato@7compliance.com
+Ato de Designação
+Termo de Responsabilidade
+Escopo de Certificação
+Lista de especialistas
+Escopo INMETRO
+Av. Sinhá Moreira, 220 - sala 02, centro, Santa Rita do Sapucaí/MG
+CEP: 37.540-000
+SGS DO BRASIL LTDA
+Página na internet: www.sgsgroup.com.br
+contato
+Contato
+Telefone de contato
+E-mail de contato
+Luiz Ferri
+(11) 2664-9595
+br.comercial.crs@sgs.com
+Ato de Designação
+Termo de Responsabilidade
+Escopo de Certificação
+Lista de especialistas
+Escopo INMETRO
+Av. Piracema, 1.341 – Galpão Horizon 2 andar – parte A, Tamboré, Barueri/SP
+CEP: 06.460-030
+TECPAR - INSTITUTO DE TECNOLOGIA DO PARANÁ
+Página na internet: http://www.tecpar.br/
+contato
+Contato
+Telefone de contato
+E-mail de contato
+Fernando Felice
+(41) 3316-3071
+ffelice@tecpar.br
+Ato de Designação
+Termo de Responsabilidade
+Escopo de Certificação
+Lista de especialistas
+Escopo INMETRO
+Rua Professor Algacyr Munhoz Mader, 3775, Curitiba/PR
+CEP: 81.350-010
+TÜV RHEINLAND BRASIL
+Página na internet: https://www.tuv.com/br
+contato
+Contato
+Telefone de contato
+E-mail de contato
+Hugo Tinini
+Igor Moreno
+(11) 97456-8175
+(11) 98974-8410
+(11) 3514-5700
+telecom@br.tuv.com
+Ato de Designação
+Termo de Responsabilidade
+Escopo de Certificação
+Lista de especialistas
+Escopo INMETRO
+Av. Francisco Matarazzo, 1400 - Torre Milano - 6° Andar, Água Branca, São Paulo/SP
+CEP: 05.001-903
+TUV SUD Sfdk Lab. de Análise de Produtos Ltda
+Página na internet: www.tuv-sud.com.br
+contato
+Contato
+Telefone de contato
+Telefone de contato
+Mário Tampellini
+(11) 98346-1965
+mario.tampellini@tuvsud.com
+Ato de Designação
+Termo de Responsabilidade
+Escopo de Certificação
+Lista de especialistas
+Escopo INMETRO
+Av. Gen. Valdomiro de Lima, 833, sala 307 - Jabaquara - São Paulo/SP
+CEP: 04344-070
+T&A Brasil Ltda
+Página na internet: https://www.teabrasil.com.br
+contato
+Contato
+Telefone de contato
+E-mail de contato
+Alex Oliveira
+(11) 99982-5155
+alex.oliveira@teabrasil.com.br comercial@teabrasil.com.br
+Ato de Designação
+Termo de Responsabilidade
+Escopo de Certificação
+Lista de especialistas
+Escopo INMETRO
+Av. Industrial, 780 – 12º Andar – Sala 1208/1209 Bairro Campestre – Santo André – SP
+CEP: 09.080-500
+UL DO BRASIL CERTIFICAÇÕES
+Página na internet: https://latam.ul.com/
+contato
+Contato
+Telefone de contato
+E-mail de contato
+Rafael de O. Parada
+João Abel
+Paulo Oliveira
+(11) 4800-9172
+(11) 98536-2127
+(11) 3049-8714
+rafael.parada@ul.com
+joao.abel@ul.com
+paulo.oliveira@ul.com
+sales.br@ul.com
+Ato de Designação
+Termo de Responsabilidade
+Escopo de Certificação
+Lista de especialistas
+Av. Engenheiro Luís Carlos Berrini, 105 - 23º Andar, Cj. 231, Edif. Berrini One, São Paulo/SP
+CEP: 04.571-010
+UL DO BRASIL LTDA
+Página na internet: https://latam.ul.com/
+contato
+Contato
+Telefone de contato
+E-mail de contato
+Rafael de O. Parada
+João Abel
+Paulo Oliveira
+(11) 4800-9172
+(11) 98536-2127
+(11) 3049-8714
+rafael.parada@ul.com
+joao.abel@ul.com
+paulo.oliveira@ul.com
+sales.br@ul.com
+Ato de Designação
+Termo de Responsabilidade
+Escopo de Certificação
+Lista de especialistas
+Escopo INMETRO
+Av. Engenheiro Luís Carlos Berrini, 105 - 23º Andar, Cj. 231, Edif. Berrini One, São Paulo/SP
+CEP: 04.571-010

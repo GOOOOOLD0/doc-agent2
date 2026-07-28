@@ -2,9 +2,10 @@
 country: Brazil
 topic: reusable_experience
 case_type: reusable_framework
-source_document: Report_Spacesail_EN
+source_document: official_source_notes_and_Report_Spacesail_EN
 language: zh-CN
-review_status: human_reviewed
+review_status: draft
+last_reviewed: 2026-07-26
 ---
 
 # 巴西案例可复用经验
@@ -56,7 +57,7 @@ review_status: human_reviewed
 
 ## 5. 本地主体要求
 
-巴西案例中涉及本地公司 SBH 和 SBS。
+Spacesail 报告中涉及本地公司 SBH 和 SBS，但这是项目架构，不是巴西法规统一要求的双公司模式。
 
 分析其他国家时，需要确认：
 
@@ -65,10 +66,12 @@ review_status: human_reviewed
 3. 是否需要本地代表；
 4. 是否需要本地合作伙伴；
 5. 是否存在外资持股比例限制。
+6. 卫星法律代表和本地服务提供者能否由同一法人承担；
+7. 同一法人使用其所代表卫星容量时是否存在特殊合同结构要求。
 
 ## 6. 服务授权
 
-巴西案例中，外国卫星开发权和服务授权是两类不同授权。
+巴西案例中，外国卫星开发权和服务授权是两类不同监管事项，但并非每个项目都必须同时取得。纯容量批发与直接向终端用户提供服务应分开分析。
 
 分析其他国家时，需要确认：
 
@@ -88,12 +91,12 @@ review_status: human_reviewed
 3. 是否需要与已有运营商协调；
 4. 是否需要提交协调协议；
 5. 是否接受协调努力证明；
-6. 未完成协调时是否只能获得次级授权；
+6. 未完成协调时是否允许在无保护、不得造成有害干扰的条件下申请或运行；
 7. 是否需要干扰分析报告。
 
 ## 8. 设备认证
 
-巴西案例中，网络设备和用户设备需要认证。
+巴西案例中，受强制合格评定范围约束的电信产品需要认证和 homologation，不能笼统写成所有设备均采用同一流程。
 
 分析其他国家时，需要确认：
 
@@ -101,11 +104,13 @@ review_status: human_reviewed
 2. 网关设备是否需要认证；
 3. 是否要求本地实验室测试；
 4. 是否接受国际认证；
-5. 是否需要设备进口许可或标签要求。
+5. 是否需要设备进口许可或标签要求；
+6. 合格证书和监管机构 homologation 是否是两个不同步骤；
+7. 是否存在多个可选认证机构及其 scope 差异。
 
 ## 9. 站点许可
 
-巴西案例中，地面站、网关站和空间站需要许可，NGSO 系统可按系统许可。
+巴西案例中，发射型地球站需要许可，空间站在投入运行后办理许可；专业纯接收 FSS 站有专门登记路径。NGSO 空间站费用按系统计算，不应由此推导所有终端都可按星座一次性许可。
 
 分析其他国家时，需要确认：
 
@@ -113,12 +118,12 @@ review_status: human_reviewed
 2. 地球站是否需要许可；
 3. TT&C 站是否需要许可；
 4. 用户终端是否需要单独许可；
-5. NGSO 系统是否允许批量许可；
+5. NGSO 空间站、网关和用户终端是否分别允许系统级或批量许可；
 6. 商业运营是否必须等待全部站点许可完成。
 
 ## 10. 费用
 
-巴西案例中涉及外国卫星开发权费用、服务授权费用、TFI 和 TFF。
+巴西案例中涉及外国卫星开发权费用、服务授权费用、TFI、TFF、CFRP 和 Condecine。
 
 分析其他国家时，需要确认：
 
@@ -129,6 +134,7 @@ review_status: human_reviewed
 5. 年费；
 6. 续期费；
 7. 是否按系统、按站点、按终端或按频段收费。
+8. 公布的百分比是单项费用还是多项年度费用合计。
 
 ## 11. 法规依据
 
@@ -155,7 +161,10 @@ review_status: human_reviewed
 4. 巴西的监管机构名称；
 5. 巴西的具体申请流程；
 6. 巴西的法规编号；
-7. 巴西的 primary / secondary 授权安排。
+7. 将无保护运行条件概括成 primary / secondary 正式授权等级的说法；
+8. SBH / SBS 双主体项目设计；
+9. CPQD 作为唯一认证机构的说法；
+10. TFF 单独等于 TFI 50% 的说法。
 
 ## 13. 正确使用方式
 
@@ -172,15 +181,23 @@ review_status: human_reviewed
 
 Agent 在分析新国家时，应执行以下步骤：
 
-1. 读取 common 文件夹中的国家落地许可分析 SOP；
-2. 读取巴西案例索引；
-3. 读取本文件中的可复用经验；
-4. 对目标国家进行开放式检索；
-5. 识别目标国家自己的许可体系；
-6. 将目标国家许可映射到通用分析模块；
-7. 与巴西流程进行对比；
-8. 标记待确认问题；
-9. 输出标准化报告。
+1. 读取 `case_spec.md`、来源优先级和 Evidence Matrix 模板；
+2. 建立或更新目标国家 `source_inventory.md`；
+3. 保存官方网页、PDF 和附件到 raw sources；
+4. 为每个可用官方来源生成忠实的 source note；
+5. 逐份读取 source notes 并生成 `evidence_matrix.md`；
+6. 根据 Evidence Matrix 依次生成并校验 `01-09`；
+7. 最后生成与实际文件一致的 `00` 索引；
+8. 区分已确认信息、项目级推断和待确认问题；
+9. 仅在比较阶段参考巴西结构，不把巴西结论作为目标国家事实。
+
+生成结论时应先按目标业务区分容量批发、零售服务、网关部署、用户终端和 D2D 等场景，再判断许可组合，不能只根据国家名称输出固定清单。
+
+巴西案例证明，第二层 cases 不能直接由一份历史报告生成。正式流程应保持：
+
+`官方原文 → source note → source notes 索引 → Evidence Matrix → cases → Agent 回答`
+
+任何一层发现法规更新或结论错误，都应先修正前一层证据，再同步后续层，避免只改最终回答。
 
 ## 15. 相关文件
 
@@ -195,8 +212,11 @@ Agent 在分析新国家时，应执行以下步骤：
 - [[06_brazil_station_licensing|巴西站点许可]]
 - [[07_brazil_fee_list|巴西费用清单]]
 - [[08_brazil_regulations|巴西法规依据]]
+- [[10_brazil_answer_template|巴西落地许可 Agent 回答模板]]
+- [[11_brazil_report_review|Spacesail 报告复核]]
 
 ### 15.2 通用分析文件
 
 - [[case_spec|国家卫星落地许可案例规范]]
+- [[evidence_matrix_template|国家卫星落地许可证据映射模板]]
 - [[source_priority_rules|落地许可资料来源优先级规则]]

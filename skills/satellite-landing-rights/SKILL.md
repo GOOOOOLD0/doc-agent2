@@ -11,16 +11,18 @@ status: active
 
 ## 1. 目标与职责
 
-基于可追溯的官方资料，完成国家卫星落地许可的问答、研究、更新、建档和比较。
+基于可追溯的官方资料，完成国家卫星落地许可的问答、研究预览、正式知识生产、更新和比较。
 
-Hermes 是唯一顶层 Agent。本 Skill 负责流程编排和阶段检查；通用模板负责格式；仓库工具负责抓取、解析和校验。不得调用其他独立 Agent 或二次 LLM。
+Hermes 是正式知识的问答入口，不是正式知识发布者。Codex 或人工维护者负责 Source Notes、Evidence Matrix 和 `00-09` 的正式生产与审核。本 Skill 负责统一两类角色的流程和阶段检查；通用模板负责格式；仓库工具负责抓取、解析和校验。
+
+Hermes 不调用其他独立 Agent 或二次 LLM。需要正式 Research、Build 或 Update 时，Hermes 应生成 Codex/人工交接清单。
 
 ## 2. 项目根目录与固定路径
 
 执行任务前：
 
 1. 运行 `git rev-parse --show-toplevel`；
-2. 验证根目录中存在 `AGENT.md`、`wiki/` 和 `skills/`；
+2. 验证根目录中存在 `AGENT.md`、`AGENTS.md`、`wiki/` 和 `skills/`；
 3. 以下路径均相对于项目根目录解析。
 
 固定路径：
@@ -38,27 +40,38 @@ Hermes 是唯一顶层 Agent。本 Skill 负责流程编排和阶段检查；通
 - `skills/satellite-landing-rights/`
 - `wiki/concepts/landing_rights/common/`
 
-## 3. 任务模式
+## 3. 任务模式与执行角色
 
 根据用户意图选择：
 
-- **answer**：读取已有资料回答，不写文件；
-- **research**：搜索、登记、抓取并生成 Source Notes；
-- **build**：根据已有 Source Notes 生成 Evidence Matrix 和国家案例；
-- **update**：更新新增或变化的来源、Evidence Matrix 和受影响案例；
-- **compare**：比较多个国家；
-- **full**：依次执行 research、build 和 validate。
+- **answer（Hermes/Codex）**：读取已有正式资料回答，不写文件；
+- **research-preview（Hermes）**：检索候选来源并生成研究预览或交接清单，只写 `.agent_runs/hermes/`；
+- **update-check（Hermes）**：识别可能过期的来源和受影响文件，只写更新请求，不改正式 Wiki；
+- **compare（Hermes/Codex）**：比较已有正式国家案例，不补造缺失事实；
+- **formal-research（Codex/人工）**：登记、抓取、审查并生成正式 Source Notes；
+- **formal-build（Codex/人工）**：审核 Evidence Matrix 并生成正式 `01-09`，最后更新 `00`；
+- **formal-update（Codex/人工）**：根据新增或变化来源更新证据层和受影响案例。
 
 意图解析：
 
 - “查询、解释、是否需要”默认 `answer`；
-- “研究、收集资料、建立台账”默认 `research`；
-- “生成案例、生成00-09”默认 `build`；
-- “更新、重新核实”默认 `update`；
-- “完整研究并建立案例”默认 `full`；
-- 显式加载本 Skill 后仅提供国家名时，默认 `full`。
+- Hermes 收到“研究、收集资料、建立台账”时执行 `research-preview`；
+- Hermes 收到“生成案例、生成00-09”时生成 `formal-build` 交接清单；
+- Hermes 收到“更新、重新核实”时执行 `update-check`；
+- Codex 收到相同请求时，可在用户明确要求写入后执行对应 `formal-*` 模式；
+- Hermes 在仅收到国家名时，先检查正式案例；存在则进入 `answer`，不存在则说明需要 `formal-research`。
 
 用户只要求回答时，不得自动进入写入模式。
+
+Hermes 的所有预览固定写入：
+
+`.agent_runs/hermes/landing_rights/<country>/`
+
+Hermes 不得写入：
+
+- `wiki/raw/landing_rights/<country>/source_notes/`
+- `wiki/raw/landing_rights/<country>/evidence_matrix.md`
+- `wiki/concepts/landing_rights/cases/<country>/`
 
 ## 4. 通用规则
 
@@ -93,9 +106,42 @@ Hermes 是唯一顶层 Agent。本 Skill 负责流程编排和阶段检查；通
 
 在完成目录检查前，不得声称 Source Notes 不存在，也不得要求用户重新提供路径。
 
-### 5.2 Research：搜索、登记、抓取和 Source Notes
+### 5.2 Hermes：问答、研究预览和更新检查
 
-现有证据不足或模式为 `research`、`update`、`full` 时：
+#### Answer
+
+1. 优先读取 `00_<country>_case_index.md`；
+2. 根据问题选择相关 `01-09`；
+3. 需要核实证据边界时，再读取 Evidence Matrix 和对应 Source Notes；
+4. 回答中区分已确认、分析推断和待确认；
+5. 正式案例不存在或证据不足时，说明需要 `formal-research`，不得根据模型常识补齐。
+
+#### Research Preview
+
+Hermes 可以检索候选官方来源，但只能将以下内容写入 `.agent_runs/hermes/landing_rights/<country>/`：
+
+- `research_plan.md`；
+- `candidate_sources.md`；
+- `missing_evidence.md`；
+- `codex_handoff.md`；
+- 案例生成预览。
+
+预览必须标明“未进入正式 Wiki”，不得创建或覆盖正式 Source Notes、Evidence Matrix 或 `00-09`。
+
+#### Update Check
+
+Hermes 可以比较监控结果、现有复核日期和用户提供的新来源，输出：
+
+- 可能变化的来源；
+- 可能受影响的 Evidence ID；
+- 可能受影响的 `01-09` 文件；
+- 建议 Codex 重新核验的条款和版本。
+
+Hermes 不直接把变化写成正式法律结论。
+
+### 5.3 Codex Formal Research：搜索、登记、抓取和 Source Notes
+
+现有证据不足或执行 `formal-research`、`formal-update` 时：
 
 1. 优先检索目标国家法律法规、监管机构、政府门户、正式决议、申请指南、收费规则和官方附件；
 2. 将有效来源登记到 `source_inventory.md`；
@@ -106,9 +152,9 @@ Hermes 是唯一顶层 Agent。本 Skill 负责流程编排和阶段检查；通
 
 不得使用新闻、咨询报告或其他国家案例单独支撑关键法律结论。
 
-### 5.3 Build 第一步：生成 Evidence Matrix
+### 5.4 Codex Formal Build 第一步：审核 Evidence Matrix
 
-执行 `build`、`update` 或 `full` 时，必须先生成或更新：
+执行 `formal-build` 或 `formal-update` 时，必须先生成、审核或更新：
 
 `wiki/raw/landing_rights/<country>/evidence_matrix.md`
 
@@ -138,9 +184,11 @@ Hermes 是唯一顶层 Agent。本 Skill 负责流程编排和阶段检查；通
 - 不存在以 `| source_id |` 开头的宽表格；
 - 阶段时限、收费规则、法规正文和附件的边界得到保留。
 
-Evidence Matrix 未通过检查时，必须自动修正；不得进入案例生成阶段。
+Evidence Matrix 未通过检查时，必须修正；不得进入案例生成阶段。
 
-### 5.4 Build 第二步：生成 `01-09`
+Hermes 不执行本步骤的正式写入；只能生成预览和 Codex 交接清单。
+
+### 5.5 Codex Formal Build 第二步：生成 `01-09`
 
 Evidence Matrix 通过后，严格按照 `case_spec.md` 逐个生成：
 
@@ -163,7 +211,16 @@ Evidence Matrix 通过后，严格按照 `case_spec.md` 逐个生成：
 
 不得只根据 Evidence Matrix 的“资料概览”或“覆盖状态”生成案例。
 
-### 5.5 Build 第三步：生成 `00`
+每个文件生成后，应记录：
+
+- 映射到该文件的 Evidence ID；
+- 正文实际采用的 Evidence ID；
+- 未采用 Evidence ID 及原因；
+- 新增但未能回溯到 Evidence/Source Note 的数字、缩写、法规编号、费用和期限。
+
+Hermes 不执行本步骤的正式写入；只能对正式文件进行只读问答。
+
+### 5.6 Codex Formal Build 第三步：生成 `00`
 
 `01-09` 完成并通过检查后，最后生成或更新：
 
@@ -171,7 +228,7 @@ Evidence Matrix 通过后，严格按照 `case_spec.md` 逐个生成：
 
 索引必须与实际存在的文件、状态和链接一致。
 
-### 5.6 Compare
+### 5.7 Compare
 
 比较多个国家时：
 
@@ -194,7 +251,7 @@ Evidence Matrix 通过后，严格按照 `case_spec.md` 逐个生成：
 
 ## 7. 写入前检查
 
-写入前必须报告：
+Codex 执行正式写入前必须报告：
 
 - 项目根目录；
 - 任务模式；
@@ -210,9 +267,19 @@ Evidence Matrix 通过后，严格按照 `case_spec.md` 逐个生成：
 
 必须停止，不得写入。
 
+Hermes 执行预览写入前必须报告：
+
+- 任务模式；
+- 目标国家；
+- 预览目录；
+- 可能需要 Codex 更新的正式文件；
+- 不会修改的正式 Wiki 路径。
+
+Hermes 预览目录不是 `.agent_runs/hermes/landing_rights/<country>/` 时，必须停止。
+
 ## 8. 写入后校验
 
-至少检查：
+Codex 正式写入后至少检查：
 
 - 文件路径和文件名正确；
 - frontmatter、一级标题和 `review_status` 合规；
@@ -223,13 +290,35 @@ Evidence Matrix 通过后，严格按照 `case_spec.md` 逐个生成：
 - 无空文件、重复文件和模板占位符；
 - `00` 索引与实际文件一致。
 
+先运行确定性校验：
+
+```bash
+python3 tools/landing_rights/validate_evidence_matrix.py --country <country>
+python3 tools/landing_rights/validate_cases.py --country <country>
+```
+
+正式案例尚未全部复核时，可以通过 `--files 04,08` 只校验本次更新的编号；但交付时必须明确说明其余文件未通过全量校验。
+
+确定性校验只能确认结构、证据登记、来源回链和内部链接，不能替代法律语义、专业翻译、许可适用边界、费用和周期的人工复核。
+
 无法完成校验时，不得宣称任务已完成。
+
+Hermes 预览完成后至少检查：
+
+- 未修改正式 Wiki；
+- 候选来源与正式来源明确区分；
+- 交接清单包含目标国家、来源缺口、受影响文件和待执行模式；
+- 预览中没有把未核验内容标记为正式已确认结论。
 
 ## 9. 安全与恢复
 
 - `answer` 不修改 Wiki；
-- `research` 只写入目标国家 `raw/` 目录；
-- `build` 只写入 Evidence Matrix 和目标国家 `cases/` 目录；
+- `compare` 默认不修改 Wiki；
+- Hermes 的 `research-preview` 和 `update-check` 只写入 `.agent_runs/hermes/`；
+- Hermes 即使收到“直接生成”或“直接更新”的要求，也只生成预览和 Codex/人工交接清单；
+- Codex 的 `formal-research` 只写入目标国家 `raw/` 目录；
+- Codex 的 `formal-build` 只写入 Evidence Matrix 和目标国家 `cases/` 目录；
+- Codex 的 `formal-update` 只更新新增证据实际影响的正式文件；
 - 不覆盖已人工确认内容，除非用户明确要求；
 - 不自动执行 Git commit、push、删除文件或发送外部信息；
 - 中途失败时保留已完成文件，并从未完成阶段继续，不进行破坏性重跑。
@@ -246,10 +335,18 @@ Evidence Matrix 通过后，严格按照 `case_spec.md` 逐个生成：
 4. 来源依据；
 5. 风险和待确认事项。
 
-写入任务完成后说明：
+Codex 正式写入任务完成后说明：
 
 - 执行的模式和阶段；
 - 创建或更新的文件；
 - 实际使用的主要来源；
 - 校验结果；
 - 仍需人工复核的事项。
+
+Hermes 预览任务完成后说明：
+
+- 预览目录；
+- 发现的来源或更新候选；
+- 建议 Codex 执行的模式；
+- 可能受影响的 Evidence ID 和 `01-09`；
+- 正式 Wiki 未被修改。

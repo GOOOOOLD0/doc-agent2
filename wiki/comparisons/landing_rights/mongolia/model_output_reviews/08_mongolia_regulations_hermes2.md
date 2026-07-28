@@ -4,6 +4,7 @@ topic: landing_rights
 case_type: regulations
 language: zh-CN
 review_status: draft
+comparison_status: historical_model_output
 last_reviewed: 2026-07-24
 ---
 
