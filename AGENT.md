@@ -2,7 +2,7 @@
 
 ## 1. 项目定位
 
-本项目以 Hermes Agent 作为统一入口，通过 Skill 路由和 Python 工具维护两类知识：
+本项目以 Hermes 作为统一问答和 Skill 路由入口，通过 Codex、人工维护者和确定性工具维护两类知识：
 
 1. 各国卫星落地许可与市场准入；
 2. 书籍、法规、标准及其他长文档的解析与 Source Notes。
@@ -11,7 +11,35 @@
 
 `wiki/`
 
-本文件只定义仓库级导航、Skill 路由和全局约束。具体业务流程由对应的 `SKILL.md`、配置文件和模板负责。
+本文件只定义仓库级导航、角色边界、Skill 路由和全局约束。具体业务流程由对应的 `SKILL.md`、配置文件和模板负责。
+
+### 1.1 角色边界
+
+以下分工适用于 Satellite Landing Rights；Book Ingestion 的正式写入边界以其自身 `SKILL.md` 为准。
+
+**Codex 或人工维护者负责正式落地许可知识生产：**
+
+- 检索和审查官方来源；
+- 保存正式原始资料和 Source Notes；
+- 创建、审核和更新 Evidence Matrix；
+- 创建、审核和更新正式 `00-09` 案例；
+- 执行证据覆盖、格式、链接和版本校验；
+- 在用户明确要求时执行 Git 操作。
+
+**Hermes 负责正式知识使用和研究预览：**
+
+- 根据用户问题选择 Skill；
+- 读取已审核的 `00-09`、Evidence Matrix 和 Source Notes 回答；
+- 对尚未建库或可能过期的国家提出 Research 或 Update 请求；
+- 必要时将来源候选、研究计划和生成预览保存到 `.agent_runs/hermes/`；
+- 不得直接覆盖正式 Evidence Matrix、Source Notes 或 `00-09`。
+
+**确定性脚本负责：**
+
+- 定时访问和下载官方来源；
+- 记录变化、抓取状态和哈希；
+- 执行解析、索引和格式校验；
+- 不自行形成新的法律结论。
 
 ---
 
@@ -51,7 +79,8 @@ Skill：
 3. 用户目标与长文档解析、切分或 Source Notes 相关时，加载 `book-ingestion`。
 4. 同时涉及文档入库和落地许可分析时，先执行 `book-ingestion`，再执行 `satellite-landing-rights`。
 5. Git、Linux、Python、普通代码修改和一般知识问答通常不加载业务 Skill。
-6. 不要调用另一个完整 Agent 处理已由 Hermes 接管的任务；优先调用确定性的项目工具。
+6. Hermes 不调用另一个完整 Agent；需要正式知识生产时，生成 Codex/人工交接清单。
+7. Codex 不把 Hermes 的回答当作事实来源；正式结论仍需回溯到 Evidence Matrix 和 Source Notes。
 
 ---
 
@@ -98,6 +127,9 @@ Skill：
 10. 不自动执行 Git commit、push、删除文件或发送外部信息。
 11. 不生成只有标题、没有证据的空文件。
 12. 工具失败时保留已有结果，说明失败阶段，不进行破坏性重跑。
+13. Hermes 对 `wiki/raw/landing_rights/<country>/source_notes/`、`evidence_matrix.md` 和 `wiki/concepts/landing_rights/cases/<country>/` 只读。
+14. Hermes 的研究草稿、生成候选和交接清单统一写入 `.agent_runs/hermes/`，不得伪装成正式 Wiki 内容。
+15. 自动监控脚本可以按既有工作流更新抓取记录和快照，但不得自动改写正式法律结论。
 
 ---
 
@@ -105,12 +137,15 @@ Skill：
 
 1. 检查当前目录和实际存在的文件；
 2. 根据用户意图加载对应 Skill；
-3. 读取完成任务所需的最少上下文；
-4. 优先调用已有工具，不重复实现相同功能；
-5. 生成结果后执行最小验证；
-6. 向用户报告结果、依据和待复核事项。
+3. 判断任务属于 Hermes 问答/预览还是 Codex 正式知识生产；
+4. 读取完成任务所需的最少上下文；
+5. 优先调用已有工具，不重复实现相同功能；
+6. 生成结果后执行最小验证；
+7. 向用户报告结果、依据和待复核事项。
 
 不要无条件读取整个 Wiki。应先读取索引，再下钻到相关页面、Source Notes、Chunks 或原始来源。
+
+对尚无正式案例的新国家，Hermes 不得直接回答为“已确认”。应说明需要 Research，并输出来源缺口或 Codex 交接清单。
 
 ---
 
@@ -136,9 +171,16 @@ Hermes Agent 负责：
 
 - 理解用户意图；
 - 选择 Skill；
-- 规划步骤；
-- 调用文件、网页和项目工具；
+- 检索正式 Wiki；
+- 生成回答、研究预览和更新请求；
 - 汇总结果并与用户交互。
+
+Codex 或人工维护者负责落地许可：
+
+- 正式 Research；
+- Source Notes 和 Evidence Matrix；
+- 正式 `00-09`；
+- 证据审核和版本发布。
 
 Skill 负责：
 
@@ -171,8 +213,8 @@ Python 工具负责：
 
 ## 10. 运行约定
 
-1. `AGENTS.md`、`skills/`、`tools/` 和 `wiki/` 位于项目根目录；
+1. `AGENT.md`、`AGENTS.md`、`skills/`、`tools/` 和 `wiki/` 位于项目根目录；
 2. 尽量从项目根目录启动 Hermes；
-3. 项目只保留一个主 `AGENTS.md`；
+3. `AGENT.md` 是 Hermes 仓库入口，`AGENTS.md` 是 Codex 兼容入口；两者必须保持同一角色边界，不得维护两套业务流程；
 4. 新增业务能力时，优先新增或修改对应 Skill；
 5. 新增工具参数和文件格式时，优先更新对应配置或模块说明，不扩充根文件。

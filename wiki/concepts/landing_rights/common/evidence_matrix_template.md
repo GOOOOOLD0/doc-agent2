@@ -12,7 +12,7 @@ review_status: draft
 
 本文件仅定义 Evidence Matrix 的格式，不保存任何国家事实。
 
-Hermes 在执行 `build`、`update` 或 `full` 时：
+Codex 或人工维护者在执行 `formal-build` 或 `formal-update` 时：
 
 - 输入：
   - `wiki/raw/landing_rights/<country>/source_inventory.md`
@@ -28,6 +28,8 @@ Hermes 在执行 `build`、`update` 或 `full` 时：
 - 不得使用宽表格保存全部证据项；
 - 不得按“一份 Source Note 一行”的方式生成；
 - Evidence Matrix 未通过检查前，不得生成 `00-09` 案例。
+
+Hermes 只能读取正式 Evidence Matrix 用于问答或生成研究预览，不得创建或覆盖本文件。
 
 生成目标国家文件时，将以下占位符替换为实际内容：
 

@@ -9,7 +9,12 @@ from . import __version__
 from .client import AgentAPIError, ResponsesClient
 from .knowledge import KnowledgeBaseError, ensure_repo_root, validate_country_slug
 from .validation import GeneratedFileError
-from .workflows import build_country_cases, run_answer, run_research
+from .workflows import (
+    build_country_cases,
+    build_country_context_plan,
+    run_answer,
+    run_research,
+)
 
 
 def load_env_file(path: Path) -> None:
@@ -61,6 +66,17 @@ def _parser() -> argparse.ArgumentParser:
     research.add_argument("--question", help="可选研究重点")
     research.add_argument("--output", type=Path, help="将研究报告保存到指定文件")
 
+    context_plan = subparsers.add_parser(
+        "context-plan",
+        help="仅显示生成案例时将发送给模型的本地文件，不调用 API",
+    )
+    context_plan.add_argument("--country", required=True, help="英文小写国家 slug")
+    context_plan.add_argument(
+        "--files",
+        default="00,01,02,03,04,05,06,07,08,09,10",
+        help="逗号分隔的文件编号",
+    )
+
     build = subparsers.add_parser("build-country", help="由 source notes 生成案例文件")
     build.add_argument("--country", required=True, help="英文小写国家 slug")
     build.add_argument(
@@ -102,6 +118,7 @@ def _doctor(root: Path) -> int:
     defaults = {
         "qwen": ("qwen3.6-flash", "DASHSCOPE_API_KEY"),
         "openai": ("gpt-5.6-terra", "OPENAI_API_KEY"),
+        "ollama": ("landing-rights-qwen3.5:9b", None),
     }
     if provider not in defaults:
         print(f"模型提供方：{provider}（不支持）")
@@ -110,6 +127,9 @@ def _doctor(root: Path) -> int:
     model = os.environ.get("LANDING_RIGHTS_MODEL", default_model)
     print(f"模型提供方：{provider}")
     print(f"模型：{model}")
+    if key_name is None:
+        print("连接：本地 http://127.0.0.1:11434（无需 API Key）")
+        return 0
     if os.environ.get(key_name, "").strip():
         print(f"{key_name}：已设置")
         return 0
@@ -128,6 +148,24 @@ def main(argv: list[str] | None = None) -> int:
             return _doctor(root)
 
         country = validate_country_slug(args.country)
+        if args.command == "context-plan":
+            numbers = [value.strip() for value in args.files.split(",") if value.strip()]
+            plans = build_country_context_plan(
+                root=root,
+                country=country,
+                numbers=numbers,
+            )
+            total = 0
+            for plan in plans:
+                print(f"\n{plan.spec.number} {plan.spec.filename(country)}")
+                print(f"  发送字符数：{plan.character_count}")
+                total += plan.character_count
+                for document in plan.documents:
+                    print(f"  - {document.path.as_posix()}")
+            print(f"\n共 {len(plans)} 个请求，预计发送字符总量：{total}")
+            print("未调用模型 API。")
+            return 0
+
         client = _client(args)
         if args.command == "answer":
             result = run_answer(

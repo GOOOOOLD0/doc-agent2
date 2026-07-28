@@ -23,7 +23,19 @@ def extract_output_text(response: dict[str, Any]) -> str:
         chunks.append(direct.strip())
 
     output_items = response.get("output", [])
-    if not chunks:
+    function_arguments = [
+        item.get("arguments").strip()
+        for item in output_items
+        if isinstance(item, dict)
+        and item.get("type") == "function_call"
+        and isinstance(item.get("arguments"), str)
+        and item.get("arguments").strip()
+    ]
+    if len(function_arguments) > 1:
+        raise AgentAPIError("模型返回了多个结构化函数调用，无法确定应使用哪一个。")
+    if function_arguments:
+        chunks = function_arguments
+    elif not chunks:
         for item in output_items:
             if not isinstance(item, dict) or item.get("type") != "message":
                 continue
@@ -149,6 +161,12 @@ class ResponsesClient:
                 "base_url_env": "OPENAI_BASE_URL",
                 "base_url": "https://api.openai.com/v1",
             },
+            "ollama": {
+                "api_key_env": None,
+                "model": "landing-rights-qwen3.5:9b",
+                "base_url_env": "OLLAMA_BASE_URL",
+                "base_url": "http://127.0.0.1:11434/v1",
+            },
         }
         if provider not in providers:
             supported = ", ".join(sorted(providers))
@@ -158,8 +176,12 @@ class ResponsesClient:
 
         settings = providers[provider]
         api_key_env = settings["api_key_env"]
-        api_key = os.environ.get(api_key_env, "").strip()
-        if not api_key:
+        api_key = (
+            os.environ.get(api_key_env, "").strip()
+            if isinstance(api_key_env, str)
+            else "ollama"
+        )
+        if isinstance(api_key_env, str) and not api_key:
             raise AgentAPIError(
                 f"未设置 {api_key_env}。请复制 .env.example 为 .env，并填写 API Key。"
             )
@@ -182,17 +204,39 @@ class ResponsesClient:
         instructions: str,
         input_text: str,
         web_search: bool = False,
+        output_schema: dict[str, Any] | None = None,
     ) -> dict[str, Any]:
         payload: dict[str, Any] = {
             "model": self.model,
             "instructions": instructions,
             "input": input_text,
-            "reasoning": {"effort": self.reasoning_effort},
-            "store": False,
         }
+        if self.provider != "ollama":
+            payload["reasoning"] = {"effort": self.reasoning_effort}
+            payload["store"] = False
         if self.provider == "openai":
             payload["text"] = {"verbosity": "medium"}
+        if output_schema is not None:
+            if web_search:
+                raise AgentAPIError("结构化输出不能与联网搜索同时启用。")
+            payload["tools"] = [
+                {
+                    "type": "function",
+                    "name": "submit_case_data",
+                    "description": "提交严格依据给定 source notes 的国家案例结构化数据",
+                    "parameters": output_schema,
+                }
+            ]
+            payload["tool_choice"] = "required"
+            if self.provider == "qwen":
+                payload["reasoning"] = {"effort": "none"}
+                payload["temperature"] = 0
         if web_search:
+            if self.provider == "ollama":
+                raise AgentAPIError(
+                    "Ollama 本地模式不提供联网搜索；请去掉 --web，"
+                    "或先把官方资料加入 source notes。"
+                )
             if self.provider == "qwen":
                 # Qwen only permits required tool choice when exactly one tool is present.
                 payload["tools"] = [{"type": "web_search"}]
@@ -216,11 +260,13 @@ class ResponsesClient:
         instructions: str,
         input_text: str,
         web_search: bool = False,
+        output_schema: dict[str, Any] | None = None,
     ) -> str:
         payload = self.build_payload(
             instructions=instructions,
             input_text=input_text,
             web_search=web_search,
+            output_schema=output_schema,
         )
         body = json.dumps(payload, ensure_ascii=False).encode("utf-8")
         request = urllib.request.Request(
