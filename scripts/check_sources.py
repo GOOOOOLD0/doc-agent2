@@ -422,7 +422,7 @@ def main() -> int:
             print(f"{source_id}: error: {exc}", file=sys.stderr)
             if not args.dry_run:
                 fetched_at = dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat()
-                source_root = args.output_dir / source.get("country", "unknown") / source_id
+                source_root = args.output_dir / source.get("country", "unknown") / "sources" / source_id
                 write_check_log(source_root, source, "error", fetched_at, None, None, error=str(exc))
 
     print(f"processed: {len(eligible)}")
