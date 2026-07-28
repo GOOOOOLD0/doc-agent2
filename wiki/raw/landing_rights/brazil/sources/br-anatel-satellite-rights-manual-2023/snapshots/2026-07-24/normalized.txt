@@ -1,0 +1,233 @@
+Manual para
+Solicitação de Direito
+de Exploração de Satélite
+AGOSTO DE 2023 - VERSÃO 02
+Passo a passo                                                2)Usuário Externo (SEI)
+
+                                                             Na tela do Processo Eletrônico (SEI), procurar a
+                                                                                                                01
+
+                                                             seção Usuário Externo do SEI e clicar na imagem:
+1)Sistema Eletrônico de Informações - SEI
+
+O interessado deve acessar a página do Sistema Eletrônico
+de Informações - SEI, clicando AQUI ou acessando o site da
+Anatel (http://www.gov.br/anatel) e clicando no menu
+principal -> Centrais de Conteúdo -> Processo Eletrônico
+(SEI).
+
+
+                                                                              Atenção
+                                                              Caso o interessado não possua acesso ao SEI,
+                                                                consultar as orientações disponíveis no
+                                                               Manual do Usuário Externo do SEI, clicando
+                                                                 na imagem abaixo, para a obtenção do
+                                                                            referido acesso.
+Passo a passo                                                Na tela de Peticionamento de Processo Novo, em
+                                                             Escolha o Tipo do Processo que deseja iniciar,
+                                                             selecione o tipo Direito de Exploração de Satélite:
+                                                             Satélite Brasileiro ou Direito de Exploração de
+                                                                                                                         02
+
+
+3) Peticionamento                                            Satélite: Satélite Estrangeiro, conforme o caso.
+
+
+Após efetuar o login no SEI, acesse, no menu à esquerda da
+tela principal, a opção Peticionamento -> Processo Novo.
+
+
+
+
+                                                                                                               de
+                                                                                                     Você po
+                                                                                                                m
+                                                                                                      digitar u
+                                                                                                                 a
+                                                                                                      trecho d
+                                                                                                                 qui,
+                                                                                                     palavra a
+                                                                                                              ilitar a
+                                                                                                     para fac
+                                                                                                         busca.
+Passo a passo                                          Na seção Formulário de Peticionamento, deverá,
+                                                       obrigatoriamente,       preencher        o    campo
+                                                       Especificação (resumo limitado a 50 caracteres),
+                                                       com uma indicação sobre o pleito. Por exemplo:
+                                                                                                             03
+
+
+Na próxima página, deverão ser preenchidos os campos   obtenção do direito de exploração satélite ANASAT,
+contidos nas seções Formulário de Peticionamento e     prorrogação do direito do satélite ANASAT,
+Documentos.                                            frequências adicionais ao direito satélite ANASAT.
+
+
+
+
+                                                       Ainda na seção Formulário de Peticionamento,
+                                                       selecione, no campo Interessados, a opção
+                                                       Pessoa Jurídica e, na sequência, preencha com o
+                                                       nº do CNPJ, clique em Validar (de forma a ser
+                                                       preenchido automaticamente a Razão Social
+                                                       associada ao CNPJ, caso já conste na base do SEI)
+                                                       e, em seguida, clique em Adicionar.
+Passo a passo                                               Na sequência, na seção Documentos, deverão ser
+                                                            preenchidos os dados constantes no Documento
+                                                            Principal: Requerimento de Direito de Exploração
+                                                            de Satélite, o qual abrirá após clicar em seu link.
+                                                                                                                  04
+
+
+Caso o CNPJ não esteja na base do SEI, uma nova janela se   Deverão ser preenchidos e selecionados os
+abrirá, solicitando o preenchimento dos dados do CNPJ de    campos indicados no item 1 do Requerimento,
+interesse.                                                  Identificação do Interessado no Processo.
+
+
+
+
+                                                            Orienta-se que a interessada efetue a emissão de
+                                                            Procuração Eletrônica para o usuário externo do
+                                                            pleito previamente. Para tanto, deverá ser
+Após o preenchimento, clique em Salvar. Assim, a Razão      verificado o item 7 do Manual do Usuário Externo
+Social será preenchida e deverá clicar em Adicionar.        do SEI.
+Passo a passo                                                   Em seguida, deverão ser preenchidas as
+                                                                informações indicadas no item 4 do Requerimento,
+                                                                Informações Gerais da Solicitação.
+                                                                                                                   05
+
+
+Na sequência, observar o disposto no item 2 do Requerimento
+(Informações sobre o Requerimento) e no item 3, Tipo de
+Solicitação, preencher de acordo com o tipo do pleito.
+Verificar as observações dispostas no item 3.1.
+
+
+
+
+                                                                Caso seja necessário acrescentar mais linhas na
+                                                                tabela do item 4.2, basta clicar com o botão
+                                                                direito do “mouse” em cima da tabela e ir na
+                                                                opção Linha – Inserir linhas abaixo.
+Para o caso de Prorrogação ou Alteração de Direito de           Na sequência, deverá ser preenchido o item 5,
+Exploração, deverá ser indicado o nº do processo que conferiu   Informações Técnicas Simplificadas do Satélite
+anteriormente o Direito de Exploração.                          Geoestacionário, ou item 6, Informações
+                                                                Técnicas Simplificadas do Sistema de Satélites
+                                                                Não_Geoestacionários, conforme o tipo sistema
+                                                                (GEO ou não-GEO).
+   Passo a passo                                                                                                   Também deverão ser apresentados o Plano de Frequências,
+                                                                                                                   Leiaute dos transponders associados ao plano de frequências,
+                                                                                                                   Diagrama de Cobertura, e deverão ser descritas as aplicações
+                                                                                                                   do sistema, em se tratando tanto de satélite geoestacionário
+                                                                                                                                                                                                          06
+
+
+Para o item 5, Informações Técnicas Simplificadas do                                                 Satélite      quanto sistemas não- geoestacionários.
+Geoestacionário, deverão ser fornecidas as seguintes informações:
+  - Nome do Satélite
+                                                                                                                   Para a inserção de imagens nos itens correspondentes, utilizar
+  - Posição Orbital do Satélite                        Também deverão ser fornecidas as frequências de             o botão Imagem       na barra de opções do editor.
+  - Redes de Satélite correspondentes na UIT           operação do satélite (subida e descida) e tipo de
+  (Filings)                                            polarização (linear ou circular)
+  - Data de Lançamento                                 Caso haja previsão de estações TT&C no Brasil,
+  - Data prevista para início de operação              descrever características técnicas simplificadas:           Em seguida, observar no item 7, Anexos Obrigatórios, os
+  comercial no Brasil                                  - Localização da Estação TT&C (Município/UF)                documentos necessários a serem anexados em conformidade
+  - Precisão do Controle Orbital                       - Frequência Inicial (MHz)
+  - Número e localização das gateways no Brasil        - Frequência Final (MHz)                                    com o disposto no Ato nº 9.526, de 27/10/2021, e demais
+  (caso haja previsão de instalação)                   - Sentido (subida/descida)
+  - Área de Cobertura Associada ao Direito de          - Função (Telemetria, Rastreio ou Controle)                 condições estabelecidas no Regulamento Geral de Exploração
+  Exploração
+                                                                                                                   de Satélites, de acordo com o tipo do pleito:
+
+Para o item 6, Informações Técnicas Simplificadas do Sistema de Satélites
+                                                                                                                   a) Inscrição válida do representante legal no Cadastro Nacional de Pessoas Jurídicas
+Não-Geoestacionários, deverão ser fornecidas as seguintes informações:                                             (CNPJ);
+                                                                                                                   b) Apresentação de cópia do Ato constitutivo e suas alterações vigentes, ou sua
+                                          Também deverão ser fornecidas as frequências de operação do              consolidação, devidamente registrados ou arquivados na repartição competente,
+- Nome do Sistema de Satélite             satélite (subida e descida) e tipo de polarização (linear ou circular)   comprovando que o representante legal é uma empresa brasileira e tem sede e
+- Número de Satélites associados          Deverão ser apresentados os Parâmetros orbitais simplificado do          administração no país (no caso de sociedade por ações, apresentação da composição
+- Redes de Satélite correspondentes       sistema:                                                                 acionária do controle societário e os documentos de eleição de seus administradores,
+na UIT (Filings)                          - Número Total de Satélites do Sistema                                   exigência também necessária quando se tratar de sociedade que designe sua diretoria
+- Data de Lançamento                      - Número de Planos Orbitais                                              nos moldes das sociedades por ações);
+- Data de início de operação comercial    - Ângulo de Inclinação dos Planos Orbitais                               c) Documento expedido pelo órgão competente que demonstre o prazo e as condições
+no país de origem                         - Número de Satélites por Plano Orbital                                  de uso do segmento espacial que foram autorizadas no país de origem, e a devida
+- Data prevista para início de operação   - Altitudes máxima e mínima, considerando todos planos orbitais          tradução juramentada, no caso de satélite estrangeiro;
+comercial no Brasil                       Caso haja previsão de estações TT&C no Brasil, descrever                 d) Acordos de Coordenação ou a indicação da operação sem direito à proteção e
+- Precisão do Controle Orbital            características técnicas simplificadas:                                  sem causar interferência prejudicial em relação àqueles sistemas cujo acordo não
+- Número e localização das gateways       - Localização da Estação TT&C (Município/UF)                             foi obtido, apresentado documentos que comprovem os esforços de coordenação; e
+no Brasil (caso haja previsão de          - Frequência Inicial (MHz)                                               e) Acordos de Colocalização de satélites, se for o caso.
+instalação) - Área de Cobertura           - Frequência Final (MHz)                                                 f) Documentação em que conste a indicação da empresa brasileira como representante
+associada ao Direito de Exploração        - Sentido (subida/descida)                                               legal da exploradora estrangeira de satélite no tocante ao pleito de conferência do
+                                          - Função (Telemetria, Rastreio ou Controle)                              direito de exploração do satélite em questão.
+Passo a passo                                                                                  Importante observar que durante o preenchimento
+                                                                                               do Requerimento o mesmo poderá ser salvo e o
+                                                                                               seu preenchimento ser retomado posteriormente,
+                                                                                                                                                      07
+
+Para o caso de solicitação de prorrogação de Direito de Exploração                             clicando no botão Salvar.
+de satélite (ou sistemas de satélites) já conferido deverão ser                                No entanto, isso deverá ser feito com a janela do
+apresentados os documentos indicados no caso de qualquer                                       SEI referente ao Peticionamento de Processo Novo
+alteração/atualização dos mesmos. E para o caso de solicitação de                              aberta. Dessa forma, sugere-se que sejam
+alteração de Direito de Exploração de satélite (ou sistemas de                                 levantados, preliminarmente, todos os dados
+satélites), no tocante à adição de faixas de frequências, deverão ser                          necessários      para     o   preenchimento       do
+apresentados apenas os documentos indicados no item d) do quadro                               Requerimento antes de se iniciar com o
+acima, para o caso de faixas de radiofrequências não compreendidas                             procedimento de Peticionamento de Processo
+em acordos de coordenação previamente apresentados.                                            Novo no SEI.
+Por último, o item 8, Declaração de Termos e Condições, consiste                               Concluído o preenchimento do Requerimento,
+nas declarações necessárias as quais o operador satelital, ou seu                              clicar no botão Salvar e fechar a janela.
+representante legal, deverão se comprometer, em consonância com                                Voltando à tela de Peticionamento de Processo
+o disposto no Regulamento Geral de Exploração de Satélites                                     Novo, deverá ser definido o Nível de Acesso do
+                                                                                               Requerimento, como Público ou Restrito. Caso
+  I - não estar proibida de licitar ou contratar com o Poder Público, não ter sido declarada   Restrito, selecionar a Hipótese Legal para tanto.
+  inidônea ou não ter sido punida nos 2 (dois) anos anteriores com decretação de
+  caducidade de concessão, permissão ou autorização de serviço de telecomunicações ou
+  de caducidade de direito de uso de radiofrequências;
+  II - possuir aptidão para o desempenho da atividade pertinente, bem como a existência
+  de pessoal técnico adequado e disponível para a realização do objeto da autorização;
+  III - observar a regulamentação aplicável e ter ciência das condições de outorga;
+  IV - observar as condições de operação contidas na regulamentação nacional e no
+  Regulamento de Radiocomunicações da União Internacional de Telecomunicações, além
+  das condições legais, regulamentares e normativas para Exploração de Satélite, durante
+  o prazo de exploração do satélite; e
+  V - comprometimento de manter atualizada a informação sobre seus representantes
+  legais no Brasil e de prover a capacidade do Segmento Espacial somente por meio dos
+  representantes indicados, no caso de solicitação de conferência de direito de exploração
+  de satélite estrangeiro.
+Passo a passo                                                Finalizado o preenchimento dos dados solicitados
+                                                             na página do Requerimento de Direito de
+                                                             Exploração de Satélite e realizado o carregamento
+                                                             dos documentos necessários, deverá clicar no
+                                                                                                                 08
+
+
+                                                             botão Peticionar. Assim, será aberta nova tela
+Na sequência, deverão ser anexados os Documentos
+                                                             para concluir e assinar o peticionamento, na qual
+Complementares, conforme indicado no item 7 do
+                                                             deverá ser selecionado o Cargo/Função do
+Requerimento, de acordo com o tipo de pleito associado ao
+                                                             usuário externo em relação à interessada, inserir
+Direito de Exploração de Satélite. Para tanto, deverão ser
+                                                             a senha de acesso ao SEI e clicar em Assinar.
+carregados por meio do botão Escolher arquivo, selecionar
+o Tipo de Documento, preencher o campo Complemento do
+Tipo de Documento, escolher o Nível de Acesso (caso
+Restrito, selecionar a Hipótese Legal para tanto) e o
+Formato. Em seguida, clicar em Adicionar para carregar o
+documento.
+
+
+
+
+                                                             Assim, será aberta nova janela no SEI com a
+                                                             indicação da Data e Horário, Número do Processo
+                                                             e do Recibo eletrônico de protocolo, além do Tipo
+                                                             de Peticionamento.
+                                                             Concluído esse procedimento, o processo SEI
+                                                             com a solicitação associada ao Direito de
+                                                             Exploração será encaminhada para análise da
+                                                             Anatel.
+Dúvidas? Entre em contato por meio do e-mail
+            orle@anatel.gov.br
+
+                                               AGOSTO DE 2023- VERSÃO 02
+

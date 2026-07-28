@@ -1,0 +1,7 @@
+## 2026-07-26T06:51:17+00:00
+
+- source_id: `br-anatel-collective-services`
+- norm: Servicos de Interesse Coletivo
+- status: `baseline-created`
+- url: https://www.gov.br/anatel/pt-br/regulado/outorga/servicos-de-interesse-coletivo
+- normalized_sha256: `2366dd1aab2a1417754c3c63d75fac2deac5d5f9bbc6526da7b20fc9ceece0bc`
