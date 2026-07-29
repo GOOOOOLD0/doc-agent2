@@ -5,7 +5,7 @@ document_type: regulation
 version: "2020"
 language: zh-CN
 
-source_file: source/radio_regulations_2020.pdf
+source_file: source/source.pdf
 profile: config/book_ingestion/itu_radio_regulations.yaml
 
 page_count: 442
