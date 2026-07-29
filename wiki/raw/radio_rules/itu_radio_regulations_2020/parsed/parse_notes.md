@@ -2,8 +2,8 @@
 
 - 共识别到 10 个章、62 个条、0 个节、0 个子条款。（来源文件类型: .pdf，位置单位: 页）
 - 使用 profile: itu_radio_regulations，层级体系: chapter > article > section > clause
-- 需要保留的元数据: pdf_page, printed_page, page_label, article_number, clause_number, tables, footnotes, cross_references, wrc_revision
-- 以下 preserve 标记依赖 LLM 精修阶段处理: printed_page, article_number, clause_number, tables, footnotes, wrc_revision
+- 需要保留的元数据: pdf_page, page_label, article_number, clause_number, tables, footnotes, cross_references, wrc_revision
+- 以下 preserve 标记依赖 LLM 精修阶段处理: article_number, clause_number, tables, footnotes, wrc_revision
 
 
 ## split_book.py 追加记录
@@ -42,3 +42,24 @@
 - 输出目录: C:\Users\ld\Desktop\yx\doc-agent2\wiki\concepts\radio_rules
 - 已更新 wiki/index.md 和 wiki/log.md
 - 来源文档: 无线电规则：2020年第1卷——条款 (version: 2020)
+
+## optimize_wiki_pages.py — Python 机械层
+
+- 去重: 0 行
+- 垃圾行: 0 行
+- OCR 错字: 是
+- 行末垃圾: 0 处
+- 交叉引用: 100 个链接
+
+### 待 LLM 精修
+
+Python 机械层已完成清洗（去重、垃圾行、OCR修正、条款合并、交叉引用）。
+**所有表格识别与重建由 LLM 全权负责：**
+1. **条款→定义表格**：将条款号+定义文本转为 `| 条款 | 定义 |` 表格（包括单条款）
+2. **内联表格重建**：检测合一条款中的内联结构化数据，重建为 Markdown 表格
+   - 频段划分表（频段序号+符号+频率范围+米制细分）
+   - 多语种术语对照表（中文+法文+英文+西班牙文+阿拉伯文+俄文）
+   - 任何其他 PDF 压平的结构化数据
+3. **残行修正**、**交叉引用审查**、**脚注归属**、**页码格式化**、**一致性检查**
+
+preserve 标记参考: tables, footnotes, wrc_revision, article_number, clause_number, cross_references

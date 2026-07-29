@@ -6,6 +6,33 @@ status: active
 
 # Book Ingestion
 
+## 使用场景
+
+当用户要求执行以下任务时使用本 Skill：
+
+- 将一本书加入 Wiki；
+- 解析 PDF、DOCX 等长文档；
+- 按章节、条款或小节拆分文档；
+- 根据书籍内容生成 Source Notes；
+- 根据 Source Notes 生成主题 Wiki 页面。
+
+## 输入
+
+每本书应具有独立文档目录：
+
+`wiki/raw/<topic>/<doc_id>/`
+
+目录中至少包括：
+
+- `document.yaml`
+- `source/`
+
+文档处理规则由 `document.yaml` 中指定的 profile 决定。
+
+配置文件位于：
+
+`config/book_ingestion/`
+
 ## 核心理念
 
 - **chunk 即做清洗**：PDF 垃圾（页眉/页码/RR1-2）在 chunk 阶段就清理干净，不留到后面。
@@ -36,6 +63,7 @@ status: active
 
 ### Step 2: split_book.py — chunk 生成
 
+- **输出位置**：`wiki/raw/<topic>/<doc_id>/chunks/`
 - 按 `preferred_level`（通常是 article）提取每个节点的页范围
 - PDF 文字层若损坏（CJK 占比 < 5%）自动切换 OCR（EasyOCR）
 - 超出 `max_chunk_tokens` 的节点按 `fallback_chunk_tokens` 兜底切分
@@ -101,10 +129,16 @@ chunk_id: article_01_section_01
      ```
    - **关键**：重启外层表格时必须带表头和分隔行，否则 2.2 行会被 markdown 解析为内嵌表格的列（若列数不同则渲染错乱）
 
-2. **表格重建**：OCR 压缩的结构化数据重建为 Markdown 表格（如频段表）
+2. **表格重建**：检查 profile 配置中 `preserve.tables` 的值。
+   - `true`（默认）：OCR 压缩的结构化数据重建为 Markdown 表格（如频段表、条款→定义表）
+   - `false`：跳过表格重建，保留 Python 清洗后的文本格式
 3. **残行修正**：检查 Python 合并的边缘情况
-4. **脚注归属**：确保脚注紧跟相关条款
-5. **WRC 修订标记保留**：`（WRC-03）` 等必须保留
+4. **脚注归属**：检查 profile 配置中 `preserve.footnotes` 的值。
+   - `true`（默认）：确保脚注紧跟相关条款，保留脚注内容
+   - `false`：可移除脚注行
+5. **WRC 修订标记保留**：检查 profile 配置中 `preserve.wrc_revision` 的值。
+   - `true`（默认）：保留 `（WRC-03）` 等修订标记
+   - `false`：可从清洗后文本中移除这些标记
 6. **最终一致性**：条款号连续、款号完整
 
 I/O: `chunks/` → `chunks/`（原地清洗覆盖）
@@ -114,6 +148,7 @@ I/O: `chunks/` → `chunks/`（原地清洗覆盖）
 - **元信息来源**：从 chunk 文件的 YAML frontmatter 读取（精简字段）
 - **生成内容**：frontmatter + chunk 路径引用 + 所有语义字段占位符
 - **不再包含**：属性表格、chunk 原文复制
+- **输出位置**：`wiki/raw/<topic>/<doc_id>/source_notes/`
 
 Source Note 模板：
 ```markdown
@@ -150,6 +185,7 @@ node_id: article_01_section_01
 
 ### Step 6: compile_wiki.py — Wiki 概念页面
 
+- **输出位置**：`wiki/concepts/<topic>/`
 - **核心内容**：从 cleaned chunks 拉全文
 - **摘要**：从 source_notes 拉 LLM 生成的摘要
 - **交叉引用注入**（本阶段唯一做 wikilink 的地方）：
@@ -174,6 +210,15 @@ uv run python tools/book_ingestion/build_source_notes.py <document.yaml> --nodes
 uv run python tools/book_ingestion/compile_wiki.py <document.yaml> --nodes 1,2,3
 uv run python tools/book_ingestion/optimize_wiki_pages.py <document.yaml> --nodes 1,2,3 --rebuild-core
 ```
+
+## 基本规则
+
+- 不得修改或覆盖 `source/` 中的原始文件；
+- 优先按照章节、条款、小节等原始结构切分；
+- 只有无法按照结构切分时，才按 token 长度兜底；
+- 表格、脚注和正文之间的关联应尽量保留；
+- Source Note 和 Wiki 页面必须保留原文位置；
+- 解析质量不足时，应记录问题，不得直接生成确定性结论。
 
 ## Pitfalls
 

@@ -1,4 +1,4 @@
-请先阅读项目根目录下的 skills\book-ingestion\SKILL.md,严格按规则和流程执行,不要自行发挥。
+请先阅读项目根目录下的 skills\book-ingestion\SKILL.md,严格按其规则和流程执行,不要自行发挥。
 
 任务:对《无线电规则》(2020年版)第一章(第1、2、3条)建立 wiki。
 

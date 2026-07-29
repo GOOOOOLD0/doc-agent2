@@ -57,11 +57,16 @@ CLS_PAT = re.compile(r'^\d+\.?\d*[A-Za-z]?\s')  # match clause-start line
 
 
 def mechanical_clean(text: str, article_id: str, topic: str,
-                     existing_pages: set, inject_wikilinks: bool = True) -> Tuple[str, dict]:
+                     existing_pages: set, inject_wikilinks: bool = True,
+                     preserve: dict = None) -> Tuple[str, dict]:
     """Python 机械清洗：确定性操作，不依赖 LLM。返回 (clean_text, stats)。
 
     inject_wikilinks=False 时跳过 Pass 5（交叉引用 wikilink 注入），
-    用于 chunk 阶段清洗。chunk 保留 PDF 原文，wikilink 注入延迟到 wiki 页面阶段。"""
+    用于 chunk 阶段清洗。chunk 保留 PDF 原文，wikilink 注入延迟到 wiki 页面阶段。
+    
+    preserve 字典控制各清洗行为开关（来自 profile.preserve）。"""
+    if preserve is None:
+        preserve = {}
     stats = {"dedup": 0, "garbage": 0, "ocr_fix": 0, "xref": 0, "junk": 0}
 
     lines = text.replace('\r\n', '\n').replace('\r', '\n').split('\n')
@@ -152,8 +157,8 @@ def mechanical_clean(text: str, article_id: str, topic: str,
     core = '\n'.join(out)
 
     # ── Pass 5: 交叉引用 wikilink 注入（正则，无语义依赖）──
-    # 仅在 inject_wikilinks=True（wiki 页面阶段）时执行
-    if inject_wikilinks:
+    # 仅在 inject_wikilinks=True 且 preserve.cross_references != False 时执行
+    if inject_wikilinks and preserve.get("cross_references", True):
         # 第N条 → wikilink（跳过自我引用）
         # 从 article_id 提取条号用于自我引用判断（article_1_section_03 → 1）
         self_article_num = None
@@ -366,6 +371,7 @@ def main():
 
     # ─── --mechanical-clean: Python 机械清洗 ───
     if args.mechanical_clean:
+        preserve = profile.get("preserve", {})
         existing_pages = get_existing_pages(concepts_dir)
         total_stats = {"dedup": 0, "garbage": 0, "ocr_fix": 0, "xref": 0, "junk": 0}
 
@@ -392,7 +398,8 @@ def main():
                 continue
 
             # 机械清洗
-            cleaned, stats = mechanical_clean(raw_text, aid, topic, existing_pages)
+            cleaned, stats = mechanical_clean(raw_text, aid, topic, existing_pages,
+                                              preserve=preserve)
             for k, v in stats.items():
                 total_stats[k] += v
 

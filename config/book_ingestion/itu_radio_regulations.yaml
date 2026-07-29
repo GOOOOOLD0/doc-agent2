@@ -1,5 +1,4 @@
 profile_name: itu_radio_regulations
-document_type: regulation
 
 split:
   hierarchy:
@@ -43,7 +42,7 @@ patterns:
 
 preserve:
   pdf_page: true
-  printed_page: true
+  # printed_page: true
   page_label: true
   article_number: true
   clause_number: true

@@ -72,6 +72,7 @@ def generate_concept_page(
     position_type: str,
     topic: str,
     notes_info: List[dict],
+    concepts_dir: Path,
 ) -> str:
     """
     生成符合 SCHEMA.md Concept Page 规范的 Wiki 页面。
@@ -172,10 +173,6 @@ def generate_concept_page(
     lines.append(f"tags: [{', '.join(tags)}]")
     lines.append(f"sources: [raw/{topic}/{doc_id}/source_notes/{node_id}.md]")
     lines.append("confidence: low")
-    if doc_version:
-        lines.append(f"source_version: {doc_version}")
-    lines.append(f"source_doc: {doc_title}")
-    lines.append(f"source_location: {source_location}")
     lines.append("---")
     lines.append("")
 
@@ -189,25 +186,14 @@ def generate_concept_page(
     lines.append(summary)
     lines.append("")
 
-    # 背景说明（SCHEMA.md Concept Page 必须项）
-    lines.append("## 背景说明\n")
-    lines.append(f"本文档属于 {doc_type} 类型文档，源语言为 {language}。")
-    if doc_version:
-        lines.append(f"文档版本: {doc_version}。")
-    lines.append(f"本文覆盖原文 {source_location} 的内容。")
-    lines.append("")
-
     # 核心内容
     lines.append("## 核心内容\n")
+    if clause_section:
+        lines.append(clause_section)
+        lines.append("")
     core_preview = core_content[:3000] + ("..." if len(core_content) > 3000 else "")
     lines.append(core_preview)
     lines.append("")
-
-    # 条款结构（如有）
-    if clause_section:
-        lines.append("## 条款结构\n")
-        lines.append(clause_section)
-        lines.append("")
 
     # 关键条款/关键观点
     lines.append("## 关键条款 / 关键观点\n")
@@ -217,11 +203,6 @@ def generate_concept_page(
     # 涉及概念
     lines.append("## 涉及概念\n")
     lines.append(related_concepts if related_concepts and "(待补充)" not in related_concepts else "（待补充）")
-    lines.append("")
-
-    # 相关规则（SCHEMA.md Concept Page 要求）
-    lines.append("## 相关规则\n")
-    lines.append(f"本文属于《{doc_title}》的一部分，相关规则参见同文档内的其他条款。")
     lines.append("")
 
     # 相关文档（SCHEMA.md Concept Page 要求）
@@ -242,33 +223,97 @@ def generate_concept_page(
 
     result = "\n".join(lines)
     # 在 wiki 生成阶段注入交叉引用（chunks 阶段不做）
-    result = inject_crossrefs(result, topic)
+    # 受 profile.preserve.cross_references 控制
+    preserve = profile.get("preserve", {})
+    if preserve.get("cross_references", True):
+        result = inject_crossrefs(result, topic, concepts_dir, node_id)
     return result
 
 
-def inject_crossrefs(text: str, topic: str) -> str:
+def roman_to_int(r: str) -> int:
+    """Convert Roman numeral string to integer (I→1, VIII→8, etc.)."""
+    values = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}
+    result = 0
+    prev = 0
+    for ch in reversed(r.upper()):
+        v = values[ch]
+        result += -v if v < prev else v
+        prev = v
+    return result
+
+
+def inject_crossrefs(text: str, topic: str, concepts_dir: Path, current_node_id: str) -> str:
     """在 wiki 生成阶段注入交叉引用 wikilink。
-    
-    将纯文本引用（第N条、附录N、WRC-NN）转为 [[...]] wikilink。
+
+    将纯文本引用（第N条、附录N、WRC-NN、第N.M款、第N条第X节）转为 [[...]] wikilink。
+    新增模式会校验目标 .md 文件确实存在才注入链接；对当前 article 的自引用跳过。
     chunks 阶段不做此操作——保持 chunks 文本纯净。
     """
+    # 提取当前 article 编号，用于跳过自引用
+    cur_article = ""
+    m = re.match(r"article_(\d+[A-Z]?)", current_node_id)
+    if m:
+        cur_article = m.group(1)
+
+    def _exists(article_num: str, section_num=None):
+        """检查目标 concept page 是否已存在。"""
+        if section_num is not None:
+            return (concepts_dir / f"article_{article_num}_section_{section_num:02d}.md").exists()
+        return (concepts_dir / f"article_{article_num}.md").exists()
+
+    # --- 嵌套款号：第N.M.X款 → article_N（必须优先于简单款号，避免部分匹配）---
+    def _clause_nested(m):
+        a = m.group(1)
+        if a == cur_article or not _exists(a):
+            return m.group(0)
+        return f"[[concepts/{topic}/article_{a}|{m.group(0)}]]"
+    text = re.sub(
+        r'(?<!\[\[)第(\d+[A-Z]?)\.(\d+[A-Z]?)\.(\d+[A-Z]?)款(?!\||\])',
+        _clause_nested, text,
+    )
+
+    # --- 简单款号：第N.M款 → article_N ---
+    def _clause_simple(m):
+        a = m.group(1)
+        if a == cur_article or not _exists(a):
+            return m.group(0)
+        return f"[[concepts/{topic}/article_{a}|{m.group(0)}]]"
+    text = re.sub(
+        r'(?<!\[\[)第(\d+[A-Z]?)\.(\d+[A-Z]?)款(?!\||\])',
+        _clause_simple, text,
+    )
+
+    # --- 条+节引用：第N条第X节 → article_N_section_XX（罗马数字转阿拉伯）---
+    def _article_section(m):
+        a = m.group(1)
+        sn = roman_to_int(m.group(2))
+        if a == cur_article or not _exists(a, sn):
+            return m.group(0)
+        return f"[[concepts/{topic}/article_{a}_section_{sn:02d}|{m.group(0)}]]"
+    text = re.sub(
+        r'(?<!\[\[)第(\d+[A-Z]?)条第\s*([IVXLCDM]+)\s*节(?!\||\])',
+        _article_section, text,
+    )
+
+    # --- 原有模式（保持不变）---
+
     # Article references: 第N条 → [[concepts/<topic>/article_N|第N条]]
     text = re.sub(
         r'(?<!\[\[)第(\d+[A-Z]?)条(?!\||\])',
         f'[[concepts/{topic}/article_\\1|第\\1条]]',
-        text
+        text,
     )
     # Appendix references
     text = re.sub(
         r'(?<!\[\[)附录(\d+[A-Z]?)(?!\||\])',
         f'[[concepts/{topic}/appendix_\\1|附录\\1]]',
-        text
+        text,
     )
     # WRC references
     text = re.sub(
         r'(?<!\[\[)WRC-(\d{2})(?!\||\])',
         f'[[concepts/{topic}/wrc-\\1|WRC-\\1]]',
-        text
+        text,
     )
     return text
 
@@ -577,7 +622,7 @@ def main():
             }
 
         page_content = generate_concept_page(
-            node, note_text, chunk_text, doc_config, profile, position_type, topic, notes_info
+            node, note_text, chunk_text, doc_config, profile, position_type, topic, notes_info, concepts_dir
         )
 
         out_path = concepts_dir / f"{node_id}.md"

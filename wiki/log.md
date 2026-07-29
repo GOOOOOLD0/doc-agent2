@@ -196,3 +196,10 @@
 - Pages: 11 个概念页面
 - Version: 2020
 - Summary: 由 compile_wiki.py 自动生成 11 个 Wiki 概念页面。
+
+## [2026-07-29] ingest | 无线电规则：2020年第1卷——条款
+- Source: raw/radio_rules/itu_radio_regulations_2020/
+- Target: concepts/radio_rules/
+- Pages: 11 个概念页面
+- Version: 2020
+- Summary: 由 compile_wiki.py 自动生成 11 个 Wiki 概念页面。

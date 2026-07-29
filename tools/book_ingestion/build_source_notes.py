@@ -202,7 +202,8 @@ def build_source_note_frontmatter(fm: dict, node_title: str, doc_config: dict) -
     ]
     if fm.get("source_version"):
         lines.append(f"source_version: {fm.get('source_version')}")
-    lines.append(f"source_location: {fm.get('source_location', '')}")
+    if fm.get("source_location"):
+        lines.append(f"source_location: {fm.get('source_location')}")
     node_id = fm.get("node_id", "")
     if node_id:
         lines.append(f"node_id: {node_id}")

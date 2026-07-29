@@ -687,14 +687,18 @@ def _split_tables_from_sections(
 
 def build_chunk_frontmatter(
     node: dict, doc_config: dict, position_type: str = "page",
-    section_num: int = 0, extra_type: str = "", chunk_file_stem: str = ""
+    section_num: int = 0, extra_type: str = "", chunk_file_stem: str = "",
+    preserve: dict = None,
 ) -> str:
     """为 chunk 文件生成精简 YAML frontmatter。
 
     只保留必要字段：title, type, source_doc, source_version,
-    source_location, node_id, chunk_id。冗余字段（created/updated/
-    source_doc_id/source_type/source_file/source_language）已删除。
+    source_location（受 preserve.page_label 控制）, node_id, chunk_id。
+    冗余字段（created/updated/source_doc_id/source_type/source_file/
+    source_language）已删除。
     """
+    if preserve is None:
+        preserve = {}
     node_id = get_node_id(node)
     node_title = node.get("title", "")
     doc_title = doc_config.get("title", "")
@@ -732,7 +736,8 @@ def build_chunk_frontmatter(
     ]
     if doc_version:
         lines.append(f"source_version: {doc_version}")
-    lines.append(f"source_location: {source_location}")
+    if preserve.get("page_label", True):
+        lines.append(f"source_location: {source_location}")
     lines.append(f"node_id: {node_id}")
     lines.append(f"chunk_id: {chunk_id}")
     lines.append("---")
@@ -839,7 +844,6 @@ def main():
             methods_used = set()
             parts = []
             page_preserve = preserve.get("pdf_page", False)
-            page_label_preserve = preserve.get("page_label", False)
 
             for p in range(start - 1, end):
                 text, method = extract_page_text_pdf(
@@ -1072,7 +1076,8 @@ def main():
 
             fm = build_chunk_frontmatter(
                 node, doc_config, position_type=structure.get("position_type", "page"),
-                section_num=section_num, extra_type=extra_type
+                section_num=section_num, extra_type=extra_type,
+                preserve=preserve,
             )
             existing_text = md_file.read_text(encoding="utf-8")
             # Skip if already has frontmatter

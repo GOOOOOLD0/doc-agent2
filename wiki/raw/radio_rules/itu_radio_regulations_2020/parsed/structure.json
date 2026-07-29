@@ -1798,7 +1798,6 @@
     },
     "preserve": {
       "pdf_page": true,
-      "printed_page": true,
       "page_label": true,
       "article_number": true,
       "clause_number": true,
