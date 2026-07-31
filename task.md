@@ -4,6 +4,7 @@
 
 原文件路径: wiki\raw\regulations\radio_regulations_2020\source.pdf
 reg_name: radio_regulations_2020
-本次处理范围: 仅第一章的1、2、3条,不要处理其他章节。
+
+本次处理范围: 仅前3条,不要处理其他条和章节。
 
 请按该 Skill 文件里定义的处理流程逐步执行,每一步做完再进入下一步。

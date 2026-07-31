@@ -1,7 +1,7 @@
 ---
 title: [[concepts/radio_rules/article_3|第3条]]
-created: 2026-07-29
-updated: 2026-07-29
+created: 2026-07-31
+updated: 2026-07-31
 type: concept
 tags: [regulation, radio_rules]
 sources: [raw/radio_rules/itu_radio_regulations_2020/source_notes/3.md]
@@ -14,7 +14,7 @@ confidence: low
 
 来源于《无线电规则：2020年第1卷——条款》（2020）第35页 至 第36页。
 
-[[concepts/radio_rules/article_3|第3条]]规定了电台技术特性的通用要求，共15条（3.1–3.15），涵盖设备选型、频率容限、无用发射抑制、带宽效率、接收机性能、发射监测及禁用发射类型。
+[[concepts/radio_rules/article_3|第3条]]规定了电台的技术特性要求，涵盖设备性能、频谱有效利用、频率容限、无用发射限制、接收机特性和合规监测等15个条款，是所有电台运营的技术基线。
 
 ## 核心内容
 
@@ -31,8 +31,7 @@ node_id: 3
 chunk_id: article_03
 ---
 
-第3条
-电台的技术特性
+### 第3条  电台的技术特性
 
 | 条款 | 定义 |
 |------|------|
@@ -55,11 +54,25 @@ chunk_id: article_03
 
 ## 关键条款 / 关键观点
 
-设备与选型（3.1–3.4）：电台设备须符合《无线电规则》并参照最新ITU-R建议书（3.1–3.2）；设计须考虑邻近频段影响并采取措施降低无用发射和接收灵敏度（3.3）；应使用最有效利用频谱的信号处理方法，如调幅系统内采用单边带技术（3.4）。频率容限与无用发射（3.5–3.8）：发射须满足[[concepts/radio_rules/appendix_2|附录2]]频率容限（3.5）和[[concepts/radio_rules/appendix_3|附录3]]杂散域无用发射最大允许功率电平（3.6，[[concepts/radio_rules/wrc-12|WRC-12]]修订）；带外域无用发射须符合业务规定或ITU-R建议书（3.7，[[concepts/radio_rules/wrc-12|WRC-12]]修订）；应尽一切努力将频率容限和无用发射保持在最低值（3.8）。带宽与频谱效率（3.9–3.10）：发射带宽应保持在技术和业务允许的最低值，[[concepts/radio_rules/appendix_1|附录1]]为确定必要带宽导则（3.9）；采用带宽扩展技术时使用最小功率谱密度（3.10）。接收机要求（3.11–3.13）：接收机频率容限应尽可能与发射机一致并考虑多普勒效应（3.11）；选择性应匹配发射带宽（3.12）；性能应保证不受合理距离内合规发射机的干扰（3.13）。监测与禁用（3.14–3.15）：各主管部门须对电台发射进行经常性校验，可依[[concepts/radio_rules/article_16|第16条]]方法并参照最新ITU-R建议书（3.14）；禁止使用阻尼波发射（3.15）。
+- 3.1-3.2 总体要求：设备选择与性能应符合规则，并依据最新ITU-R建议书选择
+- 3.3 频谱邻近兼容性：设备设计应考虑邻近频谱的使用，采取合理措施降低无用发射和干扰敏感性
+- 3.4-3.5 频谱效率：使用最有效利用频谱的信号处理方法（如单边带），符合[[concepts/radio_rules/appendix_2|附录2]]频率容限
+- 3.6-3.7 无用发射限制：符合[[concepts/radio_rules/appendix_3|附录3]]杂散域功率电平（[[concepts/radio_rules/wrc-12|WRC-12]]修订），带外发射参照ITU-R建议书
+- 3.8 最低值原则：频率容限和无用发射保持在技术状态和业务性质允许的最低值
+- 3.9 带宽最小化：必要带宽保持在最低值，[[concepts/radio_rules/appendix_1|附录1]]为确定必要带宽的导则
+- 3.10 带宽扩展技术时的最小功率谱密度要求
+- 3.11 接收机频率容限应与发射机一致，考虑多普勒效应
+- 3.12-3.13 接收机特性：应与发射类别相适应，具有充分抗干扰能力
+- 3.14 主管部门的监测义务：进行经常性校验，必要时采用[[concepts/radio_rules/article_16|第16条]]方法
+- 3.15 禁止阻尼波发射
 
 ## 涉及概念
 
-频率容限、无用发射（杂散域/带外域）、必要带宽、带宽扩展技术、单边带（SSB）技术、功率谱密度、多普勒效应、选择性、阻尼波发射、发射标识、[[concepts/radio_rules/appendix_1|附录1]]（必要带宽导则）、[[concepts/radio_rules/appendix_2|附录2]]（频率容限）、[[concepts/radio_rules/appendix_3|附录3]]（杂散域无用发射限值）。
+- 设备性能标准、频谱有效利用、信号处理方法
+- 频率容限（[[concepts/radio_rules/appendix_2|附录2]]）、杂散域无用发射（[[concepts/radio_rules/appendix_3|附录3]]）、带外域无用发射
+- 必要带宽（[[concepts/radio_rules/appendix_1|附录1]]）、功率谱密度
+- 接收机选择性、抗干扰性能
+- 合规校验（[[concepts/radio_rules/article_16|第16条]]）、阻尼波禁止
 
 ## 相关文档
 
@@ -78,8 +91,8 @@ chunk_id: article_03
 
 ## 争议或待核查问题
 
-条款3.7中的"带外发射"（out-of-band emissions）与"带外域无用发射"（unwanted emissions in the out-of-band domain）在[[concepts/radio_rules/wrc-12|WRC-12]]修订后术语是否完全统一需核对。条款3.11"接收机的频率容限"与发射机频率容限概念上有本质区别，实践中需区分理解。阻尼波发射（3.15）的绝对禁止是历史遗留条款（早期火花发射器），现代设备已不存在此问题，但条款仍有效。
+- 无
 
-^[raw/radio_rules/itu_radio_regulations_2020/source_notes/3.md]
+^[raw/radio_rules/itu_radio_regulations_2020/source_notes/article_3.md]
 
 ^[raw/radio_rules/itu_radio_regulations_2020/source_notes/3.md]

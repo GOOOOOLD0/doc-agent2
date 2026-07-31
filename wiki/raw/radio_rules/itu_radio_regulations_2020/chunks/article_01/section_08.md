@@ -9,7 +9,7 @@ node_id: 1
 chunk_id: article_01_section_08
 ---
 
-第VIII节 — 空间技术术语
+### 第VIII节 - 空间技术术语
 
 | 条款 | 定义 |
 |------|------|
