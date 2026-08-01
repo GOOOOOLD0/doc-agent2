@@ -5,3 +5,11 @@
 - status: `baseline-created`
 - url: https://legalinfo.mn/mn/detail/13071
 - normalized_sha256: `32d400baa4c188081a258bea37777b71c289fdbe9f626c8a52270133d40591be`
+## 2026-08-01T04:22:38+00:00
+
+- source_id: `mn-legal-standardization-conformity-law`
+- norm: Law on Standardization, Technical Regulation and Accreditation of Conformity Assessment
+- status: `no-update`
+- url: https://legalinfo.mn/mn/detail/13071
+- normalized_sha256: `32d400baa4c188081a258bea37777b71c289fdbe9f626c8a52270133d40591be`
+- compared_to: `/home/runner/work/doc-agent2/doc-agent2/wiki/raw/landing_rights/mongolia/sources/mn-legal-standardization-conformity-law/snapshots/2026-07-27/normalized.txt`

@@ -1,0 +1,14 @@
+{
+  "source_id": "mn-crc-license-conditions-catalog",
+  "country": "mongolia",
+  "norm": "CRC license conditions and technical requirements catalog",
+  "url": "https://crc.gov.mn/terms-of-the-customer-service-contract",
+  "fetched_at": "2026-08-01T04:22:29+00:00",
+  "title": "Нөхцөл шаардлага email email",
+  "charset": "utf-8",
+  "source_format": "html",
+  "capture_method": "generic_html",
+  "normalized_sha256": "228698cb0da224c2504b5c8ac2fbdf37ecd866a4b88840fc5bee28dddea68e61",
+  "status": "no-update",
+  "compared_to": "/home/runner/work/doc-agent2/doc-agent2/wiki/raw/landing_rights/mongolia/sources/mn-crc-license-conditions-catalog/snapshots/2026-07-27/normalized.txt"
+}

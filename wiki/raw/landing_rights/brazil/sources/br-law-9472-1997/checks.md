@@ -180,3 +180,11 @@
 - url: https://informacoes.anatel.gov.br/legislacao/leis/2-lei-9472
 - normalized_sha256: `c8f9bf5145ac07599a4bcc29e6e57afb1e5caa13880d022cb2c4c7c09d2df74e`
 - compared_to: `/home/runner/work/doc-agent2/doc-agent2/sources/brazil/br-law-9472-1997/snapshots/2026-06-30/normalized.txt`
+## 2026-08-01T04:21:21+00:00
+
+- source_id: `br-law-9472-1997`
+- norm: Law No. 9,472/1997, General Telecommunications Law (LGT)
+- status: `no-update`
+- url: https://informacoes.anatel.gov.br/legislacao/leis/2-lei-9472
+- normalized_sha256: `c8f9bf5145ac07599a4bcc29e6e57afb1e5caa13880d022cb2c4c7c09d2df74e`
+- compared_to: `/home/runner/work/doc-agent2/doc-agent2/wiki/raw/landing_rights/brazil/sources/br-law-9472-1997/snapshots/2026-07-01/normalized.txt`

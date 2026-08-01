@@ -1,0 +1,14 @@
+{
+  "source_id": "br-anatel-ocd-list",
+  "country": "brazil",
+  "norm": "Organismos de Certificacao Designados",
+  "url": "https://www.gov.br/anatel/pt-br/regulado/certificacao-de-produtos/ocds",
+  "fetched_at": "2026-08-01T04:21:36+00:00",
+  "title": "Organismos de Certificação Designados (OCD) Portal Gov.br",
+  "charset": "utf-8",
+  "source_format": "html",
+  "capture_method": "generic_html",
+  "normalized_sha256": "0e872f45f0ee5e5ecb56c76f7e94a6c10d643bf0b3b099038a8b135d71d13364",
+  "status": "updated",
+  "compared_to": "/home/runner/work/doc-agent2/doc-agent2/wiki/raw/landing_rights/brazil/sources/br-anatel-ocd-list/snapshots/2026-07-26/normalized.txt"
+}

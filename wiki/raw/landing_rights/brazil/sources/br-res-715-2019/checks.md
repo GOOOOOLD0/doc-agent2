@@ -180,3 +180,11 @@
 - url: https://informacoes.anatel.gov.br/legislacao/resolucoes/2019/1350-resolucao-715
 - normalized_sha256: `6cc77db63e7826c2d4d43c36d4410b0e0d73d9f08fd418071275fe56d3e61c5c`
 - compared_to: `/home/runner/work/doc-agent2/doc-agent2/sources/brazil/br-res-715-2019/snapshots/2026-06-30/normalized.txt`
+## 2026-08-01T04:21:39+00:00
+
+- source_id: `br-res-715-2019`
+- norm: Resolution No. 715/2019, conformity assessment and homologation of telecom products
+- status: `no-update`
+- url: https://informacoes.anatel.gov.br/legislacao/resolucoes/2019/1350-resolucao-715
+- normalized_sha256: `6cc77db63e7826c2d4d43c36d4410b0e0d73d9f08fd418071275fe56d3e61c5c`
+- compared_to: `/home/runner/work/doc-agent2/doc-agent2/wiki/raw/landing_rights/brazil/sources/br-res-715-2019/snapshots/2026-07-01/normalized.txt`

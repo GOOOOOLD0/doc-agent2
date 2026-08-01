@@ -1,0 +1,14 @@
+{
+  "source_id": "br-anatel-collective-services",
+  "country": "brazil",
+  "norm": "Servicos de Interesse Coletivo",
+  "url": "https://www.gov.br/anatel/pt-br/regulado/outorga/servicos-de-interesse-coletivo",
+  "fetched_at": "2026-08-01T04:21:30+00:00",
+  "title": "Serviços de Interesse Coletivo Portal Gov.br",
+  "charset": "utf-8",
+  "source_format": "html",
+  "capture_method": "generic_html",
+  "normalized_sha256": "2366dd1aab2a1417754c3c63d75fac2deac5d5f9bbc6526da7b20fc9ceece0bc",
+  "status": "no-update",
+  "compared_to": "/home/runner/work/doc-agent2/doc-agent2/wiki/raw/landing_rights/brazil/sources/br-anatel-collective-services/snapshots/2026-07-26/normalized.txt"
+}
