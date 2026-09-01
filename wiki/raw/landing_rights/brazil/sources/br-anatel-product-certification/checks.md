@@ -78,3 +78,24 @@
 +Links de compartilhamento em redes sociais
 +Compartilhe:
 ```
+## 2026-09-01T06:03:57+00:00
+
+- source_id: `br-anatel-product-certification`
+- norm: Certificacao de Produtos
+- status: `updated`
+- url: https://www.gov.br/anatel/pt-br/regulado/certificacao-de-produtos
+- normalized_sha256: `72e1cd19ec218ee212aef8c8d91889a30861ecc64241fb95994830d8f80498d7`
+- compared_to: `/home/runner/work/doc-agent2/doc-agent2/wiki/raw/landing_rights/brazil/sources/br-anatel-product-certification/snapshots/2026-08-01/normalized.txt`
+- diff_summary: 1 added lines, 1 removed lines
+
+```diff
+--- previous
++++ current
+@@ -5,5 +5,5 @@
+ title: Certificação de Produtos Portal Gov.br
+ Certificação de Produtos
+-Publicado em 04/11/2020 15:43Modificado em 01/07/2026 15:35
++Publicado em 04/11/2020 15:43Modificado em 17/08/2026 13:44
+ Compartilhe:
+ A certificação e homologação garantem ao consumidor a aquisição e o uso de produtos para telecomunicações que respeitam padrões de qualidade, de segurança e de funcionalidades técnicas regulamentadas que visam o uso eficiente e racional do espectro radioelétrico, da compatibilidade eletromagnética e da não agressão ao meio ambiente.
+```

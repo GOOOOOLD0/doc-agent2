@@ -90,3 +90,11 @@
 -Conselho Diretor
 -
 ```
+## 2026-09-01T06:03:50+00:00
+
+- source_id: `br-anatel-satellite-rights-page`
+- norm: Conferencia de Direito de Exploracao de Satelite
+- status: `no-update`
+- url: https://www.gov.br/anatel/pt-br/regulado/satelite/conferencia-de-direito-de-exploracao-de-satelite
+- normalized_sha256: `dd5a1c79e4734a792d790afa1eed95bdbe26a8533cc37e2dc934dbeb2a62dc4f`
+- compared_to: `/home/runner/work/doc-agent2/doc-agent2/wiki/raw/landing_rights/brazil/sources/br-anatel-satellite-rights-page/snapshots/2026-08-01/normalized.txt`

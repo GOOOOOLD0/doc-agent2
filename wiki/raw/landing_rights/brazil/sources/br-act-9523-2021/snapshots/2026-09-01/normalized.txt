@@ -1,0 +1,380 @@
+source_id: br-act-9523-2021
+country: brazil
+norm: Act No. 9,523/2021, technical and operational requirements for satellite communication systems
+url: https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2021/1598-ato-9523
+title: Anatel - Ato nº 9523, de 27 de outubro de 2021 Agência Nacional de Telecomunicações Anatel - Ato nº 9523, de 27 de outubro de 2021
+Ato nº 9523, de 27 de outubro de 2021
+Publicado: Sexta, 29 Outubro 2021 17:01
+|
+Última atualização: Sexta, 19 Dezembro 2025 07:58
+|
+Observação: Este texto não substitui o publicado no DOU de 29/10/2021.
+O SUPERINTENDENTE DE OUTORGA E RECURSOS À PRESTAÇÃO DA AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES, no uso das atribuições que lhe foram conferidas pelo art. 156 do Regimento Interno da Anatel, aprovado pela Resolução nº 612, de 29 de abril de 2013, e
+CONSIDERANDO a competência dada pelo Inciso VIII do art. 19 da Lei nº 9.472/97 – Lei Geral de Telecomunicações;
+CONSIDERANDO a competência da Anatel de regular o uso eficiente e adequado do espectro, consoante o interesse público, de acordo com o disposto no art. 160 da Lei nº 9.472, de 1997;
+CONSIDERANDO a Proposta de Atuações Regulatórias (SEI nº 3077101), aprovada pelo Acórdão 651 (SEI nº 3434164), nos autos do Processo 53500.014958/2016-89;
+CONSIDERANDO o disposto nos artigos 10 e 15 do Regulamento Anexo à Resolução nº 748, de 22 de outubro de 2021;
+CONSIDERANDO o constante dos autos do processo nº 53500.012173/2019-14;
+CONSIDERANDO o constante dos autos do processo nº 53500.032857/2019-32;
+RESOLVE:
+Art. 1º Aprovar os requisitos técnicos e operacionais para sistemas de comunicação via satélite operando sobre o território brasileiro, conforme o Anexo deste Ato.
+Art. 2º Este Ato entra em vigor em 1º de novembro de 2021.
+VINICIUS OLIVEIRA CARAM GUIMARÃES
+Superintendente de Outorga e Recursos à Prestação
+ANEXO
+REQUISITOS TÉCNICOS E OPERACIONAIS PARA SISTEMAS DE COMUNICAÇÃO VIA SATÉLITE
+1. OBJETIVO E ABRANGÊNCIA
+1.1. Estabelecer os requisitos técnicos e operacionais para sistemas de comunicação via satélite, brasileiros e estrangeiros, comunicando-se com estações no território brasileiro nas faixas de frequências associadas aos serviços de radiocomunicação por satélite, em conformidade com o Regulamento Geral de Exploração de Satélites, aprovado pela Resolução nº 748, de 22 de outubro de 2021.
+2. REFERÊNCIAS
+2.1. Resolução nº 748, de 22 de outubro de 2021, que aprova o Regulamento Geral de Exploração de Satélites;
+2.2. Regulamento de Rádio (RR) da União Internacional de Telecomunicações (UIT);
+2.3. Resolução 76 (Rev. CMR-15) da UIT: Protection of geostationary fixed-satellite service and geostationary broadcasting-satellite service networks from the maximum aggregate equivalent power flux-density produced by multiple non-geostationary fixed-satellite service systems in frequency bands where equivalent power flux-density limits have been adopted;
+2.3-A. Resolução 121 (CMR-23) da UIT: Use of the frequency band 12.75-13.25 GHz by earth stations in motion on aircraft and vessels communicating with geostationary space stations in the fixed-satellite service; (Incluído pelo Ato nº 18530, de 30 de novembro de 2025)
+2.3-B. Resolução 123 (CMR-23) da UIT: Use of the frequency bands 17.7-18.6 GHz, 18.8-19.3 GHz and 19.7-20.2 GHz (space-to-Earth) and 27.5-29.1 GHz and 29.5-30 GHz (Earth-to-space) by aeronautical and maritime earth stations in motion communicating with non-geostationary space stations in the fixed-satellite service; (Incluído pelo Ato nº 18530, de 30 de novembro de 2025)
+2.4. Resolução 156 (CMR-15) da UIT: Use of the frequency bands 19,7-20,2 GHz and 29,5-30,0 GHz by earth stations in motion communicating with geostationary space stations in the fixed-satellite service;
+2.5. Resolução 169 (CMR-19) da UIT: Use of the frequency bands 17,7-19,7 GHz and 27,5-29,5 GHz by earth stations in motion communicating with geostationary space stations in the fixed-satellite service;
+2.5-A. Resolução 679 (CMR-23) da UIT: Use of the frequency bands 18.1-18.6 GHz, 18.8-20.2 GHz and 27.5-30 GHz by the inter-satellite service; (Incluído pelo Ato nº 18530, de 30 de novembro de 2025)
+2.6. Resolução 739 (Rev. CMR-19) da UIT: Compatibility between the radio astronomy service and the active space services in certain adjacent and nearby frequency bands;
+2.7. Resolução 750 (CMR-19) da UIT: Compatibility between the Earth exploration-satellite service (passive) and relevant active services;
+2.8. Resolução 769 (CMR-19) da UIT: Protection of geostationary fixed-satellite service, broadcasting-satellite service and mobile-satellite service networks from the aggregate interference produced by multiple non-geostationary fixed-satellite service systems in the frequency bands 37.5-39.5 GHz, 39.5-42.5 GHz, 47.2-50.2 GHz and 50.4-51.4 GHz;
+2.9. Resolução 770 (CMR-19) da UIT: Application of Article 22 of the Radio Regulations to the protection of geostationary fixed-satellite service and broadcasting-satellite service networks from non-geostationary fixed-satellite service systems in the frequency bands 37.5-39.5 GHz, 39.5-42.5 GHz, 47.2-50.2 GHz and 50.4-51.4 GHz;
+2.10. Resolução 902 (CMR-03) da UIT: Provisions relating to earth stations located on board vessels which operate in fixed-satellite service networks in the uplink bands 5.925-6.425 MHz and 14-14,5 GHz;
+2.11. Recomendação ITU-R BO.1213-1: Reference receiving earth station antenna pattern for the broadcasting-satellite service in the 11,7-12,75 GHz band;
+2.12. Recomendação ITU-R BO.1517: Equivalent power flux-density limits, epfd↓, to protect the broadcasting-satellite service in the 12 GHz band from interference caused by non-geostationary fixed-satellite service systems​;
+2.13. Recomendação ITU-R BO.1697: Power flux-density values in the band 11,7-12,7 GHz and associated calculation methodology which may be used for bilateral coordination when the power flux-density values in § 3 of Annex 1 to Appendix 30 or Annex 4 to Appendix 30 of the Radio Regulations are exceeded;
+2.14. Recomendação ITU-R M.1086-1: Determination of the need for coordination between geostationary mobile satellite networks sharing the same frequency bands​;
+2.15. Recomendação ITU-R M.1091: Reference off-axis radiation patterns for mobile earth station antennas operating in the land mobile-satellite service in the frequency range 1 to 3 GHz;
+2.15-A. Recomendação ITU-R M.1643: Technical and operational requirements for aircraft earth stations of aeronautical mobile-satellite service including those using fixed-satellite service network transponders in the band 14-14.5 GHz (Earth-to-space); (Incluído pelo Ato nº 18530, de 30 de novembro de 2025)
+2.16. Recomendação ITU-R S.465-6: Reference radiation pattern of earth station antennas in the Fixed-Satellite Service for use in coordination and interference assesment in the frequency range from 2 to 31 GHz;
+2.17. Recomendação ITU-R S.484-3: Station-keeping in longitude of geostationary satellites in the fixed-satellite service​;
+2.18. Recomendação ITU-R S.524-9: Maximum permissible levels of off-axis e.i.r.p. density from earth stations in geostationary-satellite orbit networks operating in the fixed-satellite service transmitting in the 6 GHz, 13 GHz, 14 GHz and 30 GHz frequency bands;
+2.19. Recomendação ITU-R S.580-6: Radiation diagrams for use as design objectives for antennas of earth stations operating with geoestationary satellites;
+2.20. Recomendação ITU-R S.672-4: Satellite antenna radiation pattern for use as a design objective in the fixed-satellite service employing geostationary satellites;
+2.21. Recomendação ITU-R S.728-1: Maximum permissible level of off-axis e.i.r.p. density from very small aperture terminals (VSATs)​;
+2.22. Recomendação ITU-R S.1003-2: Environmental protection of the geostationary-satellite orbit;
+2.23. Recomendação ITU-R S.1528: Satellite antenna radiation patterns for non-geostationary orbit satellite antennas operating in the fixed-satellite service below 30 GHz;
+2.24. Recomendação ITU-R S.1587: Provisional technical characteristics of earth stations on board vessels operating in the frequency bands 5925-6425 MHz and 14-14.5 GHz which are allocated to the fixed-satellite service;
+2.25. Recomendação ITU-R SF.1650-1: The minimum distance from the baseline beyond which in-motion earth stations located on board vessels would not cause unacceptable interference to the terrestrial service in the bands 5.925-6.425 MHz and 14-14,5 GHz​;
+2.26. Decisão (13) 01 da Comissão Europeia de Comunicações (ECC): The harmonised use, free circulation and exemption from individual licensing of Earth Stations On Mobile Platforms (ESOMPs) within the frequency bands 17.3-20.2 GHz and 27.5-30.0 GHz​;
+2.26-A. Decisão 05 (11) da Comissão Europeia de Comunicações (ECC): The free circulation and use of Aircraft Earth Stations (AES) in the frequency bands 14.0-14.5 GHz (Earth-tospace), 10.7-11.7 GHz (space-to-Earth) and 12.5-12.75 GHz (space-to-Earth); (Incluído pelo Ato nº 18530, de 30 de novembro de 2025)
+2.26-B. Decisão (15) 04 da Comissão Europeia de Comunicações (ECC): The harmonised use, free circulation and exemption from individual licensing of Land, Maritime and Aeronautical Earth Stations On Mobile Platforms (ESOMPs) operating with NGSO FSS satellite systems in the frequency ranges 17.3-20.2 GHz, 27.5-29.1 GHz and 29.5-30.0 GHz; (Incluído pelo Ato nº 18530, de 30 de novembro de 2025)
+2.26-C. Decisão (18) 04 da Comissão Europeia de Comunicações (ECC): The harmonised use, exemption from individual licensing and free circulation and use of land based Earth Stations In-Motion (ESIM) operating with GSO FSS satellite systems in the frequency bands 10.7-12.75 GHz and 14.0-14.5 GHz; (Incluído pelo Ato nº 18530, de 30 de novembro de 2025)
+2.26-D. Decisão (18) 05 da Comissão Europeia de Comunicações (ECC): The harmonised use, exemption from individual licensing and free circulation and use of Earth Stations In-Motion (ESIM) operating with NGSO FSS satellite systems in the frequency bands 10.7-12.75 GHz and 14.0-14.5 GHz; (Incluído pelo Ato nº 18530, de 30 de novembro de 2025)
+2.27. Resolução nº 45/20 do Mercosul/GMC, de 26 de janeiro de 2021: Implementação de estações terrenas do serviço de satélite fixo (Terra-espaço) para uso distinto dos enlaces de conexão para o Serviço de Radiodifusão por Satélite.
+2.28. Parte 25 do Título 47 do Código de Regulamentações Federais dos Estados Unidos. (Incluído pelo Ato nº 18530, de 30 de novembro de 2025)
+3. DEFINIÇÕES
+3.1. Para os fins destes Requisitos Técnicos e Operacionais, além das definições constantes na legislação e regulamentação, aplicam-se as definições a seguir.
+3.2. Banda L: denominação correspondente às faixas de frequências de 1.610 MHz a 1.660,5 MHz e 1.668 MHz a 1.675 MHz (enlace de subida) e de 1.518 MHz a 1.559 MHz (enlace de descida);
+3.3. Banda S: denominação correspondente às faixas de frequências de 1.980 MHz a 2.025 MHz (enlace de subida) e de 2.160 MHz a 2.200 MHz e 2.483,5 MHz a 2.500 MHz (enlace de descida);
+3.4. Banda C: denominação correspondente às faixas de frequências de 5.850 MHz a 6.425 MHz e 6.725 MHz a 7.025 MHz (enlace de subida) e de 3.625 MHz a 4.200 MHz e 4.500 MHz a 4.800 MHz (enlace de descida);
+3.4.1. Banda C convencional: denominação correspondente às faixas de frequências de 5.925 MHz a 6.425 MHz (enlace de subida) e de 3.700 MHz a 4.200 MHz (enlace de descida);
+3.4.2. Banda C estendida: denominação correspondente às faixas de frequências de 5.850 MHz a 5.925 MHz (enlace de subida) e de 3.625 MHz a 3.700 MHz (enlace de descida);
+3.4.3. Banda C do Apêndice 30B: denominação correspondente às faixas de frequências de 6.725 MHz a 7.025 MHz (enlace de subida) e 4.500 MHz a 4.800 MHz (enlace de descida);
+3.5. Banda X: denominação correspondente às faixas de frequências de 7.900 MHz a 8.400 MHz (enlace de subida) e 7.250 MHz a 7.750 MHz (enlace de descida);
+3.6. Banda Ku: denominação correspondente às faixas de frequências de 12,75 GHz a 13,25 GHz, 13,75 GHz a 14,75 GHz e 17,3 GHz a 17,8 GHz (enlace de subida) e de 10,7 GHz a 12,7 GHz (enlace de descida);
+3.6.1. Banda Ku convencional: denominação correspondente às faixas de frequências de 13,75 GHz a 14,75 GHz (enlace de subida), 10,95 GHz a 11,20 GHz e 11,45 GHz a 12,20 GHz (enlace de descida);
+3.6.2. Banda Ku do Apêndice 30-30A: denominação correspondente às faixas de frequências de 17,3 GHz a 17,8 GHz (enlace de subida) e 12,2 GHz a 12,7 GHz (enlace de descida);
+3.6.3. Banda Ku do Apêndice 30B: denominação correspondente às faixas de frequências de 12,75 GHz a 13,25 GHz (enlace de subida), 10,70 GHz a 10,95 GHz e 11,20 GHz a 11,45 GHz (enlace de descida);
+3.7. Banda Ka: denominação correspondente às faixas de frequências de 27 GHz a 31 GHz (enlace de subida) e 17,7 GHz a 21,2 GHz (enlace de descida);
+3.7.1. Banda Ka convencional: denominação correspondente às faixas de frequências de 27 GHz a 30 GHz (enlace de subida) e 17,7 GHz a 20,2 GHz (enlace de descida);
+3.7.2. Banda Ka militar: denominação correspondente às faixas de frequências de 30 GHz a 31 GHz (enlace de subida) e 20,2 GHz a 21,2 GHz (enlace de descida);
+3.8. Bandas Q/V: denominação correspondente às faixas de frequências de 42,5 GHz a 43,5 GHz, 47,2 GHz a 50,2 GHz e 50,4 GHz a 52,4 GHz (enlace de subida) e de 37,5 GHz a 42,5 GHz (enlace de descida);
+3.9. Céu claro: condição de propagação na qual não se considera o efeito de atenuação causado por chuva e por nuvens;
+3.10. e.i.r.p. (do inglês, equivalent isotropically radiated power): potência equivalente isotropicamente radiada;
+3.11. epfd (do inglês, equivalent power flux-density): densidade de fluxo de potência equivalente que corresponde à soma da contribuição de todas as estações transmissoras de uma mesma rede de satélites, considerando o apontamento da antena da estação receptora;
+3.12. epfd agregada: densidade de fluxo de potência equivalente agregada que corresponde à soma da contribuição de todas as estações de diversas redes de satélites operando simultaneamente;
+3.13. Enlace de descida: enlace de radiocomunicação no sentido do satélite para estação terrena receptora;
+3.14. Enlace de subida: enlace de radiocomunicação no sentido da estação terrena transmissora para o satélite;
+3.15. Estação terrena: estação de radiocomunicação que se comunica com satélites ou, ainda, com outras estações terrenas por meio de satélites;
+3.16. Estação terrena em plataforma móvel: estação terrena instalada em uma estrutura móvel marítima, aeronáutica ou terrestre, que se comunica com satélites que operem em faixas de radiofrequências atribuídas ao serviço fixo por satélite;
+3.17. Interferência inaceitável: interferência que esteja acima dos limites permitidos ou que, mesmo observados os limites e métodos aplicáveis, degrade significativamente a operação de serviços de radiocomunicação regularmente autorizados.
+3.18. Modulação analógica: processo pelo qual alguma característica da onda portadora (frequência, fase, amplitude ou combinação destas) é variada de acordo com um sinal analógico (sinal contínuo que varia no tempo);
+3.19. Modulação digital: processo pelo qual alguma característica da onda portadora (frequência, fase, amplitude ou combinação destas) é variada de acordo com um sinal digital (sinal constituído de pulsos codificados ou de estados derivados de informação quantizada);
+3.20. pfd (do inglês, power flux-density): densidade de fluxo de potência;
+3.21. pfd agregada: densidade de fluxo de potência agregada que corresponde à soma da contribuição de todas as estações de uma ou mais redes de satélites, conforme o caso.
+4. CONDIÇÕES GERAIS
+4.1. As operadoras de satélite deverão envidar os devidos esforços para utilizar os recursos de órbita e espectro de forma racional, eficiente e econômica, observando e aplicando os mais recentes avanços tecnológicos referentes à operação de satélites.
+4.2. O apontamento das antenas das estações terrenas deve ser realizado de tal maneira que a direção de máxima radiação da antena, referente à polarização principal da onda radiada, esteja alinhada à direção do satélite associado.
+4.3. Para fins de coordenação, as operadoras de satélites envolvidas devem trocar todas as informações técnicas necessárias para elaboração e avaliação apropriada das propostas técnicas.
+4.4. Não é permitido o uso de modulação analógica nas faixas de frequências das bandas Ku, Ka e Q/V, exceto para fins de telemetria, rastreio, comando e durante os testes em órbita.
+4.5. O uso das faixas de radiofrequências atribuídas aos serviços de radiocomunicação por satélite, quando associado a serviços de telecomunicações de interesse restrito compatíveis, pode se dar sob a canalização mais adequada à aplicação pretendida, desde que sejam observados os limites inferior e superior da faixa de radiofrequências autorizada. (Incluído pelo Ato nº 11.190, de 31 de julho de 2024)
+5. CRITÉRIOS E REQUISITOS TÉCNICOS PARA COORDENAÇÃO
+5.1. Sistemas de Satélites Geoestacionários
+5.1.1. Para fins de coordenação de sistemas de satélites geoestacionários com outros sistemas de satélites geoestacionários que tenham prioridade de coordenação no âmbito nacional, é requerido acordo de coordenação com as operadoras responsáveis por satélites geoestacionários dentro do arco de coordenação estabelecido na Tabela 1.
+Tabela 1 - Arco de coordenação
+Serviço de Radiocomunicação associado
+Faixa de frequência
+Arco de coordenação
+(em longitude)
+Serviço Fixo por Satélite
+Faixas de frequências abaixo de 3,4 GHz
+Não se aplica 1
+Faixas de frequências entre 3,4 GHz e 8,4 GHz
+± 6°
+Faixas de frequências acima de 8,4 GHz
+± 4°
+Serviço de Radiodifusão por Satélite
+Faixas de frequências abaixo de 12,2 GHz
+Não se aplica 1
+Faixas de frequências acima de 12,2 GHz
+± 6°
+Serviço Móvel por Satélite
+Todas as faixas de frequências
+Não se aplica
+1 Para fins de coordenação no âmbito nacional de satélites associados a esse serviço, nessas faixas de frequências, não se aplica o critério de arco de coordenação, sendo requerido acordo de coordenação com todas as operadoras de satélite que tenham prioridade de coordenação no âmbito nacional, independente da posição orbital.
+5.1.2. Para fins de coordenação de sistemas de satélites geoestacionários com sistemas de satélites não-geoestacionários que tenham prioridade de coordenação no âmbito nacional, é requerido acordo de coordenação com as operadoras responsáveis por sistemas de satélites não-geoestacionários nas faixas de frequências sujeitas à disposição 9.13 do Regulamento de Rádio da União Internacional de Telecomunicações, não sendo necessária a apresentação de acordo de coordenação para as demais faixas de frequências.
+5.2. Sistemas de Satélites Não-geoestacionários
+5.2.1. As regras estabelecidas pelo § 8º do artigo 10 do Regulamento Geral de Exploração de Satélites se aplicam às faixas de frequências sujeitas à disposição 22.2 do Regulamento de Rádio da União Internacional de Telecomunicações.
+5.2.2. Para fins de coordenação de sistemas de satélites não-geoestacionários com sistemas de satélites geoestacionários que tenham prioridade de coordenação no âmbito nacional, é requerido acordo de coordenação com as operadoras responsáveis por sistemas de satélites não-geoestacionários nas faixas de frequências sujeitas à disposição 9.12A do Regulamento de Rádio da União Internacional de Telecomunicações, não sendo necessária a apresentação de acordo de coordenação para as demais faixas de frequências.
+5.2.3. Para fins de coordenação de sistemas de satélites não-geoestacionários com outros sistemas de satélites não-geoestacionários é requerido acordo de coordenação com as operadoras responsáveis por sistemas de satélites que tenham prioridade de coordenação no âmbito nacional.
+5.2.4. Na hipótese de ser detectada a existência de interferência agregada em satélites geoestacionários, proveniente de sinais de interferência oriundos de diferentes sistemas de satélites não-geoestacionários, as operadoras dos sistemas de satélites não-geoestacionários devem cooperar mutuamente, adotando as medidas técnicas necessárias para eliminar a interferência.
+5.3. Coordenação Internacional de Estações Terrenas
+5.3.1. A operação de estações terrenas em plataformas móveis marítimas nas faixas de frequências de 5.925 MHz a 6.425 MHz, de 14 GHz a 14,5 GHz e de 27,5 GHz a 29,5 GHz, a distâncias inferiores a 300 km, 125 km e 70 km, respectivamente, do ponto da costa definido pela marca de maré baixa oficialmente reconhecida por outros Estados costeiros está sujeita à obtenção de acordo de coordenação específico com as Administrações de tais Estados costeiros.
+5.3.1. A operação de estações terrenas em plataformas móveis está sujeita à obtenção de acordo de coordenação específico com outras administrações nas situações descritas nos subitens abaixo. (Redação dada pelo Ato nº 18530, de 30 de novembro de 2025)
+5.3.1.1. Para estações terrenas em plataformas móveis marítimas, deve ser obtido acordo de coordenação específico com as Administrações de Estados costeiros, quando a operação se der a distâncias inferiores aos seguintes limites, medidas a partir do ponto da costa definido pela marca de maré baixa oficialmente reconhecida por outros Estados costeiros: (Incluído pelo Ato nº 18530, de 30 de novembro de 2025)
+I – 300 km, para a faixa de 5.925 MHz a 6.425 MHz;
+II – 158 km, para a faixa de 12,75 GHz a 13,25 GHz;
+III – 125 km, para a faixa de 14 GHz a 14,5 GHz;
+IV – 70 km, para a faixa de 27,5 GHz a 29,5 GHz.
+5.3.1.2. Para estações terrenas em plataformas móveis em terra, deve ser obtido acordo de coordenação específico com outras Administrações, quando a operação se der a distâncias inferiores aos seguintes limites, medidas a partir da fronteira com o território de outras administrações: (Incluído pelo Ato nº 18530, de 30 de novembro de 2025)
+I – 125 km, para a faixa de 14 GHz a 14,5 GHz;
+II – 70 km, para a faixa de 27,9 GHz a 28,4 GHz.
+5.3.2. A operação de estações terrenas em plataformas móveis aeronáuticas nas faixas de frequências de 27,5 GHz a 29,5 GHz, dentro do território de outras Administrações, está sujeita à obtenção de acordo de coordenação específico com as Administrações envolvidas.
+5.3.3. A operação de estações terrenas do serviço fixo por satélite na faixa de frequências de 14,5 GHz a 14,75 GHz, a distâncias inferiores a 200 km das fronteiras de outras Administrações está sujeita à obtenção de acordo de coordenação específico com estas Administrações.
+6. PARÂMETROS E REQUISITOS TÉCNICOS E OPERACIONAIS ESPECÍFICOS
+6.1. Características técnico-operacionais dos satélites e das estações terrenas associadas
+6.1.1. O satélite geoestacionário deve ser mantido com uma precisão de ± 0,05° em relação à posição orbital nominal, salvo quando autorizado pela Anatel.
+6.1.2. Quando do final da vida útil, deve-se promover a retirada dos satélites geoestacionários brasileiros para uma órbita com perigeu não inferior a 200 Km acima da órbita de satélites geoestacionários.
+6.1.3. A operação dos sistemas de satélites não-geoestacionários deve observar a separação angular adequada com relação ao arco de satélites geoestacionários de forma a não operar na zona orbital definida por tal ângulo de separação, a fim de evitar interferências inaceitáveis sobre os sistemas de satélites geoestacionários.
+6.1.4. As características de desempenho das antenas utilizadas pelas estações terrenas devem, preferencialmente, ser iguais ou melhores do que aquelas estabelecidas pelas Recomendações da União Internacional de Telecomunicações referentes às características mínimas de radiação de antenas.
+6.1.5. A operação de sistemas de comunicação via satélite deve atender os requisitos estabelecidos nas Resoluções e artigos do Regulamento de Rádio da União Internacional de Telecomunicações, em especial aqueles das Resoluções 76, 739, 750, 769, 770 e dos Artigos 21 e 22 do RR.
+6.1.5. A operação de sistemas de comunicação via satélite deve atender aos requisitos e limites estabelecidos nas Resoluções e artigos do Regulamento de Rádio da União Internacional de Telecomunicações, observadas as regras específicas previstas na regulamentação nacional. (Redação dada pelo Ato nº 18530, de 30 de novembro de 2025)
+6.2. Operação de sistemas de comunicação via satélite nas faixas de frequências da banda L
+6.2.1. Na faixa de frequências de 1.610 MHz a 1.626,5 MHz, estações terrenas móveis associadas a satélites do serviço móvel por satélite ou do serviço de radiodeterminação por satélite não devem exceder a densidade espectral de e.i.r.p. de -15 dBW/4 kHz, nas porções da faixa onde haja uso de dispositivos eletrônicos para auxílio à navegação aérea instalados a bordo de aeronaves, no solo ou em satélites.
+6.2.1.1. Nas porções da faixa de frequências onde os mencionados dispositivos eletrônicos para auxílio à navegação não estejam operando, estações terrenas móveis não devem exceder a densidade espectral de e.i.r.p. de -3 dBW/4 kHz.
+6.2.2. Na faixa de frequências de 1.668 MHz a 1.670 MHz, estações terrenas móveis de uma rede do serviço móvel por satélite não devem exceder o limite de densidade de fluxo de potência agregada de -181 dB(W/m2) em 10 MHz e de -194 dB(W/m2) em 20 kHz sobre qualquer estação de radioastronomia, por mais de 2% do tempo em um período de integração de 2000 segundos.
+6.3. Operação de sistemas de comunicação via satélite nas faixas de frequências da banda C
+6.3.1. Satélites geoestacionários não devem exceder o limite de densidade espectral de e.i.r.p. no enlace de descida de -29 dBW/Hz.
+6.3.2. Estações terrenas transmissoras associadas a satélites geoestacionários do serviço fixo por satélite deverão atender as seguintes condições:
+a) O diâmetro nominal das antenas das estações terrenas não deve ser inferior a 1,8 m;
+b) A densidade espectral de e.i.r.p. fora do eixo da antena da estação terrena, na polarização principal, para condição de céu claro, não deve exceder o seguinte limite:
+d e.i.r.p. (θ) = - 16 - 25 log (θ) dBW/Hz, para 2,17° ≤ θ < 36°
+= - 55 dBW/Hz, para 36° ≤ θ < 180°
+sendo que:
+θ = ângulo, expresso em graus, numa direção qualquer do espaço, medido a partir da direção de ganho máximo da antena referente à polarização principal da onda radiada.
+6.3.2.1. O limite estabelecido na alínea b) do Item 6.3.2 deve ser atendido, fora do eixo do lóbulo principal, na direção perpendicular ao arco de satélites geoestacionários, até 3°, conforme ilustrado na Figura 1.
+6.3.2.2. A discriminação de ganho de polarização cruzada no eixo deve ser de, no mínimo, 25 dB.
+6.3.2.3. A densidade espectral de e.i.r.p. de polarização cruzada, fora do eixo, deve ser, no mínimo, 6 dB abaixo do limite estabelecido no item 6.3.2.
+6.3.3. Excepcionalmente, podem ser usadas antenas com diâmetro nominal inferior a 1,8 m, desde que não seja solicitada maior proteção do que aquela decorrente do uso de antenas com diâmetro nominal maior ou igual a 1,8 m ou causada interferência prejudicial em relação a outros sistemas de comunicação via satélite.
+6.3.4. Os limites operacionais estabelecidos nos itens 6.3.1 e 6.3.2 poderão ser excedidos, desde que haja acordo de coordenação com as exploradoras de satélites que tenham prioridade de coordenação no âmbito nacional, sem a possibilidade de aplicação da prerrogativa de autorização sob a condição de não reclamar proteção e de não causar interferência prejudicial.
+6.3.5. O controle automático de potência pode ser usado para aumentar a densidade espectral de e.i.r.p. das estações terrenas para compensar a atenuação de chuva, desde que a densidade de fluxo de potência no satélite associado à estação terrena em questão não exceda o valor resultante da densidade de fluxo de potência correspondente ao limite de densidade espectral de e.i.r.p. para condições de céu claro.
+6.4. Operação de sistemas de comunicação via satélite nas faixas de frequências das bandas Ku convencional e Ku do Apêndice 30B
+6.4.1. Satélites geoestacionários não devem exceder o limite de densidade espectral de e.i.r.p. no enlace de descida de -22 dBW/Hz.
+6.4.2. Estações terrenas transmissoras associadas a satélites geoestacionários do serviço fixo por satélite não devem exceder o seguinte limite de densidade espectral de e.i.r.p. fora do eixo da antena da estação terrena, na polarização principal, para condição de céu claro:
+d e.i.r.p. (θ) = - 19 - 25 log (θ) dBW/Hz, para 2,17° ≤ θ < 36°
+= - 58 dBW/Hz, para 36° ≤ θ < 180°
+sendo que:
+θ = ângulo, expresso em graus, numa direção qualquer do espaço, medido a partir da direção de ganho máximo da antena referente à polarização principal da onda radiada.
+6.4.2.1. O limite estabelecido no Item 6.4.2 deve ser atendido, fora do eixo do lóbulo principal, na direção perpendicular ao arco de satélites geoestacionários, até 3°, conforme ilustrado na Figura 1.
+6.4.2.2. A discriminação de ganho de polarização cruzada no eixo deve ser de, no mínimo, 25 dB.
+6.4.2.3. A densidade espectral de e.i.r.p. de polarização cruzada, fora do eixo, deve ser, no mínimo, 10 dB abaixo do limite estabelecido no item 6.4.2.
+6.4.3. Os limites operacionais estabelecidos nos itens 6.4.1 e 6.4.2 poderão ser excedidos, desde que haja acordo de coordenação com as exploradoras de satélites que tenham prioridade de coordenação no âmbito nacional, sem a possibilidade de aplicação da prerrogativa de autorização sob a condição de não reclamar proteção e de não causar interferência prejudicial.
+6.4.4. Na faixa de frequências de 13,75 GHz a 14 GHz, estações terrenas:
+a) associadas a sistemas de satélite geoestacionários do serviço fixo por satélite devem possuir diâmetro mínimo de 1,2 m;
+b) associadas a sistemas de satélites não-geoestacionários do serviço fixo por satélite devem possuir diâmetro mínimo de 4,5 m;
+c) com diâmetro menor do que 4,5 m não devem exceder o limite de densidade de fluxo de potência de -115 dB(W/m2) em 10 MHz a 36 m acima do ponto da costa definido pela marca de maré baixa, oficialmente reconhecida por cada Estado costeiro, e a 3 m acima do nível do solo na fronteira com administrações que utilizem radares móveis terrestres, por mais de 1% do tempo.
+6.4.5. Na faixa de frequências de 13,77 GHz a 13,78 GHz, estações terrenas associadas a sistemas de satélites geoestacionários do serviço fixo por satélite:
+a) com diâmetro maior ou igual a 1,2 m e menor que 4,5 m não devem exceder o limite de densidade espectral de e.i.r.p. de 4,7D + 28 dB(W/40 kHz), onde D é o diâmetro da antena em metros;
+b) com diâmetro maior ou igual a 4,5 m e menor que 31,9 m não devem exceder o limite de densidade espectral de e.i.r.p. de 49,2 + 20.log(D/4,5) dB(W/40 kHz), onde D é o diâmetro da antena em metros;
+c) com diâmetro maior ou igual a 31,9 m não devem exceder o limite de densidade espectral de e.i.r.p. de 66,2 dB(W/40 kHz);
+d) com diâmetro maior ou igual a 4,5 m, não devem exceder o limite de densidade espectral de e.i.r.p de 56,2 dB(W/4 kHz) para emissões com largura de faixa menor que 40 kHz.
+6.4.6. Na faixa de frequências de 13,772 GHz a 13,778 GHz, estações terrenas associadas a sistemas de satélites não-geoestacionários do serviço fixo por satélite não devem exceder o limite de densidade espectral de e.i.r.p. de 51 dBW/6 MHz.
+6.4.7. Na faixa de frequências de 14,5 GHz a 14,75 GHz, as estações terrenas transmissoras associadas ao serviço fixo por satélite que não sejam para enlaces de alimentação do serviço de Radiodifusão por Satélite devem possuir antenas com diâmetro mínimo de 6 m e não devem exceder o limite de densidade espectral de potência de -44,5 dBW/Hz na entrada da antena.
+6.4.8. Na faixa de frequências de 14,5 GHz a 14,75 GHz, as estações terrenas transmissoras associadas ao serviço fixo por satélite que não sejam para enlaces de alimentação do serviço de Radiodifusão por Satélite não devem exceder o limite de densidade de fluxo de potência de -151,5 dB(W/m2) em 4 kHz, produzida em todas as altitudes de 0 a 19.000 m acima do nível do mar, a uma distância de 22 km do ponto da costa definido pela marca de maré baixa oficialmente reconhecida por cada Estado costeiro.
+6.4.9. O controle automático de potência pode ser usado para aumentar a densidade espectral de e.i.r.p. das estações terrenas para compensar a atenuação de chuva, desde que a densidade de fluxo de potência no satélite associado à estação terrena em questão não exceda o valor resultante da densidade de fluxo de potência correspondente ao limite de densidade espectral de e.i.r.p. para condições de céu claro.
+6.5. Operação de sistemas de comunicação via satélite nas faixas de frequências da banda Ku do Apêndice 30-30A
+6.5.1. Satélites geoestacionários não devem exceder o limite de densidade espectral de e.i.r.p. no enlace de descida de -21 dBW/Hz;
+6.5.2. O limite operacional estabelecido no item 6.5.1 poderá ser excedido, desde que haja acordo de coordenação com as exploradoras de satélites que tenham prioridade de coordenação no âmbito nacional, sem a possibilidade de aplicação da prerrogativa de autorização sob a condição de não reclamar proteção e de não causar interferência prejudicial.
+6.5.3. Na faixa de frequências de 17,3 GHz a 17,7 GHz, consignações (assignments) do serviço fixo por satélite (espaço-Terra) de uma rede de satélite geoestacionário não devem exceder, sob condições de propagação de espaço livre, o limite de densidade de fluxo de potência de -98 dB(W/(m2*27 MHz)), nos pontos da órbita de satélites geoestacionários com ângulos geocêntricos de separação orbital entre 152,6° e 162,6°. (Incluído pelo Ato nº 18530, de 30 de novembro de 2025)
+6.6. Operação de sistemas de comunicação via satélite nas faixas de frequências da banda Ka convencional
+6.6.1. Satélites geoestacionários não devem exceder o limite de densidade espectral de e.i.r.p. no enlace de descida de -16,5 dBW/Hz;
+6.6.2. Estações terrenas transmissoras associadas a satélites geoestacionários do serviço fixo por satélite não devem exceder os seguintes limites de densidade espectral de e.i.r.p. fora do eixo da antena da estação terrena, na polarização principal, para condição de céu claro:
+a) quando se tratar da estação terrena de acesso:
+d e.i.r.p. (θ) = - 35 - 25 log (θ) dBW/Hz, para 2,17° ≤ θ < 48°
+= - 74dBW/Hz, para 48° ≤ θ < 180°
+b) quando se tratar da estação terrena do usuário:
+d e.i.r.p. (θ) = - 29 - 25 log (θ) dBW/Hz, para 2,17° ≤ θ < 48°
+= - 68 dBW/Hz, para 48° ≤ θ < 180°
+sendo que:
+θ = ângulo, expresso em graus, numa direção qualquer do espaço, medido a partir da direção de ganho máximo da antena referente à polarização principal da onda radiada.
+6.6.2.1. Excepcionalmente, para 7° < θ ≤ 48°, o limite de densidade estabelecido na alínea b) poderá ser excedido em até 3 dB.
+6.6.2.2. Os limites estabelecidos no Item 6.6.2 devem ser atendidos, fora do eixo do lóbulo principal, na direção perpendicular ao arco de satélites geoestacionários, até 3°, conforme ilustrado na Figura 1.
+6.6.2.3. A discriminação de ganho de polarização cruzada no eixo deve ser de, no mínimo, 25 dB.
+6.6.2.4. A densidade espectral de e.i.r.p. de polarização cruzada, entre os ângulos 2,17° e 7° em relação ao eixo do lóbulo principal, deve ser, no mínimo, 7 dB abaixo do limite estabelecido no item 6.6.2.
+6.6.3. Os limites operacionais estabelecidos nos itens 6.6.1 e 6.6.2 poderão ser excedidos, desde que haja acordo de coordenação com as exploradoras de satélites que tenham prioridade de coordenação no âmbito nacional, sem a possibilidade de aplicação da prerrogativa de autorização sob a condição de não reclamar proteção e de não causar interferência prejudicial.
+6.6.4. O controle automático de potência pode ser usado para aumentar a densidade espectral de e.i.r.p. das estações terrenas para compensar a atenuação de chuva, desde que a densidade de fluxo de potência no satélite associado à estação terrena em questão não exceda o valor resultante da densidade de fluxo de potência correspondente ao limite de densidade espectral de e.i.r.p. para condições de céu claro.
+6.6.5. Na faixa de frequências de 19,3 GHz a 19,7 GHz, estações espaciais do serviço entre satélites, operando de acordo com a Resolução 679 (CMR-23), não devem exceder o limite de densidade de fluxo de potência de -140 dB(W/m2) em qualquer 1 MHz, produzida na superfície da Terra para todos os ângulos de chegada, dentro de 150 km de distância de estações de enlaces de alimentação de redes de satélites não-geoestacionários do serviço móvel por satélite que estejam registradas no Registro Mestre Internacional de Frequências da UIT. (Incluído pelo Ato nº 18530, de 30 de novembro de 2025)
+6.7. Operação de sistemas de comunicação via satélite nas faixas de frequências das bandas Q/V
+6.7.1. Na faixa de frequências de 42,5 GHz a 43,5 GHz, satélites não-geoestacionários associados ao serviço fixo por satélite ou ao serviço de radiodifusão por satélite, operando na faixa de frequências adjacente de 42 GHz a 42,5 GHz, não devem exceder, por mais de 2% do tempo, os limites de densidade de fluxo de potência equivalente (epfd) de:
+a) -230 dB(W/m2) em 1 GHz e -246 dB(W/m2) em 500 kHz sobre estações de radioastronomia registradas como telescópios de refletor único;
+b) -209 dB(W/m2) em 500 kHz sobre estações de radioastronomia registradas como estações de interferometria de longa linha de base.
+6.7.2. Na faixa de frequências de 42,5 GHz a 43,5 GHz, satélites geoestacionários associados ao serviço fixo por satélite ou ao serviço de radiodifusão por satélite, operando na faixa de frequências adjacente de 42 GHz a 42,5 GHz, não devem exceder os limites de densidade de fluxo de potência de:
+a) -137 dB(W/m2) em 1 GHz e -153 dB(W/m2) em 500 kHz sobre estações de radioastronomia registradas como telescópios de refletor único;
+b) -116 dB(W/m2) em 500 kHz sobre estações de radioastronomia registradas como estações de interferometria de longa linha de base.
+6.7.3. Na faixa de frequências de 51,4 GHz a 52,4 GHz, estações terrenas de acesso associadas a sistemas de satélites geoestacionários do serviço fixo por satélite devem possuir antenas com diâmetro mínimo de 2,4 m.
+6.7.4. Na faixa de frequências de 37,5 GHz a 38 GHz, sistemas de satélites não-geoestacionários do serviço fixo por satélite, operando com altitude de apogeu entre 407 km e 2000 km, não devem exceder o limite de densidade de e.i.r.p. de emissões indesejáveis de -21 dB(W/100 MHz), por estação espacial, para ângulos acima de 65° a partir do ponto da superfície terrestre que está diretamente abaixo da estação espacial do serviço fixo por satélite na faixa de frequências de 36 GHz a 37 GHz, a fim de proteger o serviço de exploração da Terra por satélite (passivo) operando nessa faixa. (Incluído pelo Ato nº 18530, de 30 de novembro de 2025)
+6.8. Operação de sistemas de comunicação via satélite em outras faixas de frequências
+6.8.1. Na faixa de frequências de 137,025 MHz a 138 MHz, satélites não-geoestacionários associados ao serviço de operação espacial, em missões de curta duração, não devem exceder o limite de densidade de fluxo de potência de -140 dB(W/m2) em 4 kHz, na superfície da Terra.
+6.8.2. Na faixa de frequências de 148 MHz a 149,9 MHz, estações terrenas móveis:
+a) não podem transmitir em uma mesma radiofrequência que esteja sendo ativamente utilizada por estações dos serviços fixo ou móvel;
+b) não podem transmitir por mais de 1% do tempo em qualquer período de 15 minutos;
+c) que não tenham capacidade de evitar o uso de radiofrequências ativamente em uso por estações dos serviços fixo ou móvel, não devem exceder o limite de densidade espectral de potência de -16 dB(W/4 kHz) e não devem transmitir por mais de 0,25% do tempo em qualquer período de 15 minutos;
+d) não devem realizar transmissões com duração superior a 450 ms, sendo que transmissões consecutivas de uma mesma estação terrena móvel, numa mesma faixa, devem estar separadas, no mínimo, por um período de 15 segundos.
+6.8.3. Na faixa de frequências de 399,9 MHz a 400,05 MHz, estações terrenas associadas ao serviço móvel por satélite não devem exceder a e.i.r.p. de 5 dBW em toda a faixa de frequências e em qualquer faixa de 4kHz.
+6.8.4. Na faixa de frequências de 401 MHz a 403 MHz, estações terrenas associadas aos serviços de meteorologia por satélite e exploração da Terra por satélite não devem exceder a e.i.r.p. de:
+a) 22 dBW em toda a faixa de frequências e em qualquer faixa de 4kHz, no caso de estações terrenas comunicando-se com satélites geoestacionários ou satélites não-geoestacionários em órbitas com apogeu acima de 35.786 km;
+b) 7 dBW em toda a faixa de frequências e em qualquer faixa de 4kHz, no caso de estações terrenas comunicando-se com satélites não-geoestacionários em órbitas com apogeu abaixo de 35.786 km.
+6.8.5. Na faixa de frequências de 5.030 MHz a 5.150 MHz, satélites associados a uma rede do serviço de radionavegação por satélite, operando na faixa de frequências adjacente de 5.010 MHz a 5.030 MHz, não devem exceder o limite de densidade de fluxo de potência agregada de -124,5 dB(W/m2) em 150 kHz, na superfície da Terra.
+6.8.6. Na faixa de frequências de 5.150 MHz a 5.216 MHz, satélites associados ao serviço de radiodeterminação por satélite não devem exceder o limite de densidade de fluxo de potência de -159 dB(W/m2) em 4 kHz, na superfície da Terra.
+6.8.7. Na faixa de frequências de 5.150 MHz a 5.216 MHz, satélites não-geoestacionários associados ao serviço fixo por satélite não devem exceder o limite de densidade de fluxo de potência de -164 dB(W/m2) em 4 kHz, na superfície da Terra.
+6.8.8. Na faixa de frequências de 35,5 GHz a 36 GHz, sensores ativos de satélites associados aos serviços de exploração da Terra por satélite e pesquisa espacial não devem exceder o limite de densidade de fluxo de potência média na superfície da Terra de -73 dB(W/m2), em toda a faixa em questão, para qualquer ângulo superior a 0,8° a partir do centro do feixe.
+6.9. Operação de Estações Terrenas em Plataforma Móvel (Revogado pelo Ato nº 18530, de 30 de novembro de 2025)
+6.9.1. Estações terrenas em plataforma móvel deverão atender os parâmetros e critérios técnico-operacionais estabelecidos nos itens anteriores, de acordo com as faixas de frequências de operação. (Revogado pelo Ato nº 18530, de 30 de novembro de 2025)
+6.9.2. Estações terrenas em plataforma móvel devem possuir capacidade de rastreamento e manutenção do apontamento para o satélite geoestacionário associado e capacidade operacional que permita à prestadora responsável pela estação a interrupção de emissões de radiofrequências remotamente. (Revogado pelo Ato nº 18530, de 30 de novembro de 2025)
+6.9.3. Na faixa de frequências de 5.925 MHz a 6.425 MHz, as estações terrenas em plataformas móveis marítimas devem possuir antenas com diâmetro de no mínimo 2,4 m, e não devem exceder o limite de densidade espectral de e.i.r.p. de 17 dBW/MHz na direção do horizonte. (Revogado pelo Ato nº 18530, de 30 de novembro de 2025)
+6.9.3.1. Podem ser usadas antenas com diâmetro de no mínimo 1,2 m, desde que a operação das estações não cause interferência em nível superior àquele decorrente do uso de antenas de 2,4 m. (Revogado pelo Ato nº 18530, de 30 de novembro de 2025)
+6.9.4. Na faixa de frequências de 14 GHz a 14,5 GHz, as estações terrenas em plataformas móveis​ marítimas devem possuir antenas com diâmetro de no mínimo 1,2 m, e não devem exceder o limite de densidade espectral de e.i.r.p. de 12,5 dBW/MHz na direção do horizonte. (Revogado pelo Ato nº 18530, de 30 de novembro de 2025)
+6.9.4.1. Podem ser usadas antenas com diâmetro de no mínimo 60 cm, desde que a operação das estações não cause interferência em nível superior àquele decorrente do uso de antenas de 1,2 m. (Revogado pelo Ato nº 18530, de 30 de novembro de 2025)
+6.9.5. Na faixa de frequências de 27,5 GHz a 27,9 GHz e de 28,4 GHz a 29,5 GHz, as estações terrenas em plataformas móveis​ marítimas não devem exceder o limite de densidade de fluxo de potência de -109 dB(W/m2) em 14 MHz produzida na altitude de 20 m acima do nível do mar, no ponto da costa definido pela marca de maré baixa oficialmente reconhecida pelo Estado brasileiro. (Revogado pelo Ato nº 18530, de 30 de novembro de 2025)
+6.9.5.1. Na faixa de frequências de 27,5 GHz a 29,5 GHz, as estações terrenas em plataformas móveis​ marítimas não devem exceder o limite de densidade espectral de e.i.r.p. de 24,44 dBW/14 MHz na direção do horizonte para outros Estados costeiros, quando em distâncias inferiores a 70 km do ponto da costa definido pela marca de maré baixa oficialmente reconhecida pelo Estado costeiro, salvo em casos em que houver acordo de coordenação internacional que especifique outros limites operacionais. (Revogado pelo Ato nº 18530, de 30 de novembro de 2025)
+6.9.6. Na faixa de frequências de 27,5 GHz a 27,9 GHz e de 28,4 GHz a 29,5 GHz, as estações terrenas em plataformas móveis aeronáuticas, quando em linha de visada para o território brasileiro, devem atender os limites de densidade de fluxo de potência na superfície da Terra estabelecidos na Tabela 2. (Revogado pelo Ato nº 18530, de 30 de novembro de 2025)
+6.9.6.1. Na faixa de frequências de 27,5 GHz a 29,5 GHz, as estações terrenas em plataformas móveis aeronáuticas, quando em linha de visada para o território de outra Administração, devem atender os limites de densidade de fluxo de potência na superfície da Terra estabelecidos na Tabela 2, salvo em casos em que houver acordo de coordenação internacional que especifique outros limites operacionais. (Revogado pelo Ato nº 18530, de 30 de novembro de 2025)
+Tabela 2 - Limites de pfd para estações terrenas em plataformas móveis aeronáuticas
+Limite de densidade de fluxo de potência
+dB(W/m2) em 14 MHz
+Ângulo de chegada da emissão, em graus, acima do horizonte
+- 124,7
+0° ≤ θ ≤ 0,01°
+-120,9 + 1,9 ∙ log(θ)
+0,01° < θ ≤ 0,3°
+-116,2 + 11 ∙ log(θ)
+0,3° < θ ≤ 1°
+-116,2 + 18 ∙ log(θ)
+1° < θ ≤ 2°
+-117,9 + 23.7 ∙ log(θ)
+2° < θ ≤ 8°
+-96,5
+8° < θ ≤ 90°
+6.9.7. Para a operação de estações terrenas em plataformas móveis na faixa de frequências de 29,5 GHz a 30 GHz, não se aplicam os limites dos itens 6.9.5 e 6.9.6, devendo ser observado o disposto nos demais itens aplicáveis a esta faixa de frequências. (Revogado pelo Ato nº 18530, de 30 de novembro de 2025)
+7. DISPOSIÇÕES FINAIS
+7.1. Os casos omissos e as excepcionalidades serão dirimidos pela Gerência competente pela administração dos recursos de órbita e espectro de radiofrequências.
+7. OPERAÇÃO DE ESTAÇÕES TERRENAS EM PLATAFORMA MÓVEL (Redação dada pelo Ato nº 18530, de 30 de novembro de 2025)
+7.1. Características Técnico-Operacionais das Estações Terrenas em Plataforma Móvel (Redação dada pelo Ato nº 18530, de 30 de novembro de 2025)
+7.1.1. Estações terrenas em plataforma móvel associadas ao serviço fixo por satélite devem possuir capacidade de rastreamento e manutenção do apontamento para a estação espacial correspondente e ter capacidade operacional que permita a interrupção de emissões de radiofrequências remotamente. (Incluído pelo Ato nº 18530, de 30 de novembro de 2025)
+7.1.2. Estações terrenas em plataforma móvel podem realizar transmissões apenas nas faixas indicadas nos subitens abaixo e receber sinais nas faixas devidamente atribuídas ao serviço fixo por satélite, para as quais haja destinação correspondente. (Incluído pelo Ato nº 18530, de 30 de novembro de 2025)
+7.1.2.1. Estações terrenas em plataformas móveis marítimas podem realizar transmissões na faixa de frequências de 5.925 MHz a 6.425 MHz para comunicação com satélites geoestacionários. (Incluído pelo Ato nº 18530, de 30 de novembro de 2025)
+7.1.2.2. Estações terrenas em plataformas móveis marítimas ou aeronáuticas podem realizar transmissões na faixa de frequências de 12,75 GHz a 13,25 GHz para comunicação com satélites geoestacionários. (Incluído pelo Ato nº 18530, de 30 de novembro de 2025)
+7.1.2.3. Estações terrenas em plataformas móveis marítimas, aeronáuticas ou em terra podem realizar transmissões na faixa de frequências de 14 GHz a 14,5 GHz para comunicação com satélites geoestacionários ou não geoestacionários. (Incluído pelo Ato nº 18530, de 30 de novembro de 2025)
+7.1.2.4. Estações terrenas em plataformas móveis marítimas ou aeronáuticas podem realizar transmissões na faixa de frequências de 27,5 GHz a 30 GHz para comunicação com satélites geoestacionários. (Incluído pelo Ato nº 18530, de 30 de novembro de 2025)
+7.1.2.5. Estações terrenas em plataformas móveis marítimas ou aeronáuticas podem realizar transmissões na faixa de frequências de 27,5 GHz a 29,1 GHz e de 29,5 GHz a 30 GHz para comunicação com satélites não geoestacionários. (Incluído pelo Ato nº 18530, de 30 de novembro de 2025)
+7.1.2.6. Estações terrenas em plataformas móveis em terra podem realizar transmissões na faixa de frequências de 27,9 GHz a 28,4 GHz e de 29,5 GHz a 30 GHz para comunicação com satélites geoestacionário ou não geoestacionários. (Incluído pelo Ato nº 18530, de 30 de novembro de 2025)
+7.1.3. Estações terrenas em plataforma móvel marítimas, aeronáuticas ou em terra não devem causar interferência prejudicial nem solicitar proteção de estações associadas a outros sistemas de radiocomunicação. (Incluído pelo Ato nº 18530, de 30 de novembro de 2025)
+7.1.3.1. Estações terrenas em plataforma móvel que causem interferência prejudicial devem ter sua operação imediatamente interrompida até a remoção da causa da interferência. (Incluído pelo Ato nº 18530, de 30 de novembro de 2025)
+7.1.4. Estações terrenas em plataforma móvel deverão atender os parâmetros e critérios técnico-operacionais estabelecidos nos itens anteriores, observados os requisitos específicos para cada frequência de operação e os acordos de coordenação firmados. (Incluído pelo Ato nº 18530, de 30 de novembro de 2025)
+7.2. Operação de Estações Terrenas em Plataforma Móvel nas faixas de frequências da banda C (Incluído pelo Ato nº 18530, de 30 de novembro de 2025)
+7.2.1. Na faixa de frequências de 5.925 MHz a 6.425 MHz, as estações terrenas em plataformas móveis marítimas devem possuir antenas com diâmetro de no mínimo 2,4 m, e não devem exceder os limites de e.i.r.p de 20,8 dBW e de densidade espectral de e.i.r.p. de 17 dBW/MHz, na direção do horizonte. (Incluído pelo Ato nº 18530, de 30 de novembro de 2025)
+7.2.1.1. Podem ser usadas antenas com diâmetro de no mínimo 1,2 m, desde que a operação das estações não cause interferência em nível superior àquele decorrente do uso de antenas de 2,4 m. (Incluído pelo Ato nº 18530, de 30 de novembro de 2025)
+7.3. Operação de Estações Terrenas em Plataforma Móvel nas faixas de frequências da banda Ku (Incluído pelo Ato nº 18530, de 30 de novembro de 2025)
+7.3.1. Na faixa de frequências de 12,75 GHz a 13,25 GHz: (Incluído pelo Ato nº 18530, de 30 de novembro de 2025)
+a) as estações terrenas em plataformas móveis​ marítimas não devem exceder o limite de densidade espectral de e.i.r.p. de 12,5 dBW/MHz na direção do horizonte, salvo em casos em que houver acordo de coordenação que especifique outros limites operacionais. (Incluído pelo Ato nº 18530, de 30 de novembro de 2025)
+b) as estações terrenas em plataformas móveis aeronáuticas devem atender os limites de densidade de fluxo de potência na superfície da Terra estabelecidos na Tabela 2, salvo em casos em que houver acordo de coordenação que especifique outros limites operacionais. (Incluído pelo Ato nº 18530, de 30 de novembro de 2025)
+Tabela 2 - Limites de pfd para estações terrenas em plataformas móveis aeronáuticas na banda Ku
+(Incluído pelo Ato nº 18530, de 30 de novembro de 2025)
+Altitude da aeronave
+Limite de densidade de fluxo de potência
+Ângulo de chegada da emissão, em graus, acima do horizonte
+Até 3 km
+- 123,5 dB(W/m2) em 1 MHz
+0° ≤ θ ≤ 5°
+-128,5 + θ dB(W/m2) em 1 MHz
+5° < θ ≤ 40°
+-88,5 dB(W/m2) em 1 MHz
+40° < θ ≤ 90°
+Acima de 3 km
+- 112 dB(W/m2) em 14 MHz
+0° ≤ θ ≤ 5°
+-117 + θ dB(W/m2) em 14 MHz
+5° < θ ≤ 40°
+-77 dB(W/m2) em 14 MHz
+40° < θ ≤ 90°
+7.3.1.1. Para proteção dos sistemas de satélites não geoestacionários, as estações terrenas em plataformas móveis​ marítimas e aeronáuticas operando na faixa de 12,75 GHz a 13,25 GHz não devem exceder a densidade de e.i.r.p. de: (Incluído pelo Ato nº 18530, de 30 de novembro de 2025)
+a) 49 dB(W/ MHz) com antenas com ganho máximo inferior a 38,5 dBi; (Incluído pelo Ato nº 18530, de 30 de novembro de 2025)
+b) 54 dB(W/1 MHz) com antenas com ganho máximo igual ou superior a 38,5 dBi, mas inferior a 45 dBi; (Incluído pelo Ato nº 18530, de 30 de novembro de 2025)
+c) 57,5 dB(W/1 MHz) com antenas com ganho máximo superior a 45 dBi. (Incluído pelo Ato nº 18530, de 30 de novembro de 2025)
+7.3.2. Na faixa de frequências de 14 GHz a 14,5 GHz: (Incluído pelo Ato nº 18530, de 30 de novembro de 2025)
+a) as estações terrenas em plataformas móveis​ marítimas não devem exceder os limites de e.i.r.p. de 16,3 dBW e de densidade espectral de e.i.r.p. de 12,5 dBW/MHz, na direção do horizonte, e devem possuir antenas com diâmetro de no mínimo 1,2 m. Podem ser usadas antenas com diâmetro mínimo de 60 cm, desde que a operação dessas estações não cause interferência em nível superior àquele decorrente do uso de antenas de 1,2 m. (Incluído pelo Ato nº 18530, de 30 de novembro de 2025)
+b) estações terrenas em plataformas móveis aeronáuticas devem atender os limites de densidade de fluxo de potência na superfície da Terra estabelecidos na Tabela 3, salvo em casos em que houver acordo de coordenação que especifique outros limites operacionais; (Incluído pelo Ato nº 18530, de 30 de novembro de 2025)
+Tabela 3 - Limites de pfd para estações terrenas em plataformas móveis aeronáuticas na banda Ku
+(Incluído pelo Ato nº 18530, de 30 de novembro de 2025)
+Limite de densidade de fluxo de potência
+dB(W/m2 ) em 1 MHz
+Ângulo de chegada da emissão, em graus, acima do horizonte
+- 132 + 0,5 ∙ θ
+θ ≤ 40°
+-112
+40° < θ ≤ 90°
+7.4. Operação de Estações Terrenas em Plataforma Móvel nas faixas de frequências da banda Ka (Incluído pelo Ato nº 18530, de 30 de novembro de 2025)
+7.4.1. Na faixa de 27,5 GHz a 29,5 GHz, observadas as disposições dos itens 7.1.1.4 e 7.1.1.5: (Incluído pelo Ato nº 18530, de 30 de novembro de 2025)
+a) as estações terrenas em plataformas móveis​ marítimas não devem exceder o limite de densidade espectral de e.i.r.p. de 24,44 dBW em 14 MHz na direção do horizonte, salvo em casos em que houver acordo de coordenação que especifique outros limites operacionais. (Incluído pelo Ato nº 18530, de 30 de novembro de 2025)
+b) as estações terrenas em plataformas móveis aeronáuticas devem atender os limites de densidade de fluxo de potência na superfície da Terra estabelecidos na Tabela 4, salvo em casos em que houver acordo de coordenação que especifique outros limites operacionais. (Incluído pelo Ato nº 18530, de 30 de novembro de 2025)
+Tabela 4 - Limites de pfd para estações terrenas em plataformas móveis aeronáuticas na banda Ka
+(Incluído pelo Ato nº 18530, de 30 de novembro de 2025)
+Altitude da aeronave
+Limite de densidade de fluxo de potência
+Ângulo de chegada da emissão, em graus, acima do horizonte
+Até 3 km
+- 136,2 dB(W/m2) em 1 MHz
+0° ≤ θ ≤ 0,01°
+-132,4 + 1,9 ∙ log(θ) dB(W/m2) em 1 MHz
+0,01° < θ ≤ 0,3°
+-127,7 + 11 ∙ log(θ) dB(W/m2) em 1 MHz
+0,3° < θ ≤ 1°
+-127,7 + 18 ∙ log(θ) dB(W/m2) em 1 MHz
+1° < θ ≤ 12,4°
+-108 dB(W/m2) em 1 MHz
+12,4° < θ ≤ 90°
+Acima de 3 km
+- 124,7 dB(W/m2) em 14 MHz
+0° ≤ θ ≤ 0,01°
+-120,9 + 1,9 ∙ log(θ) dB(W/m2) em 14 MHz
+0,01° < θ ≤ 0,3°
+-116,2 + 11 ∙ log(θ) dB(W/m2) em 14 MHz
+0,3° < θ ≤ 1°
+-116,2 + 18 ∙ log(θ) dB(W/m2) em 14 MHz
+1° < θ ≤ 2°
+-117,9 + 23,7 ∙ log(θ) dB(W/m2) em 14 MHz
+2° < θ ≤ 8°
+-96,5 dB(W/m2) em 14 MHz
+8° < θ ≤ 90°
+7.4.1.1. Para a faixa de 27,9 GHz a 28,4 GHz, não se aplicam os limites previstos na alínea a), na direção da costa brasileira, e na alínea b), na direção do território brasileiro. (Incluído pelo Ato nº 18530, de 30 de novembro de 2025)
+7.4.2. Na faixa de frequências de 29,1 GHz a 29,5 GHz, a operação de estações terrenas em plataformas móveis está sujeita à obtenção de acordo de coordenação com as operadoras responsáveis por estações terrenas utilizadas para enlaces de alimentação de sistemas de satélites não-geoestacionários no serviço móvel por satélite, que estejam licenciadas em território brasileiro. (Incluído pelo Ato nº 18530, de 30 de novembro de 2025)
+8. DISPOSIÇÕES FINAIS (Incluído pelo Ato nº 18530, de 30 de novembro de 2025)
+8.1. Excepcionalmente, a Anatel pode autorizar o uso de radiofrequências ou o licenciamento de estações em desconformidade com os Requisitos Técnicos e Operacionais para Sistemas de Comunicação via Satélite, mediante fundamentação técnica a ser avaliada e aprovada pela Superintendência responsável pela administração do espectro de radiofrequências da Anatel, conforme a possibilidade e convivência, desde que não cause interferência prejudicial em sistemas regularmente autorizados, observado o previsto na regulamentação aplicável e os limites estritos (hard limits) definidos no Regulamento de Rádio da União Internacional de Telecomunicações. (Incluído pelo Ato nº 18530, de 30 de novembro de 2025)
+8.1.1. Em caso de ocorrência de interferência prejudicial em sistemas regularmente autorizados, a entidade responsável pelo sistema autorizado em desconformidade com os Requisitos Técnicos e Operacionais estabelecidos deve proceder com a interrupção imediata das transmissões de seu sistema, até que a interferência prejudicial seja sanada. (Incluído pelo Ato nº 18530, de 30 de novembro de 2025)
+Figura 1 - Zona de aplicabilidade de limites de densidade espectral de e.i.r.p. das estações terrenas.
+registrado em:
+Atos de Requisitos Técnicos de Gestão do Espectro,2021
+Assunto(s):
+Aprovação
+,
+Requisito Técnico
+,
+Operacionais
+,
+Sistemas de Comunicação
+,
+Satélite
+,
+Território Brasileiro
+,
+AtoVigente

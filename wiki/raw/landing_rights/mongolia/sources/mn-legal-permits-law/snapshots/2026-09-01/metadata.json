@@ -1,0 +1,14 @@
+{
+  "source_id": "mn-legal-permits-law",
+  "country": "mongolia",
+  "norm": "Law on Permits of Mongolia",
+  "url": "https://legalinfo.mn/mn/detail?lawId=16530780109311",
+  "fetched_at": "2026-09-01T06:04:34+00:00",
+  "title": "ЗӨВШӨӨРЛИЙН ТУХАЙ",
+  "charset": "utf-8",
+  "source_format": "html",
+  "capture_method": "generic_html",
+  "normalized_sha256": "b3be701eaac13aa35f0dda18b40b2473edc4140ee2d8fc5c1ea6fbfc7a089984",
+  "status": "updated",
+  "compared_to": "/home/runner/work/doc-agent2/doc-agent2/wiki/raw/landing_rights/mongolia/sources/mn-legal-permits-law/snapshots/2026-08-01/normalized.txt"
+}

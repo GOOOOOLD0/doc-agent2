@@ -1,0 +1,14 @@
+{
+  "source_id": "mn-crc-equipment-conformity",
+  "country": "mongolia",
+  "norm": "CRC conformity certificate application page",
+  "url": "https://crc.gov.mn/for-new-license-applicants/batalgaazuulalt-e/toxirlyn-gercilgee-batalgaazuulalt",
+  "fetched_at": "2026-09-01T06:04:15+00:00",
+  "title": "Тохирлын гэрчилгээ email email",
+  "charset": "utf-8",
+  "source_format": "html",
+  "capture_method": "generic_html",
+  "normalized_sha256": "1759fd616ea11810f0555443829b960650282152f8c1e4fd2d34774084aae314",
+  "status": "updated",
+  "compared_to": "/home/runner/work/doc-agent2/doc-agent2/wiki/raw/landing_rights/mongolia/sources/mn-crc-equipment-conformity/snapshots/2026-08-01/normalized.txt"
+}

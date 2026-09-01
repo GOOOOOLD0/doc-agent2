@@ -66,3 +66,24 @@
 +Links de compartilhamento em redes sociais
 +Compartilhe:
 ```
+## 2026-09-01T06:03:59+00:00
+
+- source_id: `br-anatel-ocd-list`
+- norm: Organismos de Certificacao Designados
+- status: `updated`
+- url: https://www.gov.br/anatel/pt-br/regulado/certificacao-de-produtos/ocds
+- normalized_sha256: `a9841f4315f6325182bb8ceb9424be102cb20fc5ec444ea03d4cba63c8c20cb8`
+- compared_to: `/home/runner/work/doc-agent2/doc-agent2/wiki/raw/landing_rights/brazil/sources/br-anatel-ocd-list/snapshots/2026-08-01/normalized.txt`
+- diff_summary: 1 added lines, 1 removed lines
+
+```diff
+--- previous
++++ current
+@@ -6,5 +6,5 @@
+ Organismos de Certificação Designados (OCD)
+ Organismo de Certificação Designado (OCD) é a instituição técnica legalmente constituída que, por delegação da Anatel, conduz processos de avaliação da conformidade de produtos para telecomunicações, no âmbito da certificação compulsória, e expede os certificados de conformidade correspondentes. Os certificados de conformidade de produtos para telecomunicações expedidos pelos OCD’s constituem pré-requisito necessário à expedição da homologação, pela Anatel, para fins de comercialização e utilização legais destes produtos no Brasil.
+-Publicado em 01/01/2016 16:58Modificado em 29/07/2026 08:39
++Publicado em 01/01/2016 16:58Modificado em 31/08/2026 10:43
+ Compartilhe:
+ ABCP CERTIFICADORA DE PRODUTOS LTDA
+```
