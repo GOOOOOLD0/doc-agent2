@@ -35,3 +35,11 @@
  Энгийн зөвшөөрөл
  Facebook
 ```
+## 2026-10-01T06:55:50+00:00
+
+- source_id: `mn-crc-radio-frequency-license`
+- norm: Radio frequency and frequency band use special license page
+- status: `no-update`
+- url: https://crc.gov.mn/for-new-license-applicants/tusgai-zovsoorol-4/radio-davtamz-asiglax-tusgai-zovsoorol
+- normalized_sha256: `ef557ed2b708cdb4bffbf818525be85193f52f9e9bb798b242e0dc385fd09b43`
+- compared_to: `/home/runner/work/doc-agent2/doc-agent2/wiki/raw/landing_rights/mongolia/sources/mn-crc-radio-frequency-license/snapshots/2026-09-01/normalized.txt`

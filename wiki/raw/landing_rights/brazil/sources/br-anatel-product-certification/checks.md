@@ -99,3 +99,39 @@
  Compartilhe:
  A certificação e homologação garantem ao consumidor a aquisição e o uso de produtos para telecomunicações que respeitam padrões de qualidade, de segurança e de funcionalidades técnicas regulamentadas que visam o uso eficiente e racional do espectro radioelétrico, da compatibilidade eletromagnética e da não agressão ao meio ambiente.
 ```
+## 2026-10-01T06:55:36+00:00
+
+- source_id: `br-anatel-product-certification`
+- norm: Certificacao de Produtos
+- status: `updated`
+- url: https://www.gov.br/anatel/pt-br/regulado/certificacao-de-produtos
+- normalized_sha256: `e30a043a4b7d9a5a634e1fd2b7c03955dc351a53254950a797dbbd53b24fc24a`
+- compared_to: `/home/runner/work/doc-agent2/doc-agent2/wiki/raw/landing_rights/brazil/sources/br-anatel-product-certification/snapshots/2026-09-01/normalized.txt`
+- diff_summary: 11 added lines, 5 removed lines
+
+```diff
+--- previous
++++ current
+@@ -5,10 +5,16 @@
+ title: Certificação de Produtos Portal Gov.br
+ Certificação de Produtos
+-Publicado em 04/11/2020 15:43Modificado em 17/08/2026 13:44
++A certificação e a homologação garantem ao consumidor a aquisição e o uso de produtos para telecomunicações que respeitam padrões de qualidade, de segurança e de funcionalidades técnicas regulamentadas, visando uso eficiente e racional do espectro radioelétrico, da compatibilidade eletromagnética e da não agressão ao meio ambiente.
++Publicado em 04/11/2020 15:43Modificado em 07/09/2026 20:24
+ Compartilhe:
+-A certificação e homologação garantem ao consumidor a aquisição e o uso de produtos para telecomunicações que respeitam padrões de qualidade, de segurança e de funcionalidades técnicas regulamentadas que visam o uso eficiente e racional do espectro radioelétrico, da compatibilidade eletromagnética e da não agressão ao meio ambiente.
+-O Regulamento de Avaliação da Conformidade e de Homologação de Produtos para Telecomunicações, aprovado pela Resolução nº 715, de 23 de outubro de 2019, estabelece que a emissão do documento de homologação é pré-requisito obrigatório para fins de comercialização e utilização de produtos para telecomunicações no Brasil.
+-O usuário deve sempre adquirir ou utilizar produtos para telecomunicações homologados pela Anatel, que garantem a conformidade com o Regulamento sobre Certificação e Homologação da Agência e com todos os demais regulamentos aplicados ao setor das telecomunicações.
+-A consulta aos produtos certificados e homologados pela Anatel pode ser efetuada por meio da página Consulta de Produtos.
++Certifica
++Novo Sistema de Certificação e Homolgação de Produtos
++A nova plataforma Certifica substitui o antigo SCH. Entenda como acessá-la e utilizá-la.
++Como Certificar e Homologar
++Requisitos e Regulamentação
++Avaliação da Conformidade
++Consulta e Produtos Homologados
++Temas e Programas Específicos
++Sobre a Certificação
+ Links de compartilhamento em redes sociais
+ Compartilhe:
+```

@@ -35,3 +35,11 @@
  Энгийн зөвшөөрөл
  Facebook
 ```
+## 2026-10-01T06:55:47+00:00
+
+- source_id: `mn-crc-license-overview`
+- norm: CRC new license applicant overview
+- status: `no-update`
+- url: https://crc.gov.mn/for-new-license-applicants/tusgai-zovsoorol-4
+- normalized_sha256: `96b20c614ae3fca1fcbe553e1aa12a39fd785eb70893dbd68fe5240691a787af`
+- compared_to: `/home/runner/work/doc-agent2/doc-agent2/wiki/raw/landing_rights/mongolia/sources/mn-crc-license-overview/snapshots/2026-09-01/normalized.txt`

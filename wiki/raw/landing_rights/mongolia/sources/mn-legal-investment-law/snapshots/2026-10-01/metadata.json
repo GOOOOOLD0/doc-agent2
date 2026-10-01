@@ -1,0 +1,14 @@
+{
+  "source_id": "mn-legal-investment-law",
+  "country": "mongolia",
+  "norm": "Investment Law of Mongolia",
+  "url": "https://legalinfo.mn/mn/detail?lawId=9491",
+  "fetched_at": "2026-10-01T06:56:23+00:00",
+  "title": "ХӨРӨНГӨ ОРУУЛАЛТЫН ТУХАЙ",
+  "charset": "utf-8",
+  "source_format": "html",
+  "capture_method": "generic_html",
+  "normalized_sha256": "413630e2bf9c92d73ee673b2eb02e6dfac43e4922ef133cde39208fb70e44fe3",
+  "status": "updated",
+  "compared_to": "/home/runner/work/doc-agent2/doc-agent2/wiki/raw/landing_rights/mongolia/sources/mn-legal-investment-law/snapshots/2026-09-01/normalized.txt"
+}

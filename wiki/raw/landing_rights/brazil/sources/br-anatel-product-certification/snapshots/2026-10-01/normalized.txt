@@ -1,0 +1,20 @@
+source_id: br-anatel-product-certification
+country: brazil
+norm: Certificacao de Produtos
+url: https://www.gov.br/anatel/pt-br/regulado/certificacao-de-produtos
+title: Certificação de Produtos Portal Gov.br
+Certificação de Produtos
+A certificação e a homologação garantem ao consumidor a aquisição e o uso de produtos para telecomunicações que respeitam padrões de qualidade, de segurança e de funcionalidades técnicas regulamentadas, visando uso eficiente e racional do espectro radioelétrico, da compatibilidade eletromagnética e da não agressão ao meio ambiente.
+Publicado em 04/11/2020 15:43Modificado em 07/09/2026 20:24
+Compartilhe:
+Certifica
+Novo Sistema de Certificação e Homolgação de Produtos
+A nova plataforma Certifica substitui o antigo SCH. Entenda como acessá-la e utilizá-la.
+Como Certificar e Homologar
+Requisitos e Regulamentação
+Avaliação da Conformidade
+Consulta e Produtos Homologados
+Temas e Programas Específicos
+Sobre a Certificação
+Links de compartilhamento em redes sociais
+Compartilhe:

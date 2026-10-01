@@ -196,3 +196,24 @@
 - url: https://informacoes.anatel.gov.br/legislacao/resolucoes/2020/1381-resolucao-719
 - normalized_sha256: `d3b0a774c9851208a02dff5b2e659303610a20d5b0708a2a9e1d6df96f474005`
 - compared_to: `/home/runner/work/doc-agent2/doc-agent2/wiki/raw/landing_rights/brazil/sources/br-res-719-2020/snapshots/2026-08-01/normalized.txt`
+## 2026-10-01T06:55:42+00:00
+
+- source_id: `br-res-719-2020`
+- norm: Resolution No. 719/2020, General Licensing Regulation (RGL)
+- status: `updated`
+- url: https://informacoes.anatel.gov.br/legislacao/resolucoes/2020/1381-resolucao-719
+- normalized_sha256: `6b6feddef7b570e2a837175c61e8a83f049ef80b0369d1150d6d836e1710e633`
+- compared_to: `/home/runner/work/doc-agent2/doc-agent2/wiki/raw/landing_rights/brazil/sources/br-res-719-2020/snapshots/2026-09-01/normalized.txt`
+- diff_summary: 1 added lines, 1 removed lines
+
+```diff
+--- previous
++++ current
+@@ -7,5 +7,5 @@
+ Publicado: Quarta, 12 Fevereiro 2020 17:05
+ |
+-Última atualização: Terça, 09 Dezembro 2025 08:38
++Última atualização: Terça, 22 Setembro 2026 16:04
+ |
+ Aprova o Regulamento Geral de Licenciamento.
+```

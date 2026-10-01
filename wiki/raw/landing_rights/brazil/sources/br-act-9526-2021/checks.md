@@ -98,3 +98,11 @@
 - url: https://sei.anatel.gov.br/sei/publicacoes/controlador_publicacoes.php?acao=publicacao_visualizar&id_documento=8580171&id_orgao_publicacao=0
 - normalized_sha256: `178efa99054845c88bc3d6eed1ac31353d42d27e3b26578df9f1333cfa89cca3`
 - compared_to: `/home/runner/work/doc-agent2/doc-agent2/wiki/raw/landing_rights/brazil/sources/br-act-9526-2021/snapshots/2026-08-01/normalized.txt`
+## 2026-10-01T06:55:28+00:00
+
+- source_id: `br-act-9526-2021`
+- norm: Act No. 9,526/2021, requirements for obtaining the right to exploit satellites
+- status: `no-update`
+- url: https://sei.anatel.gov.br/sei/publicacoes/controlador_publicacoes.php?acao=publicacao_visualizar&id_documento=8580171&id_orgao_publicacao=0
+- normalized_sha256: `178efa99054845c88bc3d6eed1ac31353d42d27e3b26578df9f1333cfa89cca3`
+- compared_to: `/home/runner/work/doc-agent2/doc-agent2/wiki/raw/landing_rights/brazil/sources/br-act-9526-2021/snapshots/2026-09-01/normalized.txt`

@@ -21,3 +21,11 @@
 - url: https://www.gov.br/anatel/pt-br/regulado/outorga/servicos-de-interesse-coletivo
 - normalized_sha256: `2366dd1aab2a1417754c3c63d75fac2deac5d5f9bbc6526da7b20fc9ceece0bc`
 - compared_to: `/home/runner/work/doc-agent2/doc-agent2/wiki/raw/landing_rights/brazil/sources/br-anatel-collective-services/snapshots/2026-08-01/normalized.txt`
+## 2026-10-01T06:55:32+00:00
+
+- source_id: `br-anatel-collective-services`
+- norm: Servicos de Interesse Coletivo
+- status: `no-update`
+- url: https://www.gov.br/anatel/pt-br/regulado/outorga/servicos-de-interesse-coletivo
+- normalized_sha256: `2366dd1aab2a1417754c3c63d75fac2deac5d5f9bbc6526da7b20fc9ceece0bc`
+- compared_to: `/home/runner/work/doc-agent2/doc-agent2/wiki/raw/landing_rights/brazil/sources/br-anatel-collective-services/snapshots/2026-09-01/normalized.txt`

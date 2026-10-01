@@ -1,0 +1,14 @@
+{
+  "source_id": "mn-crc-laws-catalog",
+  "country": "mongolia",
+  "norm": "CRC catalog of Mongolian laws",
+  "url": "https://crc.gov.mn/documents/mongol-ulsyn-xuuliud",
+  "fetched_at": "2026-10-01T06:55:55+00:00",
+  "title": "Монгол улсын хуулиуд email email",
+  "charset": "utf-8",
+  "source_format": "html",
+  "capture_method": "generic_html",
+  "normalized_sha256": "3dbdd8752ced7d0c5ca63f2d1c40faa0a1087705d96e799d074c54c8441cd349",
+  "status": "updated",
+  "compared_to": "/home/runner/work/doc-agent2/doc-agent2/wiki/raw/landing_rights/mongolia/sources/mn-crc-laws-catalog/snapshots/2026-09-01/normalized.txt"
+}

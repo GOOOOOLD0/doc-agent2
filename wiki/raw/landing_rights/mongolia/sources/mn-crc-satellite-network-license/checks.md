@@ -35,3 +35,11 @@
  Энгийн зөвшөөрөл
  Facebook
 ```
+## 2026-10-01T06:55:49+00:00
+
+- source_id: `mn-crc-satellite-network-license`
+- norm: Satellite communications network establishment, operation and service license page
+- status: `no-update`
+- url: https://crc.gov.mn/for-new-license-applicants/tusgai-zovsoorol-4/sansryn-xolboony-sulzee-baiguulax-tuunii-asiglalt-uilcilgee-erxlex-3
+- normalized_sha256: `f303a785ea42d0232421188f878f6ed2fac54b6fc723d6c05c72c771137a807b`
+- compared_to: `/home/runner/work/doc-agent2/doc-agent2/wiki/raw/landing_rights/mongolia/sources/mn-crc-satellite-network-license/snapshots/2026-09-01/normalized.txt`

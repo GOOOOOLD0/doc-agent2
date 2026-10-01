@@ -21,3 +21,10 @@
 - url: https://legalinfo.mn/mn/detail?lawId=16531361657351
 - normalized_sha256: `cd6f1835e5417387d8cc6692a15f37d2f7fe5c4cee026e78a247d0184e9ad197`
 - compared_to: `/home/runner/work/doc-agent2/doc-agent2/wiki/raw/landing_rights/mongolia/sources/mn-legal-satellite-frequency-rules-annex/snapshots/2026-08-01/normalized.txt`
+## 2026-10-01T06:56:04+00:00
+
+- source_id: `mn-legal-satellite-frequency-rules-annex`
+- norm: Annex to CRC Resolution No. 37/2022 on satellite frequency allocation and technical requirements
+- status: `error`
+- url: https://legalinfo.mn/mn/detail?lawId=16531361657351
+- error: curl: (22) The requested URL returned error: 500

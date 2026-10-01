@@ -40,3 +40,11 @@
  10 дугаар зүйл.Байгууллагын стандарт
  Хэвлэх
 ```
+## 2026-10-01T06:56:55+00:00
+
+- source_id: `mn-legal-standardization-conformity-law`
+- norm: Law on Standardization, Technical Regulation and Accreditation of Conformity Assessment
+- status: `no-update`
+- url: https://legalinfo.mn/mn/detail/13071
+- normalized_sha256: `c4947f4056efcfe7529c2abb684a200ef12cee5c59efbf77ecc98df4481e8935`
+- compared_to: `/home/runner/work/doc-agent2/doc-agent2/wiki/raw/landing_rights/mongolia/sources/mn-legal-standardization-conformity-law/snapshots/2026-09-01/normalized.txt`

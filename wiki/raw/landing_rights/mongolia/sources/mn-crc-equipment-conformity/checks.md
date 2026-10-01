@@ -35,3 +35,11 @@
  Энгийн зөвшөөрөл
  Facebook
 ```
+## 2026-10-01T06:55:53+00:00
+
+- source_id: `mn-crc-equipment-conformity`
+- norm: CRC conformity certificate application page
+- status: `no-update`
+- url: https://crc.gov.mn/for-new-license-applicants/batalgaazuulalt-e/toxirlyn-gercilgee-batalgaazuulalt
+- normalized_sha256: `1759fd616ea11810f0555443829b960650282152f8c1e4fd2d34774084aae314`
+- compared_to: `/home/runner/work/doc-agent2/doc-agent2/wiki/raw/landing_rights/mongolia/sources/mn-crc-equipment-conformity/snapshots/2026-09-01/normalized.txt`

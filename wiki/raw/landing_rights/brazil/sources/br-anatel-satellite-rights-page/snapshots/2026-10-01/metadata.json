@@ -1,0 +1,14 @@
+{
+  "source_id": "br-anatel-satellite-rights-page",
+  "country": "brazil",
+  "norm": "Conferencia de Direito de Exploracao de Satelite",
+  "url": "https://www.gov.br/anatel/pt-br/regulado/satelite/conferencia-de-direito-de-exploracao-de-satelite",
+  "fetched_at": "2026-10-01T06:55:29+00:00",
+  "title": "Conferência de Direito de Exploração de Satélite Portal Gov.br",
+  "charset": "utf-8",
+  "source_format": "html",
+  "capture_method": "generic_html",
+  "normalized_sha256": "dd5a1c79e4734a792d790afa1eed95bdbe26a8533cc37e2dc934dbeb2a62dc4f",
+  "status": "no-update",
+  "compared_to": "/home/runner/work/doc-agent2/doc-agent2/wiki/raw/landing_rights/brazil/sources/br-anatel-satellite-rights-page/snapshots/2026-09-01/normalized.txt"
+}
