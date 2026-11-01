@@ -1,0 +1,14 @@
+{
+  "source_id": "mn-crc-regulatory-service-fees",
+  "country": "mongolia",
+  "norm": "CRC regulatory service fees page",
+  "url": "https://crc.gov.mn/zoxicuulaltyn-uilcilgeenii-xols-2",
+  "fetched_at": "2026-11-01T07:26:38+00:00",
+  "title": "Зохицуулалтын үйлчилгээний хөлс email email",
+  "charset": "utf-8",
+  "source_format": "html",
+  "capture_method": "generic_html",
+  "normalized_sha256": "9814a7f444030883f2f83090627dec1f4f11fdbab3ff5cb5ae4111682a457f08",
+  "status": "updated",
+  "compared_to": "/home/runner/work/doc-agent2/doc-agent2/wiki/raw/landing_rights/mongolia/sources/mn-crc-regulatory-service-fees/snapshots/2026-10-01/normalized.txt"
+}

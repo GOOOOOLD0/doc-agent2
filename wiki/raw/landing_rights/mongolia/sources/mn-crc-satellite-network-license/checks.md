@@ -43,3 +43,32 @@
 - url: https://crc.gov.mn/for-new-license-applicants/tusgai-zovsoorol-4/sansryn-xolboony-sulzee-baiguulax-tuunii-asiglalt-uilcilgee-erxlex-3
 - normalized_sha256: `f303a785ea42d0232421188f878f6ed2fac54b6fc723d6c05c72c771137a807b`
 - compared_to: `/home/runner/work/doc-agent2/doc-agent2/wiki/raw/landing_rights/mongolia/sources/mn-crc-satellite-network-license/snapshots/2026-09-01/normalized.txt`
+## 2026-11-01T07:10:41+00:00
+
+- source_id: `mn-crc-satellite-network-license`
+- norm: Satellite communications network establishment, operation and service license page
+- status: `updated`
+- url: https://crc.gov.mn/for-new-license-applicants/tusgai-zovsoorol-4/sansryn-xolboony-sulzee-baiguulax-tuunii-asiglalt-uilcilgee-erxlex-3
+- normalized_sha256: `1ebe3988099f331f0a8c9a599eea9af811f11edba364c4405230b8497a966fd1`
+- compared_to: `/home/runner/work/doc-agent2/doc-agent2/wiki/raw/landing_rights/mongolia/sources/mn-crc-satellite-network-license/snapshots/2026-10-01/normalized.txt`
+- diff_summary: 2 added lines, 2 removed lines
+
+```diff
+--- previous
++++ current
+@@ -11,7 +11,6 @@
+ Радио давтамж ашиглах тусгай зөвшөөрөл
+ Харилцаа холбооны сүлжээ, дэд бүтцийн суурилуулалт, засвар үйлчилгээ эрхлэх
+-Дотоодын шуудангийн үйлчилгээ эрхлэх
+ Төлбөртэй радио, телевизийн үйлчилгээ эрхлэх
+-Улс хоорондын шуудангийн үйлчилгээ
++Шуудангийн үйлчилгээ эрхлэх
+ Арилжааны радио, телевизийн үйлчилгээ эрхлэх
+ Олон нийтийн радио, телевизийн үйлчилгээ эрхлэх
+@@ -46,4 +45,5 @@
+ ХХЗХ-ны тогтоол
+ Журам
++Норм, норматив
+ Стандарт
+ Нөхцөл шаардлага
+```

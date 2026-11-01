@@ -29,3 +29,23 @@
 - url: https://crc.gov.mn/terms-of-the-customer-service-contract
 - normalized_sha256: `228698cb0da224c2504b5c8ac2fbdf37ecd866a4b88840fc5bee28dddea68e61`
 - compared_to: `/home/runner/work/doc-agent2/doc-agent2/wiki/raw/landing_rights/mongolia/sources/mn-crc-license-conditions-catalog/snapshots/2026-09-01/normalized.txt`
+## 2026-11-01T07:26:36+00:00
+
+- source_id: `mn-crc-license-conditions-catalog`
+- norm: CRC license conditions and technical requirements catalog
+- status: `updated`
+- url: https://crc.gov.mn/terms-of-the-customer-service-contract
+- normalized_sha256: `de3cade20a55acbdc54b7f998d99ab147e77af36ef70e0ce0a5a5e04806ceb76`
+- compared_to: `/home/runner/work/doc-agent2/doc-agent2/wiki/raw/landing_rights/mongolia/sources/mn-crc-license-conditions-catalog/snapshots/2026-10-01/normalized.txt`
+- diff_summary: 1 added lines, 0 removed lines
+
+```diff
+--- previous
++++ current
+@@ -169,4 +169,5 @@
+ ХХЗХ-ны тогтоол
+ Журам
++Норм, норматив
+ Стандарт
+ Нөхцөл шаардлага
+```

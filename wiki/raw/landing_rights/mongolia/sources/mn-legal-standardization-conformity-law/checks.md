@@ -48,3 +48,10 @@
 - url: https://legalinfo.mn/mn/detail/13071
 - normalized_sha256: `c4947f4056efcfe7529c2abb684a200ef12cee5c59efbf77ecc98df4481e8935`
 - compared_to: `/home/runner/work/doc-agent2/doc-agent2/wiki/raw/landing_rights/mongolia/sources/mn-legal-standardization-conformity-law/snapshots/2026-09-01/normalized.txt`
+## 2026-11-01T07:33:24+00:00
+
+- source_id: `mn-legal-standardization-conformity-law`
+- norm: Law on Standardization, Technical Regulation and Accreditation of Conformity Assessment
+- status: `error`
+- url: https://legalinfo.mn/mn/detail/13071
+- error: curl: (28) Failed to connect to legalinfo.mn port 443 after 135161 ms: Couldn't connect to server

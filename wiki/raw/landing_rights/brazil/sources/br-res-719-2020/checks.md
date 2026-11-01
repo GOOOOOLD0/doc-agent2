@@ -217,3 +217,10 @@
  |
  Aprova o Regulamento Geral de Licenciamento.
 ```
+## 2026-11-01T07:10:37+00:00
+
+- source_id: `br-res-719-2020`
+- norm: Resolution No. 719/2020, General Licensing Regulation (RGL)
+- status: `error`
+- url: https://informacoes.anatel.gov.br/legislacao/resolucoes/2020/1381-resolucao-719
+- error: no extractable text found with capture_method=anatel_html

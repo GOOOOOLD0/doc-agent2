@@ -204,3 +204,10 @@
 - url: https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2021/1598-ato-9523
 - normalized_sha256: `62432d8e61d845e0d3f9ff294dbde8d400bf30a1e1ce3cbc486feb69a026d6a0`
 - compared_to: `/home/runner/work/doc-agent2/doc-agent2/wiki/raw/landing_rights/brazil/sources/br-act-9523-2021/snapshots/2026-09-01/normalized.txt`
+## 2026-11-01T07:10:25+00:00
+
+- source_id: `br-act-9523-2021`
+- norm: Act No. 9,523/2021, technical and operational requirements for satellite communication systems
+- status: `error`
+- url: https://informacoes.anatel.gov.br/legislacao/atos-de-requisitos-tecnicos-de-gestao-do-espectro/2021/1598-ato-9523
+- error: no extractable text found with capture_method=anatel_html

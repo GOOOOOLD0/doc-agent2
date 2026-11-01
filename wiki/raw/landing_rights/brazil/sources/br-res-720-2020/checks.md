@@ -225,3 +225,10 @@
 - url: https://informacoes.anatel.gov.br/legislacao/resolucoes/2020/1382-resolucao-720
 - normalized_sha256: `1909b7aeea45031924f46aea0102afaa05c8b4036c6fe14a14ef12d3221a0118`
 - compared_to: `/home/runner/work/doc-agent2/doc-agent2/wiki/raw/landing_rights/brazil/sources/br-res-720-2020/snapshots/2026-09-01/normalized.txt`
+## 2026-11-01T07:10:37+00:00
+
+- source_id: `br-res-720-2020`
+- norm: Resolution No. 720/2020, General Regulation of Grants (RGO)
+- status: `error`
+- url: https://informacoes.anatel.gov.br/legislacao/resolucoes/2020/1382-resolucao-720
+- error: no extractable text found with capture_method=anatel_html

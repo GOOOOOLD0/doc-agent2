@@ -29,3 +29,10 @@
 - url: https://legalinfo.mn/mn/detail/443
 - normalized_sha256: `a70ef0cb93a541ceeefac7eadb9b71497343111433e52fcc2450de3d2fa6bc8d`
 - compared_to: `/home/runner/work/doc-agent2/doc-agent2/wiki/raw/landing_rights/mongolia/sources/mn-legal-radio-waves-law/snapshots/2026-09-01/normalized.txt`
+## 2026-11-01T07:19:49+00:00
+
+- source_id: `mn-legal-radio-waves-law`
+- norm: Radio Waves Law of Mongolia
+- status: `error`
+- url: https://legalinfo.mn/mn/detail/443
+- error: curl: (28) Failed to connect to legalinfo.mn port 443 after 135160 ms: Couldn't connect to server

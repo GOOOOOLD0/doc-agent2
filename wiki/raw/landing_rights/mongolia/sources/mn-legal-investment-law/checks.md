@@ -140,3 +140,10 @@
  ДОЛООДУГААР БҮЛЭГ
  ХӨРӨНГӨ ОРУУЛАГЧИЙН ГОМДОЛ, МАРГААНЫГ ШИЙДВЭРЛЭХ
 ```
+## 2026-11-01T07:24:20+00:00
+
+- source_id: `mn-legal-investment-law`
+- norm: Investment Law of Mongolia
+- status: `error`
+- url: https://legalinfo.mn/mn/detail?lawId=9491
+- error: curl: (28) Failed to connect to legalinfo.mn port 443 after 135160 ms: Couldn't connect to server

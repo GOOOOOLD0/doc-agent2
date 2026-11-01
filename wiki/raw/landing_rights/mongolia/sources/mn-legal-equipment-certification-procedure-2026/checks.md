@@ -29,3 +29,10 @@
 - url: https://legalinfo.mn/mn/detail?lawId=17435914033652
 - normalized_sha256: `8bd8ac70c809bc08e158a448c4a9faaaca74d97641da35d098a2eb89af1cce33`
 - compared_to: `/home/runner/work/doc-agent2/doc-agent2/wiki/raw/landing_rights/mongolia/sources/mn-legal-equipment-certification-procedure-2026/snapshots/2026-09-01/normalized.txt`
+## 2026-11-01T07:31:09+00:00
+
+- source_id: `mn-legal-equipment-certification-procedure-2026`
+- norm: Information and communications equipment certification procedure, annex to CRC Resolution No. 24/2026
+- status: `error`
+- url: https://legalinfo.mn/mn/detail?lawId=17435914033652
+- error: curl: (28) Failed to connect to legalinfo.mn port 443 after 135160 ms: Couldn't connect to server

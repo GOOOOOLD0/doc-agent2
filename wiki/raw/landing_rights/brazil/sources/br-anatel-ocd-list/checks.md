@@ -150,3 +150,11 @@
  Ato de Designação
  Termo de Responsabilidade
 ```
+## 2026-11-01T07:10:33+00:00
+
+- source_id: `br-anatel-ocd-list`
+- norm: Organismos de Certificacao Designados
+- status: `no-update`
+- url: https://www.gov.br/anatel/pt-br/regulado/certificacao-de-produtos/ocds
+- normalized_sha256: `65e03402b223b2079e8b7e8392f763bf3e2016579b8a2c310c87296ae2bc0fd0`
+- compared_to: `/home/runner/work/doc-agent2/doc-agent2/wiki/raw/landing_rights/brazil/sources/br-anatel-ocd-list/snapshots/2026-10-01/normalized.txt`

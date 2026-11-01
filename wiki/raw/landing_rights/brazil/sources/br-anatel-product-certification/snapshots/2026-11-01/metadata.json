@@ -1,0 +1,14 @@
+{
+  "source_id": "br-anatel-product-certification",
+  "country": "brazil",
+  "norm": "Certificacao de Produtos",
+  "url": "https://www.gov.br/anatel/pt-br/regulado/certificacao-de-produtos",
+  "fetched_at": "2026-11-01T07:10:32+00:00",
+  "title": "Certificação de Produtos Portal Gov.br",
+  "charset": "utf-8",
+  "source_format": "html",
+  "capture_method": "generic_html",
+  "normalized_sha256": "8b3a5101939ce52211a1436477fce16f63ef81b834b255aba5947ec8b12bb1f7",
+  "status": "updated",
+  "compared_to": "/home/runner/work/doc-agent2/doc-agent2/wiki/raw/landing_rights/brazil/sources/br-anatel-product-certification/snapshots/2026-10-01/normalized.txt"
+}

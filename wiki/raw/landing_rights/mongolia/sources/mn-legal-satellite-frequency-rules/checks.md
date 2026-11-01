@@ -29,3 +29,10 @@
 - url: https://legalinfo.mn/mn/detail?lawId=16531361633621
 - normalized_sha256: `721dc0cb5337dd15267c34bc37792614960807f0c303457d46fe94eeb1a267df`
 - compared_to: `/home/runner/work/doc-agent2/doc-agent2/wiki/raw/landing_rights/mongolia/sources/mn-legal-satellite-frequency-rules/snapshots/2026-09-01/normalized.txt`
+## 2026-11-01T07:13:04+00:00
+
+- source_id: `mn-legal-satellite-frequency-rules`
+- norm: CRC Resolution No. 37/2022 approving satellite communication system frequency allocation and technical requirements
+- status: `error`
+- url: https://legalinfo.mn/mn/detail?lawId=16531361633621
+- error: curl: (28) Failed to connect to legalinfo.mn port 443 after 135122 ms: Couldn't connect to server

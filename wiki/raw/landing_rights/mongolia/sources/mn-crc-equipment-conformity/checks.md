@@ -43,3 +43,32 @@
 - url: https://crc.gov.mn/for-new-license-applicants/batalgaazuulalt-e/toxirlyn-gercilgee-batalgaazuulalt
 - normalized_sha256: `1759fd616ea11810f0555443829b960650282152f8c1e4fd2d34774084aae314`
 - compared_to: `/home/runner/work/doc-agent2/doc-agent2/wiki/raw/landing_rights/mongolia/sources/mn-crc-equipment-conformity/snapshots/2026-09-01/normalized.txt`
+## 2026-11-01T07:10:45+00:00
+
+- source_id: `mn-crc-equipment-conformity`
+- norm: CRC conformity certificate application page
+- status: `updated`
+- url: https://crc.gov.mn/for-new-license-applicants/batalgaazuulalt-e/toxirlyn-gercilgee-batalgaazuulalt
+- normalized_sha256: `62594021639733c150d43fe54e0e1d1e4d1b95d085fc4fd368506ef4ebd0d3b2`
+- compared_to: `/home/runner/work/doc-agent2/doc-agent2/wiki/raw/landing_rights/mongolia/sources/mn-crc-equipment-conformity/snapshots/2026-10-01/normalized.txt`
+- diff_summary: 2 added lines, 2 removed lines
+
+```diff
+--- previous
++++ current
+@@ -11,7 +11,6 @@
+ Радио давтамж ашиглах тусгай зөвшөөрөл
+ Харилцаа холбооны сүлжээ, дэд бүтцийн суурилуулалт, засвар үйлчилгээ эрхлэх
+-Дотоодын шуудангийн үйлчилгээ эрхлэх
+ Төлбөртэй радио, телевизийн үйлчилгээ эрхлэх
+-Улс хоорондын шуудангийн үйлчилгээ
++Шуудангийн үйлчилгээ эрхлэх
+ Арилжааны радио, телевизийн үйлчилгээ эрхлэх
+ Олон нийтийн радио, телевизийн үйлчилгээ эрхлэх
+@@ -108,4 +107,5 @@
+ ХХЗХ-ны тогтоол
+ Журам
++Норм, норматив
+ Стандарт
+ Нөхцөл шаардлага
+```

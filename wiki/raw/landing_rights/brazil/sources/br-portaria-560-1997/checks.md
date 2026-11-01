@@ -204,3 +204,10 @@
 - url: https://informacoes.anatel.gov.br/legislacao/normas-do-mc/185-portaria-560
 - normalized_sha256: `625cf04b8509b9bcef7f9765c90fbc7a62eadc3cf85a5288088422ee5a90b9ed`
 - compared_to: `/home/runner/work/doc-agent2/doc-agent2/wiki/raw/landing_rights/brazil/sources/br-portaria-560-1997/snapshots/2026-09-01/normalized.txt`
+## 2026-11-01T07:10:38+00:00
+
+- source_id: `br-portaria-560-1997`
+- norm: Portaria No. 560/1997, Norma No. 16/97 for non-geostationary SMGS
+- status: `error`
+- url: https://informacoes.anatel.gov.br/legislacao/normas-do-mc/185-portaria-560
+- error: no extractable text found with capture_method=anatel_html

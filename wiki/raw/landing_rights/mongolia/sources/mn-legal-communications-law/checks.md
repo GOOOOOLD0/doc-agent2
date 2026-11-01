@@ -29,3 +29,10 @@
 - url: https://legalinfo.mn/mn/detail/523
 - normalized_sha256: `89a7204de26ed31f5168ac97da60d8e007cb7c7915b87910061b1dd0eb5e4b4c`
 - compared_to: `/home/runner/work/doc-agent2/doc-agent2/wiki/raw/landing_rights/mongolia/sources/mn-legal-communications-law/snapshots/2026-09-01/normalized.txt`
+## 2026-11-01T07:17:34+00:00
+
+- source_id: `mn-legal-communications-law`
+- norm: Communications Law of Mongolia
+- status: `error`
+- url: https://legalinfo.mn/mn/detail/523
+- error: curl: (28) Failed to connect to legalinfo.mn port 443 after 135160 ms: Couldn't connect to server

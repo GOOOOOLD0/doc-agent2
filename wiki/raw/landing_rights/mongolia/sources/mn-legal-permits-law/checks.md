@@ -112,3 +112,10 @@
 - status: `error`
 - url: https://legalinfo.mn/mn/detail?lawId=16530780109311
 - error: curl: (22) The requested URL returned error: 500
+## 2026-11-01T07:22:05+00:00
+
+- source_id: `mn-legal-permits-law`
+- norm: Law on Permits of Mongolia
+- status: `error`
+- url: https://legalinfo.mn/mn/detail?lawId=16530780109311
+- error: curl: (28) Failed to connect to legalinfo.mn port 443 after 135160 ms: Couldn't connect to server

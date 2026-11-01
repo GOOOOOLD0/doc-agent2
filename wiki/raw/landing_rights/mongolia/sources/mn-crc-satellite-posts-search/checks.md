@@ -29,3 +29,23 @@
 - url: https://crc.gov.mn/posts?q=%D1%81%D0%B0%D0%BD%D1%81%D1%80%D1%8B%D0%BD
 - normalized_sha256: `c75b87324e6b681103b9bf6b4cbe6ba35e6cfecce4602a969eb8e0498d4a91d0`
 - compared_to: `/home/runner/work/doc-agent2/doc-agent2/wiki/raw/landing_rights/mongolia/sources/mn-crc-satellite-posts-search/snapshots/2026-09-01/normalized.txt`
+## 2026-11-01T07:33:24+00:00
+
+- source_id: `mn-crc-satellite-posts-search`
+- norm: CRC official posts search for satellite-related notices
+- status: `updated`
+- url: https://crc.gov.mn/posts?q=%D1%81%D0%B0%D0%BD%D1%81%D1%80%D1%8B%D0%BD
+- normalized_sha256: `db23d6b15b1c758b236af5f0362f1d5f84e669ce1bb8f9f7aa41f6feac5e46e8`
+- compared_to: `/home/runner/work/doc-agent2/doc-agent2/wiki/raw/landing_rights/mongolia/sources/mn-crc-satellite-posts-search/snapshots/2026-10-01/normalized.txt`
+- diff_summary: 1 added lines, 0 removed lines
+
+```diff
+--- previous
++++ current
+@@ -49,4 +49,5 @@
+ ХХЗХ-ны тогтоол
+ Журам
++Норм, норматив
+ Стандарт
+ Нөхцөл шаардлага
+```

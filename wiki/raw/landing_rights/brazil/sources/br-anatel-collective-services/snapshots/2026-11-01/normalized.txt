@@ -1,0 +1,37 @@
+source_id: br-anatel-collective-services
+country: brazil
+norm: Servicos de Interesse Coletivo
+url: https://www.gov.br/anatel/pt-br/regulado/outorga/servicos-de-interesse-coletivo
+title: Serviços de Interesse Coletivo Portal Gov.br
+Serviços de Interesse Coletivo
+Publicado em 28/09/2020 19:04Modificado em 08/04/2026 08:58
+Compartilhe:
+Nos termos do art. 6º do Regulamento Geral dos Serviços de Telecomunicações, aprovado pela Resolução nº 777, de 28 de abril de 2025, Serviço de Telecomunicações de Interesse Coletivo é aquele cuja prestação deve ser proporcionada pela prestadora a qualquer interessado na sua fruição, em condições não discriminatórias, observados os requisitos da regulamentação.
+Conforme o art. 133, da Lei nº 9.472, de 16 de julho de 1997, são condições subjetivas para obtenção de autorização de serviço de interesse coletivo pela empresa ou cooperativa:
+I - estar constituída segundo as leis brasileiras, com sede e administração no País;
+II - não estar proibida de licitar ou contratar com o Poder Público, não ter sido declarada inidônea ou não ter sido punida, nos dois anos anteriores, com a decretação da caducidade de concessão, permissão ou autorização de serviço de telecomunicações, ou da caducidade de direito de uso de radiofreqüência;
+III - dispor de qualificação técnica para bem prestar o serviço, capacidade econômico-financeira, regularidade fiscal e estar em situação regular com a Seguridade Social;
+IV - não ser, na mesma região, localidade ou área, encarregada de prestar a mesma modalidade de serviço.
+Ressalta-se que a Agência deverá verificar a situação de regularidade fiscal da empresa ou da cooperativa relativamente a entidades integrantes da administração pública federal, podendo, ainda, quando se mostrar relevante, requerer comprovação de regularidade perante as esferas municipal e estadual do Poder Público.
+O Regulamento Geral de Outorgas, aprovado pela Resolução nº 720, de 10 de fevereiro de 2020, estabelece em seu anexo, a documentação necessária ao requerimento de autorização envolvendo serviço de interesse coletivo.
+O requerente deve comprovar a qualificação jurídica apresentando as seguintes informações:
+informar, por meio de sistema informatizado disponibilizado pela Anatel, sua qualificação, indicando sua razão social e o nome fantasia quando aplicável, o número de inscrição no Cadastro Nacional da Pessoa Jurídica (CNPJ) e o endereço;
+apresentar ato constitutivo e suas alterações vigentes, ou sua consolidação, devidamente registrados ou arquivados na repartição competente;
+apresentar, no caso de sociedade por ações, a composição acionária do controle societário e os documentos de eleição de seus administradores, exigência também necessária quando se tratar de sociedade que designe sua diretoria nos moldes das sociedades por ações;
+declarar, por meio de sistema informatizado disponibilizado pela Anatel, quando aplicável, a inexistência de impedimentos regulamentares para a obtenção da autorização; e,
+apresentar prova de inscrição no cadastro de contribuintes estadual ou distrital, relativo à sede da entidade, pertinente a seu ramo de atividade e compatível com o objeto da autorização.
+Para comprovação de qualificação técnica, a pretendente deve declarar, por meio de sistema informatizado disponibilizado pela Anatel, que possui aptidão para o desempenho da atividade pertinente bem como a existência de pessoal técnico adequado e disponível para a realização do objeto da autorização.
+Para comprovação de qualificação econômico-financeira, a pretendente deve declarar, por meio de sistema informatizado disponibilizado pela Anatel, que está em boa situação financeira e que não se encontra em falência.
+Para comprovação da regularidade fiscal o pretendente deve apresentar certidões relativas:
+a Fazenda Federal;
+o Fundo de Garantia por Tempo de Serviço (FGTS); e
+a Anatel.
+Observando que a Anatel poderá, quando se mostrar relevante, requerer da interessada a comprovação de regularidade fiscal perante as esferas municipal e estadual do Poder Público.
+Nos termos do art. 26 do Regulamento Geral de Outorgas, aprovado pela Resolução nº 720, de 10 de fevereiro de 2020, a autorização, a adaptação e a transferência de autorização, permissão e concessão de serviços de telecomunicações de interesse coletivo dará ensejo à cobrança de R$ 400,00 (quatrocentos reais), a ser pago, uma única vez, como condição para a expedição do instrumento de outorga.
+O Serviço de Comunicação Multimídia, Serviço Telefônico Fixo Comutado, Serviço Móvel Pessoal - SMP por Satélite, Serviço de Acesso Condicionado e o Serviço Limitado Especializado são os Serviços de Interesse Coletivo que devem ser requeridos por meio do Sistema Mosaico.
+A outorga de serviços de interesse coletivo possibilita a prestação de quaisquer serviços de interesse restrito ou coletivo, condicionada à prévia notificação do serviço à Anatel.
+O titular da outorga de serviços de interesse coletivo que pretenda a prestação de quaisquer serviços de interesse coletivo ou restrito deve notificar o interesse em prestar o serviço à Anatel, o que não dará ensejo a cobrança do PPDESS (Preço Público pelo Direito de Exploração de Serviços de Telecomunicações e de Satélite).
+Segundo o art. 43. do Regulamento Geral dos Serviços de Telecomunicações (RGST), as autorizadas de serviço de telecomunicações de interesse coletivo e seus terceirizados deverão zelar pela integridade física dos trabalhadores; qualificação técnica de seus serviços; e regularidade jurídica e fiscal. Consulte no link abaixo a lista de entidades sindicais habilitadas para apoiar a Agência na verificação documental dessas obrigações:
+Lista de Entidades Sindicais Habilitadas para Verificação Documental
+Links de compartilhamento em redes sociais
+Compartilhe:

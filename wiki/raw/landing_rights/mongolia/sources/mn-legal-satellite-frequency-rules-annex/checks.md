@@ -28,3 +28,10 @@
 - status: `error`
 - url: https://legalinfo.mn/mn/detail?lawId=16531361657351
 - error: curl: (22) The requested URL returned error: 500
+## 2026-11-01T07:15:19+00:00
+
+- source_id: `mn-legal-satellite-frequency-rules-annex`
+- norm: Annex to CRC Resolution No. 37/2022 on satellite frequency allocation and technical requirements
+- status: `error`
+- url: https://legalinfo.mn/mn/detail?lawId=16531361657351
+- error: curl: (28) Failed to connect to legalinfo.mn port 443 after 135160 ms: Couldn't connect to server

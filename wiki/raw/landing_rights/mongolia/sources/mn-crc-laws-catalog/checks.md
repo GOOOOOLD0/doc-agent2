@@ -53,3 +53,23 @@
  2022-06-17
  Цааш үзэх
 ```
+## 2026-11-01T07:10:47+00:00
+
+- source_id: `mn-crc-laws-catalog`
+- norm: CRC catalog of Mongolian laws
+- status: `updated`
+- url: https://crc.gov.mn/documents/mongol-ulsyn-xuuliud
+- normalized_sha256: `cef682e5582bdbe28c39cadf9fed3779f2d9af4ba5f596d769054f92280d2233`
+- compared_to: `/home/runner/work/doc-agent2/doc-agent2/wiki/raw/landing_rights/mongolia/sources/mn-crc-laws-catalog/snapshots/2026-10-01/normalized.txt`
+- diff_summary: 1 added lines, 0 removed lines
+
+```diff
+--- previous
++++ current
+@@ -112,4 +112,5 @@
+ ХХЗХ-ны тогтоол
+ Журам
++Норм, норматив
+ Стандарт
+ Нөхцөл шаардлага
+```

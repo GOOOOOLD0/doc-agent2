@@ -1,0 +1,14 @@
+{
+  "source_id": "mn-crc-satellite-posts-search",
+  "country": "mongolia",
+  "norm": "CRC official posts search for satellite-related notices",
+  "url": "https://crc.gov.mn/posts?q=%D1%81%D0%B0%D0%BD%D1%81%D1%80%D1%8B%D0%BD",
+  "fetched_at": "2026-11-01T07:33:24+00:00",
+  "title": "Posts email email",
+  "charset": "utf-8",
+  "source_format": "html",
+  "capture_method": "generic_html",
+  "normalized_sha256": "db23d6b15b1c758b236af5f0362f1d5f84e669ce1bb8f9f7aa41f6feac5e46e8",
+  "status": "updated",
+  "compared_to": "/home/runner/work/doc-agent2/doc-agent2/wiki/raw/landing_rights/mongolia/sources/mn-crc-satellite-posts-search/snapshots/2026-10-01/normalized.txt"
+}
